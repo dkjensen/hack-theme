@@ -28,7 +28,7 @@ let hack_sliders = {};
 				pagination.find( 'div' ).text(
 					pagination.data( 'label' ) + ' ' +
 					( slick.currentSlide ? slick.currentSlide + 1 : 1 ) + ' of ' +
-					slick.slideCount ?? $( this ).find( '.slick-slide:not(.slick-cloned)' ).length
+					slick.slideCount ?? $( '.hack-slick[data-slick-id="' + slider_id + '"]' ).find( '.slick-slide:not(.slick-cloned)' ).length
 				);
 			} );
 		}

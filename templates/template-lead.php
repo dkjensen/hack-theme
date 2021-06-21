@@ -402,6 +402,30 @@ if ( have_posts() ) :
 										<?php echo esc_html_x( 'Loves to imagine new ways to empower people towards the great commission beyond the four church walls.', 'Team Member Bio', 'hack' ); ?>
 									</div>
 								</div>
+								<div class="section-lead-six-team--member">
+									<div class="section-lead-six-team--member-photo">
+										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/team/sammy-fung.png' ) ); ?>" />
+									</div>
+									<div class="section-lead-six-team--member-label">
+										<h3><?php echo esc_html( 'Sammy' ); ?></h3>
+										<h6><?php echo esc_html_x( 'USA', 'Team Member Title', 'hack' ); ?></h6>
+									</div>
+									<div class="section-lead-six-team--member-bio">
+										<?php echo esc_html_x( 'A tech community builder and a follower of God’s calling on his life. ', 'Team Member Bio', 'hack' ); ?>
+									</div>
+								</div>
+								<div class="section-lead-six-team--member">
+									<div class="section-lead-six-team--member-photo">
+										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/team/danny-kwan.png' ) ); ?>" />
+									</div>
+									<div class="section-lead-six-team--member-label">
+										<h3><?php echo esc_html( 'Danny' ); ?></h3>
+										<h6><?php echo esc_html_x( 'USA', 'Team Member Title', 'hack' ); ?></h6>
+									</div>
+									<div class="section-lead-six-team--member-bio">
+										<?php echo esc_html_x( 'Interested in technology and theology.', 'Team Member Bio', 'hack' ); ?>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -599,7 +623,7 @@ if ( have_posts() ) :
 			</div>
 			<div class="section section-lead-twelve padding-0">
 				<div class="wrap">
-					<div class="section-lead-twelve-slider hack-slick blue-background-color" data-slick-id="eleven" data-slick='{"dots": true, "arrows": false}'>
+					<div class="section-lead-twelve-slider hack-slick blue-background-color" data-slick-id="twelve" data-slick='{"dots": true, "arrows": false}'>
 						<div class="section-lead-twelve-slider--item">
 							<div class="wrap">
 								<div class="row">
