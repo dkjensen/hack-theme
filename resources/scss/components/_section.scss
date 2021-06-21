@@ -1,0 +1,12 @@
+.section {
+	flex: 1;
+	padding: 5rem 0;
+
+	@include mq(tablet) {
+		padding: 6rem 0;
+	}
+
+	&.padding-0 {
+		padding: 0;
+	}
+}

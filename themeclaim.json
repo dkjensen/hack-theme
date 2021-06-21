@@ -1,0 +1,18 @@
+{
+  "from": {
+    "Name": "Starter Theme",
+    "Description": "Default theme",
+    "Uri": "https://dkjensen.com/",
+    "Author": "David Jensen",
+    "AuthorEmail": "david@dkjensen.com",
+    "AuthorUri": "https://dkjensen.com/"
+  },
+  "to": {
+    "Name": "Hack",
+    "Description": "Default theme for hack.indigitous.org",
+    "Uri": "https://hack.indigitous.org/",
+    "Author": "David Jensen",
+    "AuthorEmail": "david@dkjensen.com",
+    "AuthorUri": "https://dkjensen.com/"
+  }
+}

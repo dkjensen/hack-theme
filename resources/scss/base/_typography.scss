@@ -1,0 +1,141 @@
+html {
+	font-family: $base--font-family;
+	font-size: 62.5%;
+	line-height: $base--line-height;
+	color: $font-color--base;
+}
+
+body {
+	font-size: $base--font-size;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0 0 0.75em;
+	font-family: $font-family--heading;
+	font-size: 1.25rem;
+	font-weight: 700;
+	line-height: $line-height--heading;
+
+	&.divider {
+
+		&:after {
+			display: block;
+			width: 50px;
+			height: 4px;
+			margin: 1.2rem 0;
+			content: "";
+			background-color: $color--gray;
+		}
+
+		&.color-primary:after {
+			background-color: $color--primary;
+		}
+
+		&.align-center:after {
+			margin-right: auto;
+			margin-left: auto;
+		}
+	}
+}
+
+h1 {
+	font-size: 4rem;
+	line-height: 1.166;
+
+	span {
+		color: $color--primary;
+	}
+
+	@include mq(tablet) {
+		font-size: 6rem;
+	}
+}
+
+h2 {
+	font-size: 3.2rem;
+
+	@include mq(tablet) {
+		font-size: 4rem;
+	}
+}
+
+h3 {
+	font-size: 2rem;
+
+	@include mq(tablet) {
+		font-size: 2.4rem;
+	}
+}
+
+h4 {
+	font-size: 2.2rem;
+}
+
+h5 {
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+
+h6 {
+	font-size: $base--font-size;
+	color: $color--primary;
+}
+
+p {
+	margin: 0 0 var(--spacing--small);
+}
+
+a {
+	color: $action-color;
+	text-decoration-skip-ink: auto;
+	transition: color var(--duration) var(--timing);
+
+	&:hover {
+		color: $action-color--alt;
+	}
+
+	&:focus {
+		outline: var(--focus-outline);
+		outline-offset: var(--focus-outline-offset);
+	}
+}
+
+hr {
+	margin: var(--spacing) 0;
+	border-top: 0;
+	border-right: 0;
+	border-bottom: var(--border);
+	border-left: 0;
+}
+
+blockquote {
+	font-size: 2.4rem;
+	font-style: italic;
+	line-height: 1.666;
+	text-align: center;
+
+	@include mq(tablet) {
+		font-size: 3rem;
+	}
+
+	@include margin( $spacing--l 0 );
+
+	&:before {
+		content: open-quote;
+	}
+
+	&:after {
+		content: close-quote;
+	}
+}
+
+.numbered-outline {
+	font-family: "Hack Outline", sans-serif;
+	font-size: 4rem;
+	line-height: 1;
+}

@@ -1,0 +1,10 @@
+<svg id="ethiopia" xmlns="http://www.w3.org/2000/svg" width="36.22" height="36.22" viewBox="0 0 36.22 36.22">
+  <path id="Path_122" data-name="Path 122" d="M0,152.57a18.07,18.07,0,0,0,1.126,6.3l16.983,1.575,16.983-1.575a18.182,18.182,0,0,0,.03-12.518L18.11,144.7,1.1,146.351A18.073,18.073,0,0,0,0,152.57Z" transform="translate(0 -134.46)" fill="#ffda44"/>
+  <path id="Path_123" data-name="Path 123" d="M32.907,356.854A18.116,18.116,0,0,0,49.89,345.043H15.923A18.116,18.116,0,0,0,32.907,356.854Z" transform="translate(-14.797 -320.634)" fill="#d80027"/>
+  <path id="Path_124" data-name="Path 124" d="M32.907,0A18.116,18.116,0,0,0,15.923,11.811H49.89A18.117,18.117,0,0,0,32.907,0Z" transform="translate(-14.797)" fill="#6da544"/>
+  <ellipse id="Ellipse_5" data-name="Ellipse 5" cx="8.661" cy="8.661" rx="8.661" ry="8.661" transform="translate(9.449 9.449)" fill="#0052b4"/>
+  <g id="Group_59" data-name="Group 59" transform="translate(11.481 11.403)">
+    <path id="Path_125" data-name="Path 125" d="M168.915,161.191,170.478,166h5.068l-4.1,2.974,1.576,4.826-4.106-2.988-4.1,2.983,1.569-4.821-4.1-2.974h5.064Z" transform="translate(-162.287 -161.191)" fill="#ffda44"/>
+    <path id="Path_126" data-name="Path 126" d="M180.344,184.177l-4.96-1.612,3.065-4.219-1.274-.926-3.066,4.219-3.065-4.219-1.274.926,3.065,4.219-4.96,1.611.487,1.5,4.96-1.612v5.215H174.9v-5.215l4.96,1.612Z" transform="translate(-167.481 -176.272)" fill="#ffda44"/>
+  </g>
+</svg>

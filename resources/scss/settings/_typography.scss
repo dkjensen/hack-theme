@@ -1,0 +1,23 @@
+$base--font-size: 1.8rem;
+
+// Font families
+$base--font-family: "Noto Sans", sans-serif;
+
+$font-family--heading: $base--font-family;
+$font-family--code: $font-stack-consolas;
+
+// Font weights
+$font-weight--extralight: 200;
+$font-weight--light: 300;
+$font-weight--regular: 400;
+$font-weight--medium: 500;
+$font-weight--semibold: 600;
+$font-weight--bold: 700;
+
+$base--font-weight: $font-weight--regular;
+$font-weight--heading: $font-weight--semibold;
+
+// Line height
+$base--line-height: modular-scale(0, $golden);
+
+$line-height--heading: modular-scale(-1, $golden);

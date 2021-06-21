@@ -1,0 +1,90 @@
+@import "slick-carousel/slick/slick";
+@import "slick-carousel/slick/slick-theme";
+
+.slick-next,
+.slick-prev {
+	left: $gutter;
+	z-index: 1;
+	font-size: 24px;
+	font-weight: $font-weight--bold;
+	color: inherit;
+	transition: all ease 0.1s;
+
+	@include hover-focus {
+		color: $color--primary;
+	}
+
+	&:before {
+		display: none;
+		color: inherit;
+	}
+}
+
+.slick-next {
+	right: $gutter;
+	left: auto;
+}
+
+.slick-dots {
+	bottom: $spacing--xl;
+	z-index: 1;
+
+	li {
+
+		button {
+
+			@include hover-focus {
+				background: transparent;
+
+				&:before {
+					opacity: 1;
+				}
+			}
+
+			&:before {
+				display: inline-block;
+				width: 1.4rem;
+				height: 1.6rem;
+				content: "";
+				background: $color--white;
+				opacity: 0.5;
+				transition: all ease 0.1s;
+			}
+		}
+
+		&.slick-active {
+
+			button {
+
+				&:before {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+
+.slick-carousel-pagination {
+	display: flex;
+	align-items: center;
+	font-weight: $font-weight--bold;
+
+	.slick-arrow {
+		position: static;
+		top: auto;
+		right: auto;
+		bottom: auto;
+		left: auto;
+		width: 4rem;
+		height: auto;
+		margin: 0;
+		margin-top: -5px;
+		line-height: 1;
+		text-align: center;
+		transform: none;
+
+		&:first-child {
+			margin-left: -1rem;
+		}
+	}
+}
