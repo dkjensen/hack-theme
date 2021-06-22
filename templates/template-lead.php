@@ -196,7 +196,7 @@ if ( have_posts() ) :
 								esc_html_e( 'HACK allowed me to see that we can make big things in a small amount of time with the Lord if we are available.', 'hack' );
 								?>
 							</blockquote>
-							<h3 class="yellow-color"><?php echo esc_html( 'Tresor, D’Jamena' ); ?></h3>
+							<h3 class="yellow-color"><?php echo esc_html( 'Tresor, N’Djamena' ); ?></h3>
 						</div>
 					</div>
 					<div class="section-lead-five-slider--item">
