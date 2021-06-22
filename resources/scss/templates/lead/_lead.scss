@@ -488,6 +488,10 @@
 						h3 {
 							margin: 0 0 0 $gutter;
 						}
+
+						img {
+							width: 26px;
+						}
 					}
 				}
 			}
@@ -510,7 +514,7 @@
 
 		.badge {
 			position: absolute;
-			top: 4.5rem;
+			top: $spacing--xxl;
 			left: -16px;
 			z-index: 2;
 			pointer-events: none;
