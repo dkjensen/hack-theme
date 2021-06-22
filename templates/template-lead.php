@@ -624,6 +624,8 @@ if ( have_posts() ) :
 					<div class="slick-carousel-pagination" data-slick-id="ten" data-label="<?php echo esc_attr_x( 'Project', 'Text Before Slider Pagination', 'hack' ); ?>"><div></div></div>
 				</div>
 			</div>
+			<?php
+			/*
 			<div class="section padding-0 section-lead-eleven">
 				<div class="wrap">
 					<div class="section-lead-eleven-slider hack-slick" data-slick-id="eleven" data-slick='{"dots": false, "arrows": true, "asNavFor": ".section-lead-eleven-slider-captions"}'>
@@ -644,7 +646,8 @@ if ( have_posts() ) :
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> */
+			?>
 			<div class="section section-lead-twelve padding-0">
 				<div class="wrap">
 					<div class="section-lead-twelve-slider hack-slick blue-background-color" data-slick-id="twelve" data-slick='{"dots": true, "arrows": false}'>
