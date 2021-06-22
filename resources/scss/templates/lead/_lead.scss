@@ -12,19 +12,71 @@
 			}
 		}
 
-		&-graphic {
-			max-width: 124vw;
-			margin-left: -12vw;
+		.column:last-child {
+			position: relative;
+			padding-top: $gutter;
+			padding-bottom: 85%;
 
 			@include mq(tablet) {
-				max-width: 58vw;
-				margin-right: -10vw;
-				margin-left: 0;
+				padding-top: 0;
+				padding-bottom: 60%;
 			}
+		}
 
-			@include mq(desktop) {
-				max-width: 61.1vw;
-				margin-left: -12vw;
+		&-graphic {
+			// max-width: 124vw;
+			// margin-left: -12vw;
+
+			// @include mq(tablet) {
+			// 	max-width: 58vw;
+			// 	margin-right: -10vw;
+			// 	margin-left: 0;
+			// }
+
+			// @include mq(desktop) {
+			// 	max-width: 61.1vw;
+			// 	margin-left: -12vw;
+			// }
+
+			&--container {
+				position: absolute;
+				left: -15%;
+				width: 131.5%;
+				height: 0;
+				padding-bottom: 81%;
+
+				@include mq(tablet) {
+					left: -39%;
+					width: 190%;
+					padding-bottom: 117.604%;
+				}
+
+				img {
+					position: absolute;
+				}
+
+				img:nth-child(1) {
+					top: 4.016%;
+					left: 19.709%;
+					width: 39.419%;
+				}
+
+				img:nth-child(2) {
+					right: 0;
+					width: 39.419%;
+				}
+
+				img:nth-child(3) {
+					bottom: 8.171%;
+					left: 0%;
+					width: 25.511%;
+				}
+
+				img:nth-child(4) {
+					bottom: 0;
+					left: 26.877%;
+					width: 43.088%;
+				}
 			}
 
 		}
@@ -111,6 +163,7 @@
 		&-sidebar {
 			padding: $spacing--xl $gutter;
 			margin-top: -$spacing--xxxl;
+			border-radius: 4px;
 
 			@include mq(tablet) {
 				padding: $spacing--xl;
@@ -225,10 +278,21 @@
 	}
 
 	&-seven {
+		position: relative;
 		display: flex;
 		align-items: center;
 		height: 73vw;
 		background: url(../img/hack-lead-break-2.jpg) center/cover no-repeat;
+
+		&:before {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			content: "";
+			background: rgba(0, 0, 0, 0.5);
+		}
 
 		@include mq(tablet) {
 			height: 656px;
@@ -239,6 +303,8 @@
 		}
 
 		.wrap {
+			position: relative;
+			z-index: 1;
 			text-align: center;
 		}
 	}
@@ -413,7 +479,21 @@
 						margin-top: auto;
 						margin-bottom: auto;
 					}
+
+					&-title {
+						display: flex;
+						align-items: center;
+						margin: 0 0 $gutter;
+
+						h3 {
+							margin: 0 0 0 $gutter;
+						}
+					}
 				}
+			}
+
+			.slick-list {
+				overflow: visible;
 			}
 		}
 
@@ -425,6 +505,60 @@
 				right: 0;
 				width: 33%;
 				padding: 0 6rem;
+			}
+		}
+
+		.badge {
+			position: absolute;
+			top: 4.5rem;
+			left: -16px;
+			z-index: 2;
+			pointer-events: none;
+
+			@include mq($until: tablet) {
+				display: none;
+			}
+
+			&:before {
+				position: absolute;
+				bottom: 100%;
+				left: 0;
+				z-index: -1;
+				display: inline-block;
+				width: 16px;
+				height: 23px;
+				content: "";
+				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16.4 11.7'%3E%3Cpath fill='%23ee5028' d='M16.4 11.7V2.5l-13 9.2z'/%3E%3Cpath d='M3.4 11.7l13-9.3V0C11.6 3.5 2 10.3 0 11.7h3.4z'/%3E%3C/svg%3E");
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: contain;
+				transform: translateY(40%);
+			}
+
+			&--inside {
+				position: relative;
+				z-index: 2;
+				display: inline-block;
+				width: 100%;
+				max-width: 100px;
+				padding: $gutter;
+				font-size: 1.2rem;
+				font-weight: $font-weight--bold;
+				line-height: 1.333;
+				text-transform: uppercase;
+				background: $color--white;
+				border: 2px solid $color--black;
+				border-radius: 4px;
+
+				span {
+					font-size: 2rem;
+					color: $color--primary;
+				}
+
+				img {
+					max-width: 110%;
+					margin: 0 0 0.4rem;
+				}
 			}
 		}
 	}

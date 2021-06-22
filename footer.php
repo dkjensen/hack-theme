@@ -13,7 +13,7 @@ use function Dkjensen\Hack\Functions\hack_name_tag;
 		<div class="site-footer-call-to-action primary-background-color">
 			<div class="wrap">
 				<div class="site-footer-call-to-action--content">
-					<h1 class="white-color">
+					<h1 class="white-color" data-sal="slide-right">
 					<?php
 						/* translators: %s #HACK name tag */
 						printf( esc_html_x( 'Join %s', 'Footer', 'hack' ), hack_name_tag() );

@@ -34,7 +34,12 @@ if ( have_posts() ) :
 							</p>
 						</div>
 						<div class="column one-half">
-							<img class="section-lead-one-graphic" src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-hero.png' ) ); ?>" />
+							<div class="section-lead-one-graphic--container">
+								<img class="section-lead-one-graphic" style="--sal-duration: 0.5s;" data-sal="slide-left" data-sal-easing="ease-in-out" src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-hero-1.png' ) ); ?>" />
+								<img class="section-lead-one-graphic" style="--sal-duration: 0.5s;" data-sal="slide-down" data-sal-easing="ease-in-out" data-sal-delay="100" src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-hero-2.png' ) ); ?>" />
+								<img class="section-lead-one-graphic" style="--sal-duration: 0.5s;" data-sal="slide-right" data-sal-easing="ease-in-out" data-sal-delay="200" src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-hero-3.png' ) ); ?>" />
+								<img class="section-lead-one-graphic" style="--sal-duration: 0.5s;" data-sal="slide-up" data-sal-easing="ease-in-out" data-sal-delay="300" src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-hero-4.png' ) ); ?>" />
+							</div>
 						</div>
 					</div>
 				</div>
@@ -83,7 +88,7 @@ if ( have_posts() ) :
 						</div>
 					</div>
 					<div class="row">
-						<div class="column one-half">
+						<div class="column one-half" data-sal="slide-right">
 							<h2>
 								<?php
 								/* translators: %s #HACK name tag */
@@ -116,42 +121,42 @@ if ( have_posts() ) :
 							<blockquote class="primary-color"><?php printf( esc_html__( 'God has given you what you need to lead %s in your city.', 'hack' ), hack_name_tag() ); ?></blockquote>
 						</div>
 						<div class="column seven-twelfths offset-1">
-							<div class="section-lead-four-callout">
+							<div class="section-lead-four-callout" data-sal="slide-left">
 								<div class="section-lead-four-callout--img"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-mature.svg' ) ); ?>" /></div>
 								<div class="section-lead-four-callout--copy">
 									<h3 class="primary-color"><?php esc_html_e( 'Mature', 'hack' ); ?></h3>
 									<p><?php esc_html_e( 'You are strong in your biblical Christian faith.', 'hack' ); ?></p>
 								</div>
 							</div>
-							<div class="section-lead-four-callout">
+							<div class="section-lead-four-callout" data-sal="slide-left">
 								<div class="section-lead-four-callout--img"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-technologist-creative.svg' ) ); ?>" /></div>
 								<div class="section-lead-four-callout--copy">
 									<h3 class="primary-color"><?php esc_html_e( 'Technologist or Creative', 'hack' ); ?></h3>
 									<p><?php esc_html_e( 'You’re a member of the tech or creative industry who understands technical development.', 'hack' ); ?></p>
 								</div>
 							</div>
-							<div class="section-lead-four-callout">
+							<div class="section-lead-four-callout" data-sal="slide-left">
 								<div class="section-lead-four-callout--img"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-leader.svg' ) ); ?>" /></div>
 								<div class="section-lead-four-callout--copy">
 									<h3 class="primary-color"><?php esc_html_e( 'Leader', 'hack' ); ?></h3>
 									<p><?php esc_html_e( 'You understand how to run a hackathon or are willing to learn.', 'hack' ); ?></p>
 								</div>
 							</div>
-							<div class="section-lead-four-callout">
+							<div class="section-lead-four-callout" data-sal="slide-left">
 								<div class="section-lead-four-callout--img"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-organized.svg' ) ); ?>" /></div>
 								<div class="section-lead-four-callout--copy">
 									<h3 class="primary-color"><?php esc_html_e( 'Organized', 'hack' ); ?></h3>
 									<p><?php esc_html_e( 'You’re able to gather a local team to manage logistics, keep a tight schedule, coordinate various elements of a hackathon, and communicate with participants.', 'hack' ); ?></p>
 								</div>
 							</div>
-							<div class="section-lead-four-callout">
+							<div class="section-lead-four-callout" data-sal="slide-left">
 								<div class="section-lead-four-callout--img"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-committed.svg' ) ); ?>" /></div>
 								<div class="section-lead-four-callout--copy">
 									<h3 class="primary-color"><?php esc_html_e( 'Committed', 'hack' ); ?></h3>
 									<p><?php esc_html_e( 'You can commit to 2 monthly calls and regular communication with the Regional Lead until 30 October 2021.', 'hack' ); ?></p>
 								</div>
 							</div>
-							<div class="section-lead-four-callout">
+							<div class="section-lead-four-callout" data-sal="slide-left">
 								<div class="section-lead-four-callout--img"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-servant.svg' ) ); ?>" /></div>
 								<div class="section-lead-four-callout--copy">
 									<h3 class="primary-color"><?php esc_html_e( 'Servant-hearted', 'hack' ); ?></h3>
@@ -261,9 +266,9 @@ if ( have_posts() ) :
 					<div class="row">
 						<div class="column one-third">
 							<div class="section-lead-six-sidebar gray-300-background-color full-width-mobile">
-								<h5 class="divider"><?php esc_html_e( 'Your Team', 'hack' ); ?></h5>
-								<h2 class="primary-color"><?php esc_html_e( 'Introducing Our Regional Leads', 'hack' ); ?></h2>
-								<p>
+								<h5 class="divider" data-sal="slide-right"><?php esc_html_e( 'Your Team', 'hack' ); ?></h5>
+								<h2 class="primary-color" data-sal="slide-right"><?php esc_html_e( 'Introducing Our Regional Leads', 'hack' ); ?></h2>
+								<p data-sal="slide-right">
 									<?php esc_html_e( 'This team will support you throughout the process of organizing #HACK in your city.', 'hack' ); ?>
 								</p>
 							</div>
@@ -408,7 +413,7 @@ if ( have_posts() ) :
 									</div>
 									<div class="section-lead-six-team--member-label">
 										<h3><?php echo esc_html( 'Sammy' ); ?></h3>
-										<h6><?php echo esc_html_x( 'USA', 'Team Member Title', 'hack' ); ?></h6>
+										<h6><?php echo esc_html_x( 'APAC', 'Team Member Title', 'hack' ); ?></h6>
 									</div>
 									<div class="section-lead-six-team--member-bio">
 										<?php echo esc_html_x( 'A tech community builder and a follower of God’s calling on his life. ', 'Team Member Bio', 'hack' ); ?>
@@ -420,7 +425,7 @@ if ( have_posts() ) :
 									</div>
 									<div class="section-lead-six-team--member-label">
 										<h3><?php echo esc_html( 'Danny' ); ?></h3>
-										<h6><?php echo esc_html_x( 'USA', 'Team Member Title', 'hack' ); ?></h6>
+										<h6><?php echo esc_html_x( 'APAC', 'Team Member Title', 'hack' ); ?></h6>
 									</div>
 									<div class="section-lead-six-team--member-bio">
 										<?php echo esc_html_x( 'Interested in technology and theology.', 'Team Member Bio', 'hack' ); ?>
@@ -433,22 +438,22 @@ if ( have_posts() ) :
 			</div>
 			<div class="section section-lead-seven">
 				<div class="wrap">
-					<h1 class="white-color">
+					<h1 class="white-color" data-sal="slide-down">
 						<?php
 						/* translators: %s #HACK name tag */
 						echo sprintf( esc_html_x( 'Lead %s in your city', 'City lead page', 'hack' ), hack_name_tag() );
 						?>
 					</h1>
-					<p><a href="https://indigitous.typeform.com/to/mojiHQqC" class="button" target="_blank"><?php esc_html_e( 'Register Now', 'hack' ); ?></a></p>
+					<p data-sal="slide-down"><a href="https://indigitous.typeform.com/to/mojiHQqC" class="button" target="_blank"><?php esc_html_e( 'Register Now', 'hack' ); ?></a></p>
 				</div>
 			</div>
 			<div class="section section-lead-eight">
 				<div class="wrap">
 					<div class="row">
 						<div class="column one-third align-center">
-							<h5 class="divider"><?php esc_html_e( 'Fast Facts', 'hack' ); ?></h5>
-							<h2 class="primary-color"><?php esc_html_e( 'What is #HACK?', 'hack' ); ?></h2>
-							<div class="slick-carousel-pagination" data-slick-id="eight" data-label="<?php echo esc_attr_x( 'Fact', 'Text Before Slider Pagination', 'hack' ); ?>"><div></div></div>
+							<h5 class="divider" data-sal="slide-right"><?php esc_html_e( 'Fast Facts', 'hack' ); ?></h5>
+							<h2 class="primary-color" data-sal="slide-right"><?php esc_html_e( 'What is #HACK?', 'hack' ); ?></h2>
+							<div class="slick-carousel-pagination" data-sal="slide-right" data-slick-id="eight" data-label="<?php echo esc_attr_x( 'Fact', 'Text Before Slider Pagination', 'hack' ); ?>"><div></div></div>
 						</div>
 						<div class="column two-thirds">
 							<div class="section-lead-eight-slider hack-slick" data-slick-id="eight" data-slick='{"arrows": true, "slidesToShow": 2, "responsive": [{"breakpoint": 768, "settings": {"slidesToShow": 1}}], "variableWidth": true, "draggable": false}'>
@@ -459,31 +464,31 @@ if ( have_posts() ) :
 									</div>
 								</div>
 								<div class="section-lead-eight-slider--item">
-									<div class="white-color primary-background-color">
+									<div class="blue-light-background-color">
 										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-rocket-ship.svg' ) ); ?>" />
 										<p><?php esc_html_e( '#HACK was launched in 2016 with the help of Nicholas Skytland and Alicia Llewellyn, founders of various NASA hackathons, including the Space Apps Challenge and the National Day of Civic Hacking.', 'hack' ); ?></p>
 									</div>
 								</div>
 								<div class="section-lead-eight-slider--item">
-									<div class="gray-200-background-color">
+									<div class="blue-background-color">
 										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-calendar.svg' ) ); ?>" />
 										<p><?php esc_html_e( 'This is the sixth edition of Indigitous’ global missional hackathon.', 'hack' ); ?></p>
 									</div>
 								</div>
 								<div class="section-lead-eight-slider--item">
-									<div class="white-color blue-background-color">
+									<div class="blue-light-background-color">
 										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-globe.svg' ) ); ?>" />
 										<p><?php esc_html_e( 'Join the world’s largest global missional collaboration.', 'hack' ); ?></p>
 									</div>
 								</div>
 								<div class="section-lead-eight-slider--item">
-									<div class="white-color primary-background-color">
+									<div class="blue-background-color">
 										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-city.svg' ) ); ?>" />
 										<p><?php esc_html_e( 'Since 2016, 210 cities have hosted a #HACK. Bring the hackathon to your city.', 'hack' ); ?></p>
 									</div>
 								</div>
 								<div class="section-lead-eight-slider--item">
-									<div class="gray-200-background-color">
+									<div class="blue-light-background-color">
 										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-people.svg' ) ); ?>" />
 										<p><?php esc_html_e( 'More than 4,300 hackers have participated in #HACK, sometimes working with people on the other side of the world.', 'hack' ); ?></p>
 									</div>
@@ -495,9 +500,15 @@ if ( have_posts() ) :
 									</div>
 								</div>
 								<div class="section-lead-eight-slider--item">
-									<div class="gray-200-background-color">
+									<div class="blue-light-background-color">
 										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-location.svg' ) ); ?>" />
 										<p><?php esc_html_e( '41 #HACK locations have sustained active Indigitous communities after the event.', 'hack' ); ?></p>
+									</div>
+								</div>
+								<div class="section-lead-eight-slider--item">
+									<div class="white-color primary-background-color">
+										<h2><?php esc_html_e( 'Find Out More', 'hack' ); ?></h2>
+										<p><a href="<?php echo esc_url( home_url( '/about/' ) ); ?>" class="button light"><?php esc_html_e( 'About #HACK', 'hack' ); ?></a></p>
 									</div>
 								</div>
 							</div>
@@ -554,9 +565,16 @@ if ( have_posts() ) :
 								<div class="row">
 									<div class="column two-thirds">
 										<iframe width="560" height="315" src="https://www.youtube.com/embed/tJ54xweQdm4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										<div class="badge">
+											<div class="badge--inside">
+												<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-logo.png' ) ); ?>" />
+												<?php esc_html_e( 'Top Overall Project', 'hack' ); ?>
+												<span><?php echo esc_html( '2020' ); ?></span>
+											</div>
+										</div>
 									</div>
 									<div class="column one-third">
-										<div class="section-lead-ten-slider--item-content">
+										<div class="section-lead-ten-slider--item-content" data-sal="slide-left">
 											<div class="section-lead-ten-slider--item-content-title">
 												<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-flag-au.svg' ) ); ?>" />
 												<h3><?php echo esc_html( 'SwitchOff', 'hack' ); ?></h3>
@@ -577,7 +595,9 @@ if ( have_posts() ) :
 									<div class="column two-thirds">
 										<iframe width="560" height="315" src="https://www.youtube.com/embed/tJ54xweQdm4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 									</div>
-									<div class="column one-third">asdasds</div>
+									<div class="column one-third">
+										<div class="section-lead-ten-slider--item-content" data-sal="slide-left">asdasds</div>
+									</div>
 								</div>
 							</div>
 							<div class="section-lead-ten-slider--item">
@@ -585,7 +605,9 @@ if ( have_posts() ) :
 									<div class="column two-thirds">
 										<iframe width="560" height="315" src="https://www.youtube.com/embed/tJ54xweQdm4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 									</div>
-									<div class="column one-third">asdasds</div>
+									<div class="column one-third">
+										<div class="section-lead-ten-slider--item-content" data-sal="slide-left">asdasds</div>
+									</div>
 								</div>
 							</div>
 							<div class="section-lead-ten-slider--item">
@@ -593,7 +615,9 @@ if ( have_posts() ) :
 									<div class="column two-thirds">
 										<iframe width="560" height="315" src="https://www.youtube.com/embed/tJ54xweQdm4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 									</div>
-									<div class="column one-third">asdasds</div>
+									<div class="column one-third">
+										<div class="section-lead-ten-slider--item-content" data-sal="slide-left">asdasds</div>
+									</div>
 								</div>
 							</div>
 						</div>

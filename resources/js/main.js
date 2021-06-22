@@ -1,8 +1,11 @@
 import "slick-carousel";
+import sal from "sal.js";
 
 let hack_sliders = {};
 
 ( function( $ ) {
+
+	sal();
 
 	$( '.menu-toggle' ).on( 'click', function( e ) {
 		e.preventDefault();
