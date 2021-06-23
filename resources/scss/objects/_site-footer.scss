@@ -48,6 +48,15 @@
 			margin: 0;
 			text-transform: uppercase;
 
+			@include mq($until: tablet) {
+				margin: 0 0 0.5em;
+				text-align: center;
+			}
+
+			@include mq($until: mobile) {
+				font-size: 9vw;
+			}
+
 			span {
 				color: inherit;
 			}
@@ -79,13 +88,28 @@
 						text-align: center;
 					}
 
-					&.current-menu-item > a {
-						color: $color--primary;
-						background: $color--white;
+					&.current-menu-item {
+
+						@include mq(tablet) {
+							margin: 0 $spacing--l;
+						}
+
+						> a {
+							color: $color--primary;
+							background: $color--white;
+						}
 					}
 
 					&:not(.current-menu-item) > a:hover {
 						text-decoration: underline;
+					}
+
+					&:first-child {
+						margin-left: 0;
+					}
+
+					&:last-child {
+						margin-right: 0;
 					}
 				}
 

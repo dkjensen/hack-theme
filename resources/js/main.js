@@ -36,12 +36,26 @@ let hack_sliders = {};
 			} );
 		}
 
-		$( this ).slick( {
+		var slickOpts = {
 			nextArrow    : '<span class="slick-next">&rsaquo;</span>',
 			prevArrow    : '<span class="slick-prev">&lsaquo;</span>',
 			accessibility: false,
-			appendArrows : append_arrows
-		} );
+		};
+
+		if ( append_arrows ) {
+			slickOpts.appendArrows = append_arrows;
+		}
+
+		$( this ).on( 'init', function( event, slick ) {
+			if ( slick.options.clickProgress ) {
+				slick.$slideTrack.on( 'click', function( e ) {
+					e.preventDefault();
+
+					slick.slickNext();
+
+				} );
+			}
+		} ).slick( slickOpts );
 
 	} );
 

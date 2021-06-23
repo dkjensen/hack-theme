@@ -51,6 +51,11 @@
 					padding-bottom: 117.604%;
 				}
 
+				@include mq($until: layout, $from: tablet) {
+					right: -42vw;
+					left: auto;
+				}
+
 				img {
 					position: absolute;
 				}
@@ -341,7 +346,12 @@
 					img {
 						display: inline-block;
 						width: 5.8rem;
-						margin: 0 0 $spacing--xl;
+						margin: 0 0 auto;
+					}
+
+					p {
+						padding: 1em 0 0;
+						margin: auto 0;
 					}
 
 					@include mq($until: tablet) {
@@ -463,6 +473,10 @@
 					@include mq($until: tablet) {
 						flex-direction: column-reverse;
 					}
+
+					.column:first-child {
+						position: relative;
+					}
 				}
 
 				&-content {
@@ -470,9 +484,11 @@
 					flex-direction: column;
 					height: 100%;
 					padding: $gutter * 2 0;
+					text-align: center;
 
 					@include mq(tablet) {
 						padding: 4.5rem 6rem;
+						text-align: left;
 					}
 
 					> *:last-child {
@@ -483,7 +499,12 @@
 					&-title {
 						display: flex;
 						align-items: center;
+						justify-content: center;
 						margin: 0 0 $gutter;
+
+						@include mq(tablet) {
+							justify-content: flex-start;
+						}
 
 						h3 {
 							margin: 0 0 0 $gutter;
@@ -502,11 +523,13 @@
 		}
 
 		.slick-carousel-pagination {
-			position: absolute;
-			bottom: $gutter;
+			justify-content: center;
 
 			@include mq(tablet) {
+				position: absolute;
 				right: 0;
+				bottom: $gutter;
+				justify-content: flex-start;
 				width: 33%;
 				padding: 0 6rem;
 			}
@@ -515,12 +538,14 @@
 		.badge {
 			position: absolute;
 			top: $spacing--xxl;
-			left: -16px;
+			left: -($gutter / 2);
 			z-index: 2;
 			pointer-events: none;
 
 			@include mq($until: tablet) {
-				display: none;
+				top: $spacing--xl;
+				left: -$gutter;
+				transform: scale(0.75);
 			}
 
 			&:before {
@@ -627,6 +652,7 @@
 				align-items: center;
 				justify-content: center;
 				height: 400px;
+				padding: 0 $gutter;
 				text-align: center;
 
 				blockquote {

@@ -35,10 +35,10 @@ if ( have_posts() ) :
 						</div>
 						<div class="column one-half">
 							<div class="section-lead-one-graphic--container">
-								<img class="section-lead-one-graphic" style="--sal-duration: 0.5s;" data-sal="slide-left" data-sal-easing="ease-in-out" src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-hero-1.png' ) ); ?>" />
-								<img class="section-lead-one-graphic" style="--sal-duration: 0.5s;" data-sal="slide-down" data-sal-easing="ease-in-out" data-sal-delay="100" src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-hero-2.png' ) ); ?>" />
-								<img class="section-lead-one-graphic" style="--sal-duration: 0.5s;" data-sal="slide-right" data-sal-easing="ease-in-out" data-sal-delay="200" src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-hero-3.png' ) ); ?>" />
-								<img class="section-lead-one-graphic" style="--sal-duration: 0.5s;" data-sal="slide-up" data-sal-easing="ease-in-out" data-sal-delay="300" src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-hero-4.png' ) ); ?>" />
+								<img class="section-lead-one-graphic" data-sal="slide-left" src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-hero-1.png' ) ); ?>" />
+								<img class="section-lead-one-graphic" data-sal="slide-down" data-sal-delay="100" src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-hero-2.png' ) ); ?>" />
+								<img class="section-lead-one-graphic" data-sal="slide-right" data-sal-delay="200" src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-hero-3.png' ) ); ?>" />
+								<img class="section-lead-one-graphic" data-sal="slide-up" data-sal-delay="300" src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-hero-4.png' ) ); ?>" />
 							</div>
 						</div>
 					</div>
@@ -377,7 +377,7 @@ if ( have_posts() ) :
 									</div>
 									<div class="section-lead-six-team--member-label">
 										<h3><?php echo esc_html( 'Melissa' ); ?></h3>
-										<h6><?php echo esc_html_x( 'Latina America', 'Team Member Title', 'hack' ); ?></h6>
+										<h6><?php echo esc_html_x( 'Latin America', 'Team Member Title', 'hack' ); ?></h6>
 									</div>
 									<div class="section-lead-six-team--member-bio">
 										<?php echo esc_html_x( 'Loves connecting people to Jesus through digital strategies.', 'Team Member Bio', 'hack' ); ?>
@@ -456,7 +456,7 @@ if ( have_posts() ) :
 							<div class="slick-carousel-pagination" data-sal="slide-right" data-slick-id="eight" data-label="<?php echo esc_attr_x( 'Fact', 'Text Before Slider Pagination', 'hack' ); ?>"><div></div></div>
 						</div>
 						<div class="column two-thirds">
-							<div class="section-lead-eight-slider hack-slick" data-slick-id="eight" data-slick='{"arrows": true, "slidesToShow": 2, "responsive": [{"breakpoint": 768, "settings": {"slidesToShow": 1}}], "variableWidth": true, "draggable": false}'>
+							<div class="section-lead-eight-slider hack-slick" data-slick-id="eight" data-slick='{"arrows": true, "slidesToShow": 2, "responsive": [{"breakpoint": 768, "settings": {"slidesToShow": 1}}], "variableWidth": true, "draggable": true, "infinite": false, "clickProgress": true}'>
 								<div class="section-lead-eight-slider--item">
 									<div class="blue-background-color">
 										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-globe.svg' ) ); ?>" />
@@ -732,11 +732,26 @@ if ( have_posts() ) :
 						</div>
 					</div>
 				</div>
-			</div> */
+			</div>
+			*/
 			?>
 			<div class="section section-lead-twelve padding-0">
 				<div class="wrap">
-					<div class="section-lead-twelve-slider hack-slick blue-background-color" data-slick-id="twelve" data-slick='{"dots": true, "arrows": false}'>
+					<div class="section-lead-twelve-slider hack-slick blue-background-color" data-slick-id="twelve" data-slick='{"dots": true, "arrows": true}'>
+						<div class="section-lead-twelve-slider--item">
+							<div class="wrap">
+								<div class="row">
+									<div class="column two-thirds offset-2">
+										<blockquote>
+											<?php
+											esc_html_e( 'God gave us an amazing opportunity to use our talents for His kingdom. It’s been so good to be with Godly and professional brothers.', 'hack' );
+											?>
+										</blockquote>
+										<h3><?php echo esc_html( 'Kaleb, Addis' ); ?></h3>
+									</div>
+								</div>
+							</div>
+						</div>
 						<div class="section-lead-twelve-slider--item">
 							<div class="wrap">
 								<div class="row">
@@ -775,20 +790,6 @@ if ( have_posts() ) :
 											?>
 										</blockquote>
 										<h3><?php echo esc_html( '#HACK Participant' ); ?></h3>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="section-lead-twelve-slider--item">
-							<div class="wrap">
-								<div class="row">
-									<div class="column two-thirds offset-2">
-										<blockquote>
-											<?php
-											esc_html_e( 'God gave us an amazing opportunity to use our talents for His kingdom. It’s been so good to be with Godly and professional brothers.', 'hack' );
-											?>
-										</blockquote>
-										<h3><?php echo esc_html( 'Kaleb, Addis' ); ?></h3>
 									</div>
 								</div>
 							</div>

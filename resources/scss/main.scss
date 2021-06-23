@@ -12,4 +12,7 @@
 
 body {
 	background: $viewport-background-color;
+	--sal-duration: 0.625s;
+	--sal-easing: ease-in-out;
 }
+

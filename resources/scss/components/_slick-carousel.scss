@@ -25,6 +25,29 @@
 	left: auto;
 }
 
+.slick-slider {
+	position: relative;
+
+	.slick-arrow {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100px;
+		height: 100%;
+		opacity: 0;
+		transform: none;
+
+		@include mq($until: tablet) {
+			display: none;
+		}
+
+		&.slick-next {
+			right: 0;
+			left: auto;
+		}
+	}
+}
+
 .slick-dots {
 	bottom: $spacing--xl;
 	z-index: 1;
