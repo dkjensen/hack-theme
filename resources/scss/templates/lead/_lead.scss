@@ -192,6 +192,10 @@
 
 	&-five {
 
+		.slick-slider {
+			margin-bottom: 0;
+		}
+
 		&-slider--item {
 			display: flex !important;
 			align-items: center;
@@ -315,9 +319,9 @@
 	}
 
 	&-eight {
+		padding-bottom: $gutter;
 
 		&-slider {
-			margin-right: -($gutter / 2);
 			margin-left: -($gutter / 2);
 
 			&--item {
@@ -326,7 +330,7 @@
 				padding: 0 $gutter / 2;
 
 				@include mq(tablet) {
-					width: 38rem !important;
+					width: 40.9rem !important;
 				}
 
 				> * {
@@ -360,14 +364,6 @@
 							font-size: 1.6rem;
 						}
 					}
-				}
-			}
-
-			.slick-list {
-				width: 100vw;
-
-				@include mq(tablet) {
-					width: 80vw;
 				}
 			}
 

@@ -22,7 +22,9 @@
 	<header id="masthead" class="site-header">
 		<div class="wrap">
 			<div class="site-branding">
-				<?php the_custom_logo(); ?>
+				<a href="<?php echo esc_url( home_url() ); ?>" class="custom-logo-link" rel="home">
+					<img class="custom-logo" alt="#HACK2021" src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-logo.svg' ) ); ?>" />
+				</a>
 			</div><!-- .site-branding -->
 
 			<?php if ( has_nav_menu( 'menu-1' ) ) : ?>

@@ -311,3 +311,4 @@ add_action( 'widgets_init', 'hack_widgets' );
 
 require_once 'lib/functions/enqueue.php';
 require_once 'lib/functions/helpers.php';
+require_once 'lib/functions/shortcodes.php';
