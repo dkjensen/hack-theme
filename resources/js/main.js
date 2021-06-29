@@ -11,6 +11,7 @@ let hack_sliders = {};
 		e.preventDefault();
 
 		$( this ).toggleClass( 'is-active' );
+		$( '.nav-primary' ).toggleClass( 'is-active' );
 
 		if ( $( this ).hasClass( 'is-active' ) ) {
 			$( this ).attr( 'aria-expanded', 'true' );
@@ -57,6 +58,20 @@ let hack_sliders = {};
 			}
 		} ).slick( slickOpts );
 
+	} );
+
+	$( '.language-switcher-toggle' ).on( 'click', function( e ) {
+		e.preventDefault();
+  
+		$( '.language-switcher' ).toggleClass( 'activated' );
+	} );
+  
+	$( '.language-switcher .wpml-ls' ).prepend( '<span class="wpml-ls-close"></span' );
+  
+	$( '.language-switcher .wpml-ls-close' ).on( 'click', function( e ) {
+		e.preventDefault();
+  
+		$( this ).closest( '.language-switcher' ).removeClass( 'activated' );
 	} );
 
 } )( jQuery );

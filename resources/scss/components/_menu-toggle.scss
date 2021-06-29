@@ -5,8 +5,17 @@ $hamburger-layer-width: 32px;
 @import "~hamburgers/_sass/hamburgers/hamburgers";
 
 .menu-toggle {
+	margin-left: $gutter !important;
+
+	@include mq(tablet) {
+		display: none;
+	}
 
 	@include hover-focus {
 		background: transparent;
+	}
+
+	.hamburger {
+		height: 2.4rem;
 	}
 }

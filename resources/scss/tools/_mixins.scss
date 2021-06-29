@@ -205,6 +205,20 @@
 	content: $glyph;
 }
 
+@mixin arrow($color: inherit) {
+
+	&:after {
+		display: inline-block;
+		margin-left: 1.5rem;
+		font-size: 4rem;
+		font-weight: $font-weight--regular;
+		line-height: 0;
+		color: $color;
+		content: "\0203A";
+		transform: rotate(90deg);
+	}
+}
+
 ////
 /// Button mixin
 ///

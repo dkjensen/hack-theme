@@ -93,15 +93,14 @@ p {
 a {
 	color: $action-color;
 	text-decoration-skip-ink: auto;
-	transition: color var(--duration) var(--timing);
+	transition: all var(--duration) var(--timing);
 
 	&:hover {
 		color: $action-color--alt;
 	}
 
 	&:focus {
-		outline: var(--focus-outline);
-		outline-offset: var(--focus-outline-offset);
+
 	}
 }
 

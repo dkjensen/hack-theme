@@ -27,7 +27,17 @@
 				</a>
 			</div><!-- .site-branding -->
 
-			<?php if ( has_nav_menu( 'menu-1' ) ) : ?>
+			<a href="#" class="language-switcher-toggle">
+				<?php echo apply_filters( 'wpml_current_language', null ); ?>
+			</a>
+			<div class="language-switcher">
+				<div class="language-switcher-container">
+					<div class="language-switcher-title"><?php esc_html_e( 'Select your Language', 'hack' ); ?></div>
+					<?php echo do_shortcode( '[wpml_language_switcher flags=0 translated=false]' ); ?>
+				</div>
+			</div>
+
+			<?php if ( has_nav_menu( 'primary' ) ) : ?>
 
 			<nav id="site-navigation" class="main-navigation">
 				<button class="hamburger hamburger--collapse menu-toggle" aria-controls="primary-menu" aria-expanded="false" type="button">
@@ -38,7 +48,7 @@
 				<?php
 				wp_nav_menu(
 					array(
-						'theme_location'  => 'menu-1',
+						'theme_location'  => 'primary',
 						'container'       => 'nav',
 						'menu_id'         => 'primary-menu',
 						'menu_class'      => 'menu nav-primary',

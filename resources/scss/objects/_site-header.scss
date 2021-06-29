@@ -3,6 +3,17 @@
 	@include margin( $gutter null);
 
 	.wrap {
+		display: flex;
 		align-items: center;
+
+		@include mq(tablet) {
+			display: grid;
+			grid-template-areas:
+				"f1 f2"
+				"f1 f3";
+			grid-template-rows: auto auto;
+			grid-template-columns: auto auto;
+			gap: 0 0;
+		}
 	}
 }

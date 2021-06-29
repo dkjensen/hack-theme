@@ -1,5 +1,9 @@
 .site-branding {
+	display: flex;
+	grid-area: f1;
+	align-items: flex-end;
 	width: 186px;
+	max-width: 42vw;
 
 	img {
 		width: auto;
