@@ -2,11 +2,11 @@
 	width: 100%;
 	max-width: 100%;
 
-	@include padding(null $layout--pading-mobile);
+	@include padding(null $layout--padding-mobile);
 	@include margin(null auto);
 
 	@include mq(tablet) {
-		max-width: calc(#{$layout--width} + #{$gutter * 2});
+		max-width: calc(#{$layout--width} + #{$gutter});
 
 		@include padding(null $layout--padding);
 	}

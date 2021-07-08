@@ -1,0 +1,553 @@
+.section-about {
+
+	&-one {
+		padding-top: 20rem;
+		text-align: center;
+
+		@include mq(tablet) {
+			padding-top: 29rem;
+		}
+
+		h1 {
+			margin: 0 0 1rem;
+		}
+
+		p {
+			width: 100%;
+			max-width: 500px;
+			margin: 0 auto;
+		}
+
+		iframe,
+		object,
+		video {
+			display: block;
+			margin: $spacing--xl 0 -24vw;
+			border-radius: 4px;
+
+			@include mq(tablet) {
+				margin: $spacing--xl 0 -20rem;
+			}
+		}
+
+		.row:first-child {
+			text-align: center;
+		}
+	}
+
+	&-two {
+		margin-top: 20vw;
+
+		@include mq($until: tablet) {
+
+			.row {
+				flex-direction: column-reverse;
+			}
+		}
+
+		@include mq(tablet) {
+			margin-top: 20rem;
+		}
+	}
+
+	&-three {
+		text-align: center;
+
+		h2 {
+			margin-bottom: $spacing--xl;
+		}
+
+		img {
+			height: 6.7rem;
+			margin: 0 0 2.3rem;
+		}
+
+		&-item {
+			display: flex;
+			flex-direction: column;
+			align-items: stretch;
+			height: 100%;
+			padding: $gutter * 2 $gutter;
+			font-size: 1.6rem;
+			background-color: $color--white;
+
+			:last-child {
+				margin-top: auto;
+			}
+		}
+	}
+
+	&-four {
+
+		.timeline {
+			position: relative;
+			list-style: none;
+			counter-reset: timeline-counter;
+
+			&-item {
+				position: relative;
+				display: flex;
+				flex-direction: column-reverse;
+				min-height: 20rem;
+				padding: 2.2rem $gutter;
+				margin: 0 0 $spacing--xxl;
+				counter-increment: timeline-counter;
+				background-color: $color--muted;
+				border-radius: 4px;
+
+				@include mq(tablet) {
+					flex-direction: row;
+					padding: 2.2rem 3rem 3rem 4rem;
+				}
+
+
+				&.current {
+					padding-top: 6rem;
+					padding-bottom: 0;
+					padding-left: 0;
+					margin-top: -4rem;
+					background-color: transparent;
+
+					@include mq(tablet) {
+						padding-top: 0;
+					}
+				}
+
+
+				@include mq(tablet) {
+
+					&:before {
+						position: absolute;
+						right: calc(100% + 1.9rem - 1px);
+						bottom: calc(100% - 4.8rem);
+						z-index: -1;
+						display: block;
+						width: calc(19rem + 2px);
+						height: 200%;
+						content: "";
+						box-shadow: inset 2px -2px 0 1px $color--black;
+						transform: translate(-1px, 1px);
+					}
+
+					&:after {
+						position: absolute;
+						top: 4.8rem;
+						right: calc(100% + 19rem);
+						display: inline-flex;
+						align-items: center;
+						justify-content: center;
+						width: 4rem;
+						height: 4rem;
+						font-weight: $font-weight--bold;
+						color: $color--white;
+						content: "#" counter(timeline-counter);
+						background-color: $color--black;
+						border-radius: 50%;
+						transform: translateY(-50%);
+					}
+				}
+
+				&:first-child:before {
+					height: 100%;
+				}
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+
+				> * {
+					display: flex;
+					flex: 1 0 50%;
+				}
+
+				&--date {
+
+					@extend h2;
+
+					position: absolute;
+					top: 4.8rem;
+					display: inline-block;
+					padding: $spacing--xxs 0;
+					transform: translateY(-50%);
+
+
+					&.badge {
+						left: -1.9rem;
+						padding: $spacing--xxs $spacing--m;
+						background-color: $color--white;
+						border-radius: 4px;
+						box-shadow: inset 0 0 0 2px $color--black;
+
+
+						&:before {
+							position: absolute;
+							bottom: 100%;
+							left: 0.3rem;
+							z-index: -1;
+							display: inline-block;
+							width: 17px;
+							height: 11px;
+							content: "";
+							background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16.4 11.7'%3E%3Cpath fill='%23ee5028' d='M16.4 11.7V2.5l-13 9.2z'/%3E%3Cpath d='M3.4 11.7l13-9.3V0C11.6 3.5 2 10.3 0 11.7h3.4z'/%3E%3C/svg%3E");
+							background-repeat: no-repeat;
+							background-position: center;
+							background-size: contain;
+						}
+					}
+
+
+					span {
+						color: $color--primary;
+					}
+				}
+
+				&--image {
+
+					@include mq($until: tablet) {
+						padding-top: $spacing--xxl;
+					}
+
+					img {
+						display: block;
+						border-radius: 4px;
+					}
+				}
+
+				&--stats {
+					flex-wrap: wrap;
+					padding-top: $spacing--m;
+					margin-top: auto;
+
+					@include mq(tablet) {
+						padding-top: $spacing--xxxl;
+					}
+
+					&-stat {
+						display: flex;
+						flex: 1 0 100%;
+						align-items: center;
+
+						@include mq(tablet) {
+							display: block;
+							flex: 1 0 50%;
+						}
+
+						span {
+
+							@extend h2;
+							display: block;
+							margin: 0;
+
+							@include mq($until: tablet) {
+								flex: 0 1 100px;
+								font-size: 2.3rem;
+							}
+						}
+					}
+
+					> p {
+						width: 100%;
+						max-width: 35rem;
+					}
+				}
+
+				&--report {
+					flex: 1 0 100%;
+					margin: 2rem 0 0;
+
+					a:not(.button) {
+						font-weight: $font-weight--bold;
+						color: $color--primary;
+						text-decoration: none;
+						text-transform: uppercase;
+					}
+				}
+			}
+		}
+	}
+
+	&-five {
+
+		&-stats {
+			display: flex;
+			flex-wrap: wrap;
+
+			&--stat {
+				flex: 1 0 50%;
+				margin: 0 0 $gutter * 2;
+				overflow: hidden;
+				font-size: 2.4rem;
+				font-weight: $font-weight--bold;
+
+				@include mq($until: tablet) {
+					flex-basis: 40%;
+
+					&:nth-child(odd) {
+						flex-basis: 60%;
+					}
+				}
+
+				span {
+
+					@extend h2;
+					display: block;
+					margin: 0;
+					color: $color--primary;
+				}
+			}
+		}
+
+		.column:last-child {
+			text-align: center;
+		}
+	}
+
+	&-six {
+		padding-top: 50vw;
+		margin: -40vw 0 0;
+
+		@include mq(tablet) {
+			padding-top: 0;
+			margin: 26rem 0 0;
+		}
+
+		h2 {
+			margin: 0 0 $spacing--s;
+		}
+
+		.column {
+
+			&:first-child {
+
+				img {
+					margin: -20rem 0 $spacing--xl;
+
+					@include mq($until: tablet) {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+
+	&-seven {
+
+		&-slider {
+			margin: $spacing--xl (-$gutter * 2) 0;
+
+			@include mq(tablet) {
+				margin: $spacing--xl 0 0;
+			}
+
+			> .slick-list > .slick-track {
+				display: flex;
+
+				> .slick-slide {
+					height: inherit;
+
+					> div {
+						display: flex;
+						height: 100%;
+					}
+				}
+			}
+
+			&--item {
+				display: flex !important;
+				align-items: center;
+				justify-content: flex-end;
+				background-position: center;
+				background-size: cover;
+
+				@include mq(tablet) {
+					height: 65rem;
+				}
+
+				&-copy {
+					width: 100%;
+					padding: $spacing--xl;
+					margin: $spacing--xl $gutter * 2;
+
+					background: $color--white;
+					border-radius: 4px;
+
+					@include mq(tablet) {
+						width: 50%;
+						margin: 0 0 0 auto;
+					}
+
+					img {
+						width: 4.4rem;
+						margin: 0 $spacing--s 0 0;
+
+						@include mq(tablet) {
+							width: 7.7rem;
+							margin: 0 $spacing--l 0 0;
+						}
+					}
+
+					h2 {
+						margin: 0;
+					}
+
+					&-title {
+						display: flex;
+						align-items: center;
+						justify-content: flex-start;
+						margin: 0 0 $spacing--l;
+					}
+
+					.slick-carousel-pagination {
+						margin: $gutter 0 0;
+					}
+				}
+			}
+
+			&-locations {
+
+				&-container {
+					margin: $spacing--xl 0 0;
+
+					@include mq($until: tablet) {
+						display: none;
+					}
+				}
+
+				&--location {
+					display: flex !important;
+					flex-direction: column;
+					align-items: flex-start;
+					justify-content: flex-start;
+					width: 14rem !important;
+					margin: 0 $gutter * 2 $gutter 0;
+					cursor: pointer;
+
+					img {
+						width: 40px;
+						margin: 0 0 $gutter;
+					}
+				}
+
+				.slick-slide {
+					transition: all ease 0.2s;
+
+					&:not(.slick-current) {
+						opacity: 0.5;
+					}
+
+					@include hover-focus {
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+
+	&-eight {
+		padding: 20rem 0;
+		background: url("../img/about/hack-about-section-8.jpg") center/cover no-repeat;
+
+		h1,
+		h3 {
+			max-width: 50rem;
+			margin: 0 auto $spacing--m;
+			color: $color--white;
+			text-align: center;
+
+			span {
+				color: inherit;
+			}
+		}
+	}
+
+	&-nine {
+
+		&-items {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			margin: -18rem (-$gutter * 2) 0;
+
+			@include mq(tablet) {
+				flex-direction: row;
+				margin: -20rem -6.5rem 0;
+			}
+
+			&--item {
+				display: flex;
+				flex: 1;
+				flex-direction: column;
+				align-items: flex-start;
+				justify-content: flex-start;
+				padding: 3.2rem;
+				margin: 0 $gutter * 2;
+				border-radius: 4px;
+
+				@include mq($until: tablet) {
+					align-items: center;
+					margin: 0 $gutter * 2 $gutter * 2;
+					text-align: center;
+
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+
+				p {
+					font-size: 2rem;
+					font-weight: $font-weight--bold;
+
+					&:last-of-type {
+						margin: 0 0 5rem;
+					}
+				}
+
+				:last-child {
+					margin-top: auto;
+				}
+			}
+		}
+	}
+
+	&-ten {
+
+		.row {
+			margin: $spacing--l 0;
+		}
+
+		.column {
+			padding: $gutter;
+
+			@include mq($until: tablet) {
+				width: 50%;
+			}
+		}
+	}
+
+	&-eleven {
+
+	}
+
+	&-twelve {
+
+		a {
+			display: inline-block;
+			margin: $spacing--xxs 0;
+			line-height: 1.4;
+			color: inherit;
+			text-decoration: none;
+			border-bottom: 2px solid;
+
+			@include hover-focus {
+				color: $color--primary;
+			}
+		}
+
+		.column.two-thirds {
+
+			@include mq(tablet) {
+				padding-left: $spacing--xl;
+			}
+		}
+	}
+}

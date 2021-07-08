@@ -32,8 +32,8 @@
 .full-width-mobile {
 
 	@include mq($until: tablet) {
-		margin-right: -$layout--pading-mobile;
-		margin-left: -$layout--pading-mobile;
+		margin-right: -$layout--padding-mobile;
+		margin-left: -$layout--padding-mobile;
 	}
 }
 
@@ -87,8 +87,20 @@
 		width: 83.333%;
 	}
 
+	.five-twelfths {
+		width: 41.666%;
+	}
+
 	.seven-twelfths {
 		width: 58.333%;
+	}
+
+	.one-twelfth {
+		width: $column--width;
+	}
+
+	.eleven-twelfths {
+		width: 91.666%;
 	}
 
 	.offset-1 {
@@ -97,5 +109,9 @@
 
 	.offset-2 {
 		margin-left: $column--width * 2;
+	}
+
+	.offset-3 {
+		margin-left: $column--width * 3;
 	}
 }

@@ -1,0 +1,62 @@
+.team {
+	padding-bottom: $spacing--xl;
+
+	@include mq(tablet) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	&-member {
+		display: grid;
+		flex: 1 0 100%;
+		grid-template-areas:
+			"photo label"
+			"bio bio";
+		grid-template-rows: auto 1fr;
+		grid-template-columns: auto 1fr;
+		gap: 0 0;
+		margin: 6rem 0 0;
+
+		@include mq(tablet) {
+			flex: 0 0 42.857%;
+		}
+
+		&.reversed {
+			grid-template-areas:
+				"bio bio"
+				"photo label";
+			grid-template-rows: 1fr auto;
+
+			.team-member-bio {
+				margin: 0 0 3rem;
+			}
+		}
+
+		&-photo {
+			grid-area: photo;
+			width: 85px;
+			height: 85px;
+		}
+
+		&-label {
+			grid-area: label;
+			margin-left: $gutter;
+
+			h3 {
+				margin: 0 0 $spacing--xxxs;
+			}
+
+			h6 {
+				margin: 0;
+				color: $color--pink;
+				text-transform: uppercase;
+			}
+		}
+
+		&-bio {
+			grid-area: bio;
+			margin: 3rem 0 0;
+		}
+	}
+}

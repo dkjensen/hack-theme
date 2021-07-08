@@ -7,6 +7,7 @@ html {
 
 body {
 	font-size: $base--font-size;
+	color: $color--text;
 }
 
 h1,
@@ -20,6 +21,10 @@ h6 {
 	font-size: 1.25rem;
 	font-weight: 700;
 	line-height: $line-height--heading;
+
+	span {
+		color: $color--primary;
+	}
 
 	&.divider {
 
@@ -46,10 +51,6 @@ h6 {
 h1 {
 	font-size: 4rem;
 	line-height: 1.166;
-
-	span {
-		color: $color--primary;
-	}
 
 	@include mq(tablet) {
 		font-size: 6rem;
@@ -137,4 +138,9 @@ blockquote {
 	font-family: "Hack Outline", sans-serif;
 	font-size: 4rem;
 	line-height: 1;
+}
+
+.intro-text {
+	width: 100%;
+	max-width: 50rem;
 }

@@ -37,10 +37,6 @@
 		opacity: 0;
 		transform: none;
 
-		@include mq($until: tablet) {
-			display: none;
-		}
-
 		&.slick-next {
 			right: 0;
 			left: auto;
@@ -104,6 +100,7 @@
 		margin-top: -5px;
 		line-height: 1;
 		text-align: center;
+		opacity: 1;
 		transform: none;
 
 		&:first-child {

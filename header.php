@@ -33,7 +33,7 @@
 			<div class="language-switcher">
 				<div class="language-switcher-container">
 					<div class="language-switcher-title"><?php esc_html_e( 'Select your Language', 'hack' ); ?></div>
-					<?php echo do_shortcode( '[wpml_language_switcher flags=0 translated=false]' ); ?>
+					<?php echo do_shortcode( '[wpml_language_switcher flags=0 translated=true]' ); ?>
 				</div>
 			</div>
 

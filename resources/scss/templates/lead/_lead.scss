@@ -637,27 +637,4 @@
 		}
 
 	}
-
-	&-twelve {
-
-		&-slider {
-			border-radius: 4px;
-
-			&--item {
-				display: flex !important;
-				align-items: center;
-				justify-content: center;
-				height: 400px;
-				padding: 0 $gutter;
-				text-align: center;
-
-				blockquote {
-
-					@include mq($until: tablet) {
-						font-size: $base--font-size;
-					}
-				}
-			}
-		}
-	}
 }

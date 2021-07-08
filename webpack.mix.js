@@ -209,7 +209,7 @@ if (process.env.sync) {
       'assets/css/*',
 			'assets/js/*',
 			'lib/**/*.php',
-			'template-parts/*.php',
+			'templates/*.php',
 			'./*.php',
     ],
   });

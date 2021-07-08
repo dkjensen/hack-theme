@@ -274,160 +274,160 @@ if ( have_posts() ) :
 							</div>
 						</div>
 						<div class="column seven-twelfths offset-1">
-							<div class="section-lead-six-team">
-								<div class="section-lead-six-team--member">
-									<div class="section-lead-six-team--member-photo">
+							<div class="team">
+								<div class="team-member">
+									<div class="team-member-photo">
 										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/team/russ-martin.png' ) ); ?>" />
 									</div>
-									<div class="section-lead-six-team--member-label">
+									<div class="team-member-label">
 										<h3><?php echo esc_html( 'Russ' ); ?></h3>
 										<h6><?php echo esc_html_x( 'Co-Founder, Indigitous', 'Team Member Title', 'hack' ); ?></h6>
 									</div>
-									<div class="section-lead-six-team--member-bio">
+									<div class="team-member-bio">
 										<?php echo esc_html_x( 'Loves building platforms, learning about the blockchain/crypto space and investing in virtual real estate.', 'Team Member Bio', 'hack' ); ?>
 									</div>
 								</div>
-								<div class="section-lead-six-team--member">
-									<div class="section-lead-six-team--member-photo">
+								<div class="team-member">
+									<div class="team-member-photo">
 										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/team/ann-chow.png' ) ); ?>" />
 									</div>
-									<div class="section-lead-six-team--member-label">
+									<div class="team-member-label">
 										<h3><?php echo esc_html( 'Ann' ); ?></h3>
 										<h6><?php echo esc_html_x( 'Project Lead For #HACK', 'Team Member Title', 'hack' ); ?></h6>
 									</div>
-									<div class="section-lead-six-team--member-bio">
+									<div class="team-member-bio">
 										<?php echo esc_html_x( 'Loves gathering followers of Jesus together for partnership, innovation and collaboration.', 'Team Member Bio', 'hack' ); ?>
 									</div>
 								</div>
-								<div class="section-lead-six-team--member">
-									<div class="section-lead-six-team--member-photo">
+								<div class="team-member">
+									<div class="team-member-photo">
 										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/team/emmanuel-christian.png' ) ); ?>" />
 									</div>
-									<div class="section-lead-six-team--member-label">
+									<div class="team-member-label">
 										<h3><?php echo esc_html( 'Emmanuel' ); ?></h3>
 										<h6><?php echo esc_html_x( 'Africa, English & Portuguese', 'Team Member Title', 'hack' ); ?></h6>
 									</div>
-									<div class="section-lead-six-team--member-bio">
+									<div class="team-member-bio">
 										<?php echo esc_html_x( 'Passionate about all things faith and technology.', 'Team Member Bio', 'hack' ); ?>
 									</div>
 								</div>
-								<div class="section-lead-six-team--member">
-									<div class="section-lead-six-team--member-photo">
+								<div class="team-member">
+									<div class="team-member-photo">
 										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/team/senay-kumelachew.png' ) ); ?>" />
 									</div>
-									<div class="section-lead-six-team--member-label">
+									<div class="team-member-label">
 										<h3><?php echo esc_html( 'Senay' ); ?></h3>
 										<h6><?php echo esc_html_x( 'Africa, English & Portuguese', 'Team Member Title', 'hack' ); ?></h6>
 									</div>
-									<div class="section-lead-six-team--member-bio">
+									<div class="team-member-bio">
 										<?php echo esc_html_x( 'Passionate Digital Ministry.', 'Team Member Bio', 'hack' ); ?>
 									</div>
 								</div>
-								<div class="section-lead-six-team--member">
-									<div class="section-lead-six-team--member-photo">
+								<div class="team-member">
+									<div class="team-member-photo">
 										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/team/yomi.png' ) ); ?>" />
 									</div>
-									<div class="section-lead-six-team--member-label">
+									<div class="team-member-label">
 										<h3><?php echo esc_html( 'Yomi' ); ?></h3>
 										<h6><?php echo esc_html_x( 'Africa, English & Portuguese', 'Team Member Title', 'hack' ); ?></h6>
 									</div>
-									<div class="section-lead-six-team--member-bio">
+									<div class="team-member-bio">
 										<?php echo esc_html_x( 'Loves connecting people to Jesus through digital strategies.', 'Team Member Bio', 'hack' ); ?>
 									</div>
 								</div>
-								<div class="section-lead-six-team--member">
-									<div class="section-lead-six-team--member-photo">
+								<div class="team-member">
+									<div class="team-member-photo">
 										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/team/charles-kondi.png' ) ); ?>" />
 									</div>
-									<div class="section-lead-six-team--member-label">
+									<div class="team-member-label">
 										<h3><?php echo esc_html( 'Charles' ); ?></h3>
 										<h6><?php echo esc_html_x( 'Africa, French', 'Team Member Title', 'hack' ); ?></h6>
 									</div>
-									<div class="section-lead-six-team--member-bio">
+									<div class="team-member-bio">
 										<?php echo esc_html_x( 'Enjoys being at the intersection of mission, youth, leadership and digital.', 'Team Member Bio', 'hack' ); ?>
 									</div>
 								</div>
-								<div class="section-lead-six-team--member">
-									<div class="section-lead-six-team--member-photo">
+								<div class="team-member">
+									<div class="team-member-photo">
 										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/team/sitthavee-teerakulchon.png' ) ); ?>" />
 									</div>
-									<div class="section-lead-six-team--member-label">
+									<div class="team-member-label">
 										<h3><?php echo esc_html( 'Sitthavee (Son)' ); ?></h3>
 										<h6><?php echo esc_html_x( 'APAC', 'Team Member Title', 'hack' ); ?></h6>
 									</div>
-									<div class="section-lead-six-team--member-bio">
+									<div class="team-member-bio">
 										<?php echo esc_html_x( 'A Christian entrepreneur who wants to leverage the power of technology to create a better world.', 'Team Member Bio', 'hack' ); ?>
 									</div>
 								</div>
-								<div class="section-lead-six-team--member">
-									<div class="section-lead-six-team--member-photo">
+								<div class="team-member">
+									<div class="team-member-photo">
 										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/team/melissa-rike.png' ) ); ?>" />
 									</div>
-									<div class="section-lead-six-team--member-label">
+									<div class="team-member-label">
 										<h3><?php echo esc_html( 'Melissa' ); ?></h3>
 										<h6><?php echo esc_html_x( 'Europe', 'Team Member Title', 'hack' ); ?></h6>
 									</div>
-									<div class="section-lead-six-team--member-bio">
+									<div class="team-member-bio">
 										<?php echo esc_html_x( 'Passionate about digital missions and helping people be a part of the mission.', 'Team Member Bio', 'hack' ); ?>
 									</div>
 								</div>
-								<div class="section-lead-six-team--member">
-									<div class="section-lead-six-team--member-photo">
+								<div class="team-member">
+									<div class="team-member-photo">
 										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/team/melissa-revelles.png' ) ); ?>" />
 									</div>
-									<div class="section-lead-six-team--member-label">
+									<div class="team-member-label">
 										<h3><?php echo esc_html( 'Melissa' ); ?></h3>
 										<h6><?php echo esc_html_x( 'Latin America', 'Team Member Title', 'hack' ); ?></h6>
 									</div>
-									<div class="section-lead-six-team--member-bio">
+									<div class="team-member-bio">
 										<?php echo esc_html_x( 'Loves connecting people to Jesus through digital strategies.', 'Team Member Bio', 'hack' ); ?>
 									</div>
 								</div>
-								<div class="section-lead-six-team--member">
-									<div class="section-lead-six-team--member-photo">
+								<div class="team-member">
+									<div class="team-member-photo">
 										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/team/siby-paul.png' ) ); ?>" />
 									</div>
-									<div class="section-lead-six-team--member-label">
+									<div class="team-member-label">
 										<h3><?php echo esc_html( 'Siby' ); ?></h3>
 										<h6><?php echo esc_html_x( 'South Asia', 'Team Member Title', 'hack' ); ?></h6>
 									</div>
-									<div class="section-lead-six-team--member-bio">
+									<div class="team-member-bio">
 										<?php echo esc_html_x( 'Follower of the Nazarene.', 'Team Member Bio', 'hack' ); ?>
 									</div>
 								</div>
-								<div class="section-lead-six-team--member">
-									<div class="section-lead-six-team--member-photo">
+								<div class="team-member">
+									<div class="team-member-photo">
 										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/team/andrew-fang.png' ) ); ?>" />
 									</div>
-									<div class="section-lead-six-team--member-label">
+									<div class="team-member-label">
 										<h3><?php echo esc_html( 'Andrew' ); ?></h3>
 										<h6><?php echo esc_html_x( 'USA', 'Team Member Title', 'hack' ); ?></h6>
 									</div>
-									<div class="section-lead-six-team--member-bio">
+									<div class="team-member-bio">
 										<?php echo esc_html_x( 'Loves to imagine new ways to empower people towards the great commission beyond the four church walls.', 'Team Member Bio', 'hack' ); ?>
 									</div>
 								</div>
-								<div class="section-lead-six-team--member">
-									<div class="section-lead-six-team--member-photo">
+								<div class="team-member">
+									<div class="team-member-photo">
 										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/team/sammy-fung.png' ) ); ?>" />
 									</div>
-									<div class="section-lead-six-team--member-label">
+									<div class="team-member-label">
 										<h3><?php echo esc_html( 'Sammy' ); ?></h3>
 										<h6><?php echo esc_html_x( 'APAC', 'Team Member Title', 'hack' ); ?></h6>
 									</div>
-									<div class="section-lead-six-team--member-bio">
+									<div class="team-member-bio">
 										<?php echo esc_html_x( 'A tech community builder and a follower of God’s calling on his life. ', 'Team Member Bio', 'hack' ); ?>
 									</div>
 								</div>
-								<div class="section-lead-six-team--member">
-									<div class="section-lead-six-team--member-photo">
+								<div class="team-member">
+									<div class="team-member-photo">
 										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/team/danny-kwan.png' ) ); ?>" />
 									</div>
-									<div class="section-lead-six-team--member-label">
+									<div class="team-member-label">
 										<h3><?php echo esc_html( 'Danny' ); ?></h3>
 										<h6><?php echo esc_html_x( 'APAC', 'Team Member Title', 'hack' ); ?></h6>
 									</div>
-									<div class="section-lead-six-team--member-bio">
+									<div class="team-member-bio">
 										<?php echo esc_html_x( 'Interested in technology and theology.', 'Team Member Bio', 'hack' ); ?>
 									</div>
 								</div>
@@ -735,110 +735,7 @@ if ( have_posts() ) :
 			</div>
 			*/
 			?>
-			<div class="section section-lead-twelve padding-0">
-				<div class="wrap">
-					<div class="section-lead-twelve-slider hack-slick blue-background-color" data-slick-id="twelve" data-slick='{"dots": true, "arrows": true}'>
-						<div class="section-lead-twelve-slider--item">
-							<div class="wrap">
-								<div class="row">
-									<div class="column two-thirds offset-2">
-										<blockquote>
-											<?php
-											esc_html_e( 'God gave us an amazing opportunity to use our talents for His kingdom. It’s been so good to be with Godly and professional brothers.', 'hack' );
-											?>
-										</blockquote>
-										<h3><?php echo esc_html( 'Kaleb, Addis' ); ?></h3>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="section-lead-twelve-slider--item">
-							<div class="wrap">
-								<div class="row">
-									<div class="column two-thirds offset-2">
-										<blockquote>
-											<?php
-											esc_html_e( 'It opened my eyes to see how a hackathon could help solve real world problems.', 'hack' );
-											?>
-										</blockquote>
-										<h3><?php echo esc_html( '#HACK Participant' ); ?></h3>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="section-lead-twelve-slider--item">
-							<div class="wrap">
-								<div class="row">
-									<div class="column two-thirds offset-2">
-										<blockquote>
-											<?php
-											esc_html_e( 'I’ve never been in a setting where technology, missions, and faith are directly linked. This is the perfect space to see that come to life for me.', 'hack' );
-											?>
-										</blockquote>
-										<h3><?php echo esc_html( '#HACK Participant' ); ?></h3>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="section-lead-twelve-slider--item">
-							<div class="wrap">
-								<div class="row">
-									<div class="column two-thirds offset-2">
-										<blockquote>
-											<?php
-											esc_html_e( 'The best hackathon ever, combining a church camp and a hackathon.', 'hack' );
-											?>
-										</blockquote>
-										<h3><?php echo esc_html( '#HACK Participant' ); ?></h3>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="section-lead-twelve-slider--item">
-							<div class="wrap">
-								<div class="row">
-									<div class="column two-thirds offset-2">
-										<blockquote>
-											<?php
-											esc_html_e( 'The best part was the amazing ideas, faith, and hard work it takes to develop something that really impacts.', 'hack' );
-											?>
-										</blockquote>
-										<h3><?php echo esc_html( 'Rebeca, Panama' ); ?></h3>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="section-lead-twelve-slider--item">
-							<div class="wrap">
-								<div class="row">
-									<div class="column two-thirds offset-2">
-										<blockquote>
-											<?php
-											esc_html_e( 'I joined #HACK to make a change in the world.', 'hack' );
-											?>
-										</blockquote>
-										<h3><?php echo esc_html( 'Alfredo, Panama' ); ?></h3>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="section-lead-twelve-slider--item">
-							<div class="wrap">
-								<div class="row">
-									<div class="column two-thirds offset-2">
-										<blockquote>
-											<?php
-											esc_html_e( 'I loved seeing God’s mission in action.', 'hack' );
-											?>
-										</blockquote>
-										<h3><?php echo esc_html( '#HACK Participant' ); ?></h3>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+			<?php get_template_part( 'template-parts/testimonials' ); ?>
 		</article>
 
 		<?php
