@@ -22,6 +22,10 @@
 			flex: 0 0 42.857%;
 		}
 
+		&.full-width {
+			flex: 1 0 100%;
+		}
+
 		&.reversed {
 			grid-template-areas:
 				"bio bio"
@@ -30,6 +34,15 @@
 
 			.team-member-bio {
 				margin: 0 0 3rem;
+			}
+		}
+
+		a {
+			color: inherit;
+			text-decoration: none;
+
+			@include hover-focus {
+				color: $color--primary;
 			}
 		}
 
@@ -45,10 +58,11 @@
 
 			h3 {
 				margin: 0 0 $spacing--xxxs;
+				line-height: 1.15;
 			}
 
 			h6 {
-				margin: 0;
+				margin: 0 0 $spacing--xxxs;
 				color: $color--pink;
 				text-transform: uppercase;
 			}

@@ -420,7 +420,7 @@ if ( have_posts() ) :
 							<a href="https://indigitous.typeform.com/to/QkVDWhea" target="_blank" class="button"><?php esc_html_e( 'Participate', 'hack' ); ?></a>
 						</div>
 						<div class="section-about-nine-items--item blue-background-color" data-sal="slide-down" data-sal-delay="200">
-							<p><?php echo esc_html_x( 'We need partners to help make this event a success. Find out how you can partner with us.', 'About page', 'partner' ); ?></p>
+							<p><?php echo esc_html_x( 'We need partners to help make this event a success. Find out how you can partner with us.', 'About page', 'hack' ); ?></p>
 							<a href="https://indigitous.typeform.com/to/RQGajmbR" target="_blank" class="button"><?php esc_html_e( 'Partner', 'hack' ); ?></a>
 						</div>
 					</div>

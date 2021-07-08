@@ -1,0 +1,15 @@
+.section-contact {
+
+	&-one {
+
+		h1 {
+			margin-bottom: 1rem;
+
+			+ p {
+				width: 100%;
+				max-width: 30rem;
+			}
+		}
+
+	}
+}

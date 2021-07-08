@@ -33,7 +33,7 @@ textarea {
 #{$all-text-inputs} {
 	box-sizing: border-box;
 	width: 100%;
-	padding: calc(var(--spacing) / 3);
+	padding: 1.2rem 1.6rem;
 	margin-bottom: var(--spacing--small);
 	background-color: transparent;
 	border: var(--border);
@@ -55,8 +55,7 @@ textarea {
 	}
 
 	&::placeholder {
-		color: $font-color--base;
-		opacity: 0.25;
+		color: rgba($color--text, 0.25);
 	}
 }
 
