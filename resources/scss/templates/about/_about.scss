@@ -68,8 +68,11 @@
 			align-items: stretch;
 			height: 100%;
 			padding: $gutter * 2 $gutter;
-			font-size: 1.6rem;
 			background-color: $color--white;
+
+			@include mq(tablet) {
+				padding: $gutter * 2 $spacing--l;
+			}
 
 			:last-child {
 				margin-top: auto;
@@ -86,33 +89,8 @@
 
 			&-item {
 				position: relative;
-				display: flex;
-				flex-direction: column-reverse;
-				min-height: 20rem;
-				padding: 2.2rem $gutter;
 				margin: 0 0 $spacing--xxl;
 				counter-increment: timeline-counter;
-				background-color: $color--muted;
-				border-radius: 4px;
-
-				@include mq(tablet) {
-					flex-direction: row;
-					padding: 2.2rem 3rem 3rem 4rem;
-				}
-
-
-				&.current {
-					padding-top: 6rem;
-					padding-bottom: 0;
-					padding-left: 0;
-					margin-top: -4rem;
-					background-color: transparent;
-
-					@include mq(tablet) {
-						padding-top: 0;
-					}
-				}
-
 
 				@include mq(tablet) {
 
@@ -158,6 +136,32 @@
 				> * {
 					display: flex;
 					flex: 1 0 50%;
+				}
+
+				&--container {
+					display: flex;
+					flex-direction: column-reverse;
+					min-height: 20rem;
+					padding: 2.2rem $gutter;
+					background-color: $color--muted;
+					border-radius: 4px;
+
+					@include mq(tablet) {
+						flex-direction: row;
+						padding: 2.2rem 3rem 3rem 4rem;
+					}
+
+					&.current {
+						padding-top: 6rem;
+						padding-bottom: 0;
+						padding-left: 0;
+						margin-top: -4rem;
+						background-color: transparent;
+
+						@include mq(tablet) {
+							padding-top: 0;
+						}
+					}
 				}
 
 				&--date {

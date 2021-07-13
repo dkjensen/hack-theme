@@ -50,7 +50,7 @@ if ( have_posts() ) :
 				<div class="wrap">
 					<div class="row">
 						<div class="columns two-thirds offset-2">
-							<h3 style="opacity: 0.7; margin: 0;"><?php echo esc_html_x( 'This its the race we are running.', 'About page', 'hack' ); ?></h3>
+							<h3 style="opacity: 0.7; margin: 0;"><?php echo esc_html_x( 'This is the race we are running.', 'About page', 'hack' ); ?></h3>
 							<h2><?php echo esc_html_x( 'We want to help bring the gospel to those who need to hear.', 'About page', 'hack' ); ?></h2>
 						</div>
 					</div>
@@ -94,12 +94,7 @@ if ( have_posts() ) :
 						</div>
 						<div class="column seven-twelfths">
 							<p>
-								<strong><?php echo esc_html_x( 'The Hack4Missions event at the 2015 Urbana Student Missions Conference inspired Indigitous co-founder Simon Seow to start #HACK.', 'About page', 'hack' ); ?></strong> 
-								<?php echo esc_html_x( 'With the help of Nicholas Skytland and Alicia Llewellyn, founders of various NASA hackathons - including the Space Apps Challenge and the National Day of Civic Hacking - Indigitous launched #HACK in November 2016.', 'About page', 'hack' ); ?>
-							</p>
-							<p>
-								<strong><?php echo esc_html_x( 'Every year since 2016', 'About page', 'hack' ); ?>,</strong> 
-								<?php echo esc_html_x( 'hackers around the world have gathered to collaborate on missional projects aimed at solving problems affecting their communities. In 2020, lockdowns caused by the global pandemic resulted in #HACK moving online for our first virtual hackathon.', 'About page', 'hack' ); ?>
+								<?php echo esc_html_x( 'Indigitous co-founder Simon Seow was inspired to start #HACK after taking part in the Hack4Missions event at the 2015 Urbana Student Missions Conference. With the help of Nicholas Skytland and Alicia Llewellyn, founders of various NASA hackathons - including the Space Apps Challenge and the National Day of Civic Hacking - Indigitous launched #HACK in November 2016. Since then, hackers around the world have gathered every year to collaborate on missional projects aimed at solving problems affecting their communities. In 2020, lockdowns caused by the global pandemic resulted in #HACK moving online for our first virtual hackathon.', 'About page', 'hack' ); ?>
 							</p>
 							<p>&nbsp;</p>
 						</div>
@@ -108,118 +103,130 @@ if ( have_posts() ) :
 						<div class="column three-fourths offset-3">
 							<div class="timeline">
 								<div class="timeline-item">
-									<div class="timeline-item--date badge">
-										<?php printf( '<span>%s</span>%s', esc_html( '#HACK' ), esc_html( '2016' ) ); ?>
-									</div>
-									<div class="timeline-item--stats" data-sal="slide-down">
-										<div class="timeline-item--stats-stat">
-											<span>1,426</span>
-											<?php esc_html_e( 'Participants', 'hack' ); ?>
+									<div class="timeline-item--container" data-sal="slide-left">
+										<div class="timeline-item--date badge">
+											<?php printf( '<span>%s</span>%s', esc_html( '#HACK' ), esc_html( '2016' ) ); ?>
 										</div>
-										<div class="timeline-item--stats-stat">
-											<span>28</span>
-											<?php esc_html_e( 'Locations', 'hack' ); ?>
+										<div class="timeline-item--stats">
+											<div class="timeline-item--stats-stat">
+												<span>1,426</span>
+												<?php esc_html_e( 'Participants', 'hack' ); ?>
+											</div>
+											<div class="timeline-item--stats-stat">
+												<span>28</span>
+												<?php esc_html_e( 'Locations', 'hack' ); ?>
+											</div>
+											<div class="timeline-item--report">
+												<a href="#" target="_blank"><a href="#" target="_blank"><i class="fas fa-download"></i> <?php esc_html_e( 'Download Report', 'hack' ); ?></a>
+											</div>
 										</div>
-										<div class="timeline-item--report">
-											<a href="#" target="_blank"><?php esc_html_e( 'Download Report', 'hack' ); ?></a>
+										<div class="timeline-item--image">
+											<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/about/timeline-item-1-img.png' ) ); ?>" />
 										</div>
-									</div>
-									<div class="timeline-item--image">
-										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/about/timeline-item-1-img.png' ) ); ?>" />
 									</div>
 								</div>
 								<div class="timeline-item">
-									<div class="timeline-item--date badge">
-										<?php printf( '<span>%s</span>%s', esc_html( '#HACK' ), esc_html( '2017' ) ); ?>
-									</div>
-									<div class="timeline-item--stats" data-sal="slide-down">
-										<div class="timeline-item--stats-stat">
-											<span>2,100</span>
-											<?php esc_html_e( 'Participants', 'hack' ); ?>
+									<div class="timeline-item--container" data-sal="slide-left">
+										<div class="timeline-item--date badge">
+											<?php printf( '<span>%s</span>%s', esc_html( '#HACK' ), esc_html( '2017' ) ); ?>
 										</div>
-										<div class="timeline-item--stats-stat">
-											<span>70</span>
-											<?php esc_html_e( 'Locations', 'hack' ); ?>
+										<div class="timeline-item--stats">
+											<div class="timeline-item--stats-stat">
+												<span>2,100</span>
+												<?php esc_html_e( 'Participants', 'hack' ); ?>
+											</div>
+											<div class="timeline-item--stats-stat">
+												<span>70</span>
+												<?php esc_html_e( 'Locations', 'hack' ); ?>
+											</div>
+											<div class="timeline-item--report">
+												<a href="#" target="_blank"><a href="#" target="_blank"><i class="fas fa-download"></i> <?php esc_html_e( 'Download Report', 'hack' ); ?></a>
+											</div>
 										</div>
-										<div class="timeline-item--report">
-											<a href="#" target="_blank"><?php esc_html_e( 'Download Report', 'hack' ); ?></a>
+										<div class="timeline-item--image">
+											<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/about/timeline-item-1-img.png' ) ); ?>" />
 										</div>
-									</div>
-									<div class="timeline-item--image">
-										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/about/timeline-item-1-img.png' ) ); ?>" />
 									</div>
 								</div>
 								<div class="timeline-item">
-									<div class="timeline-item--date badge">
-										<?php printf( '<span>%s</span>%s', esc_html( '#HACK' ), esc_html( '2018' ) ); ?>
-									</div>
-									<div class="timeline-item--stats" data-sal="slide-down">
-										<div class="timeline-item--stats-stat">
-											<span>600+</span>
-											<?php esc_html_e( 'Participants', 'hack' ); ?>
+									<div class="timeline-item--container" data-sal="slide-left">
+										<div class="timeline-item--date badge">
+											<?php printf( '<span>%s</span>%s', esc_html( '#HACK' ), esc_html( '2018' ) ); ?>
 										</div>
-										<div class="timeline-item--stats-stat">
-											<span>30+</span>
-											<?php esc_html_e( 'Locations', 'hack' ); ?>
+										<div class="timeline-item--stats">
+											<div class="timeline-item--stats-stat">
+												<span>600+</span>
+												<?php esc_html_e( 'Participants', 'hack' ); ?>
+											</div>
+											<div class="timeline-item--stats-stat">
+												<span>30+</span>
+												<?php esc_html_e( 'Locations', 'hack' ); ?>
+											</div>
+											<div class="timeline-item--report">
+												<a href="#" target="_blank"><a href="#" target="_blank"><i class="fas fa-download"></i> <?php esc_html_e( 'Download Report', 'hack' ); ?></a>
+											</div>
 										</div>
-										<div class="timeline-item--report">
-											<a href="#" target="_blank"><?php esc_html_e( 'Download Report', 'hack' ); ?></a>
+										<div class="timeline-item--image">
+											<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/about/timeline-item-1-img.png' ) ); ?>" />
 										</div>
-									</div>
-									<div class="timeline-item--image">
-										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/about/timeline-item-1-img.png' ) ); ?>" />
 									</div>
 								</div>
 								<div class="timeline-item">
-									<div class="timeline-item--date badge">
-										<?php printf( '<span>%s</span>%s', esc_html( '#HACK' ), esc_html( '2019' ) ); ?>
-									</div>
-									<div class="timeline-item--stats" data-sal="slide-down">
-										<div class="timeline-item--stats-stat">
-											<span>1,088</span>
-											<?php esc_html_e( 'Participants', 'hack' ); ?>
+									<div class="timeline-item--container" data-sal="slide-left">
+										<div class="timeline-item--date badge">
+											<?php printf( '<span>%s</span>%s', esc_html( '#HACK' ), esc_html( '2019' ) ); ?>
 										</div>
-										<div class="timeline-item--stats-stat">
-											<span>37</span>
-											<?php esc_html_e( 'Locations', 'hack' ); ?>
+										<div class="timeline-item--stats">
+											<div class="timeline-item--stats-stat">
+												<span>1,088</span>
+												<?php esc_html_e( 'Participants', 'hack' ); ?>
+											</div>
+											<div class="timeline-item--stats-stat">
+												<span>37</span>
+												<?php esc_html_e( 'Locations', 'hack' ); ?>
+											</div>
+											<div class="timeline-item--report">
+												<a href="#" target="_blank"><a href="#" target="_blank"><i class="fas fa-download"></i> <?php esc_html_e( 'Download Report', 'hack' ); ?></a>
+											</div>
 										</div>
-										<div class="timeline-item--report">
-											<a href="#" target="_blank"><?php esc_html_e( 'Download Report', 'hack' ); ?></a>
+										<div class="timeline-item--image">
+											<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/about/timeline-item-1-img.png' ) ); ?>" />
 										</div>
-									</div>
-									<div class="timeline-item--image">
-										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/about/timeline-item-1-img.png' ) ); ?>" />
 									</div>
 								</div>
 								<div class="timeline-item">
-									<div class="timeline-item--date badge badge">
-										<?php printf( '<span>%s</span>%s', esc_html( '#HACK' ), esc_html( '2020' ) ); ?>
-									</div>
-									<div class="timeline-item--stats" data-sal="slide-down">
-										<div class="timeline-item--stats-stat">
-											<span>1,088</span>
-											<?php esc_html_e( 'Participants', 'hack' ); ?>
+									<div class="timeline-item--container" data-sal="slide-left">
+										<div class="timeline-item--date badge badge">
+											<?php printf( '<span>%s</span>%s', esc_html( '#HACK' ), esc_html( '2020' ) ); ?>
 										</div>
-										<div class="timeline-item--stats-stat">
-											<span>141</span>
-											<?php esc_html_e( 'Locations', 'hack' ); ?>
+										<div class="timeline-item--stats">
+											<div class="timeline-item--stats-stat">
+												<span>1,088</span>
+												<?php esc_html_e( 'Participants', 'hack' ); ?>
+											</div>
+											<div class="timeline-item--stats-stat">
+												<span>141</span>
+												<?php esc_html_e( 'Locations', 'hack' ); ?>
+											</div>
+											<div class="timeline-item--report">
+												<a href="#" target="_blank"><a href="#" target="_blank"><i class="fas fa-download"></i> <?php esc_html_e( 'Download Report', 'hack' ); ?></a>
+											</div>
 										</div>
-										<div class="timeline-item--report">
-											<a href="#" target="_blank"><?php esc_html_e( 'Download Report', 'hack' ); ?></a>
+										<div class="timeline-item--image">
+											<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/about/timeline-item-1-img.png' ) ); ?>" />
 										</div>
-									</div>
-									<div class="timeline-item--image">
-										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/about/timeline-item-1-img.png' ) ); ?>" />
 									</div>
 								</div>
-								<div class="timeline-item current">
-									<div class="timeline-item--date">
-										<?php printf( '<span>%s</span>%s', esc_html( '#HACK' ), esc_html( '2021' ) ); ?>
-									</div>
-									<div class="timeline-item--stats" data-sal="slide-down">
-										<p><?php echo esc_html_x( 'The world’s largest global missional hackathon returns this October.', 'About page', 'hack' ); ?></p>
-										<div class="timeline-item--report">
-											<a href="https://indigitous.typeform.com/to/QkVDWhea" class="button" target="_blank"><?php esc_html_e( 'Register', 'hack' ); ?></a>
+								<div class="timeline-item">
+									<div class="timeline-item--container current" data-sal="slide-left">
+										<div class="timeline-item--date">
+											<?php printf( '<span>%s</span>%s', esc_html( '#HACK' ), esc_html( '2021' ) ); ?>
+										</div>
+										<div class="timeline-item--stats">
+											<p><?php echo esc_html_x( 'The world’s largest global missional hackathon returns this October.', 'About page', 'hack' ); ?></p>
+											<div class="timeline-item--report">
+												<a href="https://indigitous.typeform.com/to/QkVDWhea" class="button" target="_blank"><?php esc_html_e( 'Register', 'hack' ); ?></a>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -291,7 +298,7 @@ if ( have_posts() ) :
 								<h6><?php echo esc_html_x( 'Co-Founder, Indigitous', 'Team Member Title', 'hack' ); ?></h6>
 							</div>
 							<div class="team-member-bio">
-								<?php echo esc_html_x( '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec metus sapien. Cras dignissim tortor quis nunc luctus, a viverra elit porttitor. Praesent varius justo purus, nec posuere neque posuere sit amet. In sit amet turpis quis erat maximus suscipit. Nunc efficitur massa at quam convallis pharetra. Duis et odio."', 'Team Member Bio', 'hack' ); ?>
+								<?php echo esc_html_x( '"It’s been such a joy for me over the past 7 years to have watched many eyes ‘light up’ when they discovered how God desires to use their digital skills, talents and experiences to make a difference for Him, and for them to acknowledge that He has uniquely written digital in their stories for such a time as this - to make Him known among the nations!"', 'Team Member Bio', 'hack' ); ?>
 							</div>
 						</div>
 					</div>
@@ -305,7 +312,7 @@ if ( have_posts() ) :
 						<div class="column twelve-twelfths">
 							<div class="section-about-seven-slider hack-slick" data-slick-id="seven" data-slick='{"dots": false, "fade": true, "arrows": true, "asNavFor": ".section-about-seven-slider-locations"}'>
 								<div class="section-about-seven-slider--item" style="background-image: url(<?php echo esc_url( get_theme_file_uri( 'assets/img/about/hack-about-section-7-ca.jpg' ) ); ?>)">
-									<div class="section-about-seven-slider--item-copy">
+									<div class="section-about-seven-slider--item-copy" data-sal="fade">
 										<div class="section-about-seven-slider--item-copy-title">
 											<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-flag-ca.svg' ) ); ?>" />
 											<h2><?php esc_html_e( 'Canada', 'hack' ); ?></h2>
@@ -315,7 +322,7 @@ if ( have_posts() ) :
 									</div>
 								</div>
 								<div class="section-about-seven-slider--item" style="background-image: url(<?php echo esc_url( get_theme_file_uri( 'assets/img/about/hack-about-section-7-th.jpg' ) ); ?>)">
-									<div class="section-about-seven-slider--item-copy">
+									<div class="section-about-seven-slider--item-copy" data-sal="fade">
 										<div class="section-about-seven-slider--item-copy-title">
 											<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-flag-th.svg' ) ); ?>" />
 											<h2><?php esc_html_e( 'Thailand', 'hack' ); ?></h2>
@@ -325,7 +332,7 @@ if ( have_posts() ) :
 									</div>
 								</div>
 								<div class="section-about-seven-slider--item" style="background-image: url(<?php echo esc_url( get_theme_file_uri( 'assets/img/about/hack-about-section-7-in.jpg' ) ); ?>)">
-									<div class="section-about-seven-slider--item-copy">
+									<div class="section-about-seven-slider--item-copy" data-sal="fade">
 										<div class="section-about-seven-slider--item-copy-title">
 											<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-flag-ind.svg' ) ); ?>" />
 											<h2><?php esc_html_e( 'Indonesia', 'hack' ); ?></h2>
@@ -335,7 +342,7 @@ if ( have_posts() ) :
 									</div>
 								</div>
 								<div class="section-about-seven-slider--item" style="background-image: url(<?php echo esc_url( get_theme_file_uri( 'assets/img/about/hack-about-section-7-ph.jpg' ) ); ?>)">
-									<div class="section-about-seven-slider--item-copy">
+									<div class="section-about-seven-slider--item-copy" data-sal="fade">
 										<div class="section-about-seven-slider--item-copy-title">
 											<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-flag-phi.svg' ) ); ?>" />
 											<h2><?php esc_html_e( 'Philippines', 'hack' ); ?></h2>
@@ -345,7 +352,7 @@ if ( have_posts() ) :
 									</div>
 								</div>
 								<div class="section-about-seven-slider--item" style="background-image: url(<?php echo esc_url( get_theme_file_uri( 'assets/img/about/hack-about-section-7-uk.jpg' ) ); ?>)">
-									<div class="section-about-seven-slider--item-copy">
+									<div class="section-about-seven-slider--item-copy" data-sal="fade">
 										<div class="section-about-seven-slider--item-copy-title">
 											<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-flag-uk.svg' ) ); ?>" />
 											<h2><?php esc_html_e( 'United Kingdom', 'hack' ); ?></h2>
@@ -355,7 +362,7 @@ if ( have_posts() ) :
 									</div>
 								</div>
 								<div class="section-about-seven-slider--item" style="background-image: url(<?php echo esc_url( get_theme_file_uri( 'assets/img/about/hack-about-section-7-us.jpg' ) ); ?>)">
-									<div class="section-about-seven-slider--item-copy">
+									<div class="section-about-seven-slider--item-copy" data-sal="fade">
 										<div class="section-about-seven-slider--item-copy-title">
 											<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-flag-en.svg' ) ); ?>" />
 											<h2><?php esc_html_e( 'United States', 'hack' ); ?></h2>
@@ -367,27 +374,27 @@ if ( have_posts() ) :
 							</div>
 							<div class="section-about-seven-slider-locations-container">
 								<div class="section-about-seven-slider-locations hack-slick" data-slick='{"asNavFor": ".section-about-seven-slider", "infinite": true, "focusOnSelect": true, "slidesToShow": 6, "variableWidth": true}'>
-									<div class="section-about-seven-slider-locations--location" data-sal="slide-down">
+									<div class="section-about-seven-slider-locations--location">
 										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-flag-ca.svg' ) ); ?>" />
 										<h3><?php esc_html_e( 'Canada', 'hack' ); ?></h3>
 									</div>
-									<div class="section-about-seven-slider-locations--location" data-sal="slide-down" data-sal-delay="100">
+									<div class="section-about-seven-slider-locations--location">
 										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-flag-th.svg' ) ); ?>" />
 										<h3><?php esc_html_e( 'Thailand', 'hack' ); ?></h3>
 									</div>
-									<div class="section-about-seven-slider-locations--location" data-sal="slide-down" data-sal-delay="200">
+									<div class="section-about-seven-slider-locations--location">
 										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-flag-ind.svg' ) ); ?>" />
 										<h3><?php esc_html_e( 'Indonesia', 'hack' ); ?></h3>
 									</div>
-									<div class="section-about-seven-slider-locations--location" data-sal="slide-down" data-sal-delay="300">
+									<div class="section-about-seven-slider-locations--location">
 										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-flag-phi.svg' ) ); ?>" />
 										<h3><?php esc_html_e( 'Philippines', 'hack' ); ?></h3>
 									</div>
-									<div class="section-about-seven-slider-locations--location" data-sal="slide-down" data-sal-delay="400">
+									<div class="section-about-seven-slider-locations--location">
 										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-flag-uk.svg' ) ); ?>" />
 										<h3><?php esc_html_e( 'United Kingdom', 'hack' ); ?></h3>
 									</div>
-									<div class="section-about-seven-slider-locations--location" data-sal="slide-down" data-sal-delay="500">
+									<div class="section-about-seven-slider-locations--location">
 										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-flag-en.svg' ) ); ?>" />
 										<h3><?php esc_html_e( 'United States', 'hack' ); ?></h3>
 									</div>
