@@ -235,32 +235,45 @@ if ( have_posts() ) :
 					</div>
 				</div>
 			</div>
-			<div class="section section-about-five padding-top-0 padding-bottom-0">
+			<div class="section section-about-five">
 				<div class="wrap">
 					<div class="row">
-						<div class="column one-third">
-							<h2><?php echo esc_html_x( 'What God has done over the years', 'About page', 'hack' ); ?></h2>
+						<div class="column one-half">
+							<h2><?php echo esc_html_x( 'Impact Overview', 'About page', 'hack' ); ?></h2>
+							<p class="intro-text"><?php echo esc_html_x( 'These generous organizations all play an important role in bringing #HACK to a city near you.', 'About page', 'hack' ); ?></p>
+							<p><a href="#" class="text-color"><?php esc_html_e( '#HACK Impact', 'hack' ); ?></a></p>
 							<div class="section-about-five-stats">
 								<div class="section-about-five-stats--stat">
-									<span>4,300</span>
-									<?php esc_html_e( 'Participants', 'hack' ); ?>
+									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/about/hack-about-participants.svg' ) ); ?>" />
+									<div class="section-about-five-stats--stat-content">
+										<span>4,300</span>
+										<?php esc_html_e( 'Participants', 'hack' ); ?>
+									</div>
 								</div>
 								<div class="section-about-five-stats--stat">
-									<span>41</span>
-									<?php esc_html_e( 'Countries', 'hack' ); ?>
+									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/about/hack-about-countries.svg' ) ); ?>" />
+									<div class="section-about-five-stats--stat-content">
+										<span>41</span>
+										<?php esc_html_e( 'Countries', 'hack' ); ?>
+									</div>
 								</div>
 								<div class="section-about-five-stats--stat">
-									<span>210</span>
-									<?php esc_html_e( 'Cities', 'hack' ); ?>
+									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/about/hack-about-cities.svg' ) ); ?>" />
+									<div class="section-about-five-stats--stat-content">
+										<span>210</span>
+										<?php esc_html_e( 'Cities', 'hack' ); ?>
+									</div>
 								</div>
 								<div class="section-about-five-stats--stat">
-									<span>436</span>
-									<?php esc_html_e( 'Projects', 'hack' ); ?>
+									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/about/hack-about-projects.svg' ) ); ?>" />
+									<div class="section-about-five-stats--stat-content">
+										<span>436</span>
+										<?php esc_html_e( 'Projects', 'hack' ); ?>
+									</div>
 								</div>
 							</div>
-							<h2>&hellip;<?php echo esc_html_x( 'and Counting!', 'About page', 'hack' ); ?></h2>
 						</div>
-						<div class="column one-half offset-2">
+						<div class="column one-half">
 							<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/about/hack-about-section-5.png' ) ); ?>" width="505" />
 						</div>
 					</div>
@@ -270,7 +283,6 @@ if ( have_posts() ) :
 				<div class="wrap">
 					<div class="row">
 						<div class="column one-half">
-							<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/about/hack-about-section-6.png' ) ); ?>" />
 							<h5 class="divider color-primary"><?php echo esc_html_x( 'The Team', 'About page', 'hack' ); ?></h5>
 							<h2><?php echo esc_html_x( 'Who makes #HACK possible?', 'About page', 'hack' ); ?></h2>
 							<p><?php echo esc_html_x( '#HACK couldn’t happen without our dedicated Regional and City Leads, who have taken a step of faith to mobilize participants, volunteers, and sponsors in their areas to take part in the hackathon.', 'About page', 'hack' ); ?></p>
@@ -291,7 +303,7 @@ if ( have_posts() ) :
 						</div>
 						<div class="team-member">
 							<div class="team-member-photo">
-								<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/team/russ-martin.png' ) ); ?>" />
+								<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/team/simon-seow.jpg' ) ); ?>" />
 							</div>
 							<div class="team-member-label">
 								<h3><?php echo esc_html( 'Simon' ); ?></h3>
@@ -454,11 +466,11 @@ if ( have_posts() ) :
 					<div class="team">
 						<div class="team-member reversed">
 							<div class="team-member-photo">
-								<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/team/russ-martin.png' ) ); ?>" />
+								<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/team/mike-novak.png' ) ); ?>" />
 							</div>
 							<div class="team-member-label">
 								<h3><?php echo esc_html( 'Mike Novak' ); ?></h3>
-								<h6><?php echo esc_html_x( 'Co-Founder, Indigitous', 'Team Member Title', 'hack' ); ?></h6>
+								<h6><?php echo esc_html_x( 'President and CEO of Educational Media Foundation', 'Team Member Title', 'hack' ); ?></h6>
 							</div>
 							<div class="team-member-bio">
 								<?php echo esc_html_x( '“This is the place to be for anyone wanting to impact the world in a powerful way.”', 'Team Member Bio', 'hack' ); ?>
@@ -466,14 +478,14 @@ if ( have_posts() ) :
 						</div>
 						<div class="team-member reversed">
 							<div class="team-member-photo">
-								<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/team/russ-martin.png' ) ); ?>" />
+								<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/team/ken-cochrum.png' ) ); ?>" />
 							</div>
 							<div class="team-member-label">
-								<h3><?php echo esc_html( 'Jonah' ); ?></h3>
-								<h6><?php echo esc_html_x( 'Co-Founder, Indigitous', 'Team Member Title', 'hack' ); ?></h6>
+								<h3><?php echo esc_html( 'Ken Cochrum' ); ?></h3>
+								<h6><?php echo esc_html_x( 'Executive Vice President of Field Ministries at East-West', 'Team Member Title', 'hack' ); ?></h6>
 							</div>
 							<div class="team-member-bio">
-								<?php echo esc_html_x( '“It was awesome to see how total strangers came together and worked together as if they had been a team for years. It was awesome to see the Lord at work through ordinary people using their skills for His glory.” ', 'Team Member Bio', 'hack' ); ?>
+								<?php echo esc_html_x( '“Indigitous #HACK is an opportunity to unleash the huge potential in a generation of technologists to improve our world. The event gives a community of passionate people a chance to use their God-given gifts and experiences to help individuals and organizations serve others better.”', 'Team Member Bio', 'hack' ); ?>
 							</div>
 						</div>
 					</div>
