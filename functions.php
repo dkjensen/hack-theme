@@ -62,6 +62,7 @@ function hack_setup() {
 	*/
 	add_theme_support( 'post-thumbnails' );
 	set_post_thumbnail_size( 720, 720 );
+	add_image_size( '16:9', 800, 450, true );
 
 	register_nav_menus(
 		array(
@@ -308,3 +309,4 @@ require_once 'lib/functions/enqueue.php';
 require_once 'lib/functions/helpers.php';
 require_once 'lib/functions/shortcodes.php';
 require_once 'lib/functions/markup.php';
+require_once 'lib/functions/download.php';

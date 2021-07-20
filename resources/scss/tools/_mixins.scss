@@ -131,7 +131,7 @@
 ////
 
 @mixin transition {
-	transition: all $base--transition-duration $base--transition-timing-function;
+	transition: all 0.2s ease;
 }
 
 ////
@@ -310,5 +310,52 @@
 			margin-right: 0;
 			margin-left: $spacing--s;
 		}
+	}
+}
+
+@mixin hero {
+	padding-top: 20rem;
+	text-align: center;
+
+	@include mq(tablet) {
+		padding-top: 29rem;
+	}
+
+	h1 {
+		margin: 0 0 1rem;
+	}
+
+	p {
+		width: 100%;
+		max-width: 500px;
+
+		@include margin(null auto);
+	}
+
+	a {
+		color: inherit;
+	}
+}
+
+@mixin form-input {
+	position: relative;
+
+	label {
+		position: absolute;
+		padding: 1.2rem 1.6rem;
+		font-size: 1rem;
+		font-weight: $font-weight--bold;
+		line-height: 1;
+		text-transform: uppercase;
+
+		+ div {
+			#{$all-text-inputs} {
+				padding: 3rem 1.6rem 1.2rem;
+			}
+		}
+	}
+
+	#{$all-text-inputs} {
+		height: 6rem;
 	}
 }

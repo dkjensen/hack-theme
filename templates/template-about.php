@@ -202,8 +202,8 @@ if ( have_posts() ) :
 				<div class="wrap">
 					<div class="row">
 						<div class="column one-half">
-							<h2><?php echo esc_html_x( 'Impact Overview', 'About page', 'hack' ); ?></h2>
-							<p class="intro-text"><?php echo esc_html_x( 'These generous organizations all play an important role in bringing #HACK to a city near you.', 'About page', 'hack' ); ?></p>
+							<h2><?php echo esc_html_x( 'Digital Missionaries', 'About page', 'hack' ); ?></h2>
+							<p class="intro-text"><?php echo esc_html_x( '#HACK is more than just an experience. Those who take part make a difference, using their talents for God to help advance God’s Kingdom through innovation. Through working on missional projects and joining a faith-based community, attendees make an eternal impact.', 'About page', 'hack' ); ?></p>
 							<p><br><a href="#" class="button"><?php esc_html_e( '#HACK Impact', 'hack' ); ?></a></p>
 							<div class="section-about-five-stats">
 								<div class="section-about-five-stats--stat">

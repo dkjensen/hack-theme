@@ -1,0 +1,96 @@
+.card {
+	margin: 0 0 $spacing--xxl;
+	box-shadow: 0 2px 2px 0 rgba(#1e1107, 0.16);
+
+	a:not(.card--meta-term) {
+		color: $color--text;
+		text-decoration: none;
+
+		@include hover-focus {
+			color: $color--primary;
+		}
+	}
+
+	&-container {
+		overflow: hidden;
+		border-radius: 4px;
+		box-shadow: 0 2px 0 0 rgba(#1e1107, 0.16);
+
+		@include transition();
+
+		@include hover-focus {
+			box-shadow: 0 2px 0 0 rgba(#1e1107, 1);
+		}
+	}
+
+	&--image {
+		position: relative;
+		display: block;
+		height: 0;
+		padding-bottom: 56.25%;
+		overflow: hidden;
+
+		&.placeholder {
+			background-color: $color--dark;
+		}
+
+		img {
+			position: absolute;
+			min-width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&--meta {
+		position: relative;
+		z-index: 1;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		height: 0;
+		padding: 0 $gutter;
+
+		&-term {
+			padding: 0.6rem $gutter;
+			font-weight: $font-weight--bold;
+			line-height: 1.25;
+			color: $color--text;
+			text-decoration: none;
+			text-transform: uppercase;
+			background-color: $color--blue;
+			border-radius: 4px;
+
+			@include hover-focus {
+				color: $color--text;
+				background-color: $color--blue-light;
+			}
+
+			[class^="fa"] {
+				margin-right: 1rem;
+			}
+		}
+	}
+
+	&--content {
+		padding: $gutter * 1.5 $gutter;
+	}
+
+	&--actions {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		padding: 0 $gutter $gutter * 1.5;
+
+		&-download {
+			margin-right: auto;
+		}
+
+		[class^="fa"] {
+			margin-top: -0.2rem;
+			margin-right: 0.25rem;
+			font-size: 1.4rem;
+			vertical-align: middle;
+		}
+	}
+}

@@ -36,7 +36,7 @@ textarea {
 	padding: 1.2rem 1.6rem;
 	margin-bottom: var(--spacing--small);
 	background-color: transparent;
-	border: $color--black;
+	border: 1px solid $color--border;
 	border-radius: var(--border-radius);
 	box-shadow: var(--form-box-shadow);
 	transition: border-color var(--duration) var(--timing);

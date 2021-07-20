@@ -1,22 +1,8 @@
 .section-about {
 
 	&-one {
-		padding-top: 20rem;
-		text-align: center;
 
-		@include mq(tablet) {
-			padding-top: 29rem;
-		}
-
-		h1 {
-			margin: 0 0 1rem;
-		}
-
-		p {
-			width: 100%;
-			max-width: 500px;
-			margin: 0 auto;
-		}
+		@include hero();
 
 		iframe,
 		object,

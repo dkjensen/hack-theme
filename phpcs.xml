@@ -24,6 +24,7 @@
 
 	<rule ref="WordPress">
 		<exclude name="WordPress.WP.I18n.MissingArgDomain"/>
+		<exclude name="WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound"/>
 	</rule>
 
 	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
