@@ -12,9 +12,11 @@
 	}
 
 	&-container {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
 		overflow: hidden;
 		border-radius: 4px;
-		box-shadow: 0 2px 0 0 rgba(#1e1107, 0.16);
 
 		@include transition();
 
@@ -81,6 +83,7 @@
 		align-items: center;
 		justify-content: flex-end;
 		padding: 0 $gutter $gutter * 1.5;
+		margin-top: auto;
 
 		&-download {
 			margin-right: auto;
