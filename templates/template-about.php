@@ -46,46 +46,9 @@ if ( have_posts() ) :
 					</div>
 				</div>
 			</div>
-			<div class="section section-about-three yellow-background-color">
-				<div class="wrap">
-					<div class="row">
-						<div class="columns two-thirds offset-2">
-							<h3 style="opacity: 0.7; margin: 0;"><?php echo esc_html_x( 'This is the race we are running.', 'About page', 'hack' ); ?></h3>
-							<h2><?php echo esc_html_x( 'We want to help bring the gospel to those who need to hear.', 'About page', 'hack' ); ?></h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="column one-fourth">
-							<div class="section-about-three-item" data-sal="slide-down">
-								<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/about/bible.svg' ) ); ?>" />
-								<h3><?php echo esc_html_x( 'Bible or scripture engagement', 'About page', 'hack' ); ?></h3>
-								<p><?php echo esc_html_x( 'Scripture engagement, discipleship, prayer, etc.', 'About page', 'hack' ); ?>
-							</div>
-						</div>
-						<div class="column one-fourth">
-							<div class="section-about-three-item" data-sal="slide-down" data-sal-delay="100">
-								<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/about/rocket.svg' ) ); ?>" />
-								<h3><?php echo esc_html_x( 'Entrepreneurship & innovation', 'About page', 'hack' ); ?></h3>
-								<p><?php echo esc_html_x( 'Innovative businesses that alleviate poverty and bring justice', 'About page', 'hack' ); ?>
-							</div>
-						</div>
-						<div class="column one-fourth">
-							<div class="section-about-three-item" data-sal="slide-down" data-sal-delay="200">
-								<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/about/globe.svg' ) ); ?>" />
-								<h3><?php echo esc_html_x( 'Missions information', 'About page', 'hack' ); ?></h3>
-								<p><?php echo esc_html_x( 'Scripture engagement, discipleship, prayer, etc. ', 'About page', 'hack' ); ?>
-							</div>
-						</div>
-						<div class="column one-fourth">
-							<div class="section-about-three-item" data-sal="slide-down" data-sal-delay="300">
-								<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/about/heart-hands.svg' ) ); ?>" />
-								<h3><?php echo esc_html_x( 'Your passion', 'About page', 'hack' ); ?></h3>
-								<p><?php echo esc_html_x( 'Ways to help people discover Jesus in their context', 'About page', 'hack' ); ?>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+			
+			<?php get_template_part( 'template-parts/callouts' ); ?>
+
 			<div class="section section-about-four">
 				<div class="wrap">
 					<div class="row">
@@ -241,7 +204,7 @@ if ( have_posts() ) :
 						<div class="column one-half">
 							<h2><?php echo esc_html_x( 'Impact Overview', 'About page', 'hack' ); ?></h2>
 							<p class="intro-text"><?php echo esc_html_x( 'These generous organizations all play an important role in bringing #HACK to a city near you.', 'About page', 'hack' ); ?></p>
-							<p><a href="#" class="text-color"><?php esc_html_e( '#HACK Impact', 'hack' ); ?></a></p>
+							<p><br><a href="#" class="button"><?php esc_html_e( '#HACK Impact', 'hack' ); ?></a></p>
 							<div class="section-about-five-stats">
 								<div class="section-about-five-stats--stat">
 									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/about/hack-about-participants.svg' ) ); ?>" />

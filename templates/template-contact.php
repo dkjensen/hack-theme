@@ -34,7 +34,7 @@ if ( have_posts() ) :
 									<div class="team-member-label">
 										<h3><?php echo esc_html( 'Ann Chow' ); ?></h3>
 										<h6><?php echo esc_html_x( 'Project Manager', 'Team Member Title', 'hack' ); ?></h6>
-										<p><a href="mailto:hack@indigitous.org"><?php echo esc_html( 'hack@indigitous.org' ); ?></a></p>
+										<p><a href="mailto:ann@indigitous.org"><?php echo esc_html( 'ann@indigitous.org' ); ?></a></p>
 									</div>
 								</div>
 							</div>

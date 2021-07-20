@@ -1,7 +1,7 @@
-<div class="section testimonials padding-0">
+<div class="section template-parts-testimonials padding-0">
 	<div class="wrap">
-		<div class="testimonials-slider hack-slick blue-background-color" data-slick-id="twelve" data-slick='{"dots": true, "arrows": true}'>
-			<div class="testimonials-slider--item">
+		<div class="template-parts-testimonials-slider hack-slick blue-background-color" data-slick-id="twelve" data-slick='{"dots": true, "arrows": true}'>
+			<div class="template-parts-testimonials-slider--item">
 				<div class="wrap">
 					<div class="row">
 						<div class="column two-thirds offset-2">
@@ -15,7 +15,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="testimonials-slider--item">
+			<div class="template-parts-testimonials-slider--item">
 				<div class="wrap">
 					<div class="row">
 						<div class="column two-thirds offset-2">
@@ -29,7 +29,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="testimonials-slider--item">
+			<div class="template-parts-testimonials-slider--item">
 				<div class="wrap">
 					<div class="row">
 						<div class="column two-thirds offset-2">
@@ -43,7 +43,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="testimonials-slider--item">
+			<div class="template-parts-testimonials-slider--item">
 				<div class="wrap">
 					<div class="row">
 						<div class="column two-thirds offset-2">
@@ -57,7 +57,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="testimonials-slider--item">
+			<div class="template-parts-testimonials-slider--item">
 				<div class="wrap">
 					<div class="row">
 						<div class="column two-thirds offset-2">
@@ -71,7 +71,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="testimonials-slider--item">
+			<div class="template-parts-testimonials-slider--item">
 				<div class="wrap">
 					<div class="row">
 						<div class="column two-thirds offset-2">
@@ -85,7 +85,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="testimonials-slider--item">
+			<div class="template-parts-testimonials-slider--item">
 				<div class="wrap">
 					<div class="row">
 						<div class="column two-thirds offset-2">

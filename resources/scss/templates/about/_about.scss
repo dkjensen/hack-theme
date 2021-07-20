@@ -206,8 +206,10 @@
 				}
 
 				&--image {
+					display: flex;
 					flex-grow: 1;
-					text-align: right;
+					align-items: center;
+					justify-content: flex-end;
 
 					@include mq($until: tablet) {
 						padding-top: $spacing--xxl;
@@ -220,6 +222,7 @@
 				}
 
 				&--stats {
+					display: flex;
 					flex-wrap: wrap;
 					padding-top: $spacing--m;
 					margin-top: auto;

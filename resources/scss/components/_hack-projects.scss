@@ -1,0 +1,15 @@
+.hack-projects {
+
+	&-grid {
+
+		&-filters {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+		}
+
+		&-filter {
+			width: 150px;
+		}
+	}
+}

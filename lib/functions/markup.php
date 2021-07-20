@@ -15,7 +15,7 @@ namespace Dkjensen\Hack\Functions;
 function body_classes( $classes ) {
 	$template = \get_page_template_slug();
 
-	if ( in_array( $template, array( 'templates/template-about.php' ) ) ) {
+	if ( in_array( $template, array( 'templates/template-about.php', 'templates/template-projects.php' ) ) ) {
 		$classes[] = 'transparent-header';
 	}
 

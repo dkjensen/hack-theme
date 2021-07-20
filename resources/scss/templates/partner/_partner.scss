@@ -1,4 +1,4 @@
-.section-lead {
+.section-partner {
 
 	&-one {
 
@@ -7,7 +7,7 @@
 			.column:first-child {
 
 				> * {
-					max-width: 90%;
+					max-width: 95%;
 				}
 			}
 		}
@@ -97,6 +97,125 @@
 
 	&-two {
 
+		h2 span {
+			color: inherit;
+		}
+
+		&-container {
+			padding: 5rem $layout--padding-mobile;
+			margin: 0 -$layout--padding-mobile;
+			border-radius: 4px;
+
+			@include mq(tablet) {
+				padding: 5rem 0;
+				margin: 0;
+			}
+		}
+
+		&-stats {
+			margin: 5rem 0 0;
+
+			&--stat {
+				display: flex;
+				align-items: center;
+				margin: 0 0 2.5rem;
+
+				&-image {
+					flex: 0 0 20%;
+					text-align: center;
+				}
+
+				&-count {
+
+					@extend h2;
+					flex: 0 0 20%;
+					padding: 0 0 0 $gutter;
+					margin: 0;
+				}
+
+				&-data {
+					flex: 1;
+
+					h3 {
+						margin: 0;
+					}
+				}
+			}
+		}
+
+		&-cities {
+			padding: $spacing--xxl $gutter;
+			border-radius: 4px;
+
+			h3 {
+				margin: 0 0 $spacing--xl;
+				text-align: center;
+			}
+
+			&--city {
+				display: flex;
+				align-items: center;
+				padding: 0 0 0 $gutter;
+				margin: 0 0 2.5rem;
+
+				@include mq(tablet) {
+					padding: 0 0 0 $spacing--xl;
+				}
+
+				span {
+					margin: 0 0 0 $gutter;
+
+					@include mq(tablet) {
+						margin: 0 0 0 $gutter * 2;
+					}
+				}
+			}
+
+			p {
+				text-align: center;
+			}
+
+			a {
+				color: $color--text;
+			}
+		}
+	}
+
+	&-three {
+
+		h2 {
+			margin: $spacing--xl 0;
+			font-weight: $font-weight--regular;
+
+			@include mq(tablet) {
+				margin: 0 0 $spacing--xxl;
+				text-align: center;
+			}
+		}
+
+		&--items {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+
+			@include mq(tablet) {
+				padding: 0 5rem;
+			}
+
+			&-item {
+				flex: 1 0 100%;
+				margin: 0 0 5rem;
+
+				@include mq(tablet) {
+					flex: 0 0 44%;
+				}
+			}
+		}
+	}
+
+	&-nine {
+		padding-bottom: 1rem;
+
 		&-works-grid {
 			margin: 0 0 5rem;
 
@@ -142,6 +261,14 @@
 					}
 				}
 
+				&:last-child {
+					text-align: left;
+
+					span {
+						color: inherit;
+					}
+				}
+
 				h3 {
 					margin-bottom: 2rem;
 				}
@@ -154,7 +281,7 @@
 		}
 	}
 
-	&-three {
+	&-four {
 		height: 73vw;
 		background: url(../img/hack-lead-break.jpg) center/cover no-repeat;
 
@@ -163,11 +290,12 @@
 		}
 	}
 
-	&-four {
+	&-five {
 
 		&-sidebar {
 			padding: $spacing--xl $layout--padding-mobile;
 			margin-top: -$spacing--xxxl;
+			margin-bottom: $spacing--l;
 			border-radius: 4px;
 
 			@include mq(tablet) {
@@ -177,90 +305,38 @@
 
 		&-callout {
 			display: flex;
-			margin: 0 0 $gutter;
+			margin: 0 0 $spacing--xl;
+
+			@include mq(tablet) {
+				margin: 0 0 $gutter;
+			}
 
 			> :not(:first-child) {
 				flex: 1;
-				margin: 0 0 0 $gutter;
 
 				@include mq(tablet) {
 					margin: 0 0 0 $spacing--l;
+				}
+			}
+
+			&--img {
+
+				@include mq($until: tablet) {
+					display: none;
 				}
 			}
 		}
 	}
 
 	&-six {
-		padding: $gutter 0;
-
-		&-sidebar {
-			position: relative;
-			z-index: 1;
-			height: 100%;
-			padding: $spacing--xl;
-			margin-bottom: $spacing--m;
-			border-radius: 4px;
-		}
-
-		&-team {
-			padding-bottom: $spacing--xl;
-
-			@include mq(tablet) {
-				display: flex;
-				flex-wrap: wrap;
-				justify-content: space-between;
-			}
-
-			&--member {
-				display: grid;
-				flex: 1 0 100%;
-				grid-template-areas:
-					"photo label"
-					"bio bio";
-				grid-template-rows: auto 1fr;
-				grid-template-columns: auto 1fr;
-				gap: 0 0;
-				margin: 6rem 0 0;
-
-				@include mq(tablet) {
-					flex: 0 0 42.857%;
-				}
-
-				&-photo {
-					grid-area: photo;
-					width: 85px;
-					height: 85px;
-				}
-
-				&-label {
-					grid-area: label;
-					margin-left: $gutter;
-
-					h3 {
-						margin: 0 0 $spacing--xxxs;
-					}
-
-					h6 {
-						margin: 0;
-						color: $color--pink;
-						text-transform: uppercase;
-					}
-				}
-
-				&-bio {
-					grid-area: bio;
-					margin: 3rem 0 0;
-				}
-			}
-		}
-	}
-
-	&-seven {
 		position: relative;
 		display: flex;
 		align-items: center;
-		height: 73vw;
 		background: url(../img/hack-lead-break-2.jpg) center/cover no-repeat;
+
+		@include mq(tablet) {
+			height: 73vw;
+		}
 
 		&:before {
 			position: absolute;
@@ -276,14 +352,62 @@
 			height: 656px;
 		}
 
-		h1 span {
-			color: inherit;
+		h3 {
+			width: 100%;
+			max-width: 52.5rem;
+			margin: -1em auto $spacing--xl;
 		}
 
 		.wrap {
 			position: relative;
 			z-index: 1;
+
+			@include mq(tablet) {
+				text-align: center;
+			}
+		}
+	}
+
+	&-seven {
+
+		&-sidebar {
+			padding: $spacing--xl $gutter;
+			margin-bottom: $spacing--l;
+			border-radius: 4px;
+
+			@include mq(tablet) {
+				padding: $spacing--xl;
+			}
+		}
+
+		&-item {
+			display: flex;
+			margin: 0 0 $spacing--xxl;
+
+			&--li {
+				display: inline-flex;
+				flex: 1 0 auto;
+				align-items: center;
+				justify-content: center;
+				width: 6rem;
+				height: 6rem;
+				margin: 0 3rem 0 0;
+				font-size: 3rem;
+				font-weight: $font-weight--bold;
+				border-radius: 50%;
+			}
+		}
+	}
+
+	&-ten {
+
+		@include mq(tablet) {
+			padding-top: $spacing--xxxl;
 			text-align: center;
+		}
+
+		h2 {
+			margin: 0 0 $spacing--xl;
 		}
 	}
 }
