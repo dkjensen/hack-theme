@@ -15,7 +15,7 @@ namespace Dkjensen\Hack\Functions;
 function resource_download() {
 	global $wp_query;
 
-	if ( is_singular( 'resource' ) ) {
+	if ( is_singular( 'resource' ) && ! post_password_required() ) {
 		$download = get_post_meta( get_the_ID(), 'download', true );
 
 		if ( $download ) {
