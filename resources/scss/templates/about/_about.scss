@@ -520,25 +520,6 @@
 		}
 	}
 
-	&-ten {
-
-		.row {
-			margin: $spacing--l 0;
-		}
-
-		.column {
-			padding: $gutter;
-
-			@include mq($until: tablet) {
-				width: 50%;
-			}
-		}
-	}
-
-	&-eleven {
-
-	}
-
 	&-twelve {
 
 		a {

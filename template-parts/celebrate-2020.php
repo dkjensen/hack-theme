@@ -1,7 +1,7 @@
 <div class="section padding-0 template-parts-celebrate-2020">
 	<div class="wrap">
 		<div class="section gray-300-background-color">
-			<h5 class="divider align-center"><?php esc_html_e( 'Celebrate #HACK2020', 'hack' ); ?></h5>
+			<h5 class="divider text-center"><?php esc_html_e( 'Celebrate #HACK2020', 'hack' ); ?></h5>
 			<h2 class="primary-color"><?php esc_html_e( 'What God Did at #HACK2020', 'hack' ); ?></h2>
 			<div class="row">
 				<div class="column one-sixth offset-1">

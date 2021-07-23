@@ -1,0 +1,209 @@
+.section-home {
+
+	&-one {
+
+		@include hero();
+
+		h1 {
+
+			@include mq($until: mobile) {
+				font-size: 2.4rem;
+			}
+		}
+
+		&-buttons {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: $spacing--l 0;
+
+
+			.button {
+				flex: 1;
+				margin: 0 $gutter / 2;
+
+				@include mq(tablet) {
+					flex: 0;
+					min-width: 20rem;
+				}
+			}
+		}
+	}
+
+	&-two {
+		display: flex;
+		flex-direction: column;
+		height: 50.138vw;
+		padding: 0;
+		margin: 0 0 $spacing--xxl;
+		background-image: url("../img/home/hack-home-earth.svg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+
+		@include mq(wide) {
+			height: 72.2rem;
+			background-size: auto;
+		}
+
+		.wrap {
+			position: relative;
+			max-width: map-get($mq-breakpoints, wide);
+			height: 100%;
+		}
+
+		&-user {
+			position: absolute;
+			width: 10.138vw;
+			padding: $gutter / 2;
+			font-size: 1.1vw;
+			background-color: $color--blue;
+
+			@include mq($until: tablet) {
+				display: none;
+			}
+
+			@include mq(wide) {
+				width: 14.6rem;
+				font-size: 1.6rem;
+			}
+
+			h5 {
+				margin: 0;
+				font-size: 1.25em;
+
+				&:before {
+					display: inline-block;
+					width: 1.6rem;
+					height: 1.6rem;
+					margin: 0 0.4rem 0 0;
+					content: "";
+					background-image: url("../img/indigitous-logo.svg");
+					background-size: cover;
+				}
+			}
+
+			p {
+				margin: 0;
+				font-size: 1em;
+			}
+		}
+
+		+ .template-parts-callouts {
+			padding-bottom: 18vw;
+		}
+	}
+
+	&-three {
+		margin-top: -18vw;
+
+		.row .row {
+			margin-bottom: $spacing--xl;
+		}
+	}
+
+	&-four {
+
+		.row {
+			margin-top: $spacing--xxl;
+		}
+
+		&-callout {
+			display: flex;
+			align-items: center;
+
+			&--img {
+				margin-right: $gutter * 2;
+
+				img {
+					margin-bottom: -0.5rem;
+				}
+			}
+
+			&--content {
+				flex: 1;
+
+				span {
+					color: $color--primary;
+
+					@extend h2;
+				}
+
+				p {
+					margin: 0;
+
+					@extend h3;
+				}
+			}
+		}
+	}
+
+	&-five {
+		display: flex;
+		flex-direction: column;
+		height: 38.333vw;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	&-six {
+
+		.media-text {
+			margin: $spacing--l 0 0;
+		}
+	}
+
+	&-seven {
+
+		.row {
+			position: relative;
+			margin: 0 0 $spacing--xl;
+		}
+
+		&-group {
+
+			img {
+				display: block;
+				border-radius: 4px;
+			}
+
+			&--content {
+				position: absolute;
+				top: 50%;
+				right: 0;
+				width: 58%;
+				padding: $spacing--xxl;
+				background-color: $color--white;
+				border-radius: 4px;
+				transform: translateY(-50%);
+
+				.offset-1 & {
+					right: auto;
+					left: 0;
+				}
+
+				h2 {
+					margin: 0 0 $spacing--xs;
+
+					img {
+						display: inline-block;
+						margin: 0 $spacing--l 0 0;
+					}
+				}
+
+				p {
+					width: 100%;
+					max-width: 37rem;
+					min-height: 14rem;
+					line-height: 1.555;
+				}
+
+				.button {
+
+				}
+			}
+		}
+	}
+}

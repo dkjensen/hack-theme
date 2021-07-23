@@ -41,7 +41,7 @@ h6 {
 			background-color: $color--primary;
 		}
 
-		&.align-center:after {
+		&.text-center:after {
 			margin-right: auto;
 			margin-left: auto;
 		}
@@ -117,7 +117,6 @@ blockquote {
 	font-size: 2.4rem;
 	font-style: italic;
 	line-height: 1.666;
-	text-align: center;
 
 	@include mq(tablet) {
 		font-size: 3rem;
@@ -125,12 +124,23 @@ blockquote {
 
 	@include margin( $spacing--l 0 );
 
-	&:before {
-		content: open-quote;
+	&.has-quotes {
+
+		&:before {
+			content: open-quote;
+		}
+
+		&:after {
+			content: close-quote;
+		}
 	}
 
-	&:after {
-		content: close-quote;
+	&.is-large {
+
+		@include mq(tablet) {
+			font-size: 4rem;
+			line-height: 1.25;
+		}
 	}
 }
 
@@ -143,4 +153,18 @@ blockquote {
 .intro-text {
 	width: 100%;
 	max-width: 50rem;
+	margin-bottom: $spacing--l;
+
+	h2 + & {
+		margin-top: -1rem;
+	}
+
+	.text-center & {
+
+		@include margin(null auto);
+	}
+}
+
+.text-center {
+	text-align: center;
 }

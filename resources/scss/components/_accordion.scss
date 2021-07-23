@@ -1,0 +1,46 @@
+.accordion {
+	padding: $gutter / 2 $gutter;
+	margin: 0 0 $gutter;
+	border: 1px solid $color--text;
+	border-radius: 4px;
+
+	&-header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		cursor: pointer;
+
+		span {
+
+			@extend h3;
+			margin: 0;
+
+			@include transition();
+		}
+
+		.is-active & {
+			color: $color--primary;
+		}
+
+		&:after {
+			display: block;
+			width: 2rem;
+			height: 2rem;
+			line-height: 1.2;
+			text-align: center;
+
+			@include icon("\f054", 900);
+			@include transition();
+
+			.is-active & {
+				color: $color--primary;
+				transform: rotate(90deg);
+			}
+		}
+	}
+
+	&-content {
+		display: none;
+		margin: $spacing--xs 0 0;
+	}
+}

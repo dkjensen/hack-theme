@@ -19,7 +19,7 @@ if ( have_posts() ) :
 				<div class="wrap">
 					<div class="row">
 						<div class="column one-half">
-							<h6 class="divider"><?php echo esc_html_x( 'SAVE THE DATE: October 15-17 and 22-24, 2021', 'City lead page', 'hack' ); ?></h6>
+							<h6 class="divider"><?php esc_html_e( 'SAVE THE DATE: October 15-17 and 22-24, 2021', 'hack' ); ?></h6>
 							<h1>
 								<?php
 								/* translators: %s #HACK name tag */
@@ -118,7 +118,7 @@ if ( have_posts() ) :
 								</p>
 							</div>
 							<?php /* translators: %s #HACK name tag */ ?>
-							<blockquote class="primary-color"><?php printf( esc_html__( 'God has given you what you need to lead %s in your city.', 'hack' ), hack_name_tag() ); ?></blockquote>
+							<blockquote class="has-quotes text-center primary-color"><?php printf( esc_html__( 'God has given you what you need to lead %s in your city.', 'hack' ), hack_name_tag() ); ?></blockquote>
 						</div>
 						<div class="column seven-twelfths offset-1">
 							<div class="section-lead-four-callout" data-sal="slide-left">

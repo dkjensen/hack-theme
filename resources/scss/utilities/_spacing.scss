@@ -1,0 +1,34 @@
+@each $spacing-name, $spacing-value in $spacing {
+
+	.padding-top-#{ $spacing-name } {
+		padding-top: #{ $spacing-value };
+	}
+
+	.padding-right-#{ $spacing-name } {
+		padding-right: #{ $spacing-value };
+	}
+
+	.padding-bottom-#{ $spacing-name } {
+		padding-bottom: #{ $spacing-value };
+	}
+
+	.padding-left-#{ $spacing-name } {
+		padding-left: #{ $spacing-value };
+	}
+
+	.margin-top-#{ $spacing-name } {
+		margin-top: #{ $spacing-value };
+	}
+
+	.margin-right-#{ $spacing-name } {
+		margin-right: #{ $spacing-value };
+	}
+
+	.margin-bottom-#{ $spacing-name } {
+		margin-bottom: #{ $spacing-value };
+	}
+
+	.margin-left-#{ $spacing-name } {
+		margin-left: #{ $spacing-value };
+	}
+}

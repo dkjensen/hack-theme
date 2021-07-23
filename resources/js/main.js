@@ -1,4 +1,5 @@
 import "slick-carousel";
+import simpleParallax from 'simple-parallax-js';
 import sal from "sal.js";
 
 let hack = {};
@@ -139,5 +140,19 @@ let hack = {};
 	// 	video.style.width = iTargetWidth + 'px';
 	// 	video.style.height = ( video.dataset.origheight * ratio ) + 'px';
 	// } );
+
+	const parallaxImages = document.querySelectorAll( '.is-parallax' );
+
+	new simpleParallax( parallaxImages, {
+		scale: 1.1
+	} );
+
+	$( '.accordion-header' ).on( 'click', function( e ) {
+		e.preventDefault();
+
+		$( this ).siblings( '.accordion-content' ).slideToggle();
+		$( this ).parent().toggleClass( 'is-active' );
+	} );
+
 
 } )( jQuery );

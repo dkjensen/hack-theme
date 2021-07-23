@@ -353,4 +353,26 @@
 			}
 		}
 	}
+
+	&-partners {
+		padding-bottom: $spacing--l;
+
+		.row {
+
+			margin: $spacing--l (-$gutter);
+			margin-bottom: 0;
+		}
+
+		.column {
+			padding: $gutter * 2 $gutter;
+
+			@include mq($until: tablet) {
+				width: 50%;
+			}
+		}
+
+		img {
+			display: block;
+		}
+	}
 }

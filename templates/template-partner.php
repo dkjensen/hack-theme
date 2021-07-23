@@ -19,8 +19,8 @@ if ( have_posts() ) :
 				<div class="wrap">
 					<div class="row">
 						<div class="column one-half">
-							<h6 class="divider"><?php echo esc_html_x( 'SAVE THE DATE: October 15-17 and 22-24, 2021', 'Partner page', 'hack' ); ?></h6>
-							<h1><?php esc_html_e( 'A Global Missional Hackathon', 'Partner page' ); ?></h1>
+							<h6 class="divider"><?php esc_html_e( 'SAVE THE DATE: October 15-17 and 22-24, 2021', 'hack' ); ?></h6>
+							<h1><?php esc_html_e( 'A Global Missional Hackathon', 'hack' ); ?></h1>
 							<p>
 								<?php echo esc_html_x( 'The Indigitous hackathon is a unique opportunity to gather people with unique skill sets for the purpose of responding to the most pressing needs that impact our society.', 'Partner page', 'hack' ); ?>
 							</p>
@@ -98,7 +98,6 @@ if ( have_posts() ) :
 								</div>
 							</div>
 						</div>
-						
 					</div>
 				</div>
 			</div>
@@ -290,12 +289,12 @@ if ( have_posts() ) :
 					</div>
 				</div>
 			</div>
-			
+
 			<?php get_template_part( 'template-parts/quotes' ); ?>
 			<?php get_template_part( 'template-parts/fast-facts' ); ?>
 			<?php get_template_part( 'template-parts/celebrate-2020' ); ?>
 			<?php get_template_part( 'template-parts/projects' ); ?>
-			
+
 			<div class="section section-partner-ten">
 				<div class="wrap">
 					<div class="row">
