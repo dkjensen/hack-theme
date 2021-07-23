@@ -104,6 +104,10 @@
 
 	&-four {
 
+		@include mq($until: tablet) {
+			padding-bottom: 0;
+		}
+
 		.row {
 			margin-top: $spacing--xxl;
 		}
@@ -111,6 +115,11 @@
 		&-callout {
 			display: flex;
 			align-items: center;
+			margin: 0 0 $spacing--xl;
+
+			@include mq(tablet) {
+				margin: 0;
+			}
 
 			&--img {
 				margin-right: $gutter * 2;
@@ -141,7 +150,11 @@
 	&-five {
 		display: flex;
 		flex-direction: column;
-		height: 38.333vw;
+		height: 53.333vw;
+
+		@include mq(tablet) {
+			height: 38.333vw;
+		}
 
 		img {
 			width: 100%;
@@ -153,16 +166,37 @@
 		.media-text {
 			margin: $spacing--l 0 0;
 		}
+
+		.column.one-fourth {
+
+			@include mq($until: tablet) {
+				width: 50%;
+			}
+		}
+
+		.media-text--img img {
+
+			@include mq($until: tablet) {
+				display: block;
+				width: 3rem;
+				margin-top: -2.5rem;
+			}
+		}
 	}
 
 	&-seven {
 
 		.row {
 			position: relative;
-			margin: 0 0 $spacing--xl;
+			margin-bottom: $spacing--xl;
 		}
 
 		&-group {
+
+			@include mq($until: tablet) {
+				margin-right: -$layout--padding-mobile;
+				margin-left: -$layout--padding-mobile;
+			}
 
 			img {
 				display: block;
@@ -170,14 +204,24 @@
 			}
 
 			&--content {
-				position: absolute;
-				top: 50%;
-				right: 0;
-				width: 58%;
-				padding: $spacing--xxl;
+				position: relative;
+				padding: $gutter * 2;
+				margin-top: -$gutter;
+				margin-right: $layout--padding-mobile;
+				margin-left: $layout--padding-mobile;
 				background-color: $color--white;
 				border-radius: 4px;
-				transform: translateY(-50%);
+				box-shadow: 0 2px 2px 0 rgba(#1e1107, 0.16);
+
+				@include mq(tablet) {
+					position: absolute;
+					top: 50%;
+					right: 0;
+					width: 58%;
+					padding: $spacing--xxl;
+					margin: 0;
+					transform: translateY(-50%);
+				}
 
 				.offset-1 & {
 					right: auto;
@@ -188,8 +232,12 @@
 					margin: 0 0 $spacing--xs;
 
 					img {
-						display: inline-block;
+						display: block;
 						margin: 0 $spacing--l 0 0;
+
+						@include mq(tablet) {
+							display: inline-block;
+						}
 					}
 				}
 
