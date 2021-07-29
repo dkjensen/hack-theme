@@ -1,5 +1,6 @@
 import "slick-carousel";
 import simpleParallax from 'simple-parallax-js';
+import "lity";
 import sal from "sal.js";
 
 let hack = {};
@@ -89,7 +90,7 @@ let hack = {};
 		init: function() {
 			this.makeFit();
 			
-			$( window ).on( 'resize', this.makeFit() );
+			$( window ).on( 'resize orientationchange', this.makeFit() );
 		},
 		makeFit: function() {
 			$( 'iframe, object, video' ).each( function( video ) {
@@ -116,31 +117,6 @@ let hack = {};
 
 	hack.intrinsicRatioVideos.init();
 
-	// document.querySelectorAll( 'iframe, object, video' ).forEach( function( video ) {
-	// 	var ratio, iTargetWidth,
-	// 		container = video.parentNode;
-
-	// 	// Skip videos we want to ignore.
-	// 	if ( video.classList.contains( 'intrinsic-ignore' ) || video.parentNode.classList.contains( 'intrinsic-ignore' ) ) {
-	// 		return true;
-	// 	}
-
-	// 	if ( ! video.dataset.origwidth ) {
-	// 		// Get the video element proportions.
-	// 		video.setAttribute( 'data-origwidth', video.width );
-	// 		video.setAttribute( 'data-origheight', video.height );
-	// 	}
-
-	// 	iTargetWidth = container.offsetWidth;
-
-	// 	// Get ratio from proportions.
-	// 	ratio = iTargetWidth / video.dataset.origwidth;
-
-	// 	// Scale based on ratio, thus retaining proportions.
-	// 	video.style.width = iTargetWidth + 'px';
-	// 	video.style.height = ( video.dataset.origheight * ratio ) + 'px';
-	// } );
-
 	const parallaxImages = document.querySelectorAll( '.is-parallax' );
 
 	new simpleParallax( parallaxImages, {
@@ -154,5 +130,16 @@ let hack = {};
 		$( this ).parent().toggleClass( 'is-active' );
 	} );
 
+	$( '.section-faq-two-title' ).on( 'click', function( e ) {
+		e.preventDefault();
+
+		const id = $( this ).data( 'section-id' );
+
+		$( '.section-faq-two-title' ).removeClass( 'is-active' );
+		$( '.section-faq-two-answers' ).slideUp();
+
+		$( '.section-faq-two-answers[data-section-id="' + id + '"]' ).slideToggle();
+		$( this ).toggleClass( 'is-active' );
+	} ).filter( ':first-child' ).trigger( 'click' );
 
 } )( jQuery );

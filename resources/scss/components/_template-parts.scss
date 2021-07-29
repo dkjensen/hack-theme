@@ -357,22 +357,161 @@
 	&-partners {
 		padding-bottom: $spacing--l;
 
-		.row {
+		&-logos {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+			margin-right: -$gutter;
+			margin-left: -$gutter;
 
-			margin: $spacing--l (-$gutter);
-			margin-bottom: 0;
+			@include mq(tablet) {
+				margin: 0;
+			}
+
+			> * {
+				display: block;
+				flex: 0 0 50%;
+				padding: $gutter;
+				text-align: center;
+
+				@include mq(tablet) {
+					flex: auto;
+					padding: 0;
+					margin: $gutter * 2;
+				}
+			}
 		}
 
-		.column {
-			padding: $gutter * 2 $gutter;
+		img {
+			display: block;
+			height: auto;
+
+			@include margin(null auto);
+		}
+	}
+
+	&-global-participation {
+
+		.media-text {
+			margin: $spacing--l 0 0;
+		}
+
+		.column.one-fourth {
 
 			@include mq($until: tablet) {
 				width: 50%;
 			}
 		}
 
-		img {
-			display: block;
+		.view-all {
+			display: flex;
+			align-items: center;
+
+			p {
+				margin: $spacing--l 0 0;
+			}
+
+			a {
+				font-weight: $font-weight--bold;
+				color: $color--text;
+			}
+		}
+
+		.media-text--img img {
+
+			@include mq($until: tablet) {
+				display: block;
+				width: 3rem;
+				margin-top: -2.5rem;
+			}
+		}
+	}
+
+	&-downloads {
+
+		a {
+			display: inline-block;
+			margin: $spacing--xxs 0;
+			line-height: 1.4;
+			color: inherit;
+			text-decoration: none;
+			border-bottom: 2px solid;
+
+			@include hover-focus {
+				color: $color--primary;
+			}
+		}
+
+		.column.two-thirds {
+
+			@include mq(tablet) {
+				padding-left: $spacing--xl;
+			}
+		}
+	}
+
+	&-map {
+		display: flex;
+		flex-direction: column;
+		height: 50.138vw;
+		padding: 0;
+		margin: 0 0 $spacing--xxl;
+		background-image: url("../img/home/hack-home-earth.svg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+
+		@include mq(wide) {
+			height: 72.2rem;
+			background-size: auto;
+		}
+
+		.wrap {
+			position: relative;
+			max-width: map-get($mq-breakpoints, wide);
+			height: 100%;
+		}
+
+		&-user {
+			position: absolute;
+			width: 10.138vw;
+			padding: $gutter / 2;
+			font-size: 1.1vw;
+			background-color: $color--blue;
+
+			@include mq($until: tablet) {
+				display: none;
+			}
+
+			@include mq(wide) {
+				width: 14.6rem;
+				font-size: 1.6rem;
+			}
+
+			h5 {
+				margin: 0;
+				font-size: 1.25em;
+
+				&:before {
+					display: inline-block;
+					width: 1.6rem;
+					height: 1.6rem;
+					margin: 0 0.4rem 0 0;
+					content: "";
+					background-image: url("../img/indigitous-logo.svg");
+					background-size: cover;
+				}
+			}
+
+			p {
+				margin: 0;
+				font-size: 1em;
+			}
+		}
+
+		+ .template-parts-callouts {
+			padding-bottom: 18vw;
 		}
 	}
 }

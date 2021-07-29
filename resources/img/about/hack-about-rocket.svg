@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="67" height="67.232" viewBox="0 0 67 67.232">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#8dc8e8"/>
+      <stop offset="1" stop-color="#a5d9e7"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_1412" data-name="Group 1412" transform="translate(1599 23538.232)">
+    <rect id="Rectangle_2154" data-name="Rectangle 2154" width="67" height="67" transform="translate(-1599 -23538)" fill="rgba(255,255,255,0)"/>
+    <g id="Launch_Project" data-name="Launch Project" transform="translate(-1585.677 -23537.232)">
+      <g id="Icon_Components" data-name="Icon Components" transform="translate(0 0)">
+        <rect id="Rectangle_2150" data-name="Rectangle 2150" width="20.033" height="43.236" transform="translate(10.391 22.259)" fill="url(#linear-gradient)"/>
+        <ellipse id="Ellipse_126" data-name="Ellipse 126" cx="4.417" cy="4.417" rx="4.417" ry="4.417" transform="translate(15.76 22.101)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="Path_3754" data-name="Path 3754" d="M100.844,105.02S113.93,84.4,91.123,53.49h-.44C67.876,84.4,80.97,105.02,80.97,105.02" transform="translate(-70.579 -53.49)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="Path_3755" data-name="Path 3755" d="M74.925,96,68,104.647v12.524h40.354V104.647L102.005,96" transform="translate(-68 -65.367)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <line id="Line_93" data-name="Line 93" y2="7.653" transform="translate(20.105 51.804)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <line id="Line_94" data-name="Line 94" y2="13.418" transform="translate(30.424 51.804)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <line id="Line_95" data-name="Line 95" y2="13.418" transform="translate(10.391 51.804)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>

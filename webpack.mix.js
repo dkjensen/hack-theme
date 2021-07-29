@@ -166,7 +166,7 @@ mix.webpackConfig({
           from            : `${devPath}/img`,
           to              : `${distPath}/img`, 
           noErrorOnMissing: true
-        },
+        }
       ]
 	  }),
     new ImageminPlugin({

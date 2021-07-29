@@ -60,3 +60,19 @@ function hack_post_excerpt( $post ) {
 
 	return $excerpt;
 }
+
+/**
+ * Extract YouTube video ID from content
+ *
+ * @param string $content Content to search.
+ * @return bool|string
+ */
+function get_youtube_video_id( $content ) {
+	preg_match( '%(?:youtube(?:-nocookie)?\.com/(?:[^/]+/.+/|(?:v|e(?:mbed)?)/|.*[?&]v=)|youtu\.be/)([^"&?/\s]{11})%i', esc_html( get_the_content() ), $match );
+
+	if ( ! empty( $match[1] ) ) {
+		return $match[1];
+	}
+
+	return false;
+}

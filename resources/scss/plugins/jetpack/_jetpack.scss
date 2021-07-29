@@ -1,0 +1,22 @@
+#infinite-handle {
+	display: flex;
+	flex-direction: column;
+
+	span {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+		margin: 0;
+		color: $color--white;
+		background-color: $color--primary;
+		border-radius: 4px;
+
+		@extend h3;
+	}
+
+	button {
+
+
+	}
+}

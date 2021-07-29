@@ -1,4 +1,23 @@
 .section-404 {
 
 	@include hero();
+
+	h1 {
+
+		@include mq(tablet) {
+			font-size: 10rem;
+		}
+	}
+
+	p {
+
+		&:last-of-type {
+			margin-bottom: $spacing--xl;
+		}
+
+		@include mq(tablet) {
+			font-size: 2.4rem;
+		}
+	}
+
 }

@@ -209,6 +209,7 @@
 
 				&--stats {
 					display: flex;
+					flex: 1 0 auto;
 					flex-wrap: wrap;
 					padding-top: $spacing--m;
 					margin-top: auto;
@@ -516,29 +517,6 @@
 				:last-child {
 					margin-top: auto;
 				}
-			}
-		}
-	}
-
-	&-twelve {
-
-		a {
-			display: inline-block;
-			margin: $spacing--xxs 0;
-			line-height: 1.4;
-			color: inherit;
-			text-decoration: none;
-			border-bottom: 2px solid;
-
-			@include hover-focus {
-				color: $color--primary;
-			}
-		}
-
-		.column.two-thirds {
-
-			@include mq(tablet) {
-				padding-left: $spacing--xl;
 			}
 		}
 	}

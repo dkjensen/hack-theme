@@ -1,0 +1,41 @@
+.section-projects {
+
+	&-one {
+		padding-top: 20rem;
+		text-align: center;
+
+		@include mq(tablet) {
+			padding-top: 29rem;
+		}
+
+		h1 {
+			margin: 0 0 1rem;
+		}
+
+		p {
+			width: 100%;
+			max-width: 500px;
+			margin: 0 auto;
+		}
+
+		iframe,
+		object,
+		video {
+			display: block;
+			margin: $spacing--xl 0 -24vw;
+			border-radius: 4px;
+
+			@include mq(tablet) {
+				margin: $spacing--xl 0 -20rem;
+			}
+		}
+
+		.row:first-child {
+			text-align: center;
+		}
+	}
+
+	&-two {
+		text-align: center;
+	}
+}

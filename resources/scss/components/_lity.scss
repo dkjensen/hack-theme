@@ -1,0 +1,71 @@
+.lity {
+	background: $color--overlay;
+
+	&-container {
+		display: inline-flex;
+		flex-direction: column-reverse;
+		align-items: flex-end;
+		width: 100%;
+		max-width: 60rem;
+		max-height: calc(100vh - 100px);
+		padding: 0;
+		overflow: visible;
+		border: 0;
+
+		@include padding(null $layout--padding-mobile);
+
+		@include mq(tablet) {
+
+			@include padding(null $layout--padding);
+		}
+	}
+
+	&-content {
+		overflow: auto;
+		font-size: 2.4rem;
+		background: $color--white;
+		border-radius: 4px;
+
+		&:before,
+		&:after {
+			display: none;
+		}
+
+		img {
+			height: auto;
+			border-radius: 4px;
+		}
+	}
+
+	&-close {
+		position: static;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: $gutter * 3;
+		height: $gutter * 3;
+		min-height: $gutter * 3;
+		padding: 0;
+		font-size: 2.4rem !important;
+		line-height: 1 !important;
+		color: $color--muted;
+		text-shadow: none !important;
+		background: transparent;
+		border: 0 !important;
+		border-radius: 4px;
+		outline: none;
+		box-shadow: none;
+		transform: translateX($gutter);
+
+		@include transition();
+
+		@include hover-focus {
+			color: $color--primary;
+			background: transparent;
+		}
+	}
+
+	&-inline &-content {
+		padding: $gutter * 2;
+	}
+}

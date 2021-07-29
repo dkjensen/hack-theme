@@ -45,6 +45,7 @@
     "laravel-mix": "^6.0.19",
     "laravel-mix-polyfill": "^3.0.1",
     "laravel-mix-svg-sprite": "^1.0.2",
+    "lity": "^2.4.1",
     "mini-css-extract-plugin": "^1.6.0",
     "node-wp-i18n": "^1.2.5",
     "normalize.css": "^8.0.1",

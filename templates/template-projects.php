@@ -15,40 +15,50 @@ if ( have_posts() ) :
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<div class="section section-projects-one">
 				<div class="wrap">
-					<h1><span><?php echo esc_html( '#HACK' ); ?></span> <?php esc_html_e( 'Projects', 'hack' ); ?></h1>
-					<p><?php echo esc_html_x( 'A global hackathon to bring the Gospel to where it’s not.', 'Projects page', 'hack' ); ?></p>
+					<h1><?php esc_html_e( '#HACK Projects', 'hack' ); ?></h1>
+					<p class="intro-text"><?php esc_html_e( 'The Indigitous hackathon is a unique opportunity to gather people with unique skill sets for the purpose of responding to the most pressing needs that impact our society.', 'hack' ); ?></p>
 				</div>
 			</div>
 			<div class="section section-projects-two">
 				<div class="wrap">
 					<div class="row">
-						<div class="column two-thirds offset-2">
-							<h3><?php echo esc_html_x( 'This is the race we are running.', 'Projects page', 'hack' ); ?></h3>
-							<h2><?php echo esc_html_x( 'We want to help bring the gospel to those who need to hear.', 'Projects page', 'hack' ); ?></h2>
+						<div class="column one-third">
+							<div class="media-text">
+								<div class="media-text--img">
+									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/projects/hack-projects-globe.svg' ) ); ?>" width="70" />
+								</div>
+								<div class="media-text--content">
+									<h3 class="primary-color"><?php esc_html_e( 'Global Challenges', 'hack' ); ?></h3>
+								</div>
+							</div>
+							<p><?php esc_html_e( 'Identifying overarching, global mission gaps helps us focus our efforts in bringing the gospel to where it has yet to go. #HACK2021 is seeking partnering organisations who bear missions gaps issues we can undertake.', 'hack' ); ?></p>
+ 
+							<p><?php esc_html_e( 'With all selected global missions challenges, we are prepared to help frame the opportunity so teams can prototype innovative digital solutions.', 'hack' ); ?></p>
+							<p><a href="https://indigitous.typeform.com/to/RQGajmbR" class="button" target="_blank"><?php esc_html_e( 'Become a Partner', 'hack' ); ?></a></p>
 						</div>
-					</div>
-					<div class="row">
-						<div class="column one-fourth">
-							<h3><?php echo esc_html_x( 'Bible or scripture engagement', 'Projects page', 'hack' ); ?></h3>
+						<div class="column one-third">
+							<div class="media-text">
+								<div class="media-text--img">
+									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/projects/hack-projects-globe.svg' ) ); ?>" width="70" />
+								</div>
+								<div class="media-text--content">
+									<h3 class="primary-color"><?php esc_html_e( 'Local Challenges', 'hack' ); ?></h3>
+								</div>
+							</div>
+							<p><?php esc_html_e( 'Identifying overarching, global mission gaps helps us focus our efforts in bringing the gospel to where it has yet to go. #HACK2021 is seeking partnering organisations who bear missions gaps issues we can undertake.', 'hack' ); ?></p>
+ 
+							<p><?php esc_html_e( 'With all selected global missions challenges, we are prepared to help frame the opportunity so teams can prototype innovative digital solutions.', 'hack' ); ?></p>
+							<p><a href="#">+ <?php esc_html_e( 'View More', 'hack' ); ?></a></p>
 						</div>
-						<div class="column one-fourth">
-							<h3><?php echo esc_html_x( 'Entrepreneurship & innovation', 'Projects page', 'hack' ); ?></h3>
-						</div>
-						<div class="column one-fourth">
-							<h3><?php echo esc_html_x( 'Missions information', 'Projects page', 'hack' ); ?></h3>
-						</div>
-						<div class="column one-fourth">
-							<h3><?php echo esc_html_x( 'Your passion', 'Projects page', 'hack' ); ?></h3>
+						<div class="column one-third">
+							<blockquote class="primary-color"><?php esc_html_e( 'Identifying overarching, global mission gaps helps us focus our efforts in bringing the gospel to where it has yet to go.', 'hack' ); ?></blockquote>
+							<p><a href="#">+ <?php esc_html_e( 'View More', 'hack' ); ?></a></p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="section section-projects-three">
-				<div class="wrap">
-					<h1><?php echo esc_html_x( 'Priority Projects', 'Projects page', 'hack' ); ?></h1>
-					<div class="hack-projects-grid" data-attributes='{}'></div>
-				</div>
-			</div>
+
+			<?php get_template_part( 'template-parts/callouts' ); ?>
 		</article>
 
 		<?php

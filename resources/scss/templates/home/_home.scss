@@ -11,6 +11,10 @@
 			}
 		}
 
+		p {
+			max-width: 64rem;
+		}
+
 		&-buttons {
 			display: flex;
 			align-items: center;
@@ -30,70 +34,6 @@
 		}
 	}
 
-	&-two {
-		display: flex;
-		flex-direction: column;
-		height: 50.138vw;
-		padding: 0;
-		margin: 0 0 $spacing--xxl;
-		background-image: url("../img/home/hack-home-earth.svg");
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
-
-		@include mq(wide) {
-			height: 72.2rem;
-			background-size: auto;
-		}
-
-		.wrap {
-			position: relative;
-			max-width: map-get($mq-breakpoints, wide);
-			height: 100%;
-		}
-
-		&-user {
-			position: absolute;
-			width: 10.138vw;
-			padding: $gutter / 2;
-			font-size: 1.1vw;
-			background-color: $color--blue;
-
-			@include mq($until: tablet) {
-				display: none;
-			}
-
-			@include mq(wide) {
-				width: 14.6rem;
-				font-size: 1.6rem;
-			}
-
-			h5 {
-				margin: 0;
-				font-size: 1.25em;
-
-				&:before {
-					display: inline-block;
-					width: 1.6rem;
-					height: 1.6rem;
-					margin: 0 0.4rem 0 0;
-					content: "";
-					background-image: url("../img/indigitous-logo.svg");
-					background-size: cover;
-				}
-			}
-
-			p {
-				margin: 0;
-				font-size: 1em;
-			}
-		}
-
-		+ .template-parts-callouts {
-			padding-bottom: 18vw;
-		}
-	}
-
 	&-three {
 		margin-top: -18vw;
 
@@ -109,6 +49,7 @@
 		}
 
 		.row {
+			justify-content: center;
 			margin-top: $spacing--xxl;
 		}
 
@@ -118,6 +59,7 @@
 			margin: 0 0 $spacing--xl;
 
 			@include mq(tablet) {
+				justify-content: center;
 				margin: 0;
 			}
 
@@ -130,7 +72,7 @@
 			}
 
 			&--content {
-				flex: 1;
+				flex: 0;
 
 				span {
 					color: $color--primary;
@@ -158,29 +100,6 @@
 
 		img {
 			width: 100%;
-		}
-	}
-
-	&-six {
-
-		.media-text {
-			margin: $spacing--l 0 0;
-		}
-
-		.column.one-fourth {
-
-			@include mq($until: tablet) {
-				width: 50%;
-			}
-		}
-
-		.media-text--img img {
-
-			@include mq($until: tablet) {
-				display: block;
-				width: 3rem;
-				margin-top: -2.5rem;
-			}
 		}
 	}
 

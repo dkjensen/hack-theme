@@ -17,17 +17,19 @@ get_header();
 </div>
 <div class="section section-index-posts">
 	<div class="wrap">
-		<?php
-		if ( have_posts() ) {
-			while ( have_posts() ) {
-				the_post();
+		<div id="content" class="site-content">
+			<?php
+			if ( have_posts() ) {
+				while ( have_posts() ) {
+					the_post();
 
-				get_template_part( 'template-parts/card' );
+					get_template_part( 'template-parts/card' );
+				}
+			} else {
+				printf( '<p>%s</p>', esc_html__( 'No results', 'hack' ) );
 			}
-		} else {
-			printf( '<p>%s</p>', esc_html__( 'No results', 'hack' ) );
-		}
-		?>
+			?>
+		</div>
 	</div>
 </div>
 

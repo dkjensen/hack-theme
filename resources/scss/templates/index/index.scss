@@ -17,14 +17,6 @@
 			display: flex;
 			flex: 1 0 100%;
 			flex-direction: column;
-
-			@include mq(tablet) {
-				flex: 0 0 calc(33.333% - #{$gutter * 0.667});
-
-				&:not(:nth-child(3n)) {
-					margin-right: $gutter;
-				}
-			}
 		}
 	}
 }

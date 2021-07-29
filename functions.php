@@ -71,6 +71,23 @@ function hack_setup() {
 		)
 	);
 
+	add_theme_support(
+		'infinite-scroll',
+		array(
+			'container'      => 'content',
+			'wrapper'        => false,
+			'render'         => function() {
+				while ( have_posts() ) {
+					the_post();
+
+					if ( false === get_template_part( 'template-parts/' . get_post_type(), get_post_format() ) ) {
+						get_template_part( 'template-parts/card' );
+					}
+				}
+			},
+		)
+	);
+
 	/*
 		* Switch default core markup for search form, comment form, and comments
 		* to output valid HTML5.
@@ -305,8 +322,12 @@ function hack_widgets() {
 }
 add_action( 'widgets_init', 'hack_widgets' );
 
+require_once 'lib/config/globals.php';
+
 require_once 'lib/functions/enqueue.php';
 require_once 'lib/functions/helpers.php';
 require_once 'lib/functions/shortcodes.php';
 require_once 'lib/functions/markup.php';
 require_once 'lib/functions/download.php';
+require_once 'lib/functions/ajax.php';
+require_once 'lib/functions/infinite-scroll.php';
