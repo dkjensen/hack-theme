@@ -337,7 +337,7 @@
 		@include margin(null auto);
 	}
 
-	p {
+	p:not(.intro-text) {
 		width: 100%;
 		max-width: 50rem;
 

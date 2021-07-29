@@ -1,0 +1,9 @@
+.section-stories {
+
+	&-hero {
+
+		@include hero();
+
+		text-align: left;
+	}
+}

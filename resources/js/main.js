@@ -130,15 +130,19 @@ let hack = {};
 		$( this ).parent().toggleClass( 'is-active' );
 	} );
 
-	$( '.section-faq-two-title' ).on( 'click', function( e ) {
+	$( '.toggle-trigger' ).on( 'click', function( e ) {
 		e.preventDefault();
+
+		if ( $( this ).hasClass( 'is-active' ) ) {
+			return true;
+		}
 
 		const id = $( this ).data( 'section-id' );
 
-		$( '.section-faq-two-title' ).removeClass( 'is-active' );
-		$( '.section-faq-two-answers' ).slideUp();
+		$( '.toggle-trigger' ).removeClass( 'is-active' );
+		$( '.toggle-content' ).slideUp();
 
-		$( '.section-faq-two-answers[data-section-id="' + id + '"]' ).slideToggle();
+		$( '.toggle-content[data-section-id="' + id + '"]' ).slideToggle();
 		$( this ).toggleClass( 'is-active' );
 	} ).filter( ':first-child' ).trigger( 'click' );
 

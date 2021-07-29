@@ -26,13 +26,13 @@ function infinite_scroll_query() {
 add_action( 'template_redirect', __NAMESPACE__ . '\infinite_scroll_query', 0 );
 
 
-function infinite_scroll_query_object( $query ) {
-	global $hack_infinity_query;
+// function infinite_scroll_query_object( $query ) {
+// global $hack_infinity_query;
 
-	if ( is_a( $hack_infinity_query, 'WP_Query' ) ) {
-		return $hack_infinity_query;
-	}
+// if ( is_a( $hack_infinity_query, 'WP_Query' ) ) {
+// return $hack_infinity_query;
+// }
 
-	return $query;
-}
-add_filter( 'infinite_scroll_query_object', __NAMESPACE__ . '\infinite_scroll_query_object' );
+// return $query;
+// }
+// add_filter( 'infinite_scroll_query_object', __NAMESPACE__ . '\infinite_scroll_query_object' );

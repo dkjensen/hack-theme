@@ -17,13 +17,17 @@
 			flex-wrap: wrap;
 			justify-content: center;
 
+			@include mq(tablet) {
+				justify-content: space-between;
+			}
+
 			.media-text {
 				flex: 1 0 100%;
 				padding: $spacing--l 0;
 
 				@include mq(tablet) {
 					flex: 0 1 auto;
-					padding: $spacing--l $gutter * 2;
+					padding: $spacing--l 0;
 				}
 			}
 

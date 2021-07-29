@@ -38,7 +38,7 @@ if ( have_posts() ) :
 							<div class="row">
 								<div class="column three-fifths">
 									<blockquote class="primary-color is-large"><?php esc_html_e( 'The largest global hackathon for missions.', 'hack' ); ?></blockquote>
-									<p><a href="#" class="button"><?php esc_html_e( 'Learn More', 'hack' ); ?></a></p>
+									<p><a href="<?php echo esc_url( get_permalink( get_page_by_path( 'about' ) ) ); ?>" class="button"><?php esc_html_e( 'Learn More', 'hack' ); ?></a></p>
 								</div>
 							</div>
 							<div class="row">
@@ -111,7 +111,8 @@ if ( have_posts() ) :
 								</div>
 							</div>
 						</div>
-						<?php /*
+						<?php
+						/*
 						<div class="column one-fourth">
 							<div class="section-home-four-callout">
 								<div class="section-home-four-callout--img">
@@ -122,7 +123,8 @@ if ( have_posts() ) :
 									<p><?php esc_html_e( 'Projects', 'hack' ); ?></p>
 								</div>
 							</div>
-						</div> */ ?>
+						</div> */
+						?>
 						<div class="column one-fourth">
 							<div class="section-home-four-callout">
 								<div class="section-home-four-callout--img">
@@ -158,8 +160,7 @@ if ( have_posts() ) :
 								<div class="section-home-seven-group--content">
 									<h2><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/home/hack-home-participate.svg' ) ); ?>" aria-hidden="true" width="67" /> <?php esc_html_e( 'Participate', 'hack' ); ?></h2>
 									<p>
-										<strong><?php esc_html_e( 'Register by 10/15/2021', 'hack' ); ?></strong><br>
-										<?php esc_html_e( 'Bring #HACK2021 to your city and convene hackers to help make Jesus known.', 'hack' ); ?>
+										<?php esc_html_e( 'In just a few days, you can make a major impact and help bring the Gospel to where it’s not. Join us and see how God will use your talents.', 'hack' ); ?>
 									</p>
 									<a href="<?php echo esc_url( get_permalink( get_page_by_path( 'participate' ) ) ); ?>" class="button"><?php esc_html_e( 'Participate', 'hack' ); ?></a>
 								</div>
@@ -171,11 +172,11 @@ if ( have_posts() ) :
 							<div class="section-home-seven-group">
 								<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/home/hack-home-section-2.jpg' ) ); ?>" />
 								<div class="section-home-seven-group--content">
-									<h2><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/home/hack-home-lead.svg' ) ); ?>" aria-hidden="true" width="67" /> <?php esc_html_e( 'Partner', 'hack' ); ?></h2>
+									<h2><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/home/hack-home-lead.svg' ) ); ?>" aria-hidden="true" width="67" /> <?php esc_html_e( 'Lead', 'hack' ); ?></h2>
 									<p>
-										<?php esc_html_e( 'Bring #HACK2021 to your city and convene hackers to help make Jesus known.', 'hack' ); ?>
+										<?php esc_html_e( 'Indigitous needs leaders like you to bring #HACK2021 to your city. With #HACK, you can convene Christian talent to collaborate on projects that will help make Jesus known in your neighborhoods and meet the needs specific to your community.', 'hack' ); ?>
 									</p>
-									<a href="<?php echo esc_url( get_permalink( get_page_by_path( 'partner' ) ) ); ?>" class="button"><?php esc_html_e( 'Partner', 'hack' ); ?></a>
+									<a href="<?php echo esc_url( get_permalink( get_page_by_path( 'lead' ) ) ); ?>" class="button"><?php esc_html_e( 'Lead', 'hack' ); ?></a>
 								</div>
 							</div>
 						</div>
@@ -185,12 +186,11 @@ if ( have_posts() ) :
 							<div class="section-home-seven-group">
 								<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/home/hack-home-section-3.jpg' ) ); ?>" />
 								<div class="section-home-seven-group--content">
-									<h2><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/home/hack-home-sponsor.svg' ) ); ?>" aria-hidden="true" width="67" /> <?php esc_html_e( 'Sponsor', 'hack' ); ?></h2>
+									<h2><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/home/hack-home-sponsor.svg' ) ); ?>" aria-hidden="true" width="67" /> <?php esc_html_e( 'Partner', 'hack' ); ?></h2>
 									<p>
-										<strong><?php esc_html_e( 'Register by 10/15/2021', 'hack' ); ?></strong><br>
-										<?php esc_html_e( 'Bring #HACK2021 to your city and convene hackers to help make Jesus known.', 'hack' ); ?>
+										<?php esc_html_e( 'Partners play an important role in bring #HACK to cities around the world. Find out how you can help #HACK participants bring the Gospel to where it’s not.', 'hack' ); ?>
 									</p>
-									<a href="<?php echo esc_url( get_permalink( get_page_by_path( 'sponsor' ) ) ); ?>" class="button"><?php esc_html_e( 'Sponsor', 'hack' ); ?></a>
+									<a href="<?php echo esc_url( get_permalink( get_page_by_path( 'partner' ) ) ); ?>" class="button"><?php esc_html_e( 'Partner', 'hack' ); ?></a>
 								</div>
 							</div>
 						</div>

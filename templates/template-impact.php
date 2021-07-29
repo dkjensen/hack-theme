@@ -7,8 +7,6 @@
 
 global $hack_infinity_query;
 
-use function Dkjensen\Hack\Functions\hack_name_tag;
-
 get_header();
 
 if ( have_posts() ) :
@@ -45,15 +43,6 @@ if ( have_posts() ) :
 									<div class="media-text--content">
 										<span class="primary-color"><?php echo esc_html( '41' ); ?></span>
 										<h3><?php esc_html_e( 'Countries', 'hack' ); ?></h3>
-									</div>
-								</div>
-								<div class="media-text">
-									<div class="media-text--img">
-										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/about/hack-about-projects.svg' ) ); ?>" width="67" />
-									</div>
-									<div class="media-text--content">
-										<span class="primary-color"><?php echo esc_html( '436' ); ?></span>
-										<h3><?php esc_html_e( 'Projects', 'hack' ); ?></h3>
 									</div>
 								</div>
 								<div class="media-text">
@@ -239,6 +228,8 @@ if ( have_posts() ) :
 								get_template_part( 'template-parts/story', get_post_format() );
 
 							}
+
+							printf( '<div id="infinite-handle"><span><a href="%s">%s</button></span></div>', esc_url( get_post_type_archive_link( 'story' ) ), esc_html__( 'View More Stories', 'hack' ) );
 						}
 						?>
 					</div>

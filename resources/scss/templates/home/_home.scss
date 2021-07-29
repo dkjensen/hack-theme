@@ -124,6 +124,10 @@
 
 			&--content {
 				position: relative;
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				justify-content: center;
 				padding: $gutter * 2;
 				margin-top: -$gutter;
 				margin-right: $layout--padding-mobile;
@@ -137,7 +141,8 @@
 					top: 50%;
 					right: 0;
 					width: 58%;
-					padding: $spacing--xxl;
+					min-height: 80%;
+					padding: $spacing--l $spacing--xxl;
 					margin: 0;
 					transform: translateY(-50%);
 				}

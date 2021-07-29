@@ -26,7 +26,7 @@ if ( have_posts() ) :
 						<div class="column one-fourth">
 							<?php foreach ( hack_get_faqs() as $section => $answers ) { ?>
 
-							<div class="section-faq-two-title" data-section-id="<?php echo esc_attr( $section ); ?>">
+							<div class="section-faq-two-title toggle-trigger" data-section-id="<?php echo esc_attr( $section ); ?>">
 								<span><?php echo esc_html( ucfirst( $section ) ); ?></span>
 							</div>
 
@@ -35,7 +35,7 @@ if ( have_posts() ) :
 						<div class="column two-thirds offset-1">
 						<?php foreach ( hack_get_faqs() as $section => $faqs ) { ?>
 
-						<div class="section-faq-two-answers" data-section-id="<?php echo esc_attr( $section ); ?>">
+						<div class="section-faq-two-answers toggle-content" data-section-id="<?php echo esc_attr( $section ); ?>">
 							<?php foreach ( $faqs as $faq ) { ?>
 
 								<div class="section-faq-two-answers--answer">
