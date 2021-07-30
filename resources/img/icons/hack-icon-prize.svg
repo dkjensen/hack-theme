@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 82 73.9" style="enable-background:new 0 0 82 73.9;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st1{fill:url(#SVGID_1_);}
+	.st2{fill:none;stroke:#000000;stroke-width:2;stroke-linejoin:round;}
+</style>
+<g id="Prize">
+	<g id="Icon_Components">
+		<polyline class="st0" points="1,72.9 1,48.9 41,48.9 41,56.9 81,56.9 81,72.9 		"/>
+		
+			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="41" y1="11.33" x2="41" y2="71.33" gradientTransform="matrix(1 0 0 -1 0 74.24)">
+			<stop  offset="0" style="stop-color:#8DC8E8"/>
+			<stop  offset="1" style="stop-color:#A5D9E7"/>
+		</linearGradient>
+		<rect x="27.1" y="2.9" class="st1" width="27.8" height="60"/>
+		<rect x="28" y="37.6" class="st2" width="26" height="35.3"/>
+		<polygon class="st2" points="36.6,10.1 40.8,1 45.5,9.9 55.5,11.1 48.5,18.3 50.4,28.1 41.4,23.7 32.7,28.6 34.1,18.7 26.7,11.9 
+					"/>
+	</g>
+</g>
+</svg>

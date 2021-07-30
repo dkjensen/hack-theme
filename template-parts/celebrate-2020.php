@@ -5,15 +5,15 @@
 			<h2 class="primary-color"><?php esc_html_e( 'What God Did at #HACK2020', 'hack' ); ?></h2>
 			<div class="row">
 				<div class="column one-sixth offset-1">
-					<div class="template-parts-celebrate-2020--data-img"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-first.svg' ) ); ?>" /></div>
+					<div class="template-parts-celebrate-2020--data-img"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/icons/hack-icon-prize.svg' ) ); ?>" height="53" /></div>
 					<h3><?php esc_html_e( '1st Remote Hack', 'hack' ); ?></h3>
 				</div>
 				<div class="column one-sixth">
-					<div class="template-parts-celebrate-2020--data-img"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-participants.svg' ) ); ?>" /></div>
+					<div class="template-parts-celebrate-2020--data-img"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/icons/hack-icon-participate.svg' ) ); ?>" height="53" /></div>
 					<h3>1,088 <br><?php esc_html_e( 'Participants', 'hack' ); ?></h3>
 				</div>
 				<div class="column one-sixth">
-					<div class="template-parts-celebrate-2020--data-img"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-network.svg' ) ); ?>" /></div>
+					<div class="template-parts-celebrate-2020--data-img"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/icons/hack-icon-locations.svg' ) ); ?>" height="53" /></div>
 					<h3>141 <br><?php esc_html_e( 'Locations', 'hack' ); ?></h3>
 				</div>
 				<div class="column one-third">
