@@ -46,7 +46,7 @@ if ( have_posts() ) :
 					</div>
 				</div>
 			</div>
-			
+
 			<?php get_template_part( 'template-parts/callouts' ); ?>
 
 			<div class="section section-about-four">
@@ -57,7 +57,7 @@ if ( have_posts() ) :
 						</div>
 						<div class="column seven-twelfths">
 							<p>
-								<?php esc_html_e( 'Indigitous co-founder Simon Seow was inspired to start #HACK after taking part in the Hack4Missions event at the 2015 Urbana Student Missions Conference. With the help of Nicholas Skytland and Alicia Llewellyn, founders of various NASA hackathons — including the Space Apps Challenge and the National Day of Civic Hacking — Indigitous launched #HACK in November 2016. Since then, hackers around the world have gathered every year to collaborate on missional projects aimed at solving problems affecting their communities. In 2020, lockdowns caused by the global pandemic resulted in #HACK moving online for our first virtual hackathon.', 'hack' ); ?>
+								<?php esc_html_e( 'Indigitous co-founder Simon Seow was inspired to start #HACK after taking part in the Hack4Missions event at the 2015 Urbana Student Missions Conference. With the help of Nicholas Skytland and Alicia Llewellyn, founders of various NASA hackathons - including the Space Apps Challenge and the National Day of Civic Hacking - Indigitous launched #HACK in November 2016. Since then, hackers around the world have gathered every year to collaborate on missional projects aimed at solving problems affecting their communities. In 2020, lockdowns caused by the global pandemic resulted in #HACK moving online for our first virtual hackathon.', 'hack' ); ?>
 							</p>
 							<p>&nbsp;</p>
 						</div>
@@ -107,7 +107,7 @@ if ( have_posts() ) :
 											</div>
 										</div>
 										<div class="timeline-item--image">
-											<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/about/timeline-item-1-img.png' ) ); ?>" />
+											<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/about/timeline-item-2-img.png' ) ); ?>" />
 										</div>
 									</div>
 								</div>
@@ -127,7 +127,7 @@ if ( have_posts() ) :
 											</div>
 										</div>
 										<div class="timeline-item--image">
-											<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/about/timeline-item-1-img.png' ) ); ?>" />
+											<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/about/timeline-item-3-img.png' ) ); ?>" />
 										</div>
 									</div>
 								</div>
@@ -150,7 +150,7 @@ if ( have_posts() ) :
 											</div>
 										</div>
 										<div class="timeline-item--image">
-											<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/about/timeline-item-1-img.png' ) ); ?>" />
+											<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/about/timeline-item-4-img.png' ) ); ?>" />
 										</div>
 									</div>
 								</div>
@@ -173,7 +173,7 @@ if ( have_posts() ) :
 											</div>
 										</div>
 										<div class="timeline-item--image">
-											<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/about/timeline-item-1-img.png' ) ); ?>" />
+											<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/about/timeline-item-5-img.png' ) ); ?>" />
 										</div>
 									</div>
 								</div>
@@ -185,7 +185,9 @@ if ( have_posts() ) :
 										<div class="timeline-item--stats">
 											<p><?php esc_html_e( 'The world’s largest global missional hackathon returns this October.', 'hack' ); ?></p>
 											<div class="timeline-item--report">
-												<a href="https://indigitous.typeform.com/to/QkVDWhea" class="button" target="_blank"><?php esc_html_e( 'Register', 'hack' ); ?></a>
+												<a href="https://indigitous.typeform.com/to/QkVDWhea" class="button margin-right-s" target="_blank"><?php esc_html_e( 'Participate', 'hack' ); ?></a>
+												<a href="https://indigitous.typeform.com/to/mojiHQqC" class="button margin-right-s" target="_blank"><?php esc_html_e( 'Lead', 'hack' ); ?></a>
+												<a href="https://indigitous.typeform.com/to/RQGajmbR" class="button" target="_blank"><?php esc_html_e( 'Partner', 'hack' ); ?></a>
 											</div>
 										</div>
 									</div>
@@ -199,8 +201,8 @@ if ( have_posts() ) :
 				<div class="wrap">
 					<div class="row">
 						<div class="column one-half">
-							<h2><?php esc_html_e( 'Digital Missionaries', 'hack' ); ?></h2>
-							<p class="intro-text"><?php esc_html_e( '#HACK is more than just an experience. Those who take part make a difference, using their talents for God to help advance God’s Kingdom through innovation. Through working on missional projects and joining a faith-based community, attendees make an eternal impact.', 'hack' ); ?></p>
+							<h2><?php esc_html_e( 'The Impact', 'hack' ); ?></h2>
+							<p class="intro-text"><?php esc_html_e( '#HACK is more than just an event. Those who take part make a difference, using their skills to advance God’s Kingdom through mission-focused projects and innovation.', 'hack' ); ?></p>
 							<p><br><a href="#" class="button"><?php esc_html_e( '#HACK Impact', 'hack' ); ?></a></p>
 							<div class="section-about-five-stats">
 								<div class="section-about-five-stats--stat">
@@ -232,7 +234,8 @@ if ( have_posts() ) :
 										<span><?php echo esc_html( '436' ); ?></span>
 										<?php esc_html_e( 'Projects', 'hack' ); ?>
 									</div>
-								</div> */
+								</div>
+								*/
 								?>
 							</div>
 						</div>
@@ -248,7 +251,7 @@ if ( have_posts() ) :
 						<div class="column one-half">
 							<h5 class="divider color-primary"><?php esc_html_e( 'The Team', 'hack' ); ?></h5>
 							<h2><?php esc_html_e( 'Who makes #HACK possible?', 'hack' ); ?></h2>
-							<p><?php esc_html_e( '#HACK couldn’t happen without our dedicated Regional and City Leads, who have taken a step of faith to mobilize participants, volunteers, and sponsors in their areas to take part in the hackathon.', 'hack' ); ?></p>
+							<p><?php esc_html_e( '#HACK couldn’t happen without our dedicated Regional and City Leads who mobilize participants, volunteers, and sponsors in each location.', 'hack' ); ?></p>
 						</div>
 					</div>
 					<div class="team">
@@ -258,10 +261,10 @@ if ( have_posts() ) :
 							</div>
 							<div class="team-member-label">
 								<h3><?php echo esc_html( 'Russ' ); ?></h3>
-								<h6><?php esc_html_e( 'Co-Founder, Indigitous', 'Team Member Title', 'hack' ); ?></h6>
+								<h6><?php esc_html_e( 'Co-Founder, Indigitous', 'hack' ); ?></h6>
 							</div>
 							<div class="team-member-bio">
-								<?php esc_html_e( '”What I love about our #HACK events is a global community coming together, from diverse places, contexts and interests, to collaboratively work on one thing, helping bring the gospel deeper and wider where it needs to go.”', 'Team Member Bio', 'hack' ); ?>
+								<?php esc_html_e( '”What I love about our #HACK events is a global community coming together, from diverse places, contexts and interests, to collaboratively work on one thing, helping bring the gospel deeper and wider where it needs to go.”', 'hack' ); ?>
 							</div>
 						</div>
 						<div class="team-member">
@@ -270,10 +273,10 @@ if ( have_posts() ) :
 							</div>
 							<div class="team-member-label">
 								<h3><?php echo esc_html( 'Simon' ); ?></h3>
-								<h6><?php esc_html_e( 'Co-Founder, Indigitous', 'Team Member Title', 'hack' ); ?></h6>
+								<h6><?php esc_html_e( 'Co-Founder, Indigitous', 'hack' ); ?></h6>
 							</div>
 							<div class="team-member-bio">
-								<?php esc_html_e( '"It’s been such a joy for me over the past 7 years to have watched many eyes ‘light up’ when they discovered how God desires to use their digital skills, talents and experiences to make a difference for Him, and for them to acknowledge that He has uniquely written digital in their stories for such a time as this - to make Him known among the nations!"', 'Team Member Bio', 'hack' ); ?>
+								<?php esc_html_e( '"It’s been such a joy for me over the past 7 years to have watched many eyes ‘light up’ when they discovered how God desires to use their digital skills, talents and experiences to make a difference for Him, and for them to acknowledge that He has uniquely written digital in their stories for such a time as this - to make Him known among the nations!"', 'hack' ); ?>
 							</div>
 						</div>
 					</div>
@@ -289,7 +292,7 @@ if ( have_posts() ) :
 								<div class="section-about-seven-slider--item" style="background-image: url(<?php echo esc_url( get_theme_file_uri( 'assets/img/about/hack-about-section-7-ca.jpg' ) ); ?>)">
 									<div class="section-about-seven-slider--item-copy" data-sal="fade">
 										<div class="section-about-seven-slider--item-copy-title">
-											<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-flag-ca.svg' ) ); ?>" />
+											<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/flags/ca.svg' ) ); ?>" width="77" />
 											<h2><?php esc_html_e( 'Canada', 'hack' ); ?></h2>
 										</div>
 										<p><?php esc_html_e( 'In 2016 at the first Indigitous #HACK, a team in Waterloo, Canada created a suicide prevention website. If you had Googled “how to kill yourself” at that time, the top search results were advice on ways to do it. The #HACK team created a website to offer hope and connect people with the help they need and used SEO to make the site one of the top results.', 'hack' ); ?></p>
@@ -299,17 +302,17 @@ if ( have_posts() ) :
 								<div class="section-about-seven-slider--item" style="background-image: url(<?php echo esc_url( get_theme_file_uri( 'assets/img/about/hack-about-section-7-th.jpg' ) ); ?>)">
 									<div class="section-about-seven-slider--item-copy" data-sal="fade">
 										<div class="section-about-seven-slider--item-copy-title">
-											<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-flag-th.svg' ) ); ?>" />
+											<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/flags/th.svg' ) ); ?>" width="77" />
 											<h2><?php esc_html_e( 'Thailand', 'hack' ); ?></h2>
 										</div>
 										<p><?php esc_html_e( 'A team in Chiang Mai, Thailand developed a way for illiterate people to learn how to read the Bible. Bible Karaoke uses a video that highlights each word of the Bible as it is spoken by an audio track. Through repetition, people who use Bible Karaoke will eventually be able to read the Bible on their own.', 'hack' ); ?></p>
 										<div class="slick-carousel-pagination" data-slick-id="seven" data-label="<?php echo esc_attr_x( 'Highlight', 'Text Before Slider Pagination', 'hack' ); ?>"><div></div></div>
 									</div>
 								</div>
-								<div class="section-about-seven-slider--item" style="background-image: url(<?php echo esc_url( get_theme_file_uri( 'assets/img/about/hack-about-section-7-in.jpg' ) ); ?>)">
+								<div class="section-about-seven-slider--item" style="background-image: url(<?php echo esc_url( get_theme_file_uri( 'assets/img/about/hack-about-section-7-id.jpg' ) ); ?>)">
 									<div class="section-about-seven-slider--item-copy" data-sal="fade">
 										<div class="section-about-seven-slider--item-copy-title">
-											<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-flag-ind.svg' ) ); ?>" />
+											<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/flags/id.svg' ) ); ?>" width="77" />
 											<h2><?php esc_html_e( 'Indonesia', 'hack' ); ?></h2>
 										</div>
 										<p><?php esc_html_e( 'There are over 700 languages in Indonesia, and the Bible is only available in 100 of them. To help increase biblical literacy, a team of hackers in Indonesia developed a program to automate the creation of a customizable study Bible in tribal languages.', 'hack' ); ?></p>
@@ -319,17 +322,17 @@ if ( have_posts() ) :
 								<div class="section-about-seven-slider--item" style="background-image: url(<?php echo esc_url( get_theme_file_uri( 'assets/img/about/hack-about-section-7-ph.jpg' ) ); ?>)">
 									<div class="section-about-seven-slider--item-copy" data-sal="fade">
 										<div class="section-about-seven-slider--item-copy-title">
-											<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-flag-phi.svg' ) ); ?>" />
+											<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/flags/ph.svg' ) ); ?>" width="77" />
 											<h2><?php esc_html_e( 'Philippines', 'hack' ); ?></h2>
 										</div>
 										<p><?php esc_html_e( 'In Region 6 of Iloilo, Philippines, there are 349 orphans and more than 1,000 churches. Participants at #HACK Iloilo created a platform to connect orphans with adoptive foster parents. “If just one family from each church were to rise up, we can provide a home for each child,” said Pastor Mark about the project.', 'hack' ); ?></p>
 										<div class="slick-carousel-pagination" data-slick-id="seven" data-label="<?php echo esc_attr_x( 'Highlight', 'Text Before Slider Pagination', 'hack' ); ?>"><div></div></div>
 									</div>
 								</div>
-								<div class="section-about-seven-slider--item" style="background-image: url(<?php echo esc_url( get_theme_file_uri( 'assets/img/about/hack-about-section-7-uk.jpg' ) ); ?>)">
+								<div class="section-about-seven-slider--item" style="background-image: url(<?php echo esc_url( get_theme_file_uri( 'assets/img/about/hack-about-section-7-gb.jpg' ) ); ?>)">
 									<div class="section-about-seven-slider--item-copy" data-sal="fade">
 										<div class="section-about-seven-slider--item-copy-title">
-											<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-flag-uk.svg' ) ); ?>" />
+											<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/flags/gb.svg' ) ); ?>" width="77" />
 											<h2><?php esc_html_e( 'United Kingdom', 'hack' ); ?></h2>
 										</div>
 										<p><?php esc_html_e( 'In 2019, hackers in London, UK focused on projects to provide aid to low-income individuals in their communities. Find the Need is a platform that helps church congregations find areas of deprivation around their church and relevant ministries that can help. With Bankuet, hackers helped food banks get the donations they need by building an API-driven food bank stock inventory system.', 'hack' ); ?></p>
@@ -339,7 +342,7 @@ if ( have_posts() ) :
 								<div class="section-about-seven-slider--item" style="background-image: url(<?php echo esc_url( get_theme_file_uri( 'assets/img/about/hack-about-section-7-us.jpg' ) ); ?>)">
 									<div class="section-about-seven-slider--item-copy" data-sal="fade">
 										<div class="section-about-seven-slider--item-copy-title">
-											<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-flag-en.svg' ) ); ?>" />
+											<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/flags/us.svg' ) ); ?>" width="77" />
 											<h2><?php esc_html_e( 'United States', 'hack' ); ?></h2>
 										</div>
 										<p><?php esc_html_e( 'The Rohingya people group have been displaced from their homeland and now live in more than 30 countries. Because their language is small, there are no existing Bible app translations for it. To reach this group, hackers in three U.S. cities (Chicago, Orlando, and Phoenix) created an app that allows them to hear the Gospel in their heart language.', 'hack' ); ?></p>
@@ -350,30 +353,33 @@ if ( have_posts() ) :
 							<div class="section-about-seven-slider-locations-container">
 								<div class="section-about-seven-slider-locations hack-slick" data-slick='{"asNavFor": ".section-about-seven-slider", "infinite": true, "focusOnSelect": true, "slidesToShow": 6, "variableWidth": true}'>
 									<div class="section-about-seven-slider-locations--location">
-										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-flag-ca.svg' ) ); ?>" />
+										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/flags/ca.svg' ) ); ?>" />
 										<h3><?php esc_html_e( 'Canada', 'hack' ); ?></h3>
 									</div>
 									<div class="section-about-seven-slider-locations--location">
-										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-flag-th.svg' ) ); ?>" />
+										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/flags/th.svg' ) ); ?>" />
 										<h3><?php esc_html_e( 'Thailand', 'hack' ); ?></h3>
 									</div>
 									<div class="section-about-seven-slider-locations--location">
-										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-flag-ind.svg' ) ); ?>" />
+										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/flags/id.svg' ) ); ?>" />
 										<h3><?php esc_html_e( 'Indonesia', 'hack' ); ?></h3>
 									</div>
 									<div class="section-about-seven-slider-locations--location">
-										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-flag-phi.svg' ) ); ?>" />
+										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/flags/ph.svg' ) ); ?>" />
 										<h3><?php esc_html_e( 'Philippines', 'hack' ); ?></h3>
 									</div>
 									<div class="section-about-seven-slider-locations--location">
-										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-flag-uk.svg' ) ); ?>" />
+										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/flags/gb.svg' ) ); ?>" />
 										<h3><?php esc_html_e( 'United Kingdom', 'hack' ); ?></h3>
 									</div>
 									<div class="section-about-seven-slider-locations--location">
-										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-flag-en.svg' ) ); ?>" />
+										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/flags/us.svg' ) ); ?>" />
 										<h3><?php esc_html_e( 'United States', 'hack' ); ?></h3>
 									</div>
 								</div>
+								<p>
+									<strong><a href="<?php echo esc_url( get_post_type_archive_link( 'story' ) ); ?>" class="text-color"><?php esc_html_e( 'Read More Stories from #HACK', 'hack' ); ?></a></strong>
+								</p>
 							</div>
 						</div>
 					</div>
@@ -394,21 +400,21 @@ if ( have_posts() ) :
 				<div class="wrap">
 					<div class="section-about-nine-items">
 						<div class="section-about-nine-items--item blue-background-color" data-sal="slide-down">
-							<p><?php esc_html_e( 'Bring #HACK2021 to your city and convene hackers to help make Jesus known.', 'hack' ); ?></p>
+							<p><?php esc_html_e( 'Bring #HACK2021 to your city.', 'hack' ); ?></p>
 							<a href="https://indigitous.typeform.com/to/mojiHQqC" target="_blank" class="button"><?php esc_html_e( 'Lead', 'hack' ); ?></a>
 						</div>
 						<div class="section-about-nine-items--item yellow-background-color" data-sal="slide-down" data-sal-delay="100">
-							<p><?php esc_html_e( 'Use your talents for God by working on missional projects to solve the problems facing your community.', 'hack' ); ?></p>
+							<p><?php esc_html_e( 'Use your skills to bring the gospel where it is not.', 'hack' ); ?></p>
 							<a href="https://indigitous.typeform.com/to/QkVDWhea" target="_blank" class="button"><?php esc_html_e( 'Participate', 'hack' ); ?></a>
 						</div>
 						<div class="section-about-nine-items--item blue-background-color" data-sal="slide-down" data-sal-delay="200">
-							<p><?php esc_html_e( 'We need partners to help make this event a success. Find out how you can partner with us.', 'hack' ); ?></p>
+							<p><?php esc_html_e( 'We need partners to help make this event a success.', 'hack' ); ?></p>
 							<a href="https://indigitous.typeform.com/to/RQGajmbR" target="_blank" class="button"><?php esc_html_e( 'Partner', 'hack' ); ?></a>
 						</div>
 					</div>
 				</div>
 			</div>
-			
+
 			<?php get_template_part( 'template-parts/partners' ); ?>
 
 			<div class="section section-about-eleven padding-0">
@@ -416,14 +422,14 @@ if ( have_posts() ) :
 					<div class="team">
 						<div class="team-member reversed">
 							<div class="team-member-photo">
-								<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/team/mike-novak.png' ) ); ?>" />
+								<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/team/liam-savage.jpg' ) ); ?>" />
 							</div>
 							<div class="team-member-label">
-								<h3><?php echo esc_html( 'Mike Novak' ); ?></h3>
-								<h6><?php esc_html_e( 'President and CEO of Educational Media Foundation', 'Team Member Title', 'hack' ); ?></h6>
+								<h3><?php echo esc_html( 'Liam Savage' ); ?></h3>
+								<h6><?php esc_html_e( 'Director of Innovation at OneHope', 'hack' ); ?></h6>
 							</div>
 							<div class="team-member-bio">
-								<?php esc_html_e( '“This is the place to be for anyone wanting to impact the world in a powerful way.”', 'Team Member Bio', 'hack' ); ?>
+								<?php esc_html_e( '“#HACK is an incredible opportunity to sharpen your skills by working on real challenges at the intersection between the global church and technology. I look forward to it every year and love the friends I’ve made each time I go.”', 'hack' ); ?>
 							</div>
 						</div>
 						<div class="team-member reversed">
@@ -432,10 +438,10 @@ if ( have_posts() ) :
 							</div>
 							<div class="team-member-label">
 								<h3><?php echo esc_html( 'Ken Cochrum' ); ?></h3>
-								<h6><?php esc_html_e( 'Executive Vice President of Field Ministries at East-West', 'Team Member Title', 'hack' ); ?></h6>
+								<h6><?php esc_html_e( 'Executive Vice President of Field Ministries at East-West', 'hack' ); ?></h6>
 							</div>
 							<div class="team-member-bio">
-								<?php esc_html_e( '“Indigitous #HACK is an opportunity to unleash the huge potential in a generation of technologists to improve our world. The event gives a community of passionate people a chance to use their God-given gifts and experiences to help individuals and organizations serve others better.”', 'Team Member Bio', 'hack' ); ?>
+								<?php esc_html_e( '“Indigitous #HACK is an opportunity to unleash the huge potential in a generation of technologists to improve our world. The event gives a community of passionate people a chance to use their God-given gifts and experiences to help individuals and organizations serve others better.”', 'hack' ); ?>
 							</div>
 						</div>
 					</div>

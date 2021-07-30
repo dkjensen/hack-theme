@@ -14,10 +14,10 @@
 				</h2>
 				<div class="row">
 					<div class="column seven-twelfths">
-						<p><?php esc_html_e( 'Check out our fact sheet and our report from last year’s event for more information.', 'hack' ); ?></p>
+						<p><?php esc_html_e( 'Check out our resources or download the report from #HACK2020 for more information. ', 'hack' ); ?></p>
 						<br>
 						<p>
-							<a href="#" target="_blank"><i class="fas fa-download"></i> <?php esc_html_e( '#HACK2020 Fact Sheet', 'hack' ); ?></a><br>
+							<a href="<?php echo esc_url( get_post_type_archive_link( 'resource' ) ); ?>" target="_blank"><?php esc_html_e( 'Resources', 'hack' ); ?></a><br>
 							<a href="https://hack.indigitous.org/wp-content/uploads/2021/07/HACK2020-Final-Report.pdf" target="_blank"><i class="fas fa-download"></i> <?php esc_html_e( '#HACK2020 Report', 'hack' ); ?></a>
 						</p>
 					</div>
