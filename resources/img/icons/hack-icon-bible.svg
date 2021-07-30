@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="67" height="67.15" viewBox="0 0 67 67.15">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#8dc8e8"/>
+      <stop offset="1" stop-color="#a5d9e7"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_1416" data-name="Group 1416" transform="translate(2021.287 23538.594)">
+    <rect id="Rectangle_2151" data-name="Rectangle 2151" width="67" height="67" transform="translate(-2021.287 -23538.594)" fill="rgba(255,255,255,0)"/>
+    <g id="Bible" transform="translate(-2009.607 -23536.988)">
+      <g id="Icon_Components" data-name="Icon Components" transform="translate(0 0)">
+        <rect id="Rectangle_2146" data-name="Rectangle 2146" width="20.39" height="44.007" transform="translate(11.589 7.313)" fill="url(#linear-gradient)"/>
+        <rect id="Rectangle_2147" data-name="Rectangle 2147" width="43.568" height="58.42" fill="none" stroke="#231f20" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="Path_3744" data-name="Path 3744" d="M66.3,124v11.735h43.568" transform="translate(-66.3 -71.191)" fill="none" stroke="#231f20" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <line id="Line_84" data-name="Line 84" y2="5.215" transform="translate(40.854 58.816)" fill="none" stroke="#231f20" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <line id="Line_85" data-name="Line 85" x2="23.471" transform="translate(10.048 20.537)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+        <line id="Line_86" data-name="Line 86" y1="31.275" transform="translate(21.784 11.222)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>
