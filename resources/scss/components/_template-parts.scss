@@ -165,10 +165,12 @@
 		.column {
 
 			&:last-child {
+				margin-top: $spacing--l;
 				text-align: left;
 
 				@include mq(tablet) {
 					padding-left: $gutter * 2;
+					margin-top: 0;
 				}
 			}
 		}
@@ -322,13 +324,16 @@
 				padding: $gutter * 2 $gutter;
 			}
 
+			h3 {
+				min-height: 6.8rem;
+				margin: 0 0 $gutter;
+				line-height: 1.416;
+			}
+
 			p {
 				font-size: 1.6rem;
 			}
 
-			:last-child {
-				margin-top: auto;
-			}
 		}
 	}
 

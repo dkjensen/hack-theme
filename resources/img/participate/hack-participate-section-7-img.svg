@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="503" height="557" viewBox="0 0 503 557">
+  <g id="Group_1202" data-name="Group 1202" transform="translate(-458 -5183)">
+    <g id="Group_1061" data-name="Group 1061" transform="translate(24482 21465)">
+      <g id="Ellipse_115" data-name="Ellipse 115" transform="translate(-23861 -16091)" fill="rgba(255,255,255,0.98)" stroke="#707070" stroke-width="1">
+        <circle cx="87.5" cy="87.5" r="87.5" stroke="none"/>
+        <circle cx="87.5" cy="87.5" r="87" fill="none"/>
+      </g>
+      <text id="Developers" transform="translate(-23773 -15996)" fill="rgba(29,13,1,0.98)" font-size="18" font-family="NotoSans-Bold, Noto Sans" font-weight="700"><tspan x="-50.13" y="0">Developers</tspan></text>
+    </g>
+    <g id="Group_1058" data-name="Group 1058" transform="translate(24483 21486)">
+      <circle id="Ellipse_116" data-name="Ellipse 116" cx="87.5" cy="87.5" r="87.5" transform="translate(-23862 -16303)" fill="#a6dae8"/>
+      <text id="Designers" transform="translate(-23774 -16208)" fill="rgba(29,13,1,0.98)" font-size="18" font-family="NotoSans-Bold, Noto Sans" font-weight="700"><tspan x="-44.685" y="0">Designers</tspan></text>
+    </g>
+    <g id="Group_1062" data-name="Group 1062" transform="translate(24483 21471)">
+      <circle id="Ellipse_119" data-name="Ellipse 119" cx="87.5" cy="87.5" r="87.5" transform="translate(-23862 -15906)" fill="#93c7e7"/>
+      <text id="Data_Experts" data-name="Data
+Experts" transform="translate(-23774 -15825)" fill="rgba(29,13,1,0.98)" font-size="18" font-family="NotoSans-Bold, Noto Sans" font-weight="700"><tspan x="-21.438" y="0">Data</tspan><tspan x="-33.723" y="28">Experts</tspan></text>
+    </g>
+    <g id="Group_1056" data-name="Group 1056" transform="translate(24481 21463)">
+      <circle id="Ellipse_120" data-name="Ellipse 120" cx="87.5" cy="87.5" r="87.5" transform="translate(-23695 -15993)" fill="#b86b79"/>
+      <text id="Photographers_Filmographers" data-name="Photographers
+/Filmographers" transform="translate(-23607 -15912)" fill="rgba(29,13,1,0.98)" font-size="18" font-family="NotoSans-Bold, Noto Sans" font-weight="700"><tspan x="-67.14" y="0">Photographers</tspan><tspan x="-69.084" y="28">/Filmographers</tspan></text>
+    </g>
+    <g id="Group_1060" data-name="Group 1060" transform="translate(24481 21463)">
+      <circle id="Ellipse_117" data-name="Ellipse 117" cx="87.5" cy="87.5" r="87.5" transform="translate(-24023 -15993)" fill="#ccd2eb"/>
+      <text id="Marketing_Specialists" data-name="Marketing
+Specialists" transform="translate(-23936 -15912)" fill="rgba(29,13,1,0.98)" font-size="18" font-family="NotoSans-Bold, Noto Sans" font-weight="700"><tspan x="-47.169" y="0">Marketing</tspan><tspan x="-47.124" y="28">Specialists</tspan></text>
+    </g>
+    <g id="Group_1057" data-name="Group 1057" transform="translate(24483 21459)">
+      <circle id="Ellipse_121" data-name="Ellipse 121" cx="87.5" cy="87.5" r="87.5" transform="translate(-23697 -16180)" fill="#f0e974"/>
+      <text id="Content_Creators" data-name="Content
+Creators" transform="translate(-23609 -16099)" fill="rgba(29,13,1,0.98)" font-size="18" font-family="NotoSans-Bold, Noto Sans" font-weight="700"><tspan x="-36.261" y="0">Content</tspan><tspan x="-38.43" y="28">Creators</tspan></text>
+    </g>
+    <g id="Group_1059" data-name="Group 1059" transform="translate(24484 21458)">
+      <circle id="Ellipse_114" data-name="Ellipse 114" cx="87.5" cy="87.5" r="87.5" transform="translate(-24026 -16179)" fill="#93c7e7"/>
+      <text id="Project_Managers" data-name="Project
+Managers" transform="translate(-23938 -16098)" fill="rgba(29,13,1,0.98)" font-size="18" font-family="NotoSans-Bold, Noto Sans" font-weight="700"><tspan x="-31.725" y="0">Project</tspan><tspan x="-44.847" y="28">Managers</tspan></text>
+    </g>
+  </g>
+</svg>

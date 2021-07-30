@@ -35,7 +35,7 @@ function hack_post_excerpt( $post ) {
 	$text = str_replace( ']]>', ']]&gt;', $text );
 
 	/* translators: Maximum number of words used in a post excerpt. */
-	$excerpt_length = (int) _x( '55', 'excerpt_length' );
+	$excerpt_length = (int) _x( '55', 'excerpt_length', 'hack' );
 
 	/**
 	 * Filters the maximum number of words in a post excerpt.

@@ -35,10 +35,10 @@ if ( have_posts() ) :
 						</div>
 						<div class="column one-half">
 							<div class="section-participate-one-graphic--container">
-								<img class="section-participate-one-graphic" data-sal="slide-left" src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-hero-1.png' ) ); ?>" />
-								<img class="section-participate-one-graphic" data-sal="slide-down" data-sal-delay="100" src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-hero-2.png' ) ); ?>" />
-								<img class="section-participate-one-graphic" data-sal="slide-right" data-sal-delay="200" src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-hero-3.png' ) ); ?>" />
-								<img class="section-participate-one-graphic" data-sal="slide-up" data-sal-delay="300" src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-hero-4.png' ) ); ?>" />
+								<img class="section-participate-one-graphic" data-sal="slide-left" src="<?php echo esc_url( get_theme_file_uri( 'assets/img/participate/hack-participate-hero-1.jpg' ) ); ?>" />
+								<img class="section-participate-one-graphic" data-sal="slide-down" data-sal-delay="100" src="<?php echo esc_url( get_theme_file_uri( 'assets/img/participate/hack-participate-hero-2.jpg' ) ); ?>" />
+								<img class="section-participate-one-graphic" data-sal="slide-right" data-sal-delay="200" src="<?php echo esc_url( get_theme_file_uri( 'assets/img/participate/hack-participate-hero-3.jpg' ) ); ?>" />
+								<img class="section-participate-one-graphic" data-sal="slide-up" data-sal-delay="300" src="<?php echo esc_url( get_theme_file_uri( 'assets/img/participate/hack-participate-hero-4.jpg' ) ); ?>" />
 							</div>
 						</div>
 					</div>
@@ -61,7 +61,7 @@ if ( have_posts() ) :
 								<h3><?php esc_html_e( 'Interview', 'hack' ); ?></h3>
 								<p><?php esc_html_e( 'Your regional lead will approve your application and interview you to hear about your passion, answer questions, and help you think through your event.', 'hack' ); ?></p>
 						</div>
-						<div class="section-participate-two-works-grid--item white-background-color">
+						<div class="section-participate-two-works-grid--item blue-background-color">
 								<span class="numbered-outline">3</span>
 								<h3><?php esc_html_e( 'Coordinate', 'hack' ); ?></h3>
 								<p><?php esc_html_e( 'Join other city leads in #HACK2021 planning calls to discuss best practices and learn from those who have led the event in the past.', 'hack' ); ?></p>
@@ -89,255 +89,131 @@ if ( have_posts() ) :
 			</div>
 			<div class="section section-participate-three"></div>
 
-			<?php get_template_part( 'template-parts/map' ); ?>
-			<?php get_template_part( 'template-parts/global-participation' ); ?>
-
-			<div class="section section-participate-four">
+			<div class="section section-participate-four blue-background-color">
 				<div class="wrap">
 					<div class="row">
-						<div class="column one-third">
-							<div class="section-participate-four-sidebar blue-background-color">
-								<h5 class="divider color-primary"><?php esc_html_e( 'Qualifications', 'hack' ); ?></h5>
-								<h2><?php esc_html_e( 'A Leader Like You', 'hack' ); ?></h2>
-								<p>
-									<?php
-									/* translators: %s #HACK name tag */
-									printf( esc_html__( 'Indigitous needs leaders like you to bring %s to your city. With #HACK, you can convene technologists, creatives, and mission workers to collaborate on projects that will help make Jesus known in your neighborhoods and meet the needs specific to your community.', 'hack' ), hack_name_tag() );
-									?>
-								</p>
-							</div>
-							<?php /* translators: %s #HACK name tag */ ?>
-							<blockquote class="has-quotes text-center primary-color"><?php printf( esc_html__( 'God has given you what you need to lead %s in your city.', 'hack' ), hack_name_tag() ); ?></blockquote>
+						<div class="column one-half offset-3">
+							<h5 class="divider text-center primary-color">
+								<?php esc_html_e( 'Global Participation of #HACK', 'hack' ); ?>
+							</h5>
+							<h2 class="text-center">
+								<span><?php echo esc_html( '#HACK2021' ); ?></span> <?php esc_html_e( 'will be hosted in these locations and more', 'hack' ); ?>
+							</h2>
 						</div>
-						<div class="column seven-twelfths offset-1">
-							<div class="section-participate-four-callout" data-sal="slide-left">
-								<div class="section-participate-four-callout--img"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-mature.svg' ) ); ?>" /></div>
-								<div class="section-participate-four-callout--copy">
-									<h3 class="primary-color"><?php esc_html_e( 'Mature', 'hack' ); ?></h3>
-									<p><?php esc_html_e( 'You are strong in your biblical Christian faith.', 'hack' ); ?></p>
+					</div>
+				</div>
+				<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/participate/hack-participate-earth.svg' ) ); ?>" class="section-participate-four-map" />
+				<div class="wrap">
+					<div class="row">
+						<div class="column five-sixths offset-1">
+							<div class="row section-participate-four-items">
+								<div class="column one-fifth">
+									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/flags/au.svg' ) ); ?>" class="margin-bottom-xxs" width="72" />
+									<h6 class="text-color"><?php esc_html_e( 'Australia', 'hack' ); ?></h6>
 								</div>
-							</div>
-							<div class="section-participate-four-callout" data-sal="slide-left">
-								<div class="section-participate-four-callout--img"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-technologist-creative.svg' ) ); ?>" /></div>
-								<div class="section-participate-four-callout--copy">
-									<h3 class="primary-color"><?php esc_html_e( 'Technologist or Creative', 'hack' ); ?></h3>
-									<p><?php esc_html_e( 'You’re a member of the tech or creative industry who understands technical development.', 'hack' ); ?></p>
+								<div class="column one-fifth">
+									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/flags/au.svg' ) ); ?>" class="margin-bottom-xxs" width="72" />
+									<h6 class="text-color"><?php esc_html_e( 'New Zealand', 'hack' ); ?></h6>
 								</div>
-							</div>
-							<div class="section-participate-four-callout" data-sal="slide-left">
-								<div class="section-participate-four-callout--img"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-leader.svg' ) ); ?>" /></div>
-								<div class="section-participate-four-callout--copy">
-									<h3 class="primary-color"><?php esc_html_e( 'Leader', 'hack' ); ?></h3>
-									<p><?php esc_html_e( 'You understand how to run a hackathon or are willing to learn.', 'hack' ); ?></p>
+								<div class="column one-fifth">
+									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/flags/hk.svg' ) ); ?>" class="margin-bottom-xxs" width="72" />
+									<h6 class="text-color"><?php esc_html_e( 'Hong Kong', 'hack' ); ?></h6>
 								</div>
-							</div>
-							<div class="section-participate-four-callout" data-sal="slide-left">
-								<div class="section-participate-four-callout--img"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-organized.svg' ) ); ?>" /></div>
-								<div class="section-participate-four-callout--copy">
-									<h3 class="primary-color"><?php esc_html_e( 'Organized', 'hack' ); ?></h3>
-									<p><?php esc_html_e( 'You’re able to gather a local team to manage logistics, keep a tight schedule, coordinate various elements of a hackathon, and communicate with participants.', 'hack' ); ?></p>
+								<div class="column one-fifth">
+									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/flags/ph.svg' ) ); ?>" class="margin-bottom-xxs" width="72" />
+									<h6 class="text-color"><?php esc_html_e( 'Philippines', 'hack' ); ?></h6>
 								</div>
-							</div>
-							<div class="section-participate-four-callout" data-sal="slide-left">
-								<div class="section-participate-four-callout--img"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-committed.svg' ) ); ?>" /></div>
-								<div class="section-participate-four-callout--copy">
-									<h3 class="primary-color"><?php esc_html_e( 'Committed', 'hack' ); ?></h3>
-									<p><?php esc_html_e( 'You can commit to 2 monthly calls and regular communication with the Regional Lead until 30 October 2021.', 'hack' ); ?></p>
+								<div class="column one-fifth">
+									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/flags/id.svg' ) ); ?>" class="margin-bottom-xxs" width="72" />
+									<h6 class="text-color"><?php esc_html_e( 'Indonesia', 'hack' ); ?></h6>
 								</div>
-							</div>
-							<div class="section-participate-four-callout" data-sal="slide-left">
-								<div class="section-participate-four-callout--img"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-servant.svg' ) ); ?>" /></div>
-								<div class="section-participate-four-callout--copy">
-									<h3 class="primary-color"><?php esc_html_e( 'Servant-hearted', 'hack' ); ?></h3>
-									<p><?php esc_html_e( 'You value hospitality, encouragement, and prayer.', 'hack' ); ?></p>
+								<div class="column one-fifth">
+									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/flags/pk.svg' ) ); ?>" class="margin-bottom-xxs" width="72" />
+									<h6 class="text-color"><?php esc_html_e( 'Pakistan', 'hack' ); ?></h6>
+								</div>
+								<div class="column one-fifth">
+									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/flags/us.svg' ) ); ?>" class="margin-bottom-xxs" width="72" />
+									<h6 class="text-color"><?php esc_html_e( 'United States', 'hack' ); ?></h6>
+								</div>
+								<div class="column one-fifth">
+									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/flags/de.svg' ) ); ?>" class="margin-bottom-xxs" width="72" />
+									<h6 class="text-color"><?php esc_html_e( 'Germany', 'hack' ); ?></h6>
+								</div>
+								<div class="column one-fifth">
+									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/flags/ca.svg' ) ); ?>" class="margin-bottom-xxs" width="72" />
+									<h6 class="text-color"><?php esc_html_e( 'Canada', 'hack' ); ?></h6>
+								</div>
+								<div class="column one-fifth">
+									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/flags/ar.svg' ) ); ?>" class="margin-bottom-xxs" width="72" />
+									<h6 class="text-color"><?php esc_html_e( 'Argentina', 'hack' ); ?></h6>
+								</div>
+								<div class="column one-fifth">
+									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/flags/th.svg' ) ); ?>" class="margin-bottom-xxs" width="72" />
+									<h6 class="text-color"><?php esc_html_e( 'Thailand', 'hack' ); ?></h6>
+								</div>
+								<div class="column one-fifth">
+									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/flags/tr.svg' ) ); ?>" class="margin-bottom-xxs" width="72" />
+									<h6 class="text-color"><?php esc_html_e( 'Turkey', 'hack' ); ?></h6>
+								</div>
+								<div class="column one-fifth">
+									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/flags/cm.svg' ) ); ?>" class="margin-bottom-xxs" width="72" />
+									<h6 class="text-color"><?php esc_html_e( 'Cameroon', 'hack' ); ?></h6>
+								</div>
+								<div class="column one-fifth">
+									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/flags/ug.svg' ) ); ?>" class="margin-bottom-xxs" width="72" />
+									<h6 class="text-color"><?php esc_html_e( 'Uganda', 'hack' ); ?></h6>
+								</div>
+								<div class="column one-fifth">
+									<a href="<?php echo esc_url( get_permalink( get_page_by_path( 'lead' ) ) ); ?>"><?php esc_html_e( 'Don’t see your city? Lead one in your city', 'hack' ); ?></a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			
+
 			<?php get_template_part( 'template-parts/quotes' ); ?>
 
-			<div class="section section-participate-six">
-				<div class="wrap">
-					<div class="row">
-						<div class="column one-third">
-							<div class="section-participate-six-sidebar gray-300-background-color full-width-mobile">
-								<h5 class="divider" data-sal="slide-right"><?php esc_html_e( 'Your Team', 'hack' ); ?></h5>
-								<h2 class="primary-color" data-sal="slide-right"><?php esc_html_e( 'Introducing Our Regional Leads', 'hack' ); ?></h2>
-								<p data-sal="slide-right">
-									<?php esc_html_e( 'This team will support you throughout the process of organizing #HACK in your city.', 'hack' ); ?>
-								</p>
-							</div>
-						</div>
-						<div class="column seven-twelfths offset-1">
-							<div class="team">
-								<div class="team-member">
-									<div class="team-member-photo">
-										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/team/russ-martin.png' ) ); ?>" />
-									</div>
-									<div class="team-member-label">
-										<h3><?php echo esc_html( 'Russ' ); ?></h3>
-										<h6><?php esc_html_e( 'Co-Founder, Indigitous', 'Team Member Title', 'hack' ); ?></h6>
-									</div>
-									<div class="team-member-bio">
-										<?php esc_html_e( 'Loves building platforms, learning about the blockchain/crypto space and investing in virtual real estate.', 'Team Member Bio', 'hack' ); ?>
-									</div>
-								</div>
-								<div class="team-member">
-									<div class="team-member-photo">
-										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/team/ann-chow.png' ) ); ?>" />
-									</div>
-									<div class="team-member-label">
-										<h3><?php echo esc_html( 'Ann' ); ?></h3>
-										<h6><?php esc_html_e( 'Project Lead For #HACK', 'Team Member Title', 'hack' ); ?></h6>
-									</div>
-									<div class="team-member-bio">
-										<?php esc_html_e( 'Loves gathering followers of Jesus together for partnership, innovation and collaboration.', 'Team Member Bio', 'hack' ); ?>
-									</div>
-								</div>
-								<div class="team-member">
-									<div class="team-member-photo">
-										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/team/emmanuel-christian.png' ) ); ?>" />
-									</div>
-									<div class="team-member-label">
-										<h3><?php echo esc_html( 'Emmanuel' ); ?></h3>
-										<h6><?php esc_html_e( 'Africa, English & Portuguese', 'Team Member Title', 'hack' ); ?></h6>
-									</div>
-									<div class="team-member-bio">
-										<?php esc_html_e( 'Passionate about all things faith and technology.', 'Team Member Bio', 'hack' ); ?>
-									</div>
-								</div>
-								<div class="team-member">
-									<div class="team-member-photo">
-										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/team/senay-kumelachew.png' ) ); ?>" />
-									</div>
-									<div class="team-member-label">
-										<h3><?php echo esc_html( 'Senay' ); ?></h3>
-										<h6><?php esc_html_e( 'Africa, English & Portuguese', 'Team Member Title', 'hack' ); ?></h6>
-									</div>
-									<div class="team-member-bio">
-										<?php esc_html_e( 'Passionate Digital Ministry.', 'Team Member Bio', 'hack' ); ?>
-									</div>
-								</div>
-								<div class="team-member">
-									<div class="team-member-photo">
-										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/team/yomi.png' ) ); ?>" />
-									</div>
-									<div class="team-member-label">
-										<h3><?php echo esc_html( 'Yomi' ); ?></h3>
-										<h6><?php esc_html_e( 'Africa, English & Portuguese', 'Team Member Title', 'hack' ); ?></h6>
-									</div>
-									<div class="team-member-bio">
-										<?php esc_html_e( 'Loves connecting people to Jesus through digital strategies.', 'Team Member Bio', 'hack' ); ?>
-									</div>
-								</div>
-								<div class="team-member">
-									<div class="team-member-photo">
-										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/team/charles-kondi.png' ) ); ?>" />
-									</div>
-									<div class="team-member-label">
-										<h3><?php echo esc_html( 'Charles' ); ?></h3>
-										<h6><?php esc_html_e( 'Africa, French', 'Team Member Title', 'hack' ); ?></h6>
-									</div>
-									<div class="team-member-bio">
-										<?php esc_html_e( 'Enjoys being at the intersection of mission, youth, leadership and digital.', 'Team Member Bio', 'hack' ); ?>
-									</div>
-								</div>
-								<div class="team-member">
-									<div class="team-member-photo">
-										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/team/sitthavee-teerakulchon.png' ) ); ?>" />
-									</div>
-									<div class="team-member-label">
-										<h3><?php echo esc_html( 'Sitthavee (Son)' ); ?></h3>
-										<h6><?php esc_html_e( 'APAC', 'Team Member Title', 'hack' ); ?></h6>
-									</div>
-									<div class="team-member-bio">
-										<?php esc_html_e( 'A Christian entrepreneur who wants to leverage the power of technology to create a better world.', 'Team Member Bio', 'hack' ); ?>
-									</div>
-								</div>
-								<div class="team-member">
-									<div class="team-member-photo">
-										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/team/melissa-rike.png' ) ); ?>" />
-									</div>
-									<div class="team-member-label">
-										<h3><?php echo esc_html( 'Melissa' ); ?></h3>
-										<h6><?php esc_html_e( 'Europe', 'Team Member Title', 'hack' ); ?></h6>
-									</div>
-									<div class="team-member-bio">
-										<?php esc_html_e( 'Passionate about digital missions and helping people be a part of the mission.', 'Team Member Bio', 'hack' ); ?>
-									</div>
-								</div>
-								<div class="team-member">
-									<div class="team-member-photo">
-										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/team/melissa-revelles.png' ) ); ?>" />
-									</div>
-									<div class="team-member-label">
-										<h3><?php echo esc_html( 'Melissa' ); ?></h3>
-										<h6><?php esc_html_e( 'Latin America', 'Team Member Title', 'hack' ); ?></h6>
-									</div>
-									<div class="team-member-bio">
-										<?php esc_html_e( 'Loves connecting people to Jesus through digital strategies.', 'Team Member Bio', 'hack' ); ?>
-									</div>
-								</div>
-								<div class="team-member">
-									<div class="team-member-photo">
-										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/team/siby-paul.png' ) ); ?>" />
-									</div>
-									<div class="team-member-label">
-										<h3><?php echo esc_html( 'Siby' ); ?></h3>
-										<h6><?php esc_html_e( 'South Asia', 'Team Member Title', 'hack' ); ?></h6>
-									</div>
-									<div class="team-member-bio">
-										<?php esc_html_e( 'Follower of the Nazarene.', 'Team Member Bio', 'hack' ); ?>
-									</div>
-								</div>
-								<div class="team-member">
-									<div class="team-member-photo">
-										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/team/andrew-fang.png' ) ); ?>" />
-									</div>
-									<div class="team-member-label">
-										<h3><?php echo esc_html( 'Andrew' ); ?></h3>
-										<h6><?php esc_html_e( 'USA', 'Team Member Title', 'hack' ); ?></h6>
-									</div>
-									<div class="team-member-bio">
-										<?php esc_html_e( 'Loves to imagine new ways to empower people towards the great commission beyond the four church walls.', 'Team Member Bio', 'hack' ); ?>
-									</div>
-								</div>
-								<div class="team-member">
-									<div class="team-member-photo">
-										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/team/sammy-fung.png' ) ); ?>" />
-									</div>
-									<div class="team-member-label">
-										<h3><?php echo esc_html( 'Sammy' ); ?></h3>
-										<h6><?php esc_html_e( 'APAC', 'Team Member Title', 'hack' ); ?></h6>
-									</div>
-									<div class="team-member-bio">
-										<?php esc_html_e( 'A tech community builder and a follower of God’s calling on his life. ', 'Team Member Bio', 'hack' ); ?>
-									</div>
-								</div>
-								<div class="team-member">
-									<div class="team-member-photo">
-										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/team/danny-kwan.png' ) ); ?>" />
-									</div>
-									<div class="team-member-label">
-										<h3><?php echo esc_html( 'Danny' ); ?></h3>
-										<h6><?php esc_html_e( 'APAC', 'Team Member Title', 'hack' ); ?></h6>
-									</div>
-									<div class="team-member-bio">
-										<?php esc_html_e( 'Interested in technology and theology.', 'Team Member Bio', 'hack' ); ?>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+			<div class="section section-participate-six gray-300-background-color">
+				<div class="wrap text-center">
+					<h2><?php esc_html_e( 'The Kingdom of God', 'hack' ); ?> <br><?php esc_html_e( 'Needs your unique contribution', 'hack' ); ?></h2>
+					<p class="intro-text"><?php esc_html_e( 'You will share your gifts and perspectives, making new solutions possible that can’t be seen on a smaller scale.', 'hack' ); ?></p>
+					<p><a href="https://indigitous.typeform.com/to/QkVDWhea" class="button"><?php esc_html_e( 'Register Now', 'hack' ); ?></a></p>
+					<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/participate/hack-participate-section-7-img.svg' ) ); ?>" width="503" class="margin-top-xl" />
 				</div>
 			</div>
+
 			<?php get_template_part( 'template-parts/fast-facts' ); ?>
 			<?php get_template_part( 'template-parts/celebrate-2020' ); ?>
 			<?php get_template_part( 'template-parts/projects' ); ?>
 			<?php get_template_part( 'template-parts/testimonials' ); ?>
+
+			<div class="section section-participate-seven">
+				<div class="wrap">
+					<div class="row">
+						<div class="column two-thirds offset-2">
+							<h2 class="text-center"><?php esc_html_e( 'Frequently Asked Questions', 'hack' ); ?></h2>
+
+							<?php foreach ( hack_get_faqs( 'participants' ) as $faq ) { ?>
+
+							<div class="accordion">
+								<div class="accordion-header">
+									<span><?php echo esc_html( $faq['question'] ?? '' ); ?></span>
+								</div>
+								<div class="accordion-content">
+									<?php echo wp_kses_post( $faq['answer'] ?? '' ); ?>
+								</div>
+							</div>
+
+							<?php } ?>
+
+							<p class="text-right">
+								<a href="<?php echo esc_url( get_permalink( get_page_by_path( 'faq' ) ) ); ?>" class="text-color"><?php esc_html_e( 'View More', 'hack' ); ?></a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
 		</article>
 
 		<?php
