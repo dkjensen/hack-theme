@@ -20,8 +20,7 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			margin: $spacing--l 0;
-
+			margin: $spacing--l ( $gutter / 2 ) * -1;
 
 			.button {
 				flex: 1;
