@@ -225,11 +225,11 @@ if ( have_posts() ) :
 							while ( $hack_infinity_query->have_posts() ) {
 								$hack_infinity_query->the_post();
 
-								get_template_part( 'template-parts/story', get_post_format() );
+								get_template_part( 'template-parts/card-story', get_post_format() );
 
 							}
 
-							printf( '<div id="infinite-handle"><span><a href="%s">%s</button></span></div>', esc_url( get_post_type_archive_link( 'story' ) ), esc_html__( 'View More Stories', 'hack' ) );
+							printf( '<div id="infinite-handle"><span><a href="%s">%s</a></span></div>', esc_url( get_post_type_archive_link( 'story' ) ), esc_html__( 'View More Stories', 'hack' ) );
 						}
 						?>
 					</div>

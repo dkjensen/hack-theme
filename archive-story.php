@@ -55,7 +55,49 @@ $hack_from_year = gmdate( 'Y' ) - 1;
 							while ( $hack_stories->have_posts() ) {
 								$hack_stories->the_post();
 
-								get_template_part( 'template-parts/story' );
+								?>
+
+								<article <?php post_class(); ?>>
+									<div class="story-header">
+									<?php
+									$hack_locations = wp_get_post_terms( get_the_ID(), 'location' );
+									array_walk(
+										$hack_locations,
+										function( $location ) {
+											$country_code = esc_attr( get_term_meta( $location->term_id, 'country_code', true ) );
+
+											if ( ! $country_code ) {
+												return;
+											}
+
+											printf(
+												'<img src="%s" width="35" title="%s" />',
+												esc_url( get_theme_file_uri( 'assets/img/flags/' . strtolower( $country_code ) . '.svg' ) ),
+												esc_attr( $location->name )
+											);
+										}
+									);
+									?>
+
+									<h3>
+										<?php
+										if ( get_post_meta( get_the_ID(), 'price', true ) ) {
+											printf( '<span class="primary-color">%s</span> | ', esc_html__( 'Prize Won', 'hack' ) );
+										}
+										?>
+										<?php
+											$locations = wp_get_post_terms( get_the_ID(), 'location' );
+
+											echo $locations ? $locations[0]->name : '';
+										?>
+									</h3>
+									</div>
+									<div class="story-content">
+										<?php the_content(); ?>
+									</div>
+								</article>
+
+								<?php
 							}
 							?>
 						</div>

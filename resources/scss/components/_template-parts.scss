@@ -314,7 +314,11 @@
 			background-color: $color--white;
 
 			@include mq(tablet) {
-				padding: $gutter * 2 $spacing--l;
+				padding: $gutter * 2 $gutter;
+			}
+
+			p {
+				font-size: 1.6rem;
 			}
 
 			:last-child {

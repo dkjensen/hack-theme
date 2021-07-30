@@ -93,4 +93,91 @@
 			vertical-align: middle;
 		}
 	}
+
+	&-story {
+		cursor: pointer;
+		background-position: center;
+		background-size: cover;
+
+		@include card($height: 49rem);
+
+		@include mq($until: tablet) {
+			height: auto;
+		}
+
+		&.format-video {
+
+			@include overlay();
+
+			h3 {
+				margin-top: auto;
+			}
+		}
+
+		&--content {
+			position: relative;
+			z-index: 1;
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+			padding: $gutter * 2;
+			margin-top: $spacing--xxxl;
+
+			&-header {
+				position: absolute;
+				top: $gutter * 2;
+				margin: -$spacing--xxxl 0 0;
+			}
+
+			&-thumbnail {
+				margin: auto 0 0;
+				overflow: hidden;
+				border-radius: 4px;
+
+				img {
+					display: block;
+					height: 10rem;
+					object-fit: cover;
+				}
+			}
+
+			&-play {
+				position: absolute;
+				top: 20%;
+				left: 50%;
+				transform: translate(-50%, 0);
+
+				@include transition();
+				@include triangle("right", 4rem, 4.5rem, $color--white);
+			}
+
+			&-rendered {
+				display: none;
+
+				.lity & {
+					display: block;
+				}
+
+				&-header {
+					display: flex;
+					flex-wrap: wrap;
+					align-items: center;
+					margin: 0 0 $gutter * 2;
+
+					@include mq(tablet) {
+						justify-content: flex-end;
+					}
+
+					h1 {
+						margin: 0 auto 0 0;
+
+						@include mq($until: tablet) {
+							flex-basis: 100%;
+							margin: 0 0 $gutter;
+						}
+					}
+				}
+			}
+		}
+	}
 }

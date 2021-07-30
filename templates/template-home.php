@@ -43,34 +43,29 @@ if ( have_posts() ) :
 							</div>
 							<div class="row">
 								<div class="column two-fifths">
-									<h3><?php esc_html_e( 'What’s a hackathon?', 'hack' ); ?></h3>
+									<h3 class="primary-color"><?php esc_html_e( 'What’s a hackathon?', 'hack' ); ?></h3>
 									<p>
-										<?php esc_html_e( 'A hackathon* is an event with a specific focus during which people in the tech and adjacent industries collaborate to create solutions to specific challenges.', 'hack' ); ?><br>
-										*<?php esc_html_e( 'A combination of the words "hack" and marathon. ', 'hack' ); ?>
+										<?php esc_html_e( 'A hackathon* is an event with a specific focus during which people in the tech and adjacent industries collaborate to create solutions to specific challenges.', 'hack' ); ?> *<em><?php esc_html_e( 'A combination of the words "hack" and marathon. ', 'hack' ); ?></em>
 									</p>
 								</div>
 								<div class="column two-fifths offset-2">
-									<h3><?php esc_html_e( 'Who should join #HACK?', 'hack' ); ?></h3>
+									<h3 class="primary-color"><?php esc_html_e( 'Who should join #HACK?', 'hack' ); ?></h3>
 									<p><?php esc_html_e( '#HACK is not just for software developers, engineers, and UX designers. We need content creators, church leaders, project managers, and anyone who wants to contribute creative solutions to join the event.', 'hack' ); ?></p>
 								</div>
 							</div>
 							<div class="row">
 								<div class="column two-fifths">
-									<h3><?php esc_html_e( 'How is #HACK different from other hackathons?', 'hack' ); ?></h3>
-									<p><?php esc_html_e( 'What separates Indigitous #HACK from other hackathons is that our participants and projects are focused on bringing the Gospel to where it is not.', 'hack' ); ?></p>
+									<h3 class="primary-color"><?php esc_html_e( 'What happens at #HACK?', 'hack' ); ?></h3>
+									<p><?php esc_html_e( 'Exact schedules are coordinated by each location. During the event, a number of different local and global challenges are shared, then teams are formed and they work to create a unique solution.', 'hack' ); ?></p>
 								</div>
 								<div class="column two-fifths offset-2">
-									<h3><?php esc_html_e( 'What happens at #HACK?', 'hack' ); ?></h3>
-									<p><?php esc_html_e( 'During the event, you will hear a number of different local and global challenges. Choose the problem that interests you and form a team to create a unique solution.', 'hack' ); ?></p>
+									<h3 class="primary-color"><?php esc_html_e( 'When and where is the event?', 'hack' ); ?></h3>
+									<p><?php esc_html_e( 'This year the Indigitous #HACK will take place October 15-17 and October 22-24, 2021 in multiple cities around the world. Find a city near you here (link to locations).', 'hack' ); ?></p>
 								</div>
 							</div>
 							<div class="row">
 								<div class="column two-fifths">
-									<h3><?php esc_html_e( 'When and where is the event?', 'hack' ); ?></h3>
-									<p><?php esc_html_e( 'This year the Indigitous #HACK will take place October 15-17 and October 22-24, 2021 in multiple cities around the world. Find a city near you here (link to locations).', 'hack' ); ?></p>
-								</div>
-								<div class="column two-fifths offset-2">
-									<h3><?php esc_html_e( 'Why join?', 'hack' ); ?></h3>
+									<h3 class="primary-color"><?php esc_html_e( 'Why join?', 'hack' ); ?></h3>
 									<p><?php esc_html_e( '#HACK is an opportunity to create solutions that have a lasting impact, solve problems facing global and local communities, make new friends, and have fun while you are doing it.', 'hack' ); ?></p>
 								</div>
 							</div>
@@ -160,7 +155,7 @@ if ( have_posts() ) :
 								<div class="section-home-seven-group--content">
 									<h2><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/home/hack-home-participate.svg' ) ); ?>" aria-hidden="true" width="67" /> <?php esc_html_e( 'Participate', 'hack' ); ?></h2>
 									<p>
-										<?php esc_html_e( 'In just a few days, you can make a major impact and help bring the Gospel to where it’s not. Join us and see how God will use your talents.', 'hack' ); ?>
+										<?php esc_html_e( 'Join #HACK2021 to make an impact and bring the Gospel where it is not. Sign up and see how God will use your talents and experience.', 'hack' ); ?>
 									</p>
 									<a href="<?php echo esc_url( get_permalink( get_page_by_path( 'participate' ) ) ); ?>" class="button"><?php esc_html_e( 'Participate', 'hack' ); ?></a>
 								</div>
@@ -174,7 +169,7 @@ if ( have_posts() ) :
 								<div class="section-home-seven-group--content">
 									<h2><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/home/hack-home-lead.svg' ) ); ?>" aria-hidden="true" width="67" /> <?php esc_html_e( 'Lead', 'hack' ); ?></h2>
 									<p>
-										<?php esc_html_e( 'Indigitous needs leaders like you to bring #HACK2021 to your city. With #HACK, you can convene Christian talent to collaborate on projects that will help make Jesus known in your neighborhoods and meet the needs specific to your community.', 'hack' ); ?>
+										<?php esc_html_e( 'Bring #HACK2021 to your city. Bring together skilled individuals to collaborate on projects that make Jesus known and meet needs specific to your community.', 'hack' ); ?>
 									</p>
 									<a href="<?php echo esc_url( get_permalink( get_page_by_path( 'lead' ) ) ); ?>" class="button"><?php esc_html_e( 'Lead', 'hack' ); ?></a>
 								</div>
@@ -188,7 +183,7 @@ if ( have_posts() ) :
 								<div class="section-home-seven-group--content">
 									<h2><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/home/hack-home-sponsor.svg' ) ); ?>" aria-hidden="true" width="67" /> <?php esc_html_e( 'Partner', 'hack' ); ?></h2>
 									<p>
-										<?php esc_html_e( 'Partners play an important role in bring #HACK to cities around the world. Find out how you can help #HACK participants bring the Gospel to where it’s not.', 'hack' ); ?>
+										<?php esc_html_e( 'Partners play an important role in bringing #HACK to cities around the world by providing challenges, sponsorship or other support. We’d love to work together to bring the gospel to where it is not.', 'hack' ); ?>
 									</p>
 									<a href="<?php echo esc_url( get_permalink( get_page_by_path( 'partner' ) ) ); ?>" class="button"><?php esc_html_e( 'Partner', 'hack' ); ?></a>
 								</div>
@@ -218,6 +213,10 @@ if ( have_posts() ) :
 							</div>
 
 							<?php } ?>
+
+							<p class="text-right">
+								<a href="<?php echo esc_url( get_permalink( get_page_by_path( 'faq' ) ) ); ?>" class="text-color"><?php esc_html_e( 'View More', 'hack' ); ?></a>
+							</p>
 						</div>
 					</div>
 				</div>

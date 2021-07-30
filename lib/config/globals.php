@@ -32,16 +32,12 @@ function hack_get_faqs( $section = '' ) {
 		),
 		'general'      => array(
 			array(
-				'question' => esc_html__( 'What is Mass Collaboration?', 'hack' ),
-				'answer'   => sprintf( '<a href="%s" target="_blank">%s</a> %s', esc_url( 'https://blogs.gartner.com/anthony_bradley/2011/03/08/defining-social-media-mass-collaboration-is-its-unique-value/' ), esc_html__( 'Mass collaboration', 'hack' ), esc_html__( 'is the ability for large numbers of people, who may have no previous connection, to effectively and creatively work towards a common goal. The greater diversity of skill represented on each team, the higher the team’s capacity to successfully tackle the task at hand. #HACK levels mass collaboration up to a global scale, connecting like-minded believers across every region of the world through expertise and prayer.', 'hack' ) ),
+				'question' => esc_html__( 'What is unique about the Indigitous #HACK?', 'hack' ),
+				'answer'   => esc_html__( 'The Indigitous #HACK gathers those with a desire to bring the gospel to where it needs to go. #HACK offers participants an opportunity to meet the needs of the mission, the church and society on a local and global scale. We learn from one another and make new friends while fulfilling the Great Commission through new innovative platforms and digital strategies.', 'hack' ),
 			),
 			array(
-				'question' => esc_html__( 'What is unique about Indigitous Hack?', 'hack' ),
-				'answer'   => esc_html__( 'Indigitous #HACK uniquely gathers devoted Christ-followers with a desire to extend God’s purposes in our local cities and connects us around the world. #HACK offers Christians in each host city an opportunity to make new friends and learn from one another while addressing critical issues through digital solutions. #HACK invites people to meet the needs of the church, missions and society on a local and global scale, expanding the Great Commission through new innovative platforms and digital strategies.', 'hack' ),
-			),
-			array(
-				'question' => esc_html__( 'What is a Hackathon?', 'hack' ),
-				'answer'   => sprintf( '<a href="%s" target="_blank">%s</a> %s', esc_url( 'https://medium.com/hackathons-anonymous/wtf-is-a-hackathon-92668579601' ), esc_html__( 'Hackathons', 'hack' ), esc_html__( 'provide a hands-on event for self-expression and creativity for computer programmers, developers, engineers, user experience, project managers and others through technology. People with technical backgrounds come together, form teams around a problem or idea, and collaboratively code a unique solution from scratch - these generally take shape in the form of websites, mobile apps, and robots.', 'hack' ) ),
+				'question' => esc_html__( 'Is #HACK only for people who can code?', 'hack' ),
+				'answer'   => esc_html__( '#HACK welcomes anyone who wants to collaborate on mission-focused, technology projects with long-term impact. While our work focuses on multiple technology platforms, you don’t have to be a programmer to get involved. We need designers, photographers, writers, project managers, social media gurus – creative thinkers of all types! The most important skill is the ability to work as a team and find ways to problem-solve. Also, while Indigitous #HACK is explicitly Christian, participants from any (or no) faith background are welcomed warmly.', 'hack' ),
 			),
 		),
 	);

@@ -13,14 +13,14 @@ $hack_thumbnail  = ! has_post_thumbnail() && $hack_youtube_id ? esc_url( 'https:
 
 <div 
 <?php
-post_class();
+post_class( 'card-story' );
 
 if ( $hack_youtube_id ) :
 	?>
 	data-lity-target="https://www.youtube.com/embed/<?php echo esc_attr( $hack_youtube_id ); ?>" data-lity<?php endif; ?>
 	style="background-image: url(<?php echo esc_attr( $hack_thumbnail ); ?>);">
-	<div class="story--content">
-		<div class="story--content-header">
+	<div class="card-story--content">
+		<div class="card-story--content-header">
 			<?php
 				$hack_locations = wp_get_post_terms( get_the_ID(), 'location' );
 				array_walk(
@@ -41,7 +41,7 @@ if ( $hack_youtube_id ) :
 				);
 				?>
 		</div>
-		<span class="story--content-play"></span>
+		<span class="card-story--content-play"></span>
 		<h3 class="white-color"><?php the_excerpt(); ?></h3>
 	</div>
 </div>
