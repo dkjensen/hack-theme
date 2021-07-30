@@ -35,7 +35,11 @@
 	}
 
 	&-three {
-		margin-top: -18vw;
+		margin-top: -32vw;
+
+		@include mq(tablet) {
+			margin-top: -33rem;
+		}
 
 		.row .row {
 			margin-bottom: $spacing--xl;

@@ -307,6 +307,13 @@
 			margin-bottom: $spacing--xl;
 		}
 
+		h3 + h2 {
+
+			@include mq($until: tablet) {
+				margin-top: $spacing--s;
+			}
+		}
+
 		img {
 			height: 6.7rem;
 			margin: 0 0 2.3rem;
@@ -325,9 +332,12 @@
 			}
 
 			h3 {
-				min-height: 6.8rem;
 				margin: 0 0 $gutter;
 				line-height: 1.416;
+
+				@include mq(tablet) {
+					min-height: 6.8rem;
+				}
 			}
 
 			p {
@@ -529,7 +539,11 @@
 		}
 
 		+ .template-parts-callouts {
-			padding-bottom: 18vw;
+			padding-bottom: 32vw;
+
+			@include mq(tablet) {
+				padding-bottom: 33rem;
+			}
 		}
 	}
 }
