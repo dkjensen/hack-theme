@@ -95,14 +95,20 @@
 	}
 
 	&-story {
-		cursor: pointer;
 		background-position: center;
 		background-size: cover;
 
-		@include card($height: 49rem);
+		@include card();
 
 		@include mq($until: tablet) {
 			height: auto;
+		}
+
+		h3 {
+
+			:last-child {
+				margin: 0;
+			}
 		}
 
 		&.format-video {
