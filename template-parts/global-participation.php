@@ -267,7 +267,7 @@ use function Dkjensen\Hack\Functions\hack_name_tag;
 			</div>
 			<div class="column one-fourth view-all">
 				<p>
-					<a href="#">
+					<a href="<?php echo esc_url( get_permalink( get_page_by_path( 'locations' ) ) ); ?>">
 						<?php
 						/* translators: %s #HACK name tag */
 						echo sprintf( esc_html__( 'View %s', 'hack' ), hack_name_tag() );

@@ -87,7 +87,7 @@ if ( have_posts() ) :
 						<div class="column one-fourth">
 							<div class="section-home-four-callout">
 								<div class="section-home-four-callout--img">
-									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/home/hack-home-participants.svg' ) ); ?>" width="70" />
+									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/icons/hack-icon-participate.svg' ) ); ?>" width="70" />
 								</div>
 								<div class="section-home-four-callout--content">
 									<span><?php echo esc_html( '4,300' ); ?></span>
@@ -98,7 +98,7 @@ if ( have_posts() ) :
 						<div class="column one-fourth">
 							<div class="section-home-four-callout">
 								<div class="section-home-four-callout--img">
-									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/home/hack-home-countries.svg' ) ); ?>" width="70" />
+									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/icons/hack-icon-globe.svg' ) ); ?>" width="70" />
 								</div>
 								<div class="section-home-four-callout--content">
 									<span><?php echo esc_html( '41' ); ?></span>
@@ -123,7 +123,7 @@ if ( have_posts() ) :
 						<div class="column one-fourth">
 							<div class="section-home-four-callout">
 								<div class="section-home-four-callout--img">
-									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/home/hack-home-cities.svg' ) ); ?>" width="67" />
+									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/icons/hack-icon-city.svg' ) ); ?>" width="67" />
 								</div>
 								<div class="section-home-four-callout--content">
 									<span><?php echo esc_html( '210' ); ?></span>
@@ -153,7 +153,7 @@ if ( have_posts() ) :
 							<div class="section-home-seven-group">
 								<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/home/hack-home-section-1.jpg' ) ); ?>" />
 								<div class="section-home-seven-group--content">
-									<h2><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/home/hack-home-participate.svg' ) ); ?>" aria-hidden="true" width="67" /> <?php esc_html_e( 'Participate', 'hack' ); ?></h2>
+									<h2><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/icons/hack-icon-participate.svg' ) ); ?>" aria-hidden="true" width="67" /> <?php esc_html_e( 'Participate', 'hack' ); ?></h2>
 									<p>
 										<?php esc_html_e( 'Join #HACK2021 to make an impact and bring the Gospel where it is not. Sign up and see how God will use your talents and experience.', 'hack' ); ?>
 									</p>
@@ -167,7 +167,7 @@ if ( have_posts() ) :
 							<div class="section-home-seven-group">
 								<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/home/hack-home-section-2.jpg' ) ); ?>" />
 								<div class="section-home-seven-group--content">
-									<h2><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/home/hack-home-lead.svg' ) ); ?>" aria-hidden="true" width="67" /> <?php esc_html_e( 'Lead', 'hack' ); ?></h2>
+									<h2><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/icons/hack-icon-lead.svg' ) ); ?>" aria-hidden="true" width="67" /> <?php esc_html_e( 'Lead', 'hack' ); ?></h2>
 									<p>
 										<?php esc_html_e( 'Bring #HACK2021 to your city. Bring together skilled individuals to collaborate on projects that make Jesus known and meet needs specific to your community.', 'hack' ); ?>
 									</p>
@@ -181,7 +181,7 @@ if ( have_posts() ) :
 							<div class="section-home-seven-group">
 								<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/home/hack-home-section-3.jpg' ) ); ?>" />
 								<div class="section-home-seven-group--content">
-									<h2><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/home/hack-home-sponsor.svg' ) ); ?>" aria-hidden="true" width="67" /> <?php esc_html_e( 'Partner', 'hack' ); ?></h2>
+									<h2><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/icons/hack-icon-assemble.svg' ) ); ?>" aria-hidden="true" width="67" /> <?php esc_html_e( 'Partner', 'hack' ); ?></h2>
 									<p>
 										<?php esc_html_e( 'Partners play an important role in bringing #HACK to cities around the world by providing challenges, sponsorship or other support. We’d love to work together to bring the gospel to where it is not.', 'hack' ); ?>
 									</p>
@@ -201,7 +201,7 @@ if ( have_posts() ) :
 						<div class="column two-thirds offset-2">
 							<h2 class="text-center"><?php esc_html_e( 'Frequently Asked Questions', 'hack' ); ?></h2>
 
-							<?php foreach ( hack_get_faqs( 'general' ) as $faq ) { ?>
+							<?php foreach ( array( hack_get_faqs( 'general' )[1], hack_get_faqs( 'participants' )[1] ) as $faq ) { ?>
 
 							<div class="accordion">
 								<div class="accordion-header">

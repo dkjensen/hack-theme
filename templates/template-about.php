@@ -206,21 +206,21 @@ if ( have_posts() ) :
 							<p><br><a href="#" class="button"><?php esc_html_e( '#HACK Impact', 'hack' ); ?></a></p>
 							<div class="section-about-five-stats">
 								<div class="section-about-five-stats--stat">
-									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/about/hack-about-participants.svg' ) ); ?>" />
+									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/icons/hack-icon-participate.svg' ) ); ?>" />
 									<div class="section-about-five-stats--stat-content">
 										<span><?php echo esc_html( '4,300' ); ?></span>
 										<?php esc_html_e( 'Participants', 'hack' ); ?>
 									</div>
 								</div>
 								<div class="section-about-five-stats--stat">
-									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/about/hack-about-countries.svg' ) ); ?>" />
+									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/icons/hack-icon-globe.svg' ) ); ?>" />
 									<div class="section-about-five-stats--stat-content">
 										<span><?php echo esc_html( '41' ); ?></span>
 										<?php esc_html_e( 'Countries', 'hack' ); ?>
 									</div>
 								</div>
 								<div class="section-about-five-stats--stat">
-									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/about/hack-about-cities.svg' ) ); ?>" />
+									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/icons/hack-icon-city.svg' ) ); ?>" />
 									<div class="section-about-five-stats--stat-content">
 										<span><?php echo esc_html( '210' ); ?></span>
 										<?php esc_html_e( 'Cities', 'hack' ); ?>
@@ -229,7 +229,7 @@ if ( have_posts() ) :
 								<?php
 								/*
 								<div class="section-about-five-stats--stat">
-									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/about/hack-about-projects.svg' ) ); ?>" />
+									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/icons/hack-icon-project.svg' ) ); ?>" />
 									<div class="section-about-five-stats--stat-content">
 										<span><?php echo esc_html( '436' ); ?></span>
 										<?php esc_html_e( 'Projects', 'hack' ); ?>

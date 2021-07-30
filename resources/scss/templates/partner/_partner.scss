@@ -58,6 +58,7 @@
 
 				img {
 					position: absolute;
+					border-radius: 4px;
 				}
 
 				img:nth-child(1) {
@@ -253,7 +254,7 @@
 					grid-area: lg;
 					min-height: 18rem;
 					padding: $gutter;
-					background: url(../img/hack-lead-how-works.jpg) center no-repeat;
+					background: url(../img/partner/hack-partner-how-works.jpg) center no-repeat;
 					background-size: cover;
 
 					@include mq(tablet) {
@@ -283,7 +284,7 @@
 
 	&-four {
 		height: 73vw;
-		background: url(../img/hack-lead-break.jpg) center/cover no-repeat;
+		background: url(../img/partner/hack-partner-break.jpg) center/cover no-repeat;
 
 		@include mq(tablet) {
 			height: 656px;
@@ -332,21 +333,13 @@
 		position: relative;
 		display: flex;
 		align-items: center;
-		background: url(../img/hack-lead-break-2.jpg) center/cover no-repeat;
+		background: url(../img/partner/hack-partner-break-2.jpg) center/cover no-repeat;
 
 		@include mq(tablet) {
 			height: 73vw;
 		}
 
-		&:before {
-			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			content: "";
-			background: rgba(0, 0, 0, 0.5);
-		}
+		@include overlay();
 
 		@include mq(tablet) {
 			height: 656px;

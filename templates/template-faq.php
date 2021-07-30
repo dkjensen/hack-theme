@@ -15,9 +15,9 @@ if ( have_posts() ) :
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<div class="section section-faq-one">
 				<div class="wrap">
-					<h1><?php esc_html_e( 'Have a', 'hack' ); ?> <span><?php esc_html_e( 'Question', 'hack' ); ?></span><?php echo esc_html( '?' ); ?></h1>
+					<h1><?php esc_html_e( 'Have a Question?', 'hack' ); ?></h1>
 					<p class="intro-text"><?php esc_html_e( 'The Indigitous team is here to help you kick off your Hackathon. Please reach out to us if you need specific guidance from our team.', 'hack' ); ?></p>
-					<p><a href="<?php echo esc_url( get_permalink( get_page_by_path( 'contact' ) ) ); ?>"><?php esc_html_e( 'Contact Us', 'hack' ); ?></a></p>
+					<p class="intro-text"><a href="<?php echo esc_url( get_permalink( get_page_by_path( 'contact' ) ) ); ?>"><?php esc_html_e( 'Contact Us', 'hack' ); ?></a></p>
 				</div>
 			</div>
 			<div class="section section-faq-two padding-top-0">

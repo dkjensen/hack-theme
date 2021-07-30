@@ -248,6 +248,10 @@
 						margin: auto 0;
 					}
 
+					a {
+						color: $color--text;
+					}
+
 					@include mq($until: tablet) {
 
 						p {
@@ -483,6 +487,10 @@
 			padding: $gutter / 2;
 			font-size: 1.1vw;
 			background-color: $color--blue;
+
+			&:nth-child(even) {
+				background-color: $color--purple;
+			}
 
 			@include mq($until: tablet) {
 				display: none;

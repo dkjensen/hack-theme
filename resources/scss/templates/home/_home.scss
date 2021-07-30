@@ -154,7 +154,9 @@
 				}
 
 				h2 {
-					margin: 0 0 $spacing--xs;
+					display: flex;
+					align-items: center;
+					margin: 0 0 $spacing--s;
 
 					img {
 						display: block;

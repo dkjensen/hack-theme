@@ -20,9 +20,9 @@ if ( have_posts() ) :
 					<div class="row">
 						<div class="column one-half">
 							<h6 class="divider"><?php esc_html_e( 'SAVE THE DATE: October 15-17 and 22-24, 2021', 'hack' ); ?></h6>
-							<h1><?php esc_html_e( 'A Global Missional Hackathon', 'hack' ); ?></h1>
+							<h1><?php esc_html_e( 'A Global Hackathon For Missions', 'hack' ); ?></h1>
 							<p>
-								<?php echo esc_html_x( 'The Indigitous hackathon is a unique opportunity to gather people with unique skill sets for the purpose of responding to the most pressing needs that impact our society.', 'Partner page', 'hack' ); ?>
+								<?php esc_html_e( 'The Indigitous #HACK gathers participants with unique skillsets for the purpose of responding to the most pressing needs that impact our society.', 'hack' ); ?>
 							</p>
 							<p>
 								<a href="https://indigitous.typeform.com/to/RQGajmbR" class="button" target="_blank"><?php esc_html_e( 'Become a Partner', 'hack' ); ?></a>
@@ -30,10 +30,10 @@ if ( have_posts() ) :
 						</div>
 						<div class="column one-half">
 							<div class="section-partner-one-graphic--container">
-								<img class="section-partner-one-graphic" data-sal="slide-left" src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-hero-1.png' ) ); ?>" />
-								<img class="section-partner-one-graphic" data-sal="slide-down" data-sal-delay="100" src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-hero-2.png' ) ); ?>" />
-								<img class="section-partner-one-graphic" data-sal="slide-right" data-sal-delay="200" src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-hero-3.png' ) ); ?>" />
-								<img class="section-partner-one-graphic" data-sal="slide-up" data-sal-delay="300" src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-hero-4.png' ) ); ?>" />
+								<img class="section-partner-one-graphic" data-sal="slide-left" src="<?php echo esc_url( get_theme_file_uri( 'assets/img/partner/hack-partner-hero-1.png' ) ); ?>" />
+								<img class="section-partner-one-graphic" data-sal="slide-down" data-sal-delay="100" src="<?php echo esc_url( get_theme_file_uri( 'assets/img/partner/hack-partner-hero-2.png' ) ); ?>" />
+								<img class="section-partner-one-graphic" data-sal="slide-right" data-sal-delay="200" src="<?php echo esc_url( get_theme_file_uri( 'assets/img/partner/hack-partner-hero-3.png' ) ); ?>" />
+								<img class="section-partner-one-graphic" data-sal="slide-up" data-sal-delay="300" src="<?php echo esc_url( get_theme_file_uri( 'assets/img/partner/hack-partner-hero-4.png' ) ); ?>" />
 							</div>
 						</div>
 					</div>
@@ -44,33 +44,28 @@ if ( have_posts() ) :
 					<div class="section-partner-two-container blue-light-background-color">
 						<div class="row">
 							<div class="column five-twelfths offset-1">
-								<h2>
-									<?php
-									/* translators: %s #HACK name tag */
-									echo sprintf( esc_html_x( '%s Registration', 'Partner page', 'hack' ), hack_name_tag() );
-									?>
-								</h2>
-								<p><?php echo esc_html_x( 'In October 2021, the Indigitous network will convene a global hackathon of 1,000+ Christians in 40+ countries.', 'Partner page', 'hack' ); ?></p>
+								<h2><?php echo hack_name_tag(); ?></h2>
+								<p><?php esc_html_e( 'In October 2021, the Indigitous network will convene a global hackathon of 1,000+ Christians in 40+ countries.', 'hack' ); ?></p>
 								<div class="section-partner-two-stats">
 									<div class="section-partner-two-stats--stat">
 										<div class="section-partner-two-stats--stat-image">
 											<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/partner/hack-partner-regional.svg' ) ); ?>" width="32" />
 										</div>
-										<div class="section-partner-two-stats--stat-count"><?php echo esc_html( '22' ); ?></div>
+										<div class="section-partner-two-stats--stat-count"><?php echo esc_html( '13' ); ?></div>
 										<div class="section-partner-two-stats--stat-data"><h3><?php esc_html_e( 'Regional Leads', 'hack' ); ?></h3></div>
 									</div>
 									<div class="section-partner-two-stats--stat">
 										<div class="section-partner-two-stats--stat-image">
 											<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/partner/hack-partner-city.svg' ) ); ?>" width="53" />
 										</div>
-										<div class="section-partner-two-stats--stat-count"><?php echo esc_html( '22' ); ?></div>
+										<div class="section-partner-two-stats--stat-count"><?php echo esc_html( '40+' ); ?></div>
 										<div class="section-partner-two-stats--stat-data"><h3><?php esc_html_e( 'City Leads', 'hack' ); ?></h3></div>
 									</div>
 									<div class="section-partner-two-stats--stat">
 										<div class="section-partner-two-stats--stat-image">
 											<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/partner/hack-partner-locations.svg' ) ); ?>" width="53" />
 										</div>
-										<div class="section-partner-two-stats--stat-count"><?php echo esc_html( '22' ); ?></div>
+										<div class="section-partner-two-stats--stat-count"><?php echo esc_html( '40+' ); ?></div>
 										<div class="section-partner-two-stats--stat-data"><h3><?php esc_html_e( 'Locations', 'hack' ); ?></h3></div>
 									</div>
 								</div>
@@ -79,22 +74,22 @@ if ( have_posts() ) :
 								<div class="section-partner-two-cities white-background-color">
 									<h3><?php esc_html_e( 'Participating Cities', 'hack' ); ?></h3>
 									<div class="section-partner-two-cities--city">
-										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-flag-eth.svg' ) ); ?>" />
+										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/flags/de.svg' ) ); ?>" width="36" />
+										<span><?php echo esc_html( 'Berlin, Germany' ); ?></span>
+									</div>
+									<div class="section-partner-two-cities--city">
+										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/flags/ng.svg' ) ); ?>" width="36" />
+										<span><?php esc_html_e( 'Lagos, Nigeria', 'hack' ); ?></span>
+									</div>
+									<div class="section-partner-two-cities--city">
+										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/flags/id.svg' ) ); ?>" width="36" />
 										<span><?php echo esc_html( 'Jakarta, Indonesia' ); ?></span>
 									</div>
 									<div class="section-partner-two-cities--city">
-										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-flag-eth.svg' ) ); ?>" />
-										<span><?php esc_html_e( 'Participants in Ethiopia', 'hack' ); ?></span>
+										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/flags/us.svg' ) ); ?>" width="36" />
+										<span><?php esc_html_e( 'San Francisco, USA', 'hack' ); ?></span>
 									</div>
-									<div class="section-partner-two-cities--city">
-										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-flag-ind.svg' ) ); ?>" />
-										<span><?php echo esc_html( 'Jakarta, Indonesia' ); ?></span>
-									</div>
-									<div class="section-partner-two-cities--city">
-										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-flag-en.svg' ) ); ?>" />
-										<span><?php esc_html_e( 'Participants in the USA', 'hack' ); ?></span>
-									</div>
-									<p><a href="#">+ <?php esc_html_e( 'View More', 'hack' ); ?></a></p>
+									<p><a href="<?php echo esc_url( get_permalink( get_page_by_path( 'locations' ) ) ); ?>">+ <?php esc_html_e( 'View More', 'hack' ); ?></a></p>
 								</div>
 							</div>
 						</div>
@@ -111,23 +106,23 @@ if ( have_posts() ) :
 					<div class="section-partner-three--items">
 						<div class="section-partner-three--items-item">
 							<h3 class="primary-color"><?php esc_html_e( '#HACK is...', 'hack' ); ?></h3>
-							<p><?php echo esc_html_x( 'Indigitous #HACK is a community of developers, designers, coders, gamers, communicators and entrepreneurs that aim to solve real-world problems faced on the mission field and in our local contexts through technology.', 'Partner page', 'hack' ); ?></p>
+							<p><?php esc_html_e( '#HACK is an event and community of developers, designers, coders, gamers, communicators, and entrepreneurs that aim to solve real-world problems through technology.', 'hack' ); ?></p>
 						</div>
 						<div class="section-partner-three--items-item">
-							<h3 class="primary-color"><?php esc_html_e( 'Mobilizing', 'hack' ); ?></h3>
-							<p><?php echo esc_html_x( 'What separates Indigitous #HACK from other hackathons, is our goal of mobilizing Christian technologists to honour God through their skills and talents, and learn from one another as they build solutions to challenges faced in the world around them.', 'Partner page', 'hack' ); ?></p>
+							<h3 class="primary-color"><?php esc_html_e( 'An Opportunity', 'hack' ); ?></h3>
+							<p><?php esc_html_e( 'Historically, #HACK has provided remarkable opportunities for hands-on, creative solving of difficult challenges through technology.', 'hack' ); ?></p>
 						</div>
 						<div class="section-partner-three--items-item">
-							<h3 class="primary-color"><?php esc_html_e( 'Collaborative', 'hack' ); ?></h3>
-							<p><?php echo esc_html_x( 'These weekend-long design sprints highlight the collaborative aspect of innovation, of participating together around a common vision of developing solutions to meet the needs of the church and world.', 'Partner page', 'hack' ); ?></p>
+							<h3 class="primary-color"><?php esc_html_e( 'Building Solutions', 'hack' ); ?></h3>
+							<p><?php esc_html_e( 'What separates the Indigitous #HACK from other hackathons is our goal of mobilizing Christian technologists to honor God with our skills and talents. We learn from one another as we build solutions to challenges faced around the world.', 'hack' ); ?></p>
 						</div>
 						<div class="section-partner-three--items-item">
-							<h3 class="primary-color"><?php esc_html_e( 'Opportunities', 'hack' ); ?></h3>
-							<p><?php echo esc_html_x( 'Historically, hackathons have provided remarkable opportunities for hands-on, creative solving of difficult challenges through technology.', 'Partner page', 'hack' ); ?></p>
+							<h3 class="primary-color"><?php esc_html_e( 'Collaboration', 'hack' ); ?></h3>
+							<p><?php esc_html_e( 'These weekend-long design sprints highlight the collaborative aspect of innovation as we gather around a common vision of developing solutions to meet the needs of the church and world.', 'hack' ); ?></p>
 						</div>
 						<div class="section-partner-three--items-item">
-							<h3 class="primary-color"><?php esc_html_e( 'Catalyze', 'hack' ); ?></h3>
-							<p><?php echo esc_html_x( 'More than building cool technology prototypes, Indigitous ultimately wants to help catalyze the spread of the gospel where it needs to go.', 'Partner page', 'hack' ); ?></p>
+							<h3 class="primary-color"><?php esc_html_e( 'Bringing the Gospel Where It’s Not', 'hack' ); ?></h3>
+							<p><?php esc_html_e( 'More than building cool technology prototypes, #HACK catalyzes the spread of the gospel.', 'hack' ); ?></p>
 						</div>
 					</div>
 				</div>
@@ -139,8 +134,8 @@ if ( have_posts() ) :
 						<div class="column one-third">
 							<div class="section-partner-five-sidebar blue-background-color">
 								<h5 class="divider color-primary"><?php esc_html_e( 'Partnership', 'hack' ); ?></h5>
-								<h2><?php esc_html_e( 'Collaborate to Create', 'hack' ); ?></h2>
-								<p><?php esc_html_e( 'We want people to know the love and hope that Jesus has for each person. To this end, we are looking for partners interested in the following:', 'hack' ); ?></p>
+								<h2><?php esc_html_e( 'Effective Collaboration', 'hack' ); ?></h2>
+								<p><?php esc_html_e( 'We want people to know the love and hope that Jesus has for each person. To this end, we are looking for partners with the following.', 'hack' ); ?></p>
 							</div>
 						</div>
 						<div class="column seven-twelfths offset-1">
@@ -148,16 +143,16 @@ if ( have_posts() ) :
 								<div class="section-partner-five-callout--img"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/partner/hack-partner-globe.svg' ) ); ?>" height="67" /></div>
 								<div class="section-partner-five-callout--copy">
 									<h3 class="primary-color"><?php esc_html_e( 'Level 1: Global Mission Gaps', 'hack' ); ?></h3>
-									<p><?php echo esc_html_x( 'Identifying overarching, global mission gaps helps us focus our efforts in bringing the gospel to where it has yet to go. #HACK2021 is seeking partnering organizations who bear missions gaps issues we can undertake.', 'Partner page', 'hack' ); ?></p>
-									<p><?php echo esc_html_x( 'With all selected global missions challenges, we are prepared to help frame the opportunity so teams can prototype innovative digital solutions.', 'Partner page', 'hack' ); ?></p>
+									<p><?php esc_html_e( 'Identifying overarching, global mission gaps helps us focus our efforts in bringing the gospel to where it has yet to go. #HACK2021 is seeking partnering organizations who bear missions gaps issues we can undertake.', 'hack' ); ?></p>
+									<p><?php esc_html_e( 'With all selected global missions challenges, we are prepared to help frame the opportunity so teams can prototype innovative digital solutions.', 'hack' ); ?></p>
 								</div>
 							</div>
 							<div class="section-partner-five-callout" data-sal="slide-left">
 								<div class="section-partner-five-callout--img"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/partner/hack-partner-field.svg' ) ); ?>" height="67" /></div>
 								<div class="section-partner-five-callout--copy">
 									<h3 class="primary-color"><?php esc_html_e( 'Level 2: Field Challenges', 'hack' ); ?></h3>
-									<p><?php echo esc_html_x( 'Field challenges are specific projects that need to be applied in specific contexts. These issues likely require cultural contexts, specific processes or technologies to be successful.', 'Partner page', 'hack' ); ?></p>
-									<p><?php echo esc_html_x( 'With all field challenges, we are prepared to help organizations invite teams into their established ministry processes or methods in order to provide innovative solutions to their issues.', 'Partner page', 'hack' ); ?></p>
+									<p><?php esc_html_e( 'Field challenges are specific projects that need to be applied in specific contexts. These issues likely require cultural contexts, specific processes or technologies to be successful.', 'hack' ); ?></p>
+									<p><?php esc_html_e( 'With all field challenges, we are prepared to help organizations invite teams into their established ministry processes or methods in order to provide innovative solutions to their issues.', 'hack' ); ?></p>
 								</div>
 							</div>
 						</div>
@@ -167,7 +162,7 @@ if ( have_posts() ) :
 			<div class="section section-partner-six">
 				<div class="wrap">
 					<h1 class="white-color" data-sal="slide-down"><?php esc_html_e( 'The Opportunity', 'hack' ); ?></h1>
-					<h3 class="white-color" data-sal="slide-down"><?php echo esc_html_x( 'If your organization has Level 1 or 2 challenges or opportunities, we are interested in partnering with you.', 'Partner page', 'hack' ); ?></h3>
+					<h3 class="white-color" data-sal="slide-down"><?php esc_html_e( 'If your organization has Level 1 or 2 challenges or opportunities, we are interested in partnering with you.', 'hack' ); ?></h3>
 					<p data-sal="slide-down"><a href="https://indigitous.typeform.com/to/RQGajmbR" class="button" target="_blank"><?php esc_html_e( 'Become a Partner', 'hack' ); ?></a></p>
 				</div>
 			</div>
@@ -179,11 +174,11 @@ if ( have_posts() ) :
 					<div class="row">
 						<div class="column one-third">
 							<div class="section-partner-seven-sidebar blue-background-color">
-								<h5 class="divider color-primary"><?php esc_html_e( 'Partnership', 'hack' ); ?></h5>
+								<h5 class="divider color-primary"><?php esc_html_e( 'Your Challenge', 'hack' ); ?></h5>
 								<h2><?php esc_html_e( 'S.C.I.P.A.B.', 'hack' ); ?></h2>
 								<p>
 									<?php
-									esc_html_e( 'We want people to know the love and hope that Jesus has for each person. To this end, we are looking for partners interested in the following:', 'hack' );
+									esc_html_e( 'The six steps. SCIPAB helps you think ideas, information, and data together in a sequence that grabs the attention of our #HACK teams around the world, and more importantly stirs their imaginations and problem-solving skills. Please work through this exercise before completing the application form.', 'hack' );
 									?>
 								</p>
 							</div>
@@ -279,7 +274,7 @@ if ( have_posts() ) :
 							<h2>
 								<?php
 								/* translators: %s #HACK name tag */
-								printf( esc_html_x( 'Interested in partnering with %s in your city?', 'Partner page', 'hack' ), hack_name_tag() );
+								printf( esc_html__( 'Interested in partnering with %s in your city?', 'hack' ), hack_name_tag() );
 								?>
 							</h2>
 							<p>
