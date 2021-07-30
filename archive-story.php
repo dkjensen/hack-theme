@@ -61,20 +61,26 @@ $hack_from_year = gmdate( 'Y' ) - 1;
 									<div class="story-header">
 									<?php
 									$hack_locations = wp_get_post_terms( get_the_ID(), 'location' );
+									$hack_flags     = array();
+
 									array_walk(
 										$hack_locations,
-										function( $location ) {
+										function( $location ) use ( &$hack_flags ) {
 											$country_code = esc_attr( get_term_meta( $location->term_id, 'country_code', true ) );
 
 											if ( ! $country_code ) {
 												return;
 											}
 
-											printf(
-												'<img src="%s" width="35" title="%s" />',
-												esc_url( get_theme_file_uri( 'assets/img/flags/' . strtolower( $country_code ) . '.svg' ) ),
-												esc_attr( $location->name )
-											);
+											if ( ! in_array( strtolower( $country_code ), $hack_flags, true ) ) {
+												printf(
+													'<img src="%s" width="35" title="%s" />',
+													esc_url( get_theme_file_uri( 'assets/img/flags/' . strtolower( $country_code ) . '.svg' ) ),
+													esc_attr( $location->name )
+												);
+
+												$hack_flags[] = strtolower( $country_code );
+											}
 										}
 									);
 									?>
