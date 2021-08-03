@@ -15,8 +15,12 @@ namespace Dkjensen\Hack\Functions;
 function body_classes( $classes ) {
 	$template = \get_page_template_slug();
 
-	if ( in_array( $template, array( 'templates/template-about.php', 'templates/template-home.php', 'templates/template-impact.php', 'templates/template-faq.php' ) ) || is_archive() || is_home() || post_password_required() || is_404() ) {
+	if ( in_array( $template, array( 'templates/template-about.php', 'templates/template-home.php', 'templates/template-impact.php', 'templates/template-faq.php' ) ) || ( is_archive() && ! is_tax( 'location' ) ) || post_password_required() || is_404() ) {
 		$classes[] = 'transparent-header';
+	}
+
+	if ( in_array( $template, array( 'templates/template-locations.php' ) ) ) {
+		$classes[] = 'gray-300-background-color';
 	}
 
 	return $classes;
@@ -50,7 +54,7 @@ function the_password_form( $output ) {
 	<div class="section section-password-protected">
 		<div class="wrap">
 			<?php the_title( '<h1>', '</h1>' ); ?>
-			<p><?php echo esc_html_x( 'Please enter password regional manager provided to access the downloads', 'Password protected page', 'hack' ); ?></p>
+			<p><?php esc_html_e( 'Please enter password regional manager provided to access the downloads', 'hack' ); ?></p>
 
 			<form action="<?php echo esc_url( site_url( 'wp-login.php?action=postpass', 'login_post' ) ); ?>" class="post-password-form" method="post">
 				<div class="form-input">
@@ -64,7 +68,7 @@ function the_password_form( $output ) {
 				</p>
 			</form>
 
-			<p><a href="<?php echo esc_url( get_permalink( get_page_by_path( 'contact' ) ) ); ?>"><?php echo esc_html_x( 'Forgot password?', 'Password protected page', 'hack' ); ?></a></p>
+			<p><a href="<?php echo esc_url( get_permalink( get_page_by_path( 'contact' ) ) ); ?>"><?php esc_html_e( 'Forgot password?', 'hack' ); ?></a></p>
 		</div>
 	</div>
 
@@ -82,3 +86,8 @@ function protected_title_format() {
 	return '%s';
 }
 add_filter( 'protected_title_format', __NAMESPACE__ . '\protected_title_format' );
+
+/**
+ * Do not prefix archive title
+ */
+add_filter( 'get_the_archive_title_prefix', '__return_empty_string' );

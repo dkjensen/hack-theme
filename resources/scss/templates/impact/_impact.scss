@@ -93,6 +93,8 @@
 				&--container {
 					display: flex;
 					flex-direction: column-reverse;
+					justify-content: flex-end;
+					height: 100%;
 					min-height: 20rem;
 					padding: 2.2rem $gutter;
 					background-color: $color--muted;
@@ -163,8 +165,7 @@
 
 				&--image {
 					display: flex;
-					flex-grow: 1;
-					align-items: center;
+					flex-grow: 0;
 					padding-top: $spacing--xxl;
 
 					img {
@@ -177,7 +178,6 @@
 					display: flex;
 					flex-wrap: wrap;
 					padding-top: $gutter * 1.5;
-					margin-top: auto;
 
 					&-stat {
 						display: flex;

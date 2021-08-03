@@ -8,6 +8,11 @@ $spacing--xl: 5rem;
 $spacing--xxl: 7rem;
 $spacing--xxxl: 9rem;
 
+$spacing--1x: $gutter;
+$spacing--2x: $gutter * 2;
+$spacing--3x: $gutter * 3;
+$spacing--4x: $gutter * 4;
+
 $spacing: (
 	xxxs: $spacing--xxxs,
 	xxs: $spacing--xxs,
@@ -18,4 +23,9 @@ $spacing: (
 	xl: $spacing--xl,
 	xxl: $spacing--xxl,
 	xxxl: $spacing--xxxl,
+
+	1x: $spacing--1x,
+	2x: $spacing--2x,
+	3x: $spacing--3x,
+	4x: $spacing--4x
 );

@@ -5,6 +5,8 @@
  * @package Dkjensen\Hack
  */
 
+use function Dkjensen\Hack\Functions\hack_pagination;
+
 get_header();
 ?>
 
@@ -30,6 +32,7 @@ get_header();
 			}
 			?>
 		</div>
+		<?php hack_pagination(); ?>
 	</div>
 </div>
 

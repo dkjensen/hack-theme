@@ -34,8 +34,7 @@ function hack_post_excerpt( $post ) {
 	$text = apply_filters( 'the_content', $text );
 	$text = str_replace( ']]>', ']]&gt;', $text );
 
-	/* translators: Maximum number of words used in a post excerpt. */
-	$excerpt_length = (int) _x( '55', 'excerpt_length', 'hack' );
+	$excerpt_length = 55;
 
 	/**
 	 * Filters the maximum number of words in a post excerpt.
@@ -75,4 +74,126 @@ function get_youtube_video_id( $content ) {
 	}
 
 	return false;
+}
+
+/**
+ * Get the link for a given region
+ *
+ * @param string $region Region to get link for
+ * @return string
+ */
+function get_location_region_link( $region ) {
+	$region = sanitize_title_with_dashes( $region );
+
+	return home_url( 'locations/' . $region . '/' );
+}
+
+/**
+ * Get the region name
+ *
+ * @param string $slug Slug of the region.
+ * @return string
+ */
+function get_region_name( $slug = '' ) {
+	if ( ! $slug ) {
+		$slug = get_query_var( 'region' );
+	}
+
+	switch ( $slug ) {
+		case 'apac':
+			$name = 'APAC';
+			break;
+		case 'africa':
+			$name = 'Africa';
+			break;
+		case 'europe':
+			$name = 'Europe';
+			break;
+		case 'latin-america':
+			$name = 'Latin America';
+			break;
+		case 'north-america':
+			$name = 'North America';
+			break;
+		case 'south-asia':
+			$name = 'South Asia';
+			break;
+		default:
+			$name = '';
+	}
+
+	return $name;
+}
+
+/**
+ * Get formatted array of regions => locations
+ *
+ * @return array
+ */
+function get_hack_locations() {
+	global $wpdb;
+
+	$cache = wp_cache_get( 'hack_locations' );
+
+	if ( false !== $cache ) {
+		return $cache;
+	}
+
+	$locations = $wpdb->get_results(
+		"
+		SELECT t.*,
+			tt.*,
+			tm.meta_value AS region
+		FROM   {$wpdb->terms} AS t
+			INNER JOIN {$wpdb->term_taxonomy} AS tt
+					ON t.term_id = tt.term_id
+			INNER JOIN {$wpdb->termmeta} AS tm
+					ON t.term_id = tm.term_id
+						AND tm.meta_key = 'region'
+		WHERE  tt.taxonomy IN ( 'location' )
+		ORDER  BY t.name ASC 
+	"
+	);
+
+	$data = array();
+
+	foreach ( $locations as $location ) {
+		$region = $location->region ?? '';
+
+		if ( $region ) {
+			$data[ $region ][] = $location;
+		}
+	}
+
+	ksort( $data );
+
+	wp_cache_set( 'hack_locations', $data );
+
+	return $data;
+}
+
+/**
+ * Gets a location cover image
+ *
+ * @param int|string $location Location to get image for.
+ * @return string
+ */
+function get_hack_location_image( $location ) {
+	$location = get_term( $location, 'location' );
+
+	$featured_image = get_term_meta( $location->term_id, 'featured_image', true );
+
+	if ( $featured_image ) {
+		return wp_get_attachment_image_url( $featured_image, 'full' );
+	}
+
+	$country = get_term_meta( $location->term_id, 'country_code', true );
+
+	if ( file_exists( get_stylesheet_directory() . '/assets/img/location/' . sanitize_file_name( strtolower( $country . '-' . $location->slug . '.jpg' ) ) ) ) {
+		return get_theme_file_uri( '/assets/img/location/' . sanitize_file_name( strtolower( $country . '-' . $location->slug . '.jpg' ) ) );
+	} elseif ( file_exists( get_stylesheet_directory() . '/assets/img/location/' . sanitize_file_name( strtolower( $country . '.jpg' ) ) ) ) {
+		return get_theme_file_uri( '/assets/img/location/' . sanitize_file_name( strtolower( $country . '.jpg' ) ) );
+	}
+
+	return '';
 }

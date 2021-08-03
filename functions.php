@@ -331,3 +331,5 @@ require_once 'lib/functions/markup.php';
 require_once 'lib/functions/download.php';
 require_once 'lib/functions/ajax.php';
 require_once 'lib/functions/infinite-scroll.php';
+require_once 'lib/functions/rewrite-rules.php';
+require_once 'lib/functions/pagination.php';

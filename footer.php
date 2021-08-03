@@ -16,7 +16,7 @@ use function Dkjensen\Hack\Functions\hack_name_tag;
 					<h1 class="white-color" data-sal="slide-right">
 					<?php
 						/* translators: %s #HACK name tag */
-						printf( esc_html_x( 'Join %s', 'Footer', 'hack' ), hack_name_tag() );
+						printf( esc_html__( 'Join %s', 'hack' ), hack_name_tag() );
 					?>
 					</h1>
 					<?php
@@ -46,7 +46,7 @@ use function Dkjensen\Hack\Functions\hack_name_tag;
 				<div class="row">
 					<div class="column full-width">
 						<div class="site-footer-social">
-							<h5><?php echo esc_html_x( 'Get Connected', 'Footer', 'hack' ); ?></h5>
+							<h5><?php esc_html_e( 'Get Connected', 'hack' ); ?></h5>
 							<a href="https://www.facebook.com/Indigitous" class="site-footer-social--icon"><i class="fab fa-facebook-square"></i></a>
 							<a href="https://kbmm.slack.com/signup" class="site-footer-social--icon"><i class="fab fa-slack"></i></a>
 						</div>

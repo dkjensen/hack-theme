@@ -4,7 +4,7 @@
 			<div class="column one-third align-center">
 				<h5 class="divider" data-sal="slide-right"><?php esc_html_e( 'Fast Facts', 'hack' ); ?></h5>
 				<h2 class="primary-color" data-sal="slide-right"><?php esc_html_e( 'What is #HACK?', 'hack' ); ?></h2>
-				<div class="slick-carousel-pagination" data-sal="slide-right" data-slick-id="eight" data-label="<?php echo esc_attr_x( 'Fact', 'Text Before Slider Pagination', 'hack' ); ?>"><div></div></div>
+				<div class="slick-carousel-pagination" data-sal="slide-right" data-slick-id="eight" data-label="<?php esc_attr_e( 'Fact', 'hack' ); ?>"><div></div></div>
 			</div>
 			<div class="column two-thirds">
 				<div class="template-parts-fast-facts-slider hack-slick" data-slick-id="eight" data-slick='{"arrows": true, "slidesToShow": 2, "responsive": [{"breakpoint": 768, "settings": {"slidesToShow": 1}}], "variableWidth": true, "draggable": true, "infinite": false, "clickProgress": true}'>

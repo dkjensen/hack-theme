@@ -21,7 +21,7 @@ if ( have_posts() ) :
 					<h1>
 						<?php
 						/* translators: %s #HACK name tag */
-						echo sprintf( esc_html_x( 'Join %s', 'Coming soon page', 'hack' ), hack_name_tag() );
+						echo sprintf( esc_html__( 'Join %s', 'hack' ), hack_name_tag() );
 						?>
 					</h1>
 					<hr />
@@ -31,7 +31,7 @@ if ( have_posts() ) :
 							<h3 class="primary-color">
 								<?php
 								/* translators: %s #HACK name tag */
-								echo sprintf( esc_html_x( 'Bring %s To Your City', 'Coming soon page', 'hack' ), hack_name_tag() );
+								echo sprintf( esc_html__( 'Bring %s To Your City', 'hack' ), hack_name_tag() );
 								?>
 							</h3>
 							<p>
@@ -42,7 +42,7 @@ if ( have_posts() ) :
 							<h3 class="primary-color">
 								<?php
 								/* translators: %s #HACK name tag */
-								echo sprintf( esc_html_x( '%s is coming to your city', 'Coming soon page', 'hack' ), hack_name_tag() );
+								echo sprintf( esc_html__( '%s is coming to your city', 'hack' ), hack_name_tag() );
 								?>
 							</h3>
 							<p>
@@ -52,7 +52,7 @@ if ( have_posts() ) :
 					</div>
 					<p>&nbsp;</p>
 					<p>&nbsp;</p>
-					<p><?php echo esc_html_x( 'New #HACK website coming soon', 'Coming soon page', 'hack' ); ?></p>
+					<p><?php echo esc_html__( 'New #HACK website coming soon', 'hack' ); ?></p>
 				</div>
 			</div>
 		</article>

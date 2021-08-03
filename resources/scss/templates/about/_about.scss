@@ -70,6 +70,7 @@
 
 		.timeline {
 			position: relative;
+			z-index: 1;
 			list-style: none;
 			counter-reset: timeline-counter;
 

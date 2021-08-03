@@ -27,6 +27,8 @@
 				</a>
 			</div><!-- .site-branding -->
 
+			<?php
+			/*
 			<a href="#" class="language-switcher-toggle">
 				<?php echo apply_filters( 'wpml_current_language', null ); ?>
 			</a>
@@ -36,6 +38,8 @@
 					<?php echo do_shortcode( '[wpml_language_switcher flags=0 translated=true]' ); ?>
 				</div>
 			</div>
+			*/
+			?>
 
 			<?php if ( has_nav_menu( 'primary' ) ) : ?>
 

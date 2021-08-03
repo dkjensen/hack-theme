@@ -23,11 +23,11 @@ if ( have_posts() ) :
 							<h1>
 								<?php
 								/* translators: %s #HACK name tag */
-								echo sprintf( esc_html_x( 'Bring %s To Your City', 'City lead page', 'hack' ), hack_name_tag() );
+								echo sprintf( esc_html__( 'Bring %s To Your City', 'hack' ), hack_name_tag() );
 								?>
 							</h1>
 							<p>
-								<?php echo esc_html_x( 'You have an opportunity to make an impact for God in your city.  Indigitous wants to empower you to serve your city and tackle those real problems facing your friends, neighbors, and coworkers.', 'City lead page', 'hack' ); ?>
+								<?php esc_html_e( 'You have an opportunity to make an impact for God in your city.  Indigitous wants to empower you to serve your city and tackle those real problems facing your friends, neighbors, and coworkers.', 'hack' ); ?>
 							</p>
 							<p>
 								<a href="https://indigitous.typeform.com/to/mojiHQqC" class="button" target="_blank"><?php esc_html_e( 'Register Now', 'hack' ); ?></a>
@@ -92,7 +92,7 @@ if ( have_posts() ) :
 							<h2>
 								<?php
 								/* translators: %s #HACK name tag */
-								printf( esc_html_x( 'Interested in leading %s in your city?', 'City lead page', 'hack' ), hack_name_tag() );
+								printf( esc_html__( 'Interested in leading %s in your city?', 'hack' ), hack_name_tag() );
 								?>
 							</h2>
 							<p>
@@ -190,10 +190,10 @@ if ( have_posts() ) :
 									</div>
 									<div class="team-member-label">
 										<h3><?php echo esc_html( 'Russ' ); ?></h3>
-										<h6><?php echo esc_html_x( 'Co-Founder, Indigitous', 'Team Member Title', 'hack' ); ?></h6>
+										<h6><?php esc_html_e( 'Co-Founder, Indigitous', 'hack', 'hack' ); ?></h6>
 									</div>
 									<div class="team-member-bio">
-										<?php echo esc_html_x( 'Loves building platforms, learning about the blockchain/crypto space and investing in virtual real estate.', 'Team Member Bio', 'hack' ); ?>
+										<?php esc_html_e( 'Loves building platforms, learning about the blockchain/crypto space and investing in virtual real estate.', 'hack', 'hack' ); ?>
 									</div>
 								</div>
 								<div class="team-member">
@@ -202,10 +202,10 @@ if ( have_posts() ) :
 									</div>
 									<div class="team-member-label">
 										<h3><?php echo esc_html( 'Ann' ); ?></h3>
-										<h6><?php echo esc_html_x( 'Project Lead For #HACK', 'Team Member Title', 'hack' ); ?></h6>
+										<h6><?php esc_html_e( 'Project Lead For #HACK', 'hack', 'hack' ); ?></h6>
 									</div>
 									<div class="team-member-bio">
-										<?php echo esc_html_x( 'Loves gathering followers of Jesus together for partnership, innovation and collaboration.', 'Team Member Bio', 'hack' ); ?>
+										<?php esc_html_e( 'Loves gathering followers of Jesus together for partnership, innovation and collaboration.', 'hack', 'hack' ); ?>
 									</div>
 								</div>
 								<div class="team-member">
@@ -214,10 +214,10 @@ if ( have_posts() ) :
 									</div>
 									<div class="team-member-label">
 										<h3><?php echo esc_html( 'Emmanuel' ); ?></h3>
-										<h6><?php echo esc_html_x( 'Africa, English & Portuguese', 'Team Member Title', 'hack' ); ?></h6>
+										<h6><?php esc_html_e( 'Africa, English & Portuguese', 'hack', 'hack' ); ?></h6>
 									</div>
 									<div class="team-member-bio">
-										<?php echo esc_html_x( 'Passionate about all things faith and technology.', 'Team Member Bio', 'hack' ); ?>
+										<?php esc_html_e( 'Passionate about all things faith and technology.', 'hack', 'hack' ); ?>
 									</div>
 								</div>
 								<div class="team-member">
@@ -226,10 +226,10 @@ if ( have_posts() ) :
 									</div>
 									<div class="team-member-label">
 										<h3><?php echo esc_html( 'Senay' ); ?></h3>
-										<h6><?php echo esc_html_x( 'Africa, English & Portuguese', 'Team Member Title', 'hack' ); ?></h6>
+										<h6><?php esc_html_e( 'Africa, English & Portuguese', 'hack', 'hack' ); ?></h6>
 									</div>
 									<div class="team-member-bio">
-										<?php echo esc_html_x( 'Passionate Digital Ministry.', 'Team Member Bio', 'hack' ); ?>
+										<?php esc_html_e( 'Passionate Digital Ministry.', 'hack', 'hack' ); ?>
 									</div>
 								</div>
 								<div class="team-member">
@@ -238,10 +238,10 @@ if ( have_posts() ) :
 									</div>
 									<div class="team-member-label">
 										<h3><?php echo esc_html( 'Yomi' ); ?></h3>
-										<h6><?php echo esc_html_x( 'Africa, English & Portuguese', 'Team Member Title', 'hack' ); ?></h6>
+										<h6><?php esc_html_e( 'Africa, English & Portuguese', 'hack', 'hack' ); ?></h6>
 									</div>
 									<div class="team-member-bio">
-										<?php echo esc_html_x( 'Loves connecting people to Jesus through digital strategies.', 'Team Member Bio', 'hack' ); ?>
+										<?php esc_html_e( 'Loves connecting people to Jesus through digital strategies.', 'hack', 'hack' ); ?>
 									</div>
 								</div>
 								<div class="team-member">
@@ -250,10 +250,10 @@ if ( have_posts() ) :
 									</div>
 									<div class="team-member-label">
 										<h3><?php echo esc_html( 'Charles' ); ?></h3>
-										<h6><?php echo esc_html_x( 'Africa, French', 'Team Member Title', 'hack' ); ?></h6>
+										<h6><?php esc_html_e( 'Africa, French', 'hack', 'hack' ); ?></h6>
 									</div>
 									<div class="team-member-bio">
-										<?php echo esc_html_x( 'Enjoys being at the intersection of mission, youth, leadership and digital.', 'Team Member Bio', 'hack' ); ?>
+										<?php esc_html_e( 'Enjoys being at the intersection of mission, youth, leadership and digital.', 'hack', 'hack' ); ?>
 									</div>
 								</div>
 								<div class="team-member">
@@ -262,10 +262,10 @@ if ( have_posts() ) :
 									</div>
 									<div class="team-member-label">
 										<h3><?php echo esc_html( 'Sitthavee (Son)' ); ?></h3>
-										<h6><?php echo esc_html_x( 'APAC', 'Team Member Title', 'hack' ); ?></h6>
+										<h6><?php esc_html_e( 'APAC', 'hack', 'hack' ); ?></h6>
 									</div>
 									<div class="team-member-bio">
-										<?php echo esc_html_x( 'A Christian entrepreneur who wants to leverage the power of technology to create a better world.', 'Team Member Bio', 'hack' ); ?>
+										<?php esc_html_e( 'A Christian entrepreneur who wants to leverage the power of technology to create a better world.', 'hack', 'hack' ); ?>
 									</div>
 								</div>
 								<div class="team-member">
@@ -274,10 +274,10 @@ if ( have_posts() ) :
 									</div>
 									<div class="team-member-label">
 										<h3><?php echo esc_html( 'Melissa' ); ?></h3>
-										<h6><?php echo esc_html_x( 'Europe', 'Team Member Title', 'hack' ); ?></h6>
+										<h6><?php esc_html_e( 'Europe', 'hack', 'hack' ); ?></h6>
 									</div>
 									<div class="team-member-bio">
-										<?php echo esc_html_x( 'Passionate about digital missions and helping people be a part of the mission.', 'Team Member Bio', 'hack' ); ?>
+										<?php esc_html_e( 'Passionate about digital missions and helping people be a part of the mission.', 'hack', 'hack' ); ?>
 									</div>
 								</div>
 								<div class="team-member">
@@ -286,10 +286,10 @@ if ( have_posts() ) :
 									</div>
 									<div class="team-member-label">
 										<h3><?php echo esc_html( 'Melissa' ); ?></h3>
-										<h6><?php echo esc_html_x( 'Latin America', 'Team Member Title', 'hack' ); ?></h6>
+										<h6><?php esc_html_e( 'Latin America', 'hack', 'hack' ); ?></h6>
 									</div>
 									<div class="team-member-bio">
-										<?php echo esc_html_x( 'Loves connecting people to Jesus through digital strategies.', 'Team Member Bio', 'hack' ); ?>
+										<?php esc_html_e( 'Loves connecting people to Jesus through digital strategies.', 'hack', 'hack' ); ?>
 									</div>
 								</div>
 								<div class="team-member">
@@ -298,10 +298,10 @@ if ( have_posts() ) :
 									</div>
 									<div class="team-member-label">
 										<h3><?php echo esc_html( 'Siby' ); ?></h3>
-										<h6><?php echo esc_html_x( 'South Asia', 'Team Member Title', 'hack' ); ?></h6>
+										<h6><?php esc_html_e( 'South Asia', 'hack', 'hack' ); ?></h6>
 									</div>
 									<div class="team-member-bio">
-										<?php echo esc_html_x( 'Follower of the Nazarene.', 'Team Member Bio', 'hack' ); ?>
+										<?php esc_html_e( 'Follower of the Nazarene.', 'hack', 'hack' ); ?>
 									</div>
 								</div>
 								<div class="team-member">
@@ -310,10 +310,10 @@ if ( have_posts() ) :
 									</div>
 									<div class="team-member-label">
 										<h3><?php echo esc_html( 'Andrew' ); ?></h3>
-										<h6><?php echo esc_html_x( 'USA', 'Team Member Title', 'hack' ); ?></h6>
+										<h6><?php esc_html_e( 'USA', 'hack', 'hack' ); ?></h6>
 									</div>
 									<div class="team-member-bio">
-										<?php echo esc_html_x( 'Loves to imagine new ways to empower people towards the great commission beyond the four church walls.', 'Team Member Bio', 'hack' ); ?>
+										<?php esc_html_e( 'Loves to imagine new ways to empower people towards the great commission beyond the four church walls.', 'hack', 'hack' ); ?>
 									</div>
 								</div>
 								<div class="team-member">
@@ -322,10 +322,10 @@ if ( have_posts() ) :
 									</div>
 									<div class="team-member-label">
 										<h3><?php echo esc_html( 'Sammy' ); ?></h3>
-										<h6><?php echo esc_html_x( 'APAC', 'Team Member Title', 'hack' ); ?></h6>
+										<h6><?php esc_html_e( 'APAC', 'hack', 'hack' ); ?></h6>
 									</div>
 									<div class="team-member-bio">
-										<?php echo esc_html_x( 'A tech community builder and a follower of God’s calling on his life. ', 'Team Member Bio', 'hack' ); ?>
+										<?php esc_html_e( 'A tech community builder and a follower of God’s calling on his life. ', 'hack', 'hack' ); ?>
 									</div>
 								</div>
 								<div class="team-member">
@@ -334,10 +334,10 @@ if ( have_posts() ) :
 									</div>
 									<div class="team-member-label">
 										<h3><?php echo esc_html( 'Danny' ); ?></h3>
-										<h6><?php echo esc_html_x( 'APAC', 'Team Member Title', 'hack' ); ?></h6>
+										<h6><?php esc_html_e( 'APAC', 'hack', 'hack' ); ?></h6>
 									</div>
 									<div class="team-member-bio">
-										<?php echo esc_html_x( 'Interested in technology and theology.', 'Team Member Bio', 'hack' ); ?>
+										<?php esc_html_e( 'Interested in technology and theology.', 'hack', 'hack' ); ?>
 									</div>
 								</div>
 							</div>
@@ -350,7 +350,7 @@ if ( have_posts() ) :
 					<h1 class="white-color" data-sal="slide-down">
 						<?php
 						/* translators: %s #HACK name tag */
-						echo sprintf( esc_html_x( 'Lead %s in your city', 'City lead page', 'hack' ), hack_name_tag() );
+						echo sprintf( esc_html__( 'Lead %s in your city', 'hack' ), hack_name_tag() );
 						?>
 					</h1>
 					<p data-sal="slide-down"><a href="https://indigitous.typeform.com/to/mojiHQqC" class="button" target="_blank"><?php esc_html_e( 'Register Now', 'hack' ); ?></a></p>
@@ -359,31 +359,6 @@ if ( have_posts() ) :
 			<?php get_template_part( 'template-parts/fast-facts' ); ?>
 			<?php get_template_part( 'template-parts/celebrate-2020' ); ?>
 			<?php get_template_part( 'template-parts/projects' ); ?>
-			<?php
-			/*
-			<div class="section padding-0 section-lead-eleven">
-				<div class="wrap">
-					<div class="section-lead-eleven-slider hack-slick" data-slick-id="eleven" data-slick='{"dots": false, "arrows": true, "asNavFor": ".section-lead-eleven-slider-captions"}'>
-						<div class="section-lead-eleven-slider--item" style="background-image: url(<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-section-11-1.jpg' ) ); ?>)"></div>
-						<div class="section-lead-eleven-slider--item" style="background-image: url(<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-lead-section-11-1.jpg' ) ); ?>)"></div>
-					</div>
-					<div class="section-lead-eleven-slider-captions-container">
-						<div class="row">
-							<div class="column one-half">
-								<div class="section-lead-eleven-slider-captions hack-slick" data-slick='{"asNavFor": ".section-lead-eleven-slider", "fade": true}'>
-									<div class="caption"><?php echo esc_html_x( '#HACK2020 in Ivory Coast', 'Lead Page Slider Caption', 'hack' ); ?></div>
-									<div class="caption"><?php echo esc_html_x( '#HACK2020 in Ivory Coast 2', 'Lead Page Slider Caption', 'hack' ); ?></div>
-								</div>
-							</div>
-							<div class="column one-half">
-								<div class="slick-carousel-pagination" data-slick-id="eleven" data-label="<?php echo esc_attr_x( 'Image', 'Text Before Slider Pagination', 'hack' ); ?>"><div></div></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			*/
-			?>
 			<?php get_template_part( 'template-parts/testimonials' ); ?>
 		</article>
 

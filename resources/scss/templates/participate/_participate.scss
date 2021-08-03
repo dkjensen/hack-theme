@@ -162,42 +162,4 @@
 			height: 656px;
 		}
 	}
-
-	&-four {
-
-		a {
-			color: $color--text;
-		}
-
-		&-map {
-			display: block;
-			margin: $spacing--xl auto;
-
-		}
-
-		&-items {
-			text-align: center;
-
-			.column {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				justify-content: center;
-				margin: 0 0 $spacing--xl;
-
-				@include mq($until: tablet) {
-					width: 50%;
-
-					&:last-child {
-						width: 100%;
-					}
-				}
-			}
-		}
-	}
-
-	&-six {
-
-	}
-
 }

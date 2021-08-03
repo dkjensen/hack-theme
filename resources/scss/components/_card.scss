@@ -133,6 +133,10 @@
 				position: absolute;
 				top: $gutter * 2;
 				margin: -$spacing--xxxl 0 0;
+
+				img {
+					margin: 0 $gutter 0 0;
+				}
 			}
 
 			&-thumbnail {

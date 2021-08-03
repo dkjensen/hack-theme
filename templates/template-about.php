@@ -296,7 +296,7 @@ if ( have_posts() ) :
 											<h2><?php esc_html_e( 'Canada', 'hack' ); ?></h2>
 										</div>
 										<p><?php esc_html_e( 'In 2016 at the first Indigitous #HACK, a team in Waterloo, Canada created a suicide prevention website. If you had Googled “how to kill yourself” at that time, the top search results were advice on ways to do it. The #HACK team created a website to offer hope and connect people with the help they need and used SEO to make the site one of the top results.', 'hack' ); ?></p>
-										<div class="slick-carousel-pagination" data-slick-id="seven" data-label="<?php echo esc_attr_x( 'Highlight', 'Text Before Slider Pagination', 'hack' ); ?>"><div></div></div>
+										<div class="slick-carousel-pagination" data-slick-id="seven" data-label="<?php esc_attr_e( 'Highlight', 'hack' ); ?>"><div></div></div>
 									</div>
 								</div>
 								<div class="section-about-seven-slider--item" style="background-image: url(<?php echo esc_url( get_theme_file_uri( 'assets/img/about/hack-about-section-7-th.jpg' ) ); ?>)">
@@ -306,7 +306,7 @@ if ( have_posts() ) :
 											<h2><?php esc_html_e( 'Thailand', 'hack' ); ?></h2>
 										</div>
 										<p><?php esc_html_e( 'A team in Chiang Mai, Thailand developed a way for illiterate people to learn how to read the Bible. Bible Karaoke uses a video that highlights each word of the Bible as it is spoken by an audio track. Through repetition, people who use Bible Karaoke will eventually be able to read the Bible on their own.', 'hack' ); ?></p>
-										<div class="slick-carousel-pagination" data-slick-id="seven" data-label="<?php echo esc_attr_x( 'Highlight', 'Text Before Slider Pagination', 'hack' ); ?>"><div></div></div>
+										<div class="slick-carousel-pagination" data-slick-id="seven" data-label="<?php esc_attr_e( 'Highlight', 'hack' ); ?>"><div></div></div>
 									</div>
 								</div>
 								<div class="section-about-seven-slider--item" style="background-image: url(<?php echo esc_url( get_theme_file_uri( 'assets/img/about/hack-about-section-7-id.jpg' ) ); ?>)">
@@ -316,7 +316,7 @@ if ( have_posts() ) :
 											<h2><?php esc_html_e( 'Indonesia', 'hack' ); ?></h2>
 										</div>
 										<p><?php esc_html_e( 'There are over 700 languages in Indonesia, and the Bible is only available in 100 of them. To help increase biblical literacy, a team of hackers in Indonesia developed a program to automate the creation of a customizable study Bible in tribal languages.', 'hack' ); ?></p>
-										<div class="slick-carousel-pagination" data-slick-id="seven" data-label="<?php echo esc_attr_x( 'Highlight', 'Text Before Slider Pagination', 'hack' ); ?>"><div></div></div>
+										<div class="slick-carousel-pagination" data-slick-id="seven" data-label="<?php esc_attr_e( 'Highlight', 'hack' ); ?>"><div></div></div>
 									</div>
 								</div>
 								<div class="section-about-seven-slider--item" style="background-image: url(<?php echo esc_url( get_theme_file_uri( 'assets/img/about/hack-about-section-7-ph.jpg' ) ); ?>)">
@@ -326,7 +326,7 @@ if ( have_posts() ) :
 											<h2><?php esc_html_e( 'Philippines', 'hack' ); ?></h2>
 										</div>
 										<p><?php esc_html_e( 'In Region 6 of Iloilo, Philippines, there are 349 orphans and more than 1,000 churches. Participants at #HACK Iloilo created a platform to connect orphans with adoptive foster parents. “If just one family from each church were to rise up, we can provide a home for each child,” said Pastor Mark about the project.', 'hack' ); ?></p>
-										<div class="slick-carousel-pagination" data-slick-id="seven" data-label="<?php echo esc_attr_x( 'Highlight', 'Text Before Slider Pagination', 'hack' ); ?>"><div></div></div>
+										<div class="slick-carousel-pagination" data-slick-id="seven" data-label="<?php esc_attr_e( 'Highlight', 'hack' ); ?>"><div></div></div>
 									</div>
 								</div>
 								<div class="section-about-seven-slider--item" style="background-image: url(<?php echo esc_url( get_theme_file_uri( 'assets/img/about/hack-about-section-7-gb.jpg' ) ); ?>)">
@@ -336,7 +336,7 @@ if ( have_posts() ) :
 											<h2><?php esc_html_e( 'United Kingdom', 'hack' ); ?></h2>
 										</div>
 										<p><?php esc_html_e( 'In 2019, hackers in London, UK focused on projects to provide aid to low-income individuals in their communities. Find the Need is a platform that helps church congregations find areas of deprivation around their church and relevant ministries that can help. With Bankuet, hackers helped food banks get the donations they need by building an API-driven food bank stock inventory system.', 'hack' ); ?></p>
-										<div class="slick-carousel-pagination" data-slick-id="seven" data-label="<?php echo esc_attr_x( 'Highlight', 'Text Before Slider Pagination', 'hack' ); ?>"><div></div></div>
+										<div class="slick-carousel-pagination" data-slick-id="seven" data-label="<?php esc_attr_e( 'Highlight', 'hack' ); ?>"><div></div></div>
 									</div>
 								</div>
 								<div class="section-about-seven-slider--item" style="background-image: url(<?php echo esc_url( get_theme_file_uri( 'assets/img/about/hack-about-section-7-us.jpg' ) ); ?>)">
@@ -346,7 +346,7 @@ if ( have_posts() ) :
 											<h2><?php esc_html_e( 'United States', 'hack' ); ?></h2>
 										</div>
 										<p><?php esc_html_e( 'The Rohingya people group have been displaced from their homeland and now live in more than 30 countries. Because their language is small, there are no existing Bible app translations for it. To reach this group, hackers in three U.S. cities (Chicago, Orlando, and Phoenix) created an app that allows them to hear the Gospel in their heart language.', 'hack' ); ?></p>
-										<div class="slick-carousel-pagination" data-slick-id="seven" data-label="<?php echo esc_attr_x( 'Highlight', 'Text Before Slider Pagination', 'hack' ); ?>"><div></div></div>
+										<div class="slick-carousel-pagination" data-slick-id="seven" data-label="<?php esc_attr_e( 'Highlight', 'hack' ); ?>"><div></div></div>
 									</div>
 								</div>
 							</div>

@@ -22,6 +22,10 @@
 
 		a {
 			display: inline-block;
+
+			&[href="#"] {
+				pointer-events: none;
+			}
 		}
 
 		.menu-item {

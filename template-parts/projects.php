@@ -147,6 +147,6 @@
 					</div>
 				</div>
 			</div>
-		<div class="slick-carousel-pagination" data-slick-id="ten" data-label="<?php echo esc_attr_x( 'Project', 'Text Before Slider Pagination', 'hack' ); ?>"><div></div></div>
+		<div class="slick-carousel-pagination" data-slick-id="ten" data-label="<?php esc_attr_e( 'Project', 'hack' ); ?>"><div></div></div>
 	</div>
 </div>
