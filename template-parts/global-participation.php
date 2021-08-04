@@ -85,7 +85,7 @@ use function Dkjensen\Hack\Functions\hack_name_tag;
 					</div>
 					<div class="media-text--content">
 						<span><?php echo esc_html( '23' ); ?></span>
-						<p><?php esc_html_e( 'South Africa`', 'hack' ); ?></p>
+						<p><?php esc_html_e( 'South Africa', 'hack' ); ?></p>
 					</div>
 				</div>
 			</div>

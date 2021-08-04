@@ -31,7 +31,12 @@ if ( have_posts() ) :
 
 							<?php
                             // phpcs:ignore
-                            foreach( $hack_locations as $region => $_hack_locations ) {
+                            foreach( $hack_locations as $region => $countries ) {
+								$_hack_locations = array();
+								// phpcs:ignore
+								foreach ( $countries as $country => $locations ) {
+									$_hack_locations = array_merge( $_hack_locations, $locations );
+								}
 								?>
 
 								<div class="accordion data-section-id="<?php echo esc_attr( $region ); ?>">
@@ -56,7 +61,13 @@ if ( have_posts() ) :
 						<div class="column seven-twelfths offset-1">
 							<?php
                             // phpcs:ignore
-							foreach ( $hack_locations as $region => $_hack_locations ) {
+							foreach( $hack_locations as $region => $countries ) {
+								$_hack_locations = array();
+								// phpcs:ignore
+								foreach ( $countries as $country => $locations ) {
+									$_hack_locations = array_merge( $_hack_locations, $locations );
+								}
+
 								$hack_location_count = count( $_hack_locations );
 								?>
 

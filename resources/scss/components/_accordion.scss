@@ -1,5 +1,5 @@
 .accordion {
-	padding: $gutter / 2 $gutter;
+	position: relative;
 	margin: 0 0 $gutter;
 	border: 1px solid $color--text;
 	border-radius: 4px;
@@ -8,21 +8,46 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		padding: $gutter / 2 $gutter;
 		cursor: pointer;
+		border-radius: 4px;
 
 		span {
+			display: flex;
+			align-items: center;
 
 			@extend h3;
 			margin: 0;
 
 			@include transition();
+
+			&.is-large {
+
+				@extend h2;
+				margin: 0;
+			}
+		}
+
+		a {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			display: flex;
+			align-items: center;
+			padding: $gutter / 2 $gutter;
+		}
+
+		img {
+			margin: 0 $gutter 0 0;
 		}
 
 		.is-active & {
 			color: $color--primary;
 		}
 
-		&:after {
+		.has-children &:after {
 			display: block;
 			width: 2rem;
 			height: 2rem;
@@ -44,6 +69,7 @@
 
 	&-content {
 		display: none;
+		padding: 0 $gutter $gutter;
 		margin: $spacing--xs 0 0;
 	}
 }

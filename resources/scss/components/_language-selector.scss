@@ -155,10 +155,6 @@
 		text-transform: uppercase;
 		background: none;
 
-		@include mq($until: tablet) {
-			margin-left: auto;
-		}
-
 		@include arrow();
 
 		@include hover-focus {

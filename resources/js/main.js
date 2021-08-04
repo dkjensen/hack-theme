@@ -123,11 +123,23 @@ let hack = {};
 		scale: 1.1
 	} );
 
-	$( '.accordion-header' ).on( 'click', function( e ) {
-		e.preventDefault();
+	$( '.accordion' ).each( function() {
+		let $content = $( this ).children( '.accordion-content' );
 
-		$( this ).siblings( '.accordion-content' ).slideToggle();
-		$( this ).parent().toggleClass( 'is-active' );
+		if ( $content.length ) {
+			$( this ).addClass( 'has-children' );
+		}
+	} );
+
+	$( '.accordion-header' ).on( 'click', function( e ) {
+		let $content = $( this ).siblings( '.accordion-content' );
+
+		if ( $content.length ) {
+			e.preventDefault();
+
+			$content.slideToggle();
+			$( this ).parent().toggleClass( 'is-active' );
+		}
 	} );
 
 	$( '.toggle-trigger' ).on( 'click', function( e ) {

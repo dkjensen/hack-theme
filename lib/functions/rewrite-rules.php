@@ -13,7 +13,7 @@ namespace Dkjensen\Hack\Functions;
  * @return void
  */
 function rewrite_rules() {
-	add_rewrite_rule( '^locations/([a-z]+)/?$', 'index.php?region=$matches[1]', 'top' );
+	add_rewrite_rule( '^locations/([a-z0-9\-]+)/?$', 'index.php?region=$matches[1]', 'top' );
 }
 add_action( 'init', __NAMESPACE__ . '\rewrite_rules' );
 
@@ -37,8 +37,6 @@ add_filter( 'query_vars', __NAMESPACE__ . '\query_vars' );
  * @return string
  */
 function template_include( $template ) {
-	global $wp_query;
-
 	if ( get_query_var( 'region' ) ) {
 		$template = locate_template( 'templates/template-region.php' );
 	}

@@ -2,5 +2,105 @@
 
 	&-one {
 
+		.accordion {
+			min-height: 5.6rem;
+			margin: 0 0 $gutter * 2;
+			background-repeat: no-repeat;
+			background-position: center top;
+			background-size: 100%;
+			border: 0;
+
+			@include mq(tablet) {
+				min-height: 8.4rem;
+			}
+
+			&:not(.is-active) {
+
+				.accordion-header {
+					background-color: $color--gray-300;
+				}
+			}
+
+			&-header {
+				position: absolute;
+				top: 0;
+				right: 0;
+				left: 0;
+				z-index: 1;
+				height: 5.6rem;
+				color: $color--text !important;
+				background-color: rgba($color--white, 50%);
+
+				@include mq(tablet) {
+					height: 8.4rem;
+				}
+
+				@include transition();
+
+				&:after {
+					color: $color--text !important;
+				}
+
+				a {
+					color: inherit;
+					text-decoration: none;
+				}
+
+				img {
+					filter: saturate(1.15) brightness(1.15);
+				}
+			}
+
+			&-content {
+				padding: 0;
+				margin: 0;
+				text-align: center;
+
+				img {
+					border-top-left-radius: 4px;
+					border-top-right-radius: 4px;
+				}
+
+				a {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					height: 5rem;
+					color: $color--text;
+					text-decoration: none;
+					border: 2px solid transparent;
+					border-radius: 4px;
+
+					@include hover-focus {
+						color: $color--primary;
+						border-color: $color--primary;
+					}
+				}
+
+				.row {
+					padding: $spacing--m $gutter $spacing--s;
+					background-color: $color--white;
+					border-bottom-right-radius: 4px;
+					border-bottom-left-radius: 4px;
+
+					div {
+						margin: $gutter / 2 0;
+						font-size: 2.4rem;
+						font-weight: $font-weight--bold;
+					}
+				}
+			}
+
+			&-hero {
+				height: 34rem;
+
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					object-position: center;
+				}
+			}
+		}
 	}
 }

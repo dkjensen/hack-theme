@@ -7,6 +7,8 @@
 
 use function Dkjensen\Hack\Functions\get_hack_locations;
 use function Dkjensen\Hack\Functions\get_region_name;
+use function Dkjensen\Hack\Functions\get_country_name;
+use function Dkjensen\Hack\Functions\get_hack_country_image;
 
 $hack_locations        = get_hack_locations();
 $hack_region_locations = $hack_locations[ get_region_name() ] ?? array();
@@ -15,7 +17,7 @@ get_header();
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div class="section section-locations-one">
+	<div class="section section-region-one">
 		<div class="wrap">
 			<div class="row">
 				<div class="column one-third">
@@ -36,8 +38,52 @@ get_header();
 					</p>
 				</div>
 				<div class="column seven-twelfths offset-1">
-					
-				
+					<?php
+					// phpcs:ignore
+					foreach( $hack_locations as $region => $countries ) {
+						if ( $region === get_region_name() ) {
+							foreach ( $countries as $country_code => $locations ) {
+								?>
+
+							<div class="accordion">
+								<div class="accordion-header">
+									<span class="is-large">
+										<?php
+
+										$flag = get_theme_file_uri( 'assets/img/flags/' . strtolower( $country_code ) . '.svg' );
+
+										if ( count( $locations ) > 1 ) {
+											printf( '<img src="%s" width="40" />%s', esc_url( $flag ), esc_html( get_country_name( $country_code ) ) );
+										} else {
+											printf( '<a href="%s"><img src="%s" width="40" />%s</a>', esc_url( get_term_link( absint( $locations[0]->term_id ), 'location' ) ), esc_url( $flag ), esc_html( get_country_name( $country_code ) ) );
+										}
+
+										?>
+										</span>
+								</div>
+								<?php if ( count( $locations ) > 1 ) { ?>
+
+								<div class="accordion-content">
+									<div class="accordion-hero">
+										<img src="<?php echo esc_url( get_hack_country_image( $country_code ) ); ?>" />
+									</div>
+									<div class="row">
+										<?php
+										foreach ( $locations as $location ) {
+											printf( '<div class="column one-half"><div><a href="%s">%s</a></div></div>', get_term_link( absint( $location->term_id ), 'location' ), $location->name );
+										}
+										?>
+									</div>
+								</div>
+
+								<?php } ?>
+							</div>
+
+								<?php
+							}
+						}
+					}
+					?>
 				</div>
 			</div>
 		</div>
