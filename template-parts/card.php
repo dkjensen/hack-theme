@@ -46,7 +46,7 @@ use function Dkjensen\Hack\Functions\hack_post_excerpt;
 				
 			<?php } ?>
 		
-			<a href="#" class="card--actions-share addthis_button_compact" addthis:url="<?php echo esc_url( get_permalink() ); ?>" addthis:title="<?php echo esc_attr( get_the_title() ); ?>" ><i class="fas fa-share-alt"></i> <?php esc_html_e( 'Share', 'hack' ); ?></a>
+			<a href="#" class="card--actions-share share" data-share="<?php echo esc_url( get_permalink() ); ?>"><i class="fas fa-share-alt"></i> <?php esc_html_e( 'Share', 'hack' ); ?></a>
 		</div>
 	</div>
 </article>

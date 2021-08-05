@@ -47,7 +47,7 @@ get_header();
 
 							<div class="accordion">
 								<div class="accordion-header">
-									<span class="is-large">
+									<span>
 										<?php
 
 										$flag = get_theme_file_uri( 'assets/img/flags/' . strtolower( $country_code ) . '.svg' );
@@ -64,9 +64,6 @@ get_header();
 								<?php if ( count( $locations ) > 1 ) { ?>
 
 								<div class="accordion-content">
-									<div class="accordion-hero">
-										<img src="<?php echo esc_url( get_hack_country_image( $country_code ) ); ?>" />
-									</div>
 									<div class="row">
 										<?php
 										foreach ( $locations as $location ) {

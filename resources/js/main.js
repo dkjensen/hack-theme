@@ -2,12 +2,13 @@ import "slick-carousel";
 import simpleParallax from 'simple-parallax-js';
 import "lity";
 import sal from "sal.js";
+import copy from 'copy-to-clipboard';
 
 let hack = {};
 
 ( function( $ ) {
 
-	sal();
+	const scrollAnimations = sal();
 
 	$( '.menu-toggle' ).on( 'click', function( e ) {
 		e.preventDefault();
@@ -157,5 +158,22 @@ let hack = {};
 		$( '.toggle-content[data-section-id="' + id + '"]' ).slideToggle();
 		$( this ).toggleClass( 'is-active' );
 	} ).filter( ':first-child' ).trigger( 'click' );
+
+	$( '.share' ).on( 'click', function( e ) {
+		e.preventDefault();
+
+		let $this = $( this );
+		let contentToShare = $this.data( 'share' );
+
+		copy( contentToShare, {
+			debug : false,
+			format: 'text/plain',
+			onCopy: function( object ) {
+				console.log( hack_i18n );
+				$this.append( '<div class="share-prompt" data-sal="fade">' + hack_i18n.share_confirmation + '</div>' );
+				scrollAnimations.update();
+			}
+		  } );
+	} );
 
 } )( jQuery );

@@ -23,7 +23,7 @@ if ( have_posts() ) :
 					<div class="row">
 						<div class="column one-third">
 							<h1 class="margin-bottom-xs"><?php esc_html_e( 'Locations', 'hack' ); ?></h1>
-							<p class="intro-text"><?php esc_html_e( 'The Indigitous team is here to help you kick off your Hackathon. Please reach out to us if you need specific guidance from our team.', 'hack' ); ?></p>
+							<p class="intro-text"><?php esc_html_e( 'It’s happening! More locations are being added every day as hosts and participants sign up. Browse the current locations to see where #HACK2021 will take place.', 'hack' ); ?></p>
 							<p class="intro-text">
 								<?php esc_html_e( 'Don’t see your city?', 'hack' ); ?> <br>
 								<a href="<?php echo esc_url( get_permalink( get_page_by_path( 'lead' ) ) ); ?>" class="text-color"><?php esc_html_e( 'Bring #HACK2021 to your city', 'hack' ); ?></a>

@@ -47,22 +47,25 @@
 			color: $color--primary;
 		}
 
-		.has-children &:after {
-			display: block;
-			width: 2rem;
-			height: 2rem;
-			font-size: 2rem;
-			line-height: 1.2;
-			text-align: center;
+		.has-children & {
 
-			@include icon("\f067", 900);
-			@include transition();
+			&:after {
+				display: block;
+				width: 2rem;
+				height: 2rem;
+				font-size: 2rem;
+				line-height: 1.2;
+				text-align: center;
 
-			.is-active & {
-				color: $color--primary;
-
-				@include icon("\f068", 900);
+				@include icon("\f067", 900);
+				@include transition();
 			}
+		}
+
+		.has-children.is-active &:after {
+			color: $color--primary;
+
+			@include icon("\f068", 900);
 		}
 
 	}

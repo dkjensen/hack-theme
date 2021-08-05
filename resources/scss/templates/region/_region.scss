@@ -14,22 +14,23 @@
 				min-height: 8.4rem;
 			}
 
-			&:not(.is-active) {
+			// &:not(.is-active) {
 
-				.accordion-header {
-					background-color: $color--gray-300;
-				}
-			}
+			// 	.accordion-header {
+			// 		background-color: $color--gray-300;
+			// 	}
+			// }
 
 			&-header {
-				position: absolute;
-				top: 0;
-				right: 0;
-				left: 0;
+				// position: absolute;
+				// top: 0;
+				// right: 0;
+				// left: 0;
 				z-index: 1;
 				height: 5.6rem;
 				color: $color--text !important;
-				background-color: rgba($color--white, 50%);
+				// background-color: rgba($color--white, 50%);
+				background-color: $color--gray-300;
 
 				@include mq(tablet) {
 					height: 8.4rem;

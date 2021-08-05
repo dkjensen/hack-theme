@@ -1,0 +1,42 @@
+.share {
+	position: relative;
+
+	&-prompt {
+		position: absolute;
+		bottom: 100%;
+		left: 50%;
+		z-index: 10;
+		padding: $spacing--xxxs $spacing--s;
+		font-size: 14px;
+		color: $color--white;
+		white-space: nowrap;
+		pointer-events: none;
+		background-color: $color--primary;
+		border-radius: 4px;
+		transform: translateX(-50%) translateY($gutter * -1);
+		animation: share-prompt-fade 0.2s 0.2s;
+		animation-delay: 2s;
+		animation-fill-mode: forwards;
+
+		&:before {
+			position: absolute;
+			top: 100%;
+			left: 50%;
+			content: "";
+			transform: translateX(-50%);
+
+			@include triangle("down", $gutter, $gutter / 2, $color--primary);
+		}
+	}
+}
+
+@keyframes share-prompt-fade {
+
+	from {
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0;
+	}
+}

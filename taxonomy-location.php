@@ -26,7 +26,7 @@ get_header();
 					<?php echo term_description() ? term_description() : apply_filters( 'the_content', esc_html__( 'The Indigitous team is here to help you kick off your Hackathon. Please reach out to us if you need specific guidance from our team.', 'hack' ) ); ?>
 				</div>
 				<div class="section-location-one-wrap--content-action">
-					<a href="<?php echo esc_url( get_term_meta( get_queried_object_id(), 'registration_url', true ) ); ?>" target="_blank" class="button">
+					<a href="<?php echo esc_url( 'https://indigitous.typeform.com/to/QkVDWhea#source=hackwebsite-' . strtolower( get_term_meta( get_queried_object_id(), 'country_code', true ) ) ); ?>" target="_blank" class="button">
 						<?php
 						/* translators: %s #HACK name tag */
 						printf( esc_html__( 'Join %s', 'hack' ), hack_name_tag() );
