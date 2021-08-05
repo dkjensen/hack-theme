@@ -12,7 +12,7 @@ $hack_infinity_query = null;
 function infinite_scroll_query() {
 	global $hack_infinity_query;
 
-	if ( is_page( 'impact' ) ) {
+	if ( is_page( 'impact' ) || is_page( 'thank-you' ) ) {
 		add_filter( 'infinite_scroll_archive_supported', '__return_true', 50 );
 
 		$hack_infinity_query = new \WP_Query(
