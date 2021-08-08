@@ -19,7 +19,7 @@ use function Dkjensen\Hack\Functions\hack_name_tag;
 			<div class="column one-third">
 				<div class="template-parts-callouts-2-content-item blue-background-color">
 					<h4><?php esc_html_e( 'Bring #HACK2021 to your city and convene hackers to help make Jesus known.', 'hack' ); ?></h4>
-					<p><a href="<?php echo esc_url( get_permalink( get_page_by_path( 'contact' ) ) ); ?>" class="button"><?php esc_html_e( 'About', 'hack' ); ?></a></p>
+					<p><a href="<?php echo esc_url( get_permalink( get_page_by_path( 'about' ) ) ); ?>" class="button"><?php esc_html_e( 'About', 'hack' ); ?></a></p>
 				</div>
 			</div>
 			<div class="column one-third">
