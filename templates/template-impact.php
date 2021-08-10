@@ -103,7 +103,7 @@ if ( have_posts() ) :
 												<?php esc_html_e( 'Locations', 'hack' ); ?>
 											</div>
 											<div class="section-impact-four-items--item--report">
-												<a href="https://hack.indigitous.org/wp-content/uploads/2021/07/HACK2016_FinalReport.pdf" target="_blank"><?php esc_html_e( 'Download Report', 'hack' ); ?></a>
+												<a href="https://hack.indigitous.org/wp-content/uploads/2021/07/HACK2016_FinalReport.pdf" target="_blank"><i class="fas fa-download"></i> <?php esc_html_e( 'Download Report', 'hack' ); ?></a>
 											</div>
 										</div>
 										<div class="section-impact-four-items--item--image">
@@ -126,7 +126,7 @@ if ( have_posts() ) :
 												<?php esc_html_e( 'Locations', 'hack' ); ?>
 											</div>
 											<div class="section-impact-four-items--item--report">
-												<a href="https://hack.indigitous.org/wp-content/uploads/2021/07/HACK2017_FinalReport.pdf" target="_blank"><?php esc_html_e( 'Download Report', 'hack' ); ?></a>
+												<a href="https://hack.indigitous.org/wp-content/uploads/2021/07/HACK2017_FinalReport.pdf" target="_blank"><i class="fas fa-download"></i> <?php esc_html_e( 'Download Report', 'hack' ); ?></a>
 											</div>
 										</div>
 										<div class="section-impact-four-items--item--image">
@@ -172,7 +172,7 @@ if ( have_posts() ) :
 												<?php esc_html_e( 'Locations', 'hack' ); ?>
 											</div>
 											<div class="section-impact-four-items--item--report">
-												<a href="https://hack.indigitous.org/wp-content/uploads/2021/07/HACK2019_FinalReport.pdf" target="_blank"><?php esc_html_e( 'Download Report', 'hack' ); ?></a>
+												<a href="https://hack.indigitous.org/wp-content/uploads/2021/07/HACK2019_FinalReport.pdf" target="_blank"><i class="fas fa-download"></i> <?php esc_html_e( 'Download Report', 'hack' ); ?></a>
 											</div>
 										</div>
 										<div class="section-impact-four-items--item--image">
@@ -195,7 +195,7 @@ if ( have_posts() ) :
 												<?php esc_html_e( 'Locations', 'hack' ); ?>
 											</div>
 											<div class="section-impact-four-items--item--report">
-												<a href="https://hack.indigitous.org/wp-content/uploads/2021/07/HACK2020_FinalReport.pdf" target="_blank"><?php esc_html_e( 'Download Report', 'hack' ); ?></a>
+												<a href="https://hack.indigitous.org/wp-content/uploads/2021/07/HACK2020_FinalReport.pdf" target="_blank"><i class="fas fa-download"></i> <?php esc_html_e( 'Download Report', 'hack' ); ?></a>
 											</div>
 										</div>
 										<div class="section-impact-four-items--item--image">

@@ -22,7 +22,7 @@ $hack_from_year = gmdate( 'Y' ) - 1;
 			<div class="column one-fourth">
 				<?php
 				// phpcs:ignore
-				for ( $i = 2016; $i <= $hack_from_year; $i++ ) {
+				for ( $i = gmdate( 'Y' ) - 1; $i >= 2016; $i-- ) {
 					?>
 
 					<div class="section-stories-posts-toggle toggle-trigger" data-section-id="<?php echo esc_attr( $i ); ?>">
@@ -38,7 +38,7 @@ $hack_from_year = gmdate( 'Y' ) - 1;
 
 					<?php
 					// phpcs:ignore
-					for ( $i = 2016; $i <= $hack_from_year; $i++ ) {
+					for ( $i = gmdate( 'Y' ); $i >= 2016; $i-- ) {
 						$hack_stories = new \WP_Query(
 							array(
 								'post_type'      => 'story',
@@ -87,8 +87,9 @@ $hack_from_year = gmdate( 'Y' ) - 1;
 
 									<h3>
 										<?php
-										if ( get_post_meta( get_the_ID(), 'price', true ) ) {
-											printf( '<span class="primary-color">%s</span> | ', esc_html__( 'Prize Won', 'hack' ) );
+										$prize = get_post_meta( get_the_ID(), 'price', true );
+										if ( $prize && $prize !== (string) '0' ) {
+											printf( '<span class="primary-color">%s</span> | ', esc_html( $prize ) );
 										}
 										?>
 										<?php

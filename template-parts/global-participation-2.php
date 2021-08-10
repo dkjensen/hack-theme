@@ -12,6 +12,9 @@
 		</div>
 	</div>
 	<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/participate/hack-participate-earth.svg' ) ); ?>" class="template-parts-global-participation-2-map" />
+
+	<?php if ( ! is_page( 'participate' ) ) { ?>
+
 	<div class="wrap">
 		<div class="row">
 			<div class="column five-sixths offset-1">
@@ -79,4 +82,6 @@
 			</div>
 		</div>
 	</div>
+
+	<?php } ?>
 </div>

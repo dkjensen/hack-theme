@@ -18,7 +18,7 @@ if ( have_posts() ) :
 					<div class="row">
 						<div class="column two-thirds offset-2">
 							<h1><?php esc_html_e( 'Want to talk?', 'hack' ); ?></h1>
-							<p><?php esc_html_e( 'The Indigitious team is here to help. Please reach out to us if you need specific guidance from our team. We look forward to hearing from you.', 'hack' ); ?></p>
+							<p><?php esc_html_e( 'The Indigitous team is here to help should you need additional information. We look forward to hearing from you. Thank you.', 'hack' ); ?></p>
 						</div>
 					</div>
 					<div class="row">
