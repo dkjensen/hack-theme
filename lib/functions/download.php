@@ -13,7 +13,7 @@ namespace Dkjensen\Hack\Functions;
  * @return void
  */
 function resource_download() {
-	global $wp_query;
+	global $wp_query, $wp_filesystem;
 
 	if ( is_singular( 'resource' ) && ! post_password_required() ) {
 		switch ( get_post_meta( get_the_ID(), 'download_type', true ) ) {
@@ -28,6 +28,12 @@ function resource_download() {
 
 			case 'File':
 			default:
+				if ( empty( $wp_filesystem ) ) {
+					require_once constant( 'ABSPATH' ) . '/wp-admin/includes/file.php';
+
+					\WP_Filesystem();
+				}
+
 				$download = get_post_meta( get_the_ID(), 'download', true );
 
 				if ( $download ) {
@@ -40,7 +46,10 @@ function resource_download() {
 						header( 'Cache-Control: must-revalidate' );
 						header( 'Pragma: public' );
 						header( 'Content-Length: ' . filesize( $file ) );
-						readfile( $file );
+
+						// phpcs:ignore
+						echo $wp_filesystem->get_contents( $file );
+
 						exit;
 					}
 				}
