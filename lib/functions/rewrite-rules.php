@@ -60,7 +60,7 @@ add_filter( 'template_include', __NAMESPACE__ . '\template_include' );
  * @return void
  */
 function filter_resource_visibility( $wp_query ) {
-	if ( ( defined( 'DOING_AJAX' ) && DOING_AJAX ) || is_admin() || ! $wp_query->is_main_query() || 'resource' !== ( $wp_query->query_vars['post_type'] ?? '' ) ) {
+	if ( ( defined( 'DOING_AJAX' ) && DOING_AJAX ) || is_admin() || ! $wp_query->is_main_query() || 'resource' !== ( $wp_query->query_vars['post_type'] ?? '' ) || ! $wp_query->is_post_type_archive ) {
 		return;
 	}
 
