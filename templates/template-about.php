@@ -26,7 +26,7 @@ if ( have_posts() ) :
 								?>
 							</h1>
 							<p><?php esc_html_e( 'Since 2016, the Indigitous #HACK has served as a rallying point for those who have talents in the digital space.', 'hack' ); ?></p>
-							<iframe data-sal="slide-up" width="560" height="315" src="https://www.youtube.com/embed/AeFjeyzEU4Y?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<iframe width="992" height="558" src="https://www.youtube.com/embed/SQvagv8Eegc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						</div>
 					</div>
 				</div>

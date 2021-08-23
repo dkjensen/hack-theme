@@ -405,7 +405,8 @@ function get_hack_locations() {
 		SELECT t.*,
 			tt.*,
 			tm.meta_value AS region,
-			tm2.meta_value AS country_code
+			tm2.meta_value AS country_code,
+			tm3.meta_value AS archived
 		FROM   {$wpdb->terms} AS t
 			INNER JOIN {$wpdb->term_taxonomy} AS tt
 					ON t.term_id = tt.term_id
@@ -415,7 +416,11 @@ function get_hack_locations() {
 			INNER JOIN {$wpdb->termmeta} AS tm2
 					ON t.term_id = tm2.term_id
 						AND tm2.meta_key = 'country_code'
+			LEFT JOIN {$wpdb->termmeta} AS tm3
+					ON t.term_id = tm3.term_id
+						AND tm3.meta_key = 'archived'
 		WHERE  tt.taxonomy IN ( 'location' )
+			AND ( tm3.meta_value != '1' OR tm3.meta_value IS NULL )
 		ORDER  BY t.name ASC 
 	"
 	);
