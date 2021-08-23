@@ -33,8 +33,7 @@ if ( have_posts() ) :
 				<div class="wrap">
 					<div class="row">
 						<div class="column five-sixths offset-1">
-							<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/home/hack-home-hero.jpg' ) ); ?>" />
-
+							<iframe width="992" height="558" src="https://www.youtube.com/embed/SQvagv8Eegc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							<div class="row">
 								<div class="column three-fifths">
 									<blockquote class="primary-color is-large"><?php esc_html_e( 'The largest global hackathon for missions.', 'hack' ); ?></blockquote>
