@@ -75,4 +75,48 @@
 		padding: 0 $gutter $gutter;
 		margin: $spacing--xs 0 0;
 	}
+
+	&.events {
+		border: 0px solid none;
+
+
+		.event-item {
+			background-color: rgba(#DEDBD7, 0.6);
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			flex-direction: row;
+			padding: 1.6rem;
+			border-radius: 	var(--border-radius);
+		}
+		
+		.event-date {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			flex-direction: column;
+			border-radius: 	var(--border-radius);
+			background-color: $color--primary;
+			color: white;
+			padding: 0.8rem;
+			min-width: 160px;
+			min-height: 74px;
+		}
+		
+		.event-meta {
+			margin-left: 1.6rem;
+			display: flex;
+			align-items: flex-start;
+			flex-direction: column;
+			width: 100%;
+		}
+		
+		.event-details {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			flex-direction: row;
+			width: 100%;
+		}
+	}
 }

@@ -23,7 +23,32 @@ function hack_get_faqs( $section = '' ) {
 				'answer'   => esc_html__( '#HACK welcomes anyone who wants to collaborate on mission-focused, technology projects with long-term impact. While our work focuses on multiple technology platforms, you don’t have to be a programmer to get involved. We need designers, photographers, writers, project managers, social media gurus - creative thinkers of all types! The most important skill is the ability to work as a team and find ways to problem-solve. Also, while Indigitous #HACK is explicitly Christian, participants from any (or no) faith background are welcomed warmly.', 'hack' ),
 			),
 		),
-		'partners'     => array(),
+		'partners'     => array(
+			0 => array(
+				'question' => esc_html__( 'Are there any costs involved for partnering organizations?', 'hack' ),
+				'answer'   => esc_html__( 'None, other than creating a 3-minute video.', 'hack' ),
+			),
+			1 => array(
+				'question' => esc_html__( 'What types of challenges/requests do you accept?', 'hack' ),
+				'answer'   => esc_html__( 'Those that require a technical, digital, UX/UI, data analysis, or communications solution that doesn\'t currently exist.', 'hack' ),
+			),
+			2 => array(
+				'question' => esc_html__( 'About how many hours of work will be accomplished during the #HACK?', 'hack' ),
+				'answer'   => esc_html__( '10-30 hours to describe your challenge, create a short video, submit the necessary data and be available during both #HACK weekends to answer any questions.', 'hack' ),
+			),
+			3 => array(
+				'question' => esc_html__( 'Who will work on our challenge?', 'hack' ),
+				'answer'   => esc_html__( 'We will offer your challenge to our #HACK locations for participants to choose if they wish and possess the skills needed.', 'hack' ),
+			),
+			4 => array(
+				'question' => esc_html__( 'Will a finished product be completed during #HACK?', 'hack' ),
+				'answer'   => esc_html__( 'The product completion largely depends on the size of the proposed challenge for a weekend innovation sprint.', 'hack' ),
+			),
+			5 => array(
+				'question' => esc_html__( 'What happens post-#HACK? ', 'hack' ),
+				'answer'   => esc_html__( 'You will receive the solutions that were developed by the teams to potentially initiate further collaboration, internships or paid work with certain teams.', 'hack' ),
+			),
+		),
 		'leaders'      => array(
 			0 => array(
 				'question' => esc_html__( 'Will we get any support during the hackathon?', 'hack' ),

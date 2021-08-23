@@ -118,6 +118,9 @@ function get_region_name( $slug = '' ) {
 		case 'south-asia':
 			$name = 'South Asia';
 			break;
+		// case 'online-virtual':
+		// $name = 'Online / Virtual';
+		// break;
 		default:
 			$name = '';
 	}

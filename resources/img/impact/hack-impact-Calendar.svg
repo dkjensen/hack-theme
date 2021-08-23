@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="67" height="67" viewBox="0 0 67 67">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1" y1="0.5" x2="0" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#a5d9e7"/>
+      <stop offset="1" stop-color="#8dc8e8"/>
+    </linearGradient>
+  </defs>
+  <g id="Indigitous_Icon_Calendar_Black" transform="translate(0.108)">
+    <rect id="Rectangle_2198" data-name="Rectangle 2198" width="67" height="67" transform="translate(-0.108)" fill="rgba(255,255,255,0)"/>
+    <g id="Calendar" transform="translate(1.051 7.882)">
+      <g id="Icon_Components" data-name="Icon Components">
+        <rect id="Rectangle_2178" data-name="Rectangle 2178" width="18.478" height="18.478" transform="translate(22.682 14.472)" fill="url(#linear-gradient)"/>
+        <line id="Line_101" data-name="Line 101" x2="65" transform="translate(-0.159 8.117)" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="2"/>
+        <rect id="Rectangle_2179" data-name="Rectangle 2179" width="65" height="52" transform="translate(-0.159 0.117)" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="2"/>
+        <rect id="Rectangle_2180" data-name="Rectangle 2180" width="6.532" height="6.532" transform="translate(28.655 20.445)" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="2"/>
+        <rect id="Rectangle_2181" data-name="Rectangle 2181" width="6.532" height="6.532" transform="translate(5.794 20.445)" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="2"/>
+        <rect id="Rectangle_2182" data-name="Rectangle 2182" width="6.532" height="6.532" transform="translate(51.516 20.445)" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="2"/>
+        <rect id="Rectangle_2183" data-name="Rectangle 2183" width="6.532" height="6.532" transform="translate(28.681 36.787)" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="2"/>
+        <rect id="Rectangle_2184" data-name="Rectangle 2184" width="6.532" height="6.532" transform="translate(5.82 36.787)" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="2"/>
+        <rect id="Rectangle_2185" data-name="Rectangle 2185" width="6.532" height="6.532" transform="translate(51.542 36.787)" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>

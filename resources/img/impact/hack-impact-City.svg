@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="67" height="67.334" viewBox="0 0 67 67.334">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#8dc8e8"/>
+      <stop offset="1" stop-color="#a5d9e7"/>
+    </linearGradient>
+  </defs>
+  <g id="Indigitous_Icon_City_Black" transform="translate(-0.256)">
+    <rect id="Rectangle_2199" data-name="Rectangle 2199" width="67" height="67" transform="translate(0.256)" fill="rgba(255,255,255,0)"/>
+    <g id="City" transform="translate(3.678 1.051)">
+      <g id="Icon_Components" data-name="Icon Components">
+        <rect id="Rectangle_2186" data-name="Rectangle 2186" width="23.268" height="50.218" transform="translate(21.845 15.065)" fill="url(#linear-gradient)"/>
+        <path id="Path_3758" data-name="Path 3758" d="M56,113.283V48H77.845V63.065h23.268v50.218" transform="translate(-56 -48)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="Path_3759" data-name="Path 3759" d="M56,96H89.479v11.7h26.783v12.931" transform="translate(-56 -55.826)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>

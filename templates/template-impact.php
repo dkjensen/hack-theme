@@ -29,7 +29,7 @@ if ( have_posts() ) :
 							<div class="section-impact-two-media-texts">
 								<div class="media-text">
 									<div class="media-text--img">
-										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/impact/hack-impact-participants.svg' ) ); ?>" width="70" />
+										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/impact/hack-impact-Participate.svg' ) ); ?>" width="67" />
 									</div>
 									<div class="media-text--content">
 										<span class="primary-color"><?php echo esc_html( '4,300' ); ?></span>
@@ -38,7 +38,7 @@ if ( have_posts() ) :
 								</div>
 								<div class="media-text">
 									<div class="media-text--img">
-										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/about/hack-about-countries.svg' ) ); ?>" width="70" />
+										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/impact/hack-impact-Countries.svg' ) ); ?>" width="67" />
 									</div>
 									<div class="media-text--content">
 										<span class="primary-color"><?php echo esc_html( '41' ); ?></span>
@@ -47,7 +47,7 @@ if ( have_posts() ) :
 								</div>
 								<div class="media-text">
 									<div class="media-text--img">
-										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/about/hack-about-cities.svg' ) ); ?>" width="67" />
+										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/impact/hack-impact-City.svg' ) ); ?>" width="67" />
 									</div>
 									<div class="media-text--content">
 										<span class="primary-color"><?php echo esc_html( '210' ); ?></span>
@@ -56,7 +56,7 @@ if ( have_posts() ) :
 								</div>
 								<div class="media-text">
 									<div class="media-text--img">
-										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/impact/hack-impact-calendar-agenda.svg' ) ); ?>" width="70" />
+										<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/impact/hack-impact-Calendar.svg' ) ); ?>" width="67" />
 									</div>
 									<div class="media-text--content">
 										<span class="primary-color"><?php echo esc_html( '6' ); ?></span>

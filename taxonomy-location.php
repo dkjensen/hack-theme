@@ -16,8 +16,18 @@ get_header();
 
 <div class="section section-location-one">
 	<div class="wrap">
+		<!-- <p class="location-event-type">Virtual Event</p> -->
 		<div class="section-location-one-wrap" style="background-image: url(<?php echo esc_url( get_hack_location_image( get_queried_object_id() ) ); ?>);">
 			<div class="section-location-one-wrap--content">
+				<!-- Boolean Conditional Check -->
+				<span class="location-event-type">
+				<?php
+				$event_type = get_post_meta( get_the_ID(), 'event_type', true );
+				$event_type = empty( $event_type ) ? $event_type : 'In Person';
+				// do something
+				echo $event_type
+				?>
+			</span>
 				<h1>
 					<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/flags/' . sanitize_file_name( strtolower( get_term_meta( get_queried_object_id(), 'country_code', true ) ) . '.svg' ) ) ); ?>" width="45" />
 					<?php echo get_the_archive_title(); ?>

@@ -39,7 +39,7 @@ if ( have_posts() ) :
 								}
 								?>
 
-								<div class="accordion data-section-id="<?php echo esc_attr( $region ); ?>">
+								<div class="accordion" data-section-id="<?php echo esc_attr( $region ); ?>">
 									<div class="accordion-header"><?php echo esc_html( $region ); ?></div>
 									<div class="accordion-content">
 										<?php
@@ -57,7 +57,44 @@ if ( have_posts() ) :
 								<?php
 							}
 							?>
+
+							<div class="accordion" data-section-id="<?php echo esc_attr( 'in-person' ); ?>">
+									<div class="accordion-header">
+										<?php esc_html_e( 'Online / Virtual', 'hack' ); ?>
+									</div>
+									<div class="accordion-content">
+										<?php
+										$hack_virtual_locations = new \WP_Term_Query(
+											array(
+												'taxonomy' => 'location',
+												'hide_empty' => false,
+												'meta_query' => array(
+													'relation' => 'OR',
+													array(
+														'key'   => 'event_type',
+														'value' => 'Hybrid',
+														'compare' => '=',
+													),
+													array(
+														'key'   => 'event_type',
+														'value' => 'Virtual',
+														'compare' => '=',
+													),
+												),
+											)
+										);
+										foreach ( $hack_virtual_locations->get_terms() as $hack_location ) {
+												$hack_location_link = get_term_link( $hack_location->slug, 'location' );
+											if ( ! is_wp_error( $hack_location_link ) ) {
+												printf( '<h3><a href="%s">- %s</a></h3>', esc_url( $hack_location_link ), esc_html( $hack_location->name ) );
+											}
+										}
+										?>
+									</div>
+								</div>
+								
 						</div>
+						
 						<div class="column seven-twelfths offset-1">
 							<?php
                             // phpcs:ignore
@@ -85,6 +122,19 @@ if ( have_posts() ) :
 								<?php
 							}
 							?>
+								<!-- 
+									Online-Virtual Map
+									<div class="section-locations-one-target" style="background-image: url(<?php echo esc_url( get_theme_file_uri( 'assets/img/locations/hack-location-online-virtual-map.svg' ) ); ?>">
+									<a href="/locations/online-virtual" class="section-locations-one-target--link"></a>
+									<h2>Online / Virtual</h2>
+									<p>
+										<?php
+										/*
+										 translators: %d Number of locations */
+										// echo esc_html( sprintf( _n( '%s location', '%s locations', $hack_virtual_locations_count, 'hack' ), number_format_i18n( $hack_virtual_locations_count ) ) );
+										?>
+									</p>
+								</div> -->
 						</div>
 					</div>
 				</div>

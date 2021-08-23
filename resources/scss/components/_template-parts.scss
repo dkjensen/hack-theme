@@ -443,7 +443,7 @@
 		}
 
 		.media-text--img img {
-
+			filter: saturate(1.15) brightness(1.15);
 			@include mq($until: tablet) {
 				display: block;
 				width: 3rem;

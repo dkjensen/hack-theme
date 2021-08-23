@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="67.02" height="67.07" viewBox="0 0 67.02 67.07">
+  <defs>
+    <linearGradient id="linear-gradient" x1="9.329" y1="54.646" x2="8.329" y2="54.646" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#a5d9e7"/>
+      <stop offset="1" stop-color="#8dc8e8"/>
+    </linearGradient>
+  </defs>
+  <g id="Indigitous_Icon_Participate_Black" transform="translate(0 0.07)">
+    <rect id="Rectangle_2201" data-name="Rectangle 2201" width="67" height="67" fill="rgba(255,255,255,0)"/>
+    <g id="Participate" transform="translate(1.05 0.93)">
+      <g id="Icon_Components" data-name="Icon Components">
+        <rect id="Rectangle_2191" data-name="Rectangle 2191" width="20.302" height="20.302" transform="translate(22.893 43.08) rotate(-90)" fill="url(#linear-gradient)"/>
+        <circle id="Ellipse_139" data-name="Ellipse 139" cx="10.549" cy="10.549" r="10.549" transform="translate(22.089 21.982)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2"/>
+        <path id="Path_3780" data-name="Path 3780" d="M65.633,104.64s-6.459,6.753.108,13.736c6.983,6.531,13.736.108,13.736.108" transform="translate(-53.584 -65.507)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+        <circle id="Ellipse_140" data-name="Ellipse 140" cx="6.064" cy="6.064" r="6.064" transform="translate(0 52.69)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <circle id="Ellipse_141" data-name="Ellipse 141" cx="6.064" cy="6.064" r="6.064" transform="translate(52.84 52.79)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="Path_3781" data-name="Path 3781" d="M104.55,118.483s6.753,6.423,13.743-.108c6.531-6.983.1-13.736.1-13.736" transform="translate(-65.374 -65.507)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+        <circle id="Ellipse_142" data-name="Ellipse 142" cx="6.064" cy="6.064" r="6.064" transform="translate(0.868 0.502)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="Path_3782" data-name="Path 3782" d="M80.543,66.342s-6.753-6.459-13.736.1c-6.531,6.99-.1,13.743-.1,13.743" transform="translate(-53.89 -53.891)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+        <path id="Path_3783" data-name="Path 3783" d="M117.843,79.333s6.459-6.753-.108-13.736C110.753,59.067,104,65.5,104,65.5" transform="translate(-65.218 -53.656)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+        <circle id="Ellipse_143" data-name="Ellipse 143" cx="6.064" cy="6.064" r="6.064" transform="translate(52.546)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>
