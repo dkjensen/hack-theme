@@ -12,60 +12,65 @@ get_header();
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div class="section section-give-one">
-		<div class="wrap">
-			<div class="row">
-				<div class="column six-twelfths">
-					<h1><span><?php echo esc_html( '#HACK' ); ?></span><?php esc_html_e( ' 2021 Schedule', 'hack' ); ?> </h1>
+<div class="section" style="padding-top:16rem;">
+	<div class="wrap">
+		<div class="row">
+			<div class="column six-twelfths">
+				<h1><span><?php echo esc_html( '#HACK' ); ?></span><?php esc_html_e( ' 2021 Schedule', 'hack' ); ?> </h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="column five-twelfths">
+				<div class="intro-text small">
+					<p><?php esc_html_e( ' You will share your gifts and perspectives, making new solutions possible that can’t be seen on a smaller scale.', 'hack' ); ?></p>
 				</div>
 			</div>
-			<div class="row">
-				<div class="column five-twelfths">
-					<div class="intro-text small">
-						<p><?php esc_html_e( ' You will share your gifts and perspectives, making new solutions possible that can’t be seen on a smaller scale.', 'hack' ); ?></p>
-					</div>
-				</div>
-				<div class="column seven-twelfths">
-				<p class="strong"><?php esc_html_e( 'Frequently Asked Questions', 'hack' ); ?></p>
-					<?php
-					while ( have_posts() ) {
-						the_post();
+			<div class="column seven-twelfths">
+			
+<div class="accordion events">
+	<div class="accordion-header">
+					<?php esc_html_e( 'Weekend #1 ( October 15-17)', 'hack' ); ?>
+</div>
+	<div class="accordion-content">
+		
+				<?php
+				while ( have_posts() ) {
+					// query_posts( array( 'weekend_select' => 'Weekend 1' )  );
+					the_post();
 
-						$hack_start_date = get_post_meta( get_the_ID(), 'start_date', true );
-						$hack_start_date = strtotime( $hack_start_date );
+					$hack_start_date = get_post_meta( get_the_ID(), 'start_date', true );
+					$hack_start_date = strtotime( $hack_start_date );
 
-						?>
-
-						<div class="accordion events">
-							<div class="accordion-header">October Friday 15th</div>
-							<div class="accordion-content">
-						
-								<div class="event-item">
+					?>
+								<a href="<?php the_permalink(); ?>" class="event-item">
 									<div class="event-date">
-										<span><?php echo esc_html( gmdate( 'D - d', $hack_start_date ) ); ?></span>
-										<span><?php echo esc_html( gmdate( 'H:i', $hack_start_date ) ); ?> - <?php echo esc_html( get_post_meta( get_the_ID(), 'timezone', true ) ); ?></span>
+										<span>
+										<?php echo esc_html( gmdate( 'H:i', $hack_start_date ) ); ?></span>
+										<span><?php echo esc_html( get_post_meta( get_the_ID(), 'timezone', true ) ); ?></span>
 									</div>
 									<div class="event-meta">
-										<?php the_title( '<h3>', '</h3>' ); ?>
+									<?php the_title( '<h3>', '</h3>' ); ?>
 										<div class="event-details">
-											<?php the_excerpt(); ?>
-											<span><?php echo esc_html( get_post_meta( get_the_ID(), 'presenter', true ) ); ?></span>
-											<span><?php echo esc_html( get_post_meta( get_the_ID(), 'event_duration', true ) ); ?></span>
+										<?php the_excerpt(); ?>
+											<span><?php echo esc_html( get_post_meta( get_the_ID(), 'presenter', true ) ); ?> - <?php echo esc_html( get_post_meta( get_the_ID(), 'event_duration', true ) ); ?></span>
 										</div>
 									</div>
-								</div>
+									<svg xmlns="http://www.w3.org/2000/svg" width="12.644" height="20.835" viewBox="0 0 12.644 20.835">
+										<path id="Icon_awesome-chevron-right" data-name="Icon awesome-chevron-right" d="M14.242,13.875,4.969,23.147a1.145,1.145,0,0,1-1.619,0L2.269,22.066a1.145,1.145,0,0,1,0-1.617l7.349-7.383L2.267,5.682a1.145,1.145,0,0,1,0-1.617L3.35,2.983a1.145,1.145,0,0,1,1.619,0l9.272,9.272A1.145,1.145,0,0,1,14.242,13.875Z" transform="translate(-1.933 -2.648)" fill="rgba(29,13,1,0.98)"/>
+									</svg>
+								</a>
+								<?php
+				}
+				?>
 							</div>
 						</div>
-						<?php
-					}
-					?>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-
-	<?php get_template_part( 'template-parts/callouts-2' ); ?>
-</article>
+		
+		<?php get_template_part( 'template-parts/callouts-2' ); ?>
+	</article>
 
 <?php
 

@@ -17,7 +17,7 @@ if ( have_posts() ) :
 		the_post();
 		?>
 
-		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<article>
 			<div class="section section-give-one">
 				<div class="wrap">
 					<div class="row">

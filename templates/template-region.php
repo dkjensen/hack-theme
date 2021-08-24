@@ -21,6 +21,12 @@ get_header();
 		<div class="wrap">
 			<div class="row">
 				<div class="column one-third">
+					<p class="breadcrumbs">
+						<a href="/locations"><?php esc_html_e( 'Locations', 'hack' ); ?></a>
+						<span>
+						> <?php echo esc_html( get_region_name() ); ?>
+						</span>
+					</p>
 					<h2 class="margin-bottom-xs"><?php echo esc_html( get_region_name() ); ?></h2>
 					<p class="intro-text">
 						<?php

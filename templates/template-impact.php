@@ -122,7 +122,7 @@ if ( have_posts() ) :
 												<?php esc_html_e( 'Participants', 'hack' ); ?>
 											</div>
 											<div class="section-impact-four-items--item--stats-stat">
-												<span>71</span>
+												<span>70</span>
 												<?php esc_html_e( 'Locations', 'hack' ); ?>
 											</div>
 											<div class="section-impact-four-items--item--report">
