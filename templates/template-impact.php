@@ -118,11 +118,11 @@ if ( have_posts() ) :
 										</div>
 										<div class="section-impact-four-items--item--stats">
 											<div class="section-impact-four-items--item--stats-stat">
-												<span>2,100</span>
+												<span>674</span>
 												<?php esc_html_e( 'Participants', 'hack' ); ?>
 											</div>
 											<div class="section-impact-four-items--item--stats-stat">
-												<span>70</span>
+												<span>42</span>
 												<?php esc_html_e( 'Locations', 'hack' ); ?>
 											</div>
 											<div class="section-impact-four-items--item--report">
@@ -164,7 +164,7 @@ if ( have_posts() ) :
 										</div>
 										<div class="section-impact-four-items--item--stats">
 											<div class="section-impact-four-items--item--stats-stat">
-												<span>1,088</span>
+												<span>1,100</span>
 												<?php esc_html_e( 'Participants', 'hack' ); ?>
 											</div>
 											<div class="section-impact-four-items--item--stats-stat">
@@ -191,7 +191,7 @@ if ( have_posts() ) :
 												<?php esc_html_e( 'Participants', 'hack' ); ?>
 											</div>
 											<div class="section-impact-four-items--item--stats-stat">
-												<span>141</span>
+												<span>52</span>
 												<?php esc_html_e( 'Locations', 'hack' ); ?>
 											</div>
 											<div class="section-impact-four-items--item--report">
