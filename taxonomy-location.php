@@ -15,19 +15,26 @@ get_header();
 ?>
 
 <div class="section section-location-one">
+
 	<div class="wrap">
-		<!-- <p class="location-event-type">Virtual Event</p> -->
+		<p class="breadcrumbs">
+								<a href="/locations/
+								<?php
+								echo esc_html(
+									sanitize_title_with_dashes(
+										strtolower(
+											get_term_meta( get_queried_object_id(), 'region', true )
+										)
+									)
+								);
+								?>
+							"><?php esc_html_e( 'Locations', 'hack' ); ?></a>
+								<span>
+								> <?php echo esc_html( get_term_meta( get_queried_object_id(), 'region', true ) ); ?>
+								</span>
+							</p>
 		<div class="section-location-one-wrap" style="background-image: url(<?php echo esc_url( get_hack_location_image( get_queried_object_id() ) ); ?>);">
 			<div class="section-location-one-wrap--content">
-				<!-- Boolean Conditional Check -->
-				<span class="location-event-type">
-				<?php
-				$event_type = get_post_meta( get_the_ID(), 'event_type', true );
-				$event_type = empty( $event_type ) ? $event_type : 'In Person';
-				// do something
-				echo $event_type
-				?>
-			</span>
 				<h1>
 					<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/flags/' . sanitize_file_name( strtolower( get_term_meta( get_queried_object_id(), 'country_code', true ) ) . '.svg' ) ) ); ?>" width="45" />
 					<?php echo get_the_archive_title(); ?>
@@ -48,6 +55,22 @@ get_header();
 							printf( esc_html__( 'In %s', 'hack' ), esc_html( get_the_archive_title() ) );
 						?>
 					</h3>
+				</div>
+				<div class="location-meta-row">
+					<span class="location-event-tag">
+					<?php
+					$event_type = get_term_meta( get_queried_object_id(), 'event_type', true );
+					$event_type = empty( $event_type ) ? 'In Person' : $event_type;
+					echo $event_type . ' Hack';
+					?>
+				</span>
+				<span class="location-event-tag">
+					<?php
+					$location_date = get_term_meta( get_queried_object_id(), 'location_date', true );
+					$location_date = empty( $location_date ) ? 'Oct 15-17' : $location_date;
+					echo $location_date;
+					?>
+				</span>
 				</div>
 			</div>
 		</div>
