@@ -395,21 +395,22 @@
 
 			> * {
 				display: block;
-				flex: 0 0 50%;
+				flex: 0 0 33.333%;
 				padding: $gutter;
 				text-align: center;
 
 				@include mq(tablet) {
-					flex: auto;
-					padding: 0;
-					margin: $gutter * 2;
+					flex: 0 0 16.666%;
+					padding: 2rem $gutter * 2;
 				}
 			}
 		}
 
 		img {
 			display: block;
+			width: auto;
 			height: auto;
+			max-height: 7.2rem;
 
 			@include margin(null auto);
 		}
