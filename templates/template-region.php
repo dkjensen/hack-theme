@@ -22,7 +22,7 @@ get_header();
 			<div class="row">
 				<div class="column one-third">
 					<p class="breadcrumbs">
-						<a href="/locations"><?php esc_html_e( 'Locations', 'hack' ); ?></a>
+						<a href="<?php echo esc_url( get_permalink( get_page_by_path( 'locations' ) ) ); ?>"><?php esc_html_e( 'Locations', 'hack' ); ?></a>
 						<span>
 						> <?php echo esc_html( get_region_name() ); ?>
 						</span>
