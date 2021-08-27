@@ -25,7 +25,7 @@ if ( have_posts() ) :
 								echo sprintf( esc_html__( 'About %s', 'hack' ), '<span>#HACK</span>' );
 								?>
 							</h1>
-							<p><?php esc_html_e( 'Since 2016, the Indigitous #HACK has served as a rallying point for those who have talents in the digital space.', 'hack' ); ?></p>
+							<p><?php esc_html_e( 'What separates the Indigitous #HACK from other hackathons is that our participants are focused on spreading the Gospel across all the nations.', 'hack' ); ?></p>
 							<iframe width="992" height="558" src="https://www.youtube.com/embed/SQvagv8Eegc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						</div>
 					</div>
@@ -122,7 +122,7 @@ if ( have_posts() ) :
 												<?php esc_html_e( 'Participants', 'hack' ); ?>
 											</div>
 											<div class="timeline-item--stats-stat">
-												<span>30+</span>
+												<span>30</span>
 												<?php esc_html_e( 'Locations', 'hack' ); ?>
 											</div>
 										</div>
