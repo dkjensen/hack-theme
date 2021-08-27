@@ -60,14 +60,14 @@ get_header();
 					<span class="location-event-tag">
 					<?php
 					$event_type = get_term_meta( get_queried_object_id(), 'event_type', true );
-					$event_type = empty( $event_type ) ? 'In Person' : $event_type;
+					$event_type = empty( $event_type ) ? 'Virtual' : $event_type;
 					echo $event_type . ' Hack';
 					?>
 				</span>
 				<span class="location-event-tag">
 					<?php
 					$location_date = get_term_meta( get_queried_object_id(), 'location_date', true );
-					$location_date = empty( $location_date ) ? 'Oct 15-17' : $location_date;
+					$location_date = empty( $location_date ) ? 'Oct 22-24' : $location_date;
 					echo $location_date;
 					?>
 				</span>
