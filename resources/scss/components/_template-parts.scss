@@ -400,7 +400,7 @@
 				text-align: center;
 
 				@include mq(tablet) {
-					flex: 0 0 16.666%;
+					flex: 0 0 14.285%;
 					padding: 2rem $gutter * 2;
 				}
 			}
@@ -410,7 +410,7 @@
 			display: block;
 			width: auto;
 			height: auto;
-			max-height: 7.2rem;
+			max-height: 6rem;
 
 			@include margin(null auto);
 		}
@@ -445,6 +445,7 @@
 
 		.media-text--img img {
 			filter: saturate(1.15) brightness(1.15);
+
 			@include mq($until: tablet) {
 				display: block;
 				width: 3rem;

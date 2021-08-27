@@ -72,8 +72,6 @@ if ( have_posts() ) :
 					</div>
 				</div>
 			</div>
-			
-			<?php get_template_part( 'template-parts/partners' ); ?>
 
 			<div class="section section-home-four blue-background-color">
 				<div class="wrap">
@@ -139,7 +137,7 @@ if ( have_posts() ) :
 			
 			<?php get_template_part( 'template-parts/global-participation' ); ?>
 
-			<div class="section section-home-seven">
+			<div class="section section-home-seven padding-bottom-0">
 				<div class="wrap">
 					<div class="row">
 						<div class="column five-sixths offset-1">
@@ -192,6 +190,7 @@ if ( have_posts() ) :
 				</div>
 			</div>
 
+			<?php get_template_part( 'template-parts/partners' ); ?>
 			<?php get_template_part( 'template-parts/quotes' ); ?>
 
 			<div class="section section-home-eight">
