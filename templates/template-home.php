@@ -84,7 +84,7 @@ if ( have_posts() ) :
 						<div class="column one-fourth">
 							<div class="section-home-four-callout">
 								<div class="section-home-four-callout--img">
-									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/icons/hack-icon-participate.svg' ) ); ?>" width="70" />
+									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/icons/hack-icon-participate.svg' ) ); ?>" width="70" alt=""/>
 								</div>
 								<div class="section-home-four-callout--content">
 									<span><?php echo esc_html( '4,300' ); ?></span>
@@ -95,7 +95,7 @@ if ( have_posts() ) :
 						<div class="column one-fourth">
 							<div class="section-home-four-callout">
 								<div class="section-home-four-callout--img">
-									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/icons/hack-icon-globe.svg' ) ); ?>" width="70" />
+									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/icons/hack-icon-globe.svg' ) ); ?>" width="70" alt=""/>
 								</div>
 								<div class="section-home-four-callout--content">
 									<span><?php echo esc_html( '41' ); ?></span>

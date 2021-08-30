@@ -46,7 +46,7 @@ use function Dkjensen\Hack\Functions\hack_name_tag;
 				<div class="row">
 					<div class="column full-width">
 						<div class="site-footer-social">
-							<h6><?php esc_html_e( 'Get Connected', 'hack' ); ?></h6>
+							<p class="get-connected"><?php esc_html_e( 'Get Connected', 'hack' ); ?></p>
 							<a href="https://www.facebook.com/Indigitous" class="site-footer-social--icon" aria-label="Indigitous Facebook"><i class="fab fa-facebook-square"></i></a>
 							<a href="https://kbmm.slack.com/signup" class="site-footer-social--icon" aria-label="Indigitous Slack"><i class="fab fa-slack"></i></a>
 						</div>
