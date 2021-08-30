@@ -28,9 +28,9 @@ get_header();
 									)
 								);
 								?>
-							"><?php esc_html_e( 'Locations', 'hack' ); ?></a>
+							"><?php echo esc_html( get_term_meta( get_queried_object_id(), 'region', true ) ); ?></a>
 								<span>
-								> <?php echo esc_html( get_term_meta( get_queried_object_id(), 'region', true ) ); ?>
+								> <?php echo get_the_archive_title(); ?>
 								</span>
 							</p>
 		<div class="section-location-one-wrap" style="background-image: url(<?php echo esc_url( get_hack_location_image( get_queried_object_id() ) ); ?>);">
