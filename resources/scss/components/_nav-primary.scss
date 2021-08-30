@@ -141,7 +141,7 @@
 			@include arrow();
 		}
 
-		&:hover .sub-menu {
+		&:hover .sub-menu, &:focus-within .sub-menu {
 			display: block;
 		}
 	}

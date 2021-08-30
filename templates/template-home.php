@@ -37,7 +37,7 @@ if ( have_posts() ) :
 							<div class="row">
 								<div class="column three-fifths">
 									<blockquote class="primary-color is-large"><?php esc_html_e( 'The largest global hackathon for missions.', 'hack' ); ?></blockquote>
-									<p><a href="<?php echo esc_url( get_permalink( get_page_by_path( 'about' ) ) ); ?>" class="button"><?php esc_html_e( 'Learn More', 'hack' ); ?></a></p>
+									<p><a href="<?php echo esc_url( get_permalink( get_page_by_path( 'about' ) ) ); ?>" class="button"><?php esc_html_e( 'About #Hack', 'hack' ); ?></a></p>
 								</div>
 							</div>
 							<div class="row">
@@ -120,7 +120,7 @@ if ( have_posts() ) :
 						<div class="column one-fourth">
 							<div class="section-home-four-callout">
 								<div class="section-home-four-callout--img">
-									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/icons/hack-icon-city.svg' ) ); ?>" width="67" />
+									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/icons/hack-icon-city.svg' ) ); ?>" width="67" alt=""/>
 								</div>
 								<div class="section-home-four-callout--content">
 									<span><?php echo esc_html( '210' ); ?></span>
@@ -132,7 +132,7 @@ if ( have_posts() ) :
 				</div>
 			</div>
 			<div class="section section-home-five padding-0">
-				<img src="<?php echo esc_attr( get_theme_file_uri( 'assets/img/home/hack-home-parallax.jpg' ) ); ?>" class="is-parallax" />
+				<img src="<?php echo esc_attr( get_theme_file_uri( 'assets/img/home/hack-home-parallax.jpg' ) ); ?>" class="is-parallax" alt=""/>
 			</div>
 			
 			<?php get_template_part( 'template-parts/global-participation' ); ?>
@@ -148,7 +148,7 @@ if ( have_posts() ) :
 					<div class="row">
 						<div class="column eleven-twelfths">
 							<div class="section-home-seven-group">
-								<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/home/hack-home-section-1.jpg' ) ); ?>" />
+								<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/home/hack-home-section-1.jpg' ) ); ?>" alt=""/>
 								<div class="section-home-seven-group--content">
 									<h2><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/icons/hack-icon-participate.svg' ) ); ?>" aria-hidden="true" width="67" /> <?php esc_html_e( 'Participate', 'hack' ); ?></h2>
 									<p>
@@ -162,7 +162,7 @@ if ( have_posts() ) :
 					<div class="row">
 						<div class="column eleven-twelfths offset-1">
 							<div class="section-home-seven-group">
-								<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/home/hack-home-section-2.jpg' ) ); ?>" />
+								<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/home/hack-home-section-2.jpg' ) ); ?>" alt=""/>
 								<div class="section-home-seven-group--content">
 									<h2><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/icons/hack-icon-lead.svg' ) ); ?>" aria-hidden="true" width="67" /> <?php esc_html_e( 'Lead', 'hack' ); ?></h2>
 									<p>
@@ -176,7 +176,7 @@ if ( have_posts() ) :
 					<div class="row">
 						<div class="column eleven-twelfths">
 							<div class="section-home-seven-group">
-								<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/home/hack-home-section-3.jpg' ) ); ?>" />
+								<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/home/hack-home-section-3.jpg' ) ); ?>" alt=""/>
 								<div class="section-home-seven-group--content">
 									<h2><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/icons/hack-icon-assemble.svg' ) ); ?>" aria-hidden="true" width="67" /> <?php esc_html_e( 'Partner', 'hack' ); ?></h2>
 									<p>
