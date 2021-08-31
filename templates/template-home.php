@@ -59,7 +59,11 @@ if ( have_posts() ) :
 								</div>
 								<div class="column two-fifths offset-2">
 									<h3 class="primary-color"><?php esc_html_e( 'When and where is the event?', 'hack' ); ?></h3>
-									<p><?php esc_html_e( 'This year the Indigitous #HACK will take place October 15-17 and October 22-24, 2021 in multiple cities around the world. Find a city near you here (link to locations).', 'hack' ); ?></p>
+									<p><?php esc_html_e( 'This year the Indigitous #HACK will take place October 15-17 and October 22-24, 2021 in multiple cities around the world.', 'hack' ); ?>
+									<a class="text-color" href="<?php echo esc_url( get_permalink( get_page_by_path( 'locations' ) ) ); ?>">		
+									<?php esc_html_e( 'Find a city near you here', 'hack' ); ?>
+								</a>
+								</p>
 								</div>
 							</div>
 							<div class="row">
