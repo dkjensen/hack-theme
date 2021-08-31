@@ -11,6 +11,7 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:image" content="<?php echo esc_url( get_theme_file_uri( 'assets/img/hack-social-preview.jpg' ) ); ?>" data-rh="true">
 	<?php wp_head(); ?>
 </head>
 

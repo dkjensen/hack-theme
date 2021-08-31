@@ -77,7 +77,15 @@
 	}
 
 	&.events {
-		border: 0px solid none;
+		border: initial;
+		border-bottom: 2px solid rgba($color--text, 0.5);
+		@include transition();
+		&.is-active {
+			border-bottom: 2px solid rgba($color--primary, 0.5);
+		}
+		.accordion-header {
+			font-weight: 700;
+		}
 
 		.event-item {
 			background-color: rgba(#DEDBD7, 0.6);

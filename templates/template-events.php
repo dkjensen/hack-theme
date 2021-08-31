@@ -16,11 +16,12 @@ get_header();
 		<div class="wrap">
 			<div class="row">
 				<div class="column six-twelfths">
-					<h1><span><?php echo esc_html( '#HACK' ); ?></span><?php esc_html_e( ' 2021 Schedule', 'hack' ); ?> </h1>
+					<h1><span><?php echo esc_html( '#HACK' ); ?></span><?php esc_html_e( ' 2021 Program', 'hack' ); ?> </h1>
 				</div>
 			</div>
 			<div class="row">
 				<div class="column five-twelfths">
+				<img class="img-width-80" alt="" src="<?php echo esc_url( get_theme_file_uri( 'assets/img/events/hackers-computer.jpg' ) ); ?>" />
 					<div class="intro-text small">
 						<p><?php esc_html_e( ' You will share your gifts and perspectives, making new solutions possible that can’t be seen on a smaller scale.', 'hack' ); ?></p>
 					</div>
@@ -43,6 +44,11 @@ get_header();
 										'key'     => 'weekend_select',
 										'value'   => 'Participant',
 										'compare' => 'NOT EXISTS',
+									),
+									array(
+										'key'     => 'weekend_select',
+										'value'   => 'Both',
+										'compare' => '=',
 									),
 								),
 							)

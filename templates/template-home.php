@@ -145,7 +145,7 @@ if ( have_posts() ) :
 				<div class="wrap">
 					<div class="row">
 						<div class="column five-sixths offset-1">
-							<h6 class="divider text-center"><?php esc_html_e( 'SAVE THE DATE: October 15-17 and 22-24, 2021', 'hack' ); ?></h6>
+							<p class="divider text-center orange-title"><?php esc_html_e( 'SAVE THE DATE: October 15-17 and 22-24, 2021', 'hack' ); ?></p>
 							<h2 class="text-center"><?php esc_html_e( 'Join us for', 'hack' ); ?> <span><?php esc_html_e( 'Indigitous #HACK2021', 'hack' ); ?></span> <?php esc_html_e( 'to make an impact and take the gospel where it needs to go.', 'hack' ); ?></h2>
 						</div>
 					</div>
