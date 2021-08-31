@@ -21,7 +21,7 @@ get_header();
 			</div>
 			<div class="row">
 				<div class="column five-twelfths">
-				<img class="img-width-80" alt="" src="<?php echo esc_url( get_theme_file_uri( 'assets/img/events/hackers-computer.jpg' ) ); ?>" />
+				<img class="img-width-80" alt="" src="<?php echo esc_url( get_theme_file_uri( 'assets/img/events/hack-participant.jpg.jpg' ) ); ?>" />
 					<div class="intro-text small">
 						<p><?php esc_html_e( ' You will share your gifts and perspectives, making new solutions possible that can’t be seen on a smaller scale.', 'hack' ); ?></p>
 					</div>
