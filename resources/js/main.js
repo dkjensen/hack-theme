@@ -176,4 +176,6 @@ let hack = {};
 		  } );
 	} );
 
+	$( '.events .accordion-header' ).eq( 0 ).trigger( 'click' );
+
 } )( jQuery );

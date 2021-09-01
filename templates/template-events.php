@@ -33,8 +33,12 @@ get_header();
 							array(
 								'post_type'      => 'event',
 								'posts_per_page' => -1,
+								'meta_key'       => 'start_date',
+								'orderby'        => 'meta_value',
+								'order'          => 'ASC',
 								'meta_query'     => array(
-									'relation' => 'OR',
+									'relation'     => 'OR',
+									'compare'      => '<=',
 									array(
 										'key'     => 'weekend_select',
 										'value'   => 'Participant',
@@ -78,14 +82,18 @@ get_header();
 										$hack_start_date = strtotime( $hack_start_date );
 										?>
 
-										<a href="<?php echo get_permalink( $event->ID ); ?>" class="event-item">
+										<a href="<?php echo esc_html( get_permalink( $event->ID ) ); ?>" class="event-item">
 											<div class="event-date">
 												<span>
 												<?php echo esc_html( gmdate( 'H:i', $hack_start_date ) ); ?></span>
 												<span><?php echo esc_html( get_post_meta( $event->ID, 'timezone', true ) ); ?></span>
 											</div>
 											<div class="event-meta">
-												<h3><?php echo get_the_title( $event->ID ); ?></h3>
+												<h3>
+												<?php
+												echo esc_html( get_the_title( $event->ID ) );
+												?>
+												</h3>
 												<div class="event-details">
 													<span>
 														<?php echo esc_html( get_post_meta( $event->ID, 'presenter', true ) ); ?> - <?php echo esc_html( get_post_meta( $event->ID, 'event_duration', true ) ); ?>
