@@ -18,7 +18,7 @@ get_header();
 		<div class="row">
 				<div class="column five-twelfths">
 					<p class="breadcrumbs">
-						<a href="/events">< <?php esc_html_e( 'All Events', 'hack' ); ?></a>
+						<a href="/program">< <?php esc_html_e( 'All Events', 'hack' ); ?></a>
 					</p>
 					<div class="event--summary">
 						<h3>
