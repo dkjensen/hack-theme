@@ -18,7 +18,21 @@ get_header();
 		<div class="row">
 				<div class="column five-twelfths">
 					<p class="breadcrumbs">
-						<a href="/program">< <?php esc_html_e( 'All Events', 'hack' ); ?></a>
+
+<?php
+	$hack_weekend_type = get_post_meta( get_the_id(), 'weekend_select', true );
+?>
+	<a href="
+	<?php
+	echo ( $hack_weekend_type == 'City Lead' ? '/city-lead-program' : '/program' );
+	?>
+	
+	">
+	<?php esc_html_e( '< All Events', 'hack' ); ?>
+	</a>
+
+
+					
 					</p>
 					<div class="event--summary">
 						<h3>
