@@ -311,7 +311,7 @@ if ( have_posts() ) :
 									</div>
 									<div class="team-member-label">
 										<h3><a href="<?php echo esc_url( get_location_region_link( 'north-america' ) ); ?>"><?php echo esc_html( 'Andrew' ); ?></a></h3>
-										<h6><?php esc_html_e( 'USA', 'hack' ); ?></h6>
+										<h6><?php esc_html_e( 'North America', 'hack' ); ?></h6>
 									</div>
 									<div class="team-member-bio">
 										<?php esc_html_e( 'Loves to imagine new ways to empower people towards the great commission beyond the four church walls.', 'hack' ); ?>

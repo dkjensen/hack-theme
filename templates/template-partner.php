@@ -121,7 +121,7 @@ if ( have_posts() ) :
 							<p><?php esc_html_e( 'These weekend-long design sprints highlight the collaborative aspect of innovation as we gather around a common vision of developing solutions to meet the needs of the church and world.', 'hack' ); ?></p>
 						</div>
 						<div class="section-partner-three--items-item">
-							<h3 class="primary-color"><?php esc_html_e( 'Bringing the Gospel Where It’s Not', 'hack' ); ?></h3>
+							<h3 class="primary-color"><?php esc_html_e( 'Bringing the Gospel Where It Needs To Go', 'hack' ); ?></h3>
 							<p><?php esc_html_e( 'More than building cool technology prototypes, #HACK catalyzes the spread of the gospel.', 'hack' ); ?></p>
 						</div>
 					</div>
@@ -248,22 +248,22 @@ if ( have_posts() ) :
 						<div class="section-partner-nine-works-grid--item white-background-color">
 								<span class="numbered-outline">2</span>
 								<h3><?php esc_html_e( 'Coordinate', 'hack' ); ?></h3>
-								<p><?php esc_html_e( '#HACK leadership will arrange a call for further discussion.', 'hack' ); ?></p>
+								<p><?php esc_html_e( 'The #HACK2021 team will arrange a call for further discussion.', 'hack' ); ?></p>
 						</div>
 						<div class="section-partner-nine-works-grid--item white-background-color">
 								<span class="numbered-outline">3</span>
 								<h3><?php esc_html_e( 'Communicate', 'hack' ); ?></h3>
-								<p><?php esc_html_e( 'If your application is selected, we will support you through the process of communicating your challenge to the #HACK teams.', 'hack' ); ?></p>
+								<p><?php esc_html_e( 'Once the applications are selected, the #HACK2021 team will support you in communicating your challenge to the #HACK2021 teams and locations.', 'hack' ); ?></p>
 						</div>
 						<div class="section-partner-nine-works-grid--item white-background-color">
 								<span class="numbered-outline">4</span>
-								<h3><?php esc_html_e( 'Assemble', 'hack' ); ?></h3>
-								<p><?php esc_html_e( 'Communicate your challenge during the #HACK weekends.', 'hack' ); ?></p>
+								<h3><?php esc_html_e( 'Support', 'hack' ); ?></h3>
+								<p><?php esc_html_e( 'Leading up to the event, answer any questions and provide further clarifications to the teams who have selected your challenge.', 'hack' ); ?></p>
 						</div>
 						<div class="section-partner-nine-works-grid--item white-background-color">
 								<span class="numbered-outline">5</span>
 								<h3><?php echo hack_name_tag(); ?></h3>
-								<p><?php esc_html_e( 'Support the teams over two #HACK weekends as they work through your challenges and answer any questions.', 'hack' ); ?></p>
+								<p><?php esc_html_e( 'Provide guidance for the teams working on the challenges over the 2 weekends in October.', 'hack' ); ?></p>
 						</div>
 						<div class="section-partner-nine-works-grid--item blue-background-color">
 								<span class="numbered-outline">6</span>
