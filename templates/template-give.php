@@ -25,7 +25,7 @@ if ( have_posts() ) :
 							<div class="intro-text small">
 								<p><?php esc_html_e( 'In serving the broader body of Christ through #HACK2021, the Indigitous global team has taken on certain expenses.', 'hack' ); ?></p>
 								<p><?php esc_html_e( 'Our costs for this event are around $40,000 USD including project management, marketing, logistics, etc.', 'hack' ); ?></p>
-								<p><?php esc_html_e( 'If you or your organization wants to help fund seeing 1000+ participants in 40 cities around the world working on projects to bring the gospel where it’s not, we would be most appreciative of your partnership.', 'hack' ); ?></p>
+								<p><?php esc_html_e( 'If you or your organization wants to help fund seeing 1000+ participants in 40+ cities around the world working on projects to bring the gospel where it needs to go, we would be most appreciative of your partnership.', 'hack' ); ?></p>
 							</div>
 						</div>
 						<div class="column five-twelfths">

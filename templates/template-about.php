@@ -35,7 +35,7 @@ if ( have_posts() ) :
 				<div class="wrap">
 					<div class="row">
 						<div class="column one-third offset-1">
-							<blockquote data-sal="slide-right" class="primary-color"><?php esc_html_e( 'A global hackathon to bring the Gospel to where it’s not.', 'hack' ); ?></blockquote>
+							<blockquote data-sal="slide-right" class="primary-color"><?php esc_html_e( 'A global hackathon to bring the Gospel to where it needs to go.', 'hack' ); ?></blockquote>
 						</div>
 						<div class="column one-half offset-1">
 							<h3><?php esc_html_e( 'What is a hackathon?', 'hack' ); ?></h3>
@@ -404,7 +404,7 @@ if ( have_posts() ) :
 							<a href="https://indigitous.typeform.com/to/mojiHQqC" target="_blank" class="button"><?php esc_html_e( 'Lead', 'hack' ); ?></a>
 						</div>
 						<div class="section-about-nine-items--item yellow-background-color" data-sal="slide-down" data-sal-delay="100">
-							<p><?php esc_html_e( 'Use your skills to bring the gospel where it is not.', 'hack' ); ?></p>
+							<p><?php esc_html_e( 'Use your skills to bring the gospel where it needs to go.', 'hack' ); ?></p>
 							<a href="https://indigitous.typeform.com/to/QkVDWhea" target="_blank" class="button"><?php esc_html_e( 'Participate', 'hack' ); ?></a>
 						</div>
 						<div class="section-about-nine-items--item blue-background-color" data-sal="slide-down" data-sal-delay="200">

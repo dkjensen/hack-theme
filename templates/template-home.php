@@ -17,7 +17,7 @@ if ( have_posts() ) :
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<div class="section section-home-one">
 				<div class="wrap">
-					<h1><?php esc_html_e( 'A Global Hackathon', 'hack' ); ?> <br><span><?php esc_html_e( 'To Bring The Gospel Where It’s Not', 'hack' ); ?></span></h1>
+					<h1><?php esc_html_e( 'A Global Hackathon', 'hack' ); ?> <br><span><?php esc_html_e( 'Where it Needs to Go', 'hack' ); ?></span></h1>
 					<p><?php esc_html_e( 'The Indigitous #HACK is a global hackathon where participants around the world gather to solve problems facing their communities. #HACK convenes people from all backgrounds to use their skills, gifts, and expertise to impact the world. Join #HACK2021 and see how God can use you.', 'hack' ); ?>
 					<div class="section-home-one-buttons">
 					<a href="<?php echo esc_url( get_permalink( get_page_by_path( 'participate' ) ) ); ?>" class="button"><?php esc_html_e( 'Participate', 'hack' ); ?></a>
