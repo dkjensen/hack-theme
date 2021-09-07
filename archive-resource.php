@@ -15,7 +15,7 @@ $is_lead = get_query_var( 'leads' );
 
 <div class="
 	<?php
-	echo ( $is_lead == 0 ?
+	echo ( ! $is_lead ?
 		'section section-index-hero purple-background-color'
 			:
 		'section section-index-hero yellow-background-color' );
@@ -26,7 +26,7 @@ $is_lead = get_query_var( 'leads' );
 		<h1>
 		<?php
 		echo wp_kses_post( is_post_type_archive() ? post_type_archive_title( '', false ) : get_the_archive_title() );
-		echo ( $is_lead == 0 ? '' : ' for #HACK Leads' );
+		echo ( ! $is_lead ? '' : ' for #HACK Leads' );
 		?>
 		</h1>
 		<p><?php esc_html_e( 'Check out the resources for #HACK. If you are are looking for something specific or need additional assistance please reach out to the Indigitous team.', 'hack' ); ?></p>

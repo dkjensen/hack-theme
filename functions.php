@@ -333,3 +333,4 @@ require_once 'lib/functions/ajax.php';
 require_once 'lib/functions/infinite-scroll.php';
 require_once 'lib/functions/rewrite-rules.php';
 require_once 'lib/functions/pagination.php';
+require_once 'lib/functions/queries.php';

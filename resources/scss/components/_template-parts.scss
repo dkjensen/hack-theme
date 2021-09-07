@@ -555,6 +555,10 @@
 			color: $color--text;
 		}
 
+		.img {
+			filter: brightness(1.15) saturate(1.15);
+		}
+
 		&-map {
 			display: block;
 			margin: $spacing--xl auto;
