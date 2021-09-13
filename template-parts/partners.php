@@ -31,6 +31,15 @@
 			<a target="_blank" rel="noopener" href="https://zume.vision/" class="template-parts-partners-logos--logo" aria-label="Zúme"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/zume-logo.png' ) ); ?>" alt="" /></a>
 			<a target="_blank" rel="noopener" href="https://createinternational.com/" class="template-parts-partners-logos--logo" aria-label="Create International"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/create-international-logo.png' ) ); ?>" alt="" /></a>
 			<a target="_blank" rel="noopener" href="https://etnopedia.org/" class="template-parts-partners-logos--logo" aria-label="Etnopedia"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/etnopedia-logo.png' ) ); ?>" alt="" /></a>
+
+			<a target="_blank" rel="noopener" href="https://seedcompany.com/" class="template-parts-partners-logos--logo" aria-label="Seed"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/seed-logo.png' ) ); ?>" alt="" /></a>
+			<a target="_blank" rel="noopener" href="#" class="template-parts-partners-logos--logo" aria-label="V59"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/v59-logo.png' ) ); ?>" alt="" /></a>
+			<a target="_blank" rel="noopener" href="https://www.frontiers.org/" class="template-parts-partners-logos--logo" aria-label="Frontiers"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/frontiers-logo.png' ) ); ?>" alt="" /></a>
+			<a target="_blank" rel="noopener" href="https://visionsynergy.net/" class="template-parts-partners-logos--logo" aria-label="Vision Synergy"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/vision-synergy-logo.png' ) ); ?>" alt="" /></a>
+			<a target="_blank" rel="noopener" href="https://emdc.info/" class="template-parts-partners-logos--logo" aria-label="EMDC"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/emdc-logo.png' ) ); ?>" alt="" /></a>
+			<a target="_blank" rel="noopener" href="https://athirdofus.com/" class="template-parts-partners-logos--logo" aria-label="A Third of Us"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/a-third-of-us-logo.png' ) ); ?>" alt="" /></a>
+			<a target="_blank" rel="noopener" href="https://www.wycliffe.org/" class="template-parts-partners-logos--logo" aria-label="Wycliffe"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/wycliffe-logo.png' ) ); ?>" alt="" /></a>
+			<a target="_blank" rel="noopener" href="https://www.agapeliv.dk/" class="template-parts-partners-logos--logo" aria-label="Agapeliv"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/agapeliv-logo.png' ) ); ?>" alt="" /></a>
 		</div>
 	</div>
 </div>
