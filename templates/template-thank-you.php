@@ -17,11 +17,70 @@ if ( have_posts() ) :
 		?>
 
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<div class="section section-thank-you-one padding-0">
-				<div class="wrap text-center">
-					<h1><?php esc_html_e( 'Thank You', 'hack' ); ?></h1>
-					<p class="intro-text"><?php esc_html_e( 'We appreciate your time to signup, check your inbox for next steps regarding #HACK.', 'hack' ); ?></p>
+			<div class="section section-thank-you-one">
+
+		<div class="wrap">
+			<div class="row">
+				<div class="column one-fourth">
+					<div class="card">
+						<div class="card--content">
+							<img class="message-spring-logo" alt="Message Spring App" src="<?php echo esc_url( get_theme_file_uri( 'assets/img/thank-you/message-spring.png' ) ); ?>" />
+
+							<img class="message-spring-qr" alt="Message Spring App - QR Code" src="<?php echo esc_url( get_theme_file_uri( 'assets/img/thank-you/message-spring-qr.png' ) ); ?>" />
+
+							<div class="app-badge-wrapper">
+								<a class="" aria-label="Message Spring App - Download Badge" href="<?php echo esc_html_e( 'https://apps.apple.com/us/app/messagespring/id1360404589?itsct=apps_box_link&itscg=30200' ); ?>" target="_blank" rel="noopener">
+									<img class="app-badge" alt="Message Spring App - Download Badges" src="<?php echo esc_url( get_theme_file_uri( 'assets/img/thank-you/download-iphone.png' ) ); ?>" />
+								</a>
+								<a class="" aria-label="Message Spring App - Download Badge" href="<?php echo esc_html_e( 'https://play.google.com/store/apps/details?id=cloud.iyc.notifyme' ); ?>" target="_blank" rel="noopener">
+									<img class="app-badge" alt="Message Spring App - Download Badges" src="<?php echo esc_url( get_theme_file_uri( 'assets/img/thank-you/download-google-play.png' ) ); ?>" />
+								</a>
+							</div>
+
+						</div>
+					</div>
 				</div>
+				<div class="column seven-twelfths offset-1">
+				<h1><?php esc_html_e( 'Thank You', 'hack' ); ?> </h1>
+				<p>
+						<?php
+						esc_html_e(
+							'We are excited that you are planning on joining us.
+ 							For clearer communication, we are using MessageSpring for #HACK2021.',
+							'hack'
+						);
+						?>
+				</p>
+
+				<ul>
+					<li><?php esc_html_e( 'Receive notifications in the language of your choice', 'hack' ); ?></li>
+					<li><?php esc_html_e( 'Have direct communications with the Indigitous team helping to organize #HACK2021', 'hack' ); ?></li>
+					<li><?php esc_html_e( 'Manage all your settings and preferences', 'hack' ); ?></li>
+					<li><?php esc_html_e( 'If you’ve already downloaded the app search Indigitous #HACK2021 or use our ', 'hack' ); ?>
+						<a class="primary-color" href="<?php echo esc_html_e( 'https://notifyme.onelink.me/glgO/46cbde48?place_id=4316' ); ?>" target="_blank" rel="noopener">
+							<?php esc_html_e( 'Link', 'hack' ); ?></a>.
+					</li>
+					<li><?php esc_html_e( 'Stay tuned for more communication from us.', 'hack' ); ?></li>
+				</ul>
+
+				<p class="sub-text">
+					<?php esc_html_e( 'If you’d rather not download the app, that’s okay too. You’ll still receive the messages and communications we send out via email but you won’t be able to reply directly - in other words, communication will be primarily one way - from us to you.', 'hack' ); ?>
+				</p>
+
+				<p>
+					<a class="button" href="<?php echo esc_html_e( 'https://notifyme.onelink.me/glgO/46cbde48?place_id=4316' ); ?>" target="_blank" rel="noopener">
+					<?php esc_html_e( 'Download', 'hack' ); ?>
+					</a>
+					<span class="sub-text">
+					<?php esc_html_e( 'Mobile device only', 'hack' ); ?>
+				</span>
+				</p>
+
+				</div>
+			</div>
+		</div>
+
+
 			</div>
 
 			<?php get_template_part( 'template-parts/testimonials' ); ?>
