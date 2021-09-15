@@ -3,17 +3,52 @@
 	&-one {
 		color: $color--white;
 		background: url("../img/thank-you/hack-thank-you-hero.jpg") center/cover no-repeat;
+		text-align: left;
+		padding: 12rem 2rem 12rem;
 
-		@include hero();
+		.message-spring-logo {
+			width: 175px;
+			margin: 0 auto;
+			display: block;
+		}
+		.message-spring-qr {
+			margin: 0 auto;
+			display: block;
+		}
 
-		.wrap {
+		.app-badge-wrapper {
 			display: flex;
-			flex-direction: column;
 			align-items: center;
 			justify-content: center;
-			height: 50vw;
-			min-height: 50rem;
-			max-height: 70rem;
+			flex-direction: row;
+			width: 100%;
+			margin: 0 auto;
+			:nth-child(1) img{
+				height: 40px;
+				margin-left: 0.5rem;
+			}
+			:nth-child(2) img{
+				height: 60px;
+				margin-left: 0.5rem;
+			}
+		}
+
+		ul {
+			list-style: initial;
+			list-style-position: outside;
+			margin: 2rem 0 2rem 2rem;
+			width: 75%;
+			li {
+				margin: 0.8rem 0;
+				padding-left: 0.8rem;
+			}
+		}
+
+		.sub-text {
+			font-style: italic;
+			font-size: 1.6rem;
+			color: rgba($color--white, 0.8);
+			margin-bottom: 2rem;
 		}
 
 		+ .template-parts-testimonials {
