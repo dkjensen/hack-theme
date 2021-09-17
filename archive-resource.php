@@ -18,7 +18,7 @@ $is_lead = get_query_var( 'leads' );
 	echo ( ! $is_lead ?
 		'section section-index-hero purple-background-color'
 			:
-		'section section-index-hero yellow-background-color' );
+		'section section-index-hero blue-background-color' );
 	?>
 	">
 <div class="wrap">
