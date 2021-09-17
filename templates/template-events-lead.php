@@ -86,7 +86,7 @@ get_header();
 													<?php echo esc_html( get_post_meta( $event->ID, 'presenter', true ) ); ?> - <?php echo esc_html( get_post_meta( $event->ID, 'event_duration', true ) ); ?>
 												</span>
 												<span class="event-button">												
-													<?php esc_html_e( 'Attend', 'hack' ); ?>
+													<?php esc_html_e( 'See Details', 'hack' ); ?>
 												</span>
 											</div>
 										</div>

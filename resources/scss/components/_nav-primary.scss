@@ -95,6 +95,9 @@
 		display: none;
 		width: auto;
 		margin: 0 0 $gutter;
+		:nth-child(3) {
+			border-bottom: 1px dotted $color--text;
+		}
 
 		.menu-item > a {
 

@@ -12,11 +12,11 @@ get_header();
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-<div class="section section-location-one">
+<div class="section">
 
 	<div class="wrap">
 		<div class="row">
-				<div class="column five-twelfths">
+				<div class="column one-fourth">
 					<p class="breadcrumbs">
 
 <?php
@@ -39,54 +39,73 @@ get_header();
 		
 					</p>
 					<div class="event--summary">
-						<h3>
+
+					<div class="date-wrapper">
+						<?php
+								$hack_start_date = get_post_meta( get_the_ID(), 'start_date', true );
+								$hack_start_date = strtotime( $hack_start_date );
+						?>
+							<h3>
+								<?php
+								echo esc_html( gmdate( 'd', $hack_start_date ) );
+								?>
+							</h3>
+							<span class="bold">
 							<?php
-							$hack_start_date = get_post_meta( get_the_ID(), 'start_date', true );
-							$hack_start_date = strtotime( $hack_start_date );
-							echo esc_html( gmdate( 'F d', $hack_start_date ) );
+								echo esc_html( gmdate( 'F', $hack_start_date ) );
 							?>
-						</h3>
-						<p>
-							<?php echo esc_html( 'Time: ' . gmdate( 'H:i', $hack_start_date ) ); ?> <?php echo esc_html( get_post_meta( get_the_id(), 'timezone', true ) ); ?>
-						</p>
-						<h4>
-							<?php echo esc_html( get_post_meta( get_the_id(), 'event_location', true ) ); ?>
-						</h4>
-
-						<?php
-						echo ( ! $hack_speaker ?
-						 ''
-						 :
-						sprintf(
-							'<p>%s</p>',
-							esc_html( 'Speaker: ' . $hack_speaker )
-						) );
-						?>
-						<?php
-						echo ( ! $hack_host ?
-						 ''
-						 :
-						sprintf(
-							'<p>%s</p>',
-							esc_html( 'Hosted by: ' . $hack_host )
-						) );
-						?>
-
-						<p>
-						<?php esc_html_e( 'Event Duration: ', 'hack' ); ?>
-						<?php echo esc_html( get_post_meta( get_the_id(), 'event_duration', true ) ); ?>
-						</p>
-
-						<p>
-						<?php esc_html_e( 'Event Cost: Free', 'hack' ); ?>
-						</p>
-
-						<a class="button" rel="noopener" target="_blank" href="<?php echo esc_html( get_post_meta( get_the_id(), 'event_link', true ) ); ?>">
-						<?php esc_html_e( 'Join', 'hack' ); ?>
+							</span>
+							<span>
+								<?php echo esc_html( 'Time: ' . gmdate( 'H:i', $hack_start_date ) ); ?> <?php echo esc_html( get_post_meta( get_the_id(), 'timezone', true ) ); ?>
+							</span>
+							<a class="text-color" rel="noopener" target="_blank" 
+							href="<?php esc_html_e( 'https://dateful.com/eventlink/e/?iso=', 'hack' ); ?>
+							<?php echo esc_html( gmdate( 'Y-m-d' . '\T' . 'h:i', $hack_start_date ) ); ?>
+							">
+						<?php esc_html_e( 'View Your Local Time', 'hack' ); ?>
 						</a>
 					</div>
+
+								<span>
+								<?php esc_html_e( 'Location: ', 'hack' ); ?>
+									<?php echo esc_html( get_post_meta( get_the_id(), 'event_location', true ) ); ?>
+
+								</span>
+		
+								<?php
+								echo ( ! $hack_speaker ?
+								 ''
+								 :
+								sprintf(
+									'<span>%s</span>',
+									esc_html( 'Speaker: ' . $hack_speaker )
+								) );
+								?>
+								<?php
+								echo ( ! $hack_host ?
+								 ''
+								 :
+								sprintf(
+									'<span>%s</span>',
+									esc_html( 'Hosted by: ' . $hack_host )
+								) );
+								?>
+		
+								<span>
+								<?php esc_html_e( 'Duration: ', 'hack' ); ?>
+								<?php echo esc_html( get_post_meta( get_the_id(), 'event_duration', true ) ); ?>
+								</span>
+		
+								<span>
+								<?php esc_html_e( 'Cost: Free', 'hack' ); ?>
+								</span>
+		
+								<a class="button" rel="noopener" target="_blank" href="<?php echo esc_html( get_post_meta( get_the_id(), 'event_link', true ) ); ?>">
+								<?php esc_html_e( 'Join', 'hack' ); ?>
+								</a>
+					</div>
 				</div>
-				<div class="column seven-twelfths">
+				<div class="column seven-twelfths offset-1">
 					<h2>
 						<?php echo esc_html( get_the_title() ); ?>
 					</h2>

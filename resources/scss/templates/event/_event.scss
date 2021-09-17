@@ -1,0 +1,36 @@
+.event--summary {
+  margin: 0 0 $spacing--xxl;
+  border-radius: 	var(--border-radius);
+  padding: $gutter * 1.5 $gutter;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+
+  .date-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 1.6rem;
+    h3 {
+      font-size: 6rem;
+      margin-bottom: 0;
+    }
+    .bold {
+      font-weight: bold;
+    }
+  }
+
+  span {
+    margin-bottom: 0.4rem;
+  }
+
+  a {
+    margin-top: 1.6rem;
+    &.text-color {
+      margin-top: 0;
+    }
+  }
+}
