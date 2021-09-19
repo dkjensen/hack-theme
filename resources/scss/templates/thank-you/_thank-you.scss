@@ -49,6 +49,9 @@
 			font-size: 1.6rem;
 			color: rgba($color--white, 0.8);
 			margin-bottom: 2rem;
+			&.ml-20 {
+				margin-left: 2rem;
+			}
 		}
 
 		+ .template-parts-testimonials {

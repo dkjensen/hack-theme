@@ -71,8 +71,8 @@ if ( have_posts() ) :
 					<a class="button" href="<?php echo esc_html_e( 'https://notifyme.onelink.me/glgO/46cbde48?place_id=4316' ); ?>" target="_blank" rel="noopener">
 					<?php esc_html_e( 'Download', 'hack' ); ?>
 					</a>
-					<span class="sub-text">
-					<?php esc_html_e( 'Mobile device only', 'hack' ); ?>
+					<span class="sub-text ml-20">
+					<?php esc_html_e( 'Mobile Only', 'hack' ); ?>
 				</span>
 				</p>
 
