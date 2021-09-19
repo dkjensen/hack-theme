@@ -35,29 +35,32 @@ if ( have_posts() ) :
 					<div class="row">
 						<?php
 
-						$hack_challenges = new \WP_Term_Query(
+						$hack_challenges = new \WP_Query(
 							array(
-								'taxonomy'   => 'challenge',
-								'hide_empty' => false,
+								'post_type'      => 'challenge',
+								'posts_per_page' => 3,
+								'post_status'    => 'publish',
 							)
 						);
 
-						foreach ( $hack_challenges->get_terms() as $hack_challenge ) {
+						while ( $hack_challenges->have_posts() ) {
+							$hack_challenges->the_post();
+
 							?>
 
 						<div class="column one-third">
 							<div class="section-challenges-two-item">
-								<img class="section-challenges-two-item-icon" src="<?php echo esc_url( get_theme_file_uri( 'assets/img/icons/hack-icon-' . get_term_meta( $hack_challenge->term_id, 'icon', true ) . '.svg' ) ); ?>" width="56" />
-								<h3><?php echo esc_html( $hack_challenge->name ); ?></h3>
-								<?php echo wp_kses_post( wpautop( $hack_challenge->description ) ); ?>
+								<img class="section-challenges-two-item-icon" src="<?php echo esc_url( get_theme_file_uri( 'assets/img/icons/hack-icon-' . get_post_meta( get_the_ID(), 'icon', true ) . '.svg' ) ); ?>" width="56" />
+								<h3><?php the_title(); ?></h3>
+								<?php the_excerpt(); ?>
 								<div class="section-challenges-two-item-info" style="background-image: url(<?php echo esc_url( get_theme_file_uri( 'assets/img/challenges/hack-challenges-item-1.jpg' ) ); ?>);">
-									<?php echo wp_kses_post( wpautop( get_term_meta( $hack_challenge->term_id, 'short_info', true ) ) ); ?>
-									<p><a href="<?php echo esc_url( get_term_link( $hack_challenge->term_id, 'challenge' ) ); ?>" class="button"><?php esc_html_e( 'Join Challenge', 'hack' ); ?></a></p>
+									<?php echo wp_kses_post( wpautop( get_post_meta( get_the_ID(), 'short_info', true ) ) ); ?>
+									<p><a href="<?php echo esc_url( get_permalink( get_the_ID() ) ); ?>" class="button"><?php esc_html_e( 'Join Challenge', 'hack' ); ?></a></p>
 
 									<div class="section-challenges-two-item-info--footer">
 										<?php
 										if ( function_exists( '\get_field' ) ) {
-											$hack_presented_by = get_field( 'presented_by', $hack_challenge );
+											$hack_presented_by = get_field( 'presented_by' );
 
 											if ( ! empty( $hack_presented_by ) ) {
 												?>
@@ -83,6 +86,8 @@ if ( have_posts() ) :
 
 							<?php
 						}
+
+						wp_reset_postdata();
 						?>
 					</div>
 				</div>
