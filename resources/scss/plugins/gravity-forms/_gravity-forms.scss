@@ -1,5 +1,5 @@
 .gform_wrapper.gravity-theme {
-	margin: 6rem 0 0;
+	margin: $gutter * 2 0;
 
 	#{$all-text-inputs} {
 		font-size: 1.4rem;

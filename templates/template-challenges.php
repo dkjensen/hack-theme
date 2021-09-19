@@ -33,54 +33,57 @@ if ( have_posts() ) :
 			<div class="section section-challenges-two">
 				<div class="wrap">
 					<div class="row">
+						<?php
+
+						$hack_challenges = new \WP_Term_Query(
+							array(
+								'taxonomy'   => 'challenge',
+								'hide_empty' => false,
+							)
+						);
+
+						foreach ( $hack_challenges->get_terms() as $hack_challenge ) {
+							?>
+
 						<div class="column one-third">
 							<div class="section-challenges-two-item">
-								<img class="section-challenges-two-item-icon" src="<?php echo esc_url( get_theme_file_uri( 'assets/img/icons/hack-icon-globe.svg' ) ); ?>" width="56" />
-								<h3><?php esc_html_e( 'Entrepreneurship & innovation', 'hack' ); ?></h3>
-								<p><?php esc_html_e( 'Innovative businesses that alleviate poverty and bring justice', 'hack' ); ?></p>
+								<img class="section-challenges-two-item-icon" src="<?php echo esc_url( get_theme_file_uri( 'assets/img/icons/hack-icon-' . get_term_meta( $hack_challenge->term_id, 'icon', true ) . '.svg' ) ); ?>" width="56" />
+								<h3><?php echo esc_html( $hack_challenge->name ); ?></h3>
+								<?php echo wp_kses_post( wpautop( $hack_challenge->description ) ); ?>
 								<div class="section-challenges-two-item-info" style="background-image: url(<?php echo esc_url( get_theme_file_uri( 'assets/img/challenges/hack-challenges-item-1.jpg' ) ); ?>);">
-									<h3><?php esc_html_e( 'Church Planting Data Information Awesomeness', 'hack' ); ?></h3>
-									<p><?php esc_html_e( 'Scripture translation and engagement, discipleship, and prayer.', 'hack' ); ?></p>
-									<p><a href="#" class="button"><?php esc_html_e( 'Join Challenge', 'hack' ); ?></a></p>
+									<?php echo wp_kses_post( wpautop( get_term_meta( $hack_challenge->term_id, 'short_info', true ) ) ); ?>
+									<p><a href="<?php echo esc_url( get_term_link( $hack_challenge->term_id, 'challenge' ) ); ?>" class="button"><?php esc_html_e( 'Join Challenge', 'hack' ); ?></a></p>
 
 									<div class="section-challenges-two-item-info--footer">
-										<p><?php esc_html_e( 'This Challenge is presented by', 'hack' ); ?></p>
+										<?php
+										if ( function_exists( '\get_field' ) ) {
+											$hack_presented_by = get_field( 'presented_by', $hack_challenge );
+
+											if ( ! empty( $hack_presented_by ) ) {
+												?>
+
+												<p><?php esc_html_e( 'This Challenge is presented by', 'hack' ); ?></p>
+												<div class="section-challenges-two-item-info--footer-presenters">
+
+													<?php
+													foreach ( $hack_presented_by as $hack_presenter ) {
+														printf( '<a href="%s" target="_blank">%s</a>', esc_url( $hack_presenter['website'] ), wp_get_attachment_image( $hack_presenter['logo'] ) );
+													}
+													?>
+												</div>
+
+												<?php
+											}
+										}
+										?>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="column one-third">
-							<div class="section-challenges-two-item">
-								<img class="section-challenges-two-item-icon" src="<?php echo esc_url( get_theme_file_uri( 'assets/img/icons/hack-icon-globe.svg' ) ); ?>" width="56" />
-								<h3><?php esc_html_e( 'Entrepreneurship & innovation', 'hack' ); ?></h3>
-								<p><?php esc_html_e( 'Innovative businesses that alleviate poverty and bring justice', 'hack' ); ?></p>
-								<div class="section-challenges-two-item-info" style="background-image: url(<?php echo esc_url( get_theme_file_uri( 'assets/img/challenges/hack-challenges-item-1.jpg' ) ); ?>);">
-									<h3><?php esc_html_e( 'Church Planting Data Information Awesomeness', 'hack' ); ?></h3>
-									<p><?php esc_html_e( 'Scripture translation and engagement, discipleship, and prayer.', 'hack' ); ?></p>
-									<p><a href="#" class="button"><?php esc_html_e( 'Join Challenge', 'hack' ); ?></a></p>
 
-									<div class="section-challenges-two-item-info--footer">
-										<p><?php esc_html_e( 'This Challenge is presented by', 'hack' ); ?></p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="column one-third">
-							<div class="section-challenges-two-item">
-								<img class="section-challenges-two-item-icon" src="<?php echo esc_url( get_theme_file_uri( 'assets/img/icons/hack-icon-globe.svg' ) ); ?>" width="56" />
-								<h3><?php esc_html_e( 'Entrepreneurship & innovation', 'hack' ); ?></h3>
-								<p><?php esc_html_e( 'Innovative businesses that alleviate poverty and bring justice', 'hack' ); ?></p>
-								<div class="section-challenges-two-item-info" style="background-image: url(<?php echo esc_url( get_theme_file_uri( 'assets/img/challenges/hack-challenges-item-1.jpg' ) ); ?>);">
-									<h3><?php esc_html_e( 'Church Planting Data Information Awesomeness', 'hack' ); ?></h3>
-									<p><?php esc_html_e( 'Scripture translation and engagement, discipleship, and prayer.', 'hack' ); ?></p>
-									<p><a href="#" class="button"><?php esc_html_e( 'Join Challenge', 'hack' ); ?></a></p>
-
-									<div class="section-challenges-two-item-info--footer">
-										<p><?php esc_html_e( 'This Challenge is presented by', 'hack' ); ?></p>
-									</div>
-								</div>
-							</div>
-						</div>
+							<?php
+						}
+						?>
 					</div>
 				</div>
 			</div>
