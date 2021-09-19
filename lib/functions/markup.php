@@ -15,7 +15,7 @@ namespace Dkjensen\Hack\Functions;
 function body_classes( $classes ) {
 	$template = \get_page_template_slug();
 
-	if ( in_array( $template, array( 'templates/template-about.php', 'templates/template-home.php', 'templates/template-impact.php', 'templates/template-faq.php', 'templates/template-challenges.php' ) ) || ( is_archive() && ! is_tax( 'location' ) ) || post_password_required() || is_404() ) {
+	if ( in_array( $template, array( 'templates/template-about.php', 'templates/template-home.php', 'templates/template-impact.php', 'templates/template-faq.php', 'templates/template-challenges.php' ) ) || ( is_archive() && ! is_tax( 'location' ) && ! is_tax( 'challenge' ) ) || post_password_required() || is_404() ) {
 		$classes[] = 'transparent-header';
 	}
 

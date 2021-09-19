@@ -334,3 +334,18 @@ require_once 'lib/functions/infinite-scroll.php';
 require_once 'lib/functions/rewrite-rules.php';
 require_once 'lib/functions/pagination.php';
 require_once 'lib/functions/queries.php';
+
+// add_filter(
+// 'gform_notification',
+// function( $notification, $form, $entry ) {
+
+// error_log( get_post_meta( get_the_ID(), 'contact_email', true ) );
+
+// $notification['to'] = get_post_meta( get_the_ID(), 'contact_email', true );
+
+// return $notification;
+
+// },
+// 10,
+// 3
+// );

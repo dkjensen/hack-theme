@@ -1,0 +1,385 @@
+.wp-block {
+
+	// Audio block.
+	&-audio {
+	}
+
+	// Button block.
+	&-button {
+
+		&__link {
+
+			@include button;
+
+			.is-style-outline & {
+				color: $color--primary;
+				background-color: transparent;
+				border: 2px solid $color--primary;
+
+				@include hover-focus {
+					color: $color--white;
+					background-color: $color--primary;
+					border-color: $color--primary;
+				}
+			}
+
+			.is-style-arrow & {
+
+				&:after {
+
+					@include icon("\f054", 700);
+					display: inline-block;
+					margin-left: 0.8rem;
+				}
+			}
+		}
+	}
+
+	// Categories block.
+	&-categories {
+
+		&-list {
+		}
+
+		&-dropdown {
+		}
+	}
+
+	// Code block.
+	&-code {
+	}
+
+	// Columns block.
+	&-columns {
+		margin: 0;
+
+		@include mq($until: tablet) {
+			flex-wrap: wrap;
+		}
+	}
+
+	&-column {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: $gutter * 2;
+
+		@include mq($until: tablet) {
+			flex: none;
+			width: 100%;
+
+			&:empty {
+				display: none;
+			}
+		}
+
+		@include mq(tablet) {
+
+			&:not(:first-child) {
+				margin-left: $gutter * 2;
+			}
+		}
+
+		> :first-child {
+			margin-top: 0;
+		}
+
+		> :last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	// Cover block.
+	&-cover {
+		min-height: 38rem;
+	}
+
+	// Cover image block.
+	&-cover-image {
+
+		&.has-parallax {
+		}
+
+		&.has-background-dim {
+		}
+
+		&-text {
+		}
+
+		&.has-left-content {
+		}
+
+		&.has-right-content {
+		}
+
+		&.has-left-content &-text {
+		}
+
+		&.has-right-content &-text {
+		}
+	}
+
+	// Embed block.
+	&-embed {
+
+		@include margin($spacing--m null);
+	}
+
+	// File block.
+	&-file {
+
+		&__button {
+		}
+	}
+
+	// Gallery block.
+	&-gallery {
+
+		@include margin($spacing--m null);
+
+		&.is-cropped {
+		}
+
+		&.columns-1 {
+		}
+
+		&.columns-2 {
+		}
+
+		&.columns-3 {
+		}
+
+		.blocks-gallery-item {
+		}
+
+		&.is-cropped .blocks-gallery-item {
+		}
+
+		.blocks-gallery-item {
+
+			img {
+				align-self: center;
+			}
+		}
+
+		&.columns-1 .blocks-gallery-item {
+		}
+	}
+
+	&-group {
+
+		&,
+		&.has-background {
+
+			@include padding(0);
+		}
+
+
+		&.card {
+			margin-bottom: $gutter;
+		}
+	}
+
+	// Image block.
+	&-image {
+
+		@include margin($spacing--m null);
+
+		&.alignleft {
+			margin-right: $spacing--m;
+		}
+
+		&.alignright {
+			margin-left: $spacing--m;
+		}
+
+		&.alignwide {
+			max-width: 120%;
+		}
+
+		&.alignfull {
+			max-width: none;
+		}
+
+		img {
+			height: auto;
+		}
+	}
+
+	// Latest posts block.
+	&-latest-posts {
+
+		&.is-grid {
+		}
+
+		&__post-date {
+		}
+
+		&__post-excerpt {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		li > a {
+			font-family: $font-family--heading;
+			font-weight: $font-weight--semibold;
+			line-height: $line-height--heading;
+			color: $color--heading;
+		}
+	}
+
+	// Media text block.
+	&-media-text {
+
+		&__media {
+
+			img {
+				width: auto;
+				max-width: 100%;
+				height: auto;
+				max-height: 100%;
+			}
+		}
+	}
+
+	// Post template block.
+	&-post-template {
+		float: none !important;
+		padding: 0;
+		margin: 0 !important;
+		list-style: none;
+
+		> * {
+			margin: 0 0 $gutter;
+		}
+
+		&.is-flex-container,
+		&.is-flex-container.is-flex-container {
+			column-gap: $gutter;
+			justify-content: center;
+
+			&.alignleft {
+				justify-content: flex-start;
+			}
+
+			&.alignright {
+				justify-content: flex-end;
+			}
+
+			@for $i from 1 to 6 {
+				&.columns-#{$i} > li {
+					padding: 0;
+					margin: 0;
+
+					@include mq(tablet) {
+						// width: calc(#{ 100% / #{$i} } - #{$gutter--fill});
+						width: calc((100% - (#{$gutter} * #{$i - 1})) / #{$i});
+
+						> *,
+						.article {
+							height: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// Preformatted block.
+	&-preformatted {
+	}
+
+	// Pullquote block.
+	&-pullquote {
+		border-left: 0;
+
+		@include margin($spacing--l null);
+
+		&.aligncenter {
+
+			@include margin($spacing--l null);
+		}
+	}
+
+	// Quote block.
+	&-quote {
+		border: 0;
+
+		@extend blockquote;
+	}
+
+	// Separator block.
+	&-separator {
+	}
+
+	// Subhead block.
+	&-subhead {
+	}
+
+	// Template part block.
+	&-swc-template-part {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+	}
+
+	// Table block.
+	&-table {
+	}
+
+	// Verse block.
+	&-verse {
+	}
+
+	/**
+	 * Genesis blocks.
+	 */
+
+	// Accordion block.
+	&-genesis-blocks-gb {
+
+		&-accordion {
+			margin: 0 0 $spacing--l;
+
+			.gb-accordion-title {
+				padding: 0;
+				font-size: 2.1rem;
+				font-weight: $font-weight--regular;
+				color: $color--secondary;
+				list-style: none;
+				cursor: pointer;
+				background-color: transparent;
+				outline: none;
+
+				@include transition();
+			}
+
+			details[open] {
+
+				.gb-accordion-title {
+					color: $color--text;
+				}
+
+				summary ~ * {
+					animation: sweep 0.5s ease-in-out;
+
+					@keyframes sweep {
+
+						0% {
+							margin-left: -10px;
+							opacity: 0;
+						}
+
+						100% {
+							margin-left: 0;
+							opacity: 1;
+						}
+					}
+				}
+			}
+
+			.gb-accordion-text {
+				padding: $spacing--s 0;
+			}
+		}
+	}
+}
