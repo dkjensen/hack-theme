@@ -59,10 +59,12 @@ get_header();
 								<?php echo esc_html( 'Time: ' . gmdate( 'H:i', $hack_start_date ) ); ?> <?php echo esc_html( get_post_meta( get_the_id(), 'timezone', true ) ); ?>
 							</span>
 							<a class="text-color" rel="noopener" target="_blank" 
-							href="<?php esc_html_e( 'https://dateful.com/eventlink/e/?iso=', 'hack' ); ?>
-							<?php echo esc_html( gmdate( 'Y-m-d' . '\T' . 'h:i', $hack_start_date ) ); ?>
+							href="<?php esc_html_e( 'https://dateful.com/eventlink/e/?t=', 'hack' ); ?>
+
+							<?php echo esc_html( gmdate( 'Y-m-d \of h:i', $hack_start_date ) ); ?> <?php echo esc_html( get_post_meta( get_the_id(), 'timezone', true ) ); ?>
+							&title=<?php echo esc_html( get_the_title() ); ?>
 							">
-						<?php esc_html_e( 'View Your Local Time', 'hack' ); ?>
+						<?php esc_html_e( 'View Your Local Timezone', 'hack' ); ?>
 						</a>
 					</div>
 

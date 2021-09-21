@@ -421,7 +421,7 @@ function get_hack_locations() {
 						AND tm3.meta_key = 'archived'
 		WHERE  tt.taxonomy IN ( 'location' )
 			AND ( tm3.meta_value != '1' OR tm3.meta_value IS NULL )
-		ORDER  BY t.name ASC 
+		ORDER  BY tm2.meta_value ASC, t.name
 	"
 	);
 

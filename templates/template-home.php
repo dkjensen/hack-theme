@@ -42,7 +42,7 @@ if ( have_posts() ) :
 							</div>
 							<div class="row">
 								<div class="column two-fifths">
-									<h3 class="primary-color"><?php esc_html_e( 'What’s a hackathon?', 'hack' ); ?></h3>
+									<h3 class="primary-color"><?php esc_html_e( 'What\'s a hackathon?', 'hack' ); ?></h3>
 									<p>
 										<?php esc_html_e( 'A hackathon* is an event with a specific focus during which people in the tech and adjacent industries collaborate to create solutions to specific challenges.', 'hack' ); ?> *<em><?php esc_html_e( 'A combination of the words "hack" and marathon. ', 'hack' ); ?></em>
 									</p>

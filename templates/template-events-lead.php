@@ -16,7 +16,7 @@ get_header();
 		<div class="wrap">
 			<div class="row">
 				<div class="column single-column">
-					<h1 class="text-center"><span><?php echo esc_html( '#HACK' ); ?></span><?php esc_html_e( ' 2021 City Lead Program', 'hack' ); ?> </h1>
+					<h1 class="text-center"><span><?php echo esc_html( '#HACK' ); ?></span><?php esc_html_e( '2021 Global Schedule For City Leads', 'hack' ); ?> </h1>
 					<div class="intro-text small text-center">
 						<p><?php esc_html_e( 'Here is the program for #HACK2021. We are excited you can join us for this global hackathon for missions. If you have any questions please get in touch.', 'hack' ); ?></p>
 						<p><a class="text-color" href="<?php echo esc_url( get_permalink( get_page_by_path( 'contact' ) ) ); ?>"><?php esc_html_e( 'Contact Us', 'hack' ); ?></a></p>
