@@ -43,7 +43,16 @@ get_header();
 					<?php echo term_description() ? term_description() : apply_filters( 'the_content', esc_html__( 'We are excited for you to join our team and contribute your skills and creativity for Kingdom impact. See you there.', 'hack' ) ); ?>
 				</div>
 				<div class="section-location-one-wrap--content-action">
-					<a href="<?php echo esc_url( 'https://indigitous.typeform.com/to/QkVDWhea#source=hackwebsite-' . strtolower( get_term_meta( get_queried_object_id(), 'country_code', true ) ) . '-' . sanitize_title_with_dashes( get_the_archive_title() ) ); ?>" target="_blank" class="button">
+					<a target="_blank" class="button" href="
+					<?php
+					$hack_registration_url = get_term_meta( get_queried_object_id(), 'registration_url', true );
+					$hack_registration_url = empty( $hack_registration_url ) ?
+					'https://indigitous.typeform.com/to/QkVDWhea#source=hackwebsite-' . strtolower( get_term_meta( get_queried_object_id(), 'country_code', true ) ) . '-' . sanitize_title_with_dashes( get_the_archive_title() )
+					:
+					$hack_registration_url;
+					echo esc_url( $hack_registration_url );
+					?>
+					">
 						<?php
 						/* translators: %s #HACK name tag */
 						printf( esc_html__( 'Join %s', 'hack' ), hack_name_tag() );
