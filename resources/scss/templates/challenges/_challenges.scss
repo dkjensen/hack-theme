@@ -37,6 +37,9 @@
 			padding: $gutter * 2 $gutter * 2 0;
 			margin: 0 0 $spacing--xl;
 			text-align: center;
+			& > p {
+				min-height: 120px;
+			}
 
 			@include card();
 
@@ -60,13 +63,13 @@
 				background-size: cover;
 				border-radius: 4px;
 				&.american-bible-society {
-					background-image: url('assets/img/challenges/american-bible-society.jpg');
+					background-image: url('.../img/challenges/american-bible-society.jpg');
 				}
 				&.coalition-of-the-willing {
-					background-image: url('assets/img/challenges/coalition-of-the-willing.jpg');
+					background-image: url('.../img/challenges/coalition-of-the-willing.jpg');
 				}
 				&.world-vision {
-					background-image: url('assets/img/challenges/world-vision.jpg');
+					background-image: url('.../img/challenges/world-vision.jpg');
 				}
 
 				@include margin($spacing--s ($gutter * 2) * -1 0);
@@ -114,7 +117,7 @@
 								max-width: 10rem;
 								height: auto;
 								max-height: 4rem;
-								margin: 0 0 $gutter / 2 $gutter;
+								margin: 0 auto;
 							}
 						}
 					}
