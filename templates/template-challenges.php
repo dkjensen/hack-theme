@@ -65,7 +65,7 @@ if ( have_posts() ) :
 											if ( ! empty( $hack_presented_by ) ) {
 												?>
 
-												<p><?php esc_html_e( 'This Challenge is presented by', 'hack' ); ?></p>
+												<p><?php esc_html_e( 'This Challenge is Presented by:', 'hack' ); ?></p>
 												<div class="section-challenges-two-item-info--footer-presenters">
 
 													<?php

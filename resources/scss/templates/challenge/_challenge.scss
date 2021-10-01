@@ -14,25 +14,27 @@
 		@include overlay();
 
 		.wrap {
+			align-items: flex-start;
+			display: flex;
+			height: inherit;
 			position: relative;
 			z-index: 1;
-			display: flex;
-			align-items: center;
-			height: inherit;
+			padding: 6rem .8rem;
+			}
 		}
 
 		&-title {
-			margin: 2rem 0;
 			display: flex;
-			align-items: center;
+			align-items: flex-start;
+			flex-direction: column;
 			justify-content: flex-start;
-			flex-direction: row;
+			text-align: left;
+			width: initial;
+			@include mq(tablet) {
+				width: 70%;
+			}
 			h1 {
 				color: $color--white;
-				width: initial;
-				// @include mq(tablet) {
-				// 	width: 50%;
-				// }
 				margin-bottom: 0;
 			}
 			h2 {
@@ -76,7 +78,6 @@
 				}
 			}
 		}
-	}
 
 	&-two {
 

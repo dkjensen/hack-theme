@@ -89,13 +89,24 @@
 							justify-content: flex-end;
 						}
 
-						img {
-							display: inline-block;
-							width: auto;
-							max-width: 10rem;
-							height: auto;
-							max-height: 4rem;
-							margin: 0 0 $gutter / 2 $gutter;
+						a {
+							background: white;
+							border-radius: 4px;
+							width: max-content;
+							padding: 8px 16px;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							margin-bottom: 16px;
+
+							img {
+								display: inline-block;
+								width: auto;
+								max-width: 10rem;
+								height: auto;
+								max-height: 4rem;
+								margin: 0 0 $gutter / 2 $gutter;
+							}
 						}
 					}
 				}
