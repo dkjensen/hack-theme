@@ -14,7 +14,7 @@ while ( have_posts() ) {
 
 	?>
 
-<div class="wrap">s
+<div class="wrap">
 	<p class="breadcrumbs">
 		<a href="<?php echo esc_url( get_permalink( get_page_by_path( 'challenges' ) ) ); ?>">
 		<?php esc_html_e( 'Challenges', 'hack' ); ?>
