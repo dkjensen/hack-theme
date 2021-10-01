@@ -63,13 +63,13 @@
 				background-size: cover;
 				border-radius: 4px;
 				&.american-bible-society {
-					background-image: url('.../img/challenges/american-bible-society.jpg');
+					background-image: url('../img/challenges/american-bible-society.jpg');
 				}
 				&.coalition-of-the-willing {
-					background-image: url('.../img/challenges/coalition-of-the-willing.jpg');
+					background-image: url('../img/challenges/coalition-of-the-willing.jpg');
 				}
 				&.world-vision {
-					background-image: url('.../img/challenges/world-vision.jpg');
+					background-image: url('../img/challenges/world-vision.jpg');
 				}
 
 				@include margin($spacing--s ($gutter * 2) * -1 0);

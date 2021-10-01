@@ -20,7 +20,10 @@
 			height: inherit;
 			position: relative;
 			z-index: 1;
-			padding: 6rem .8rem;
+			padding: 6rem 2rem 5rem;
+				@include mq(tablet) {
+					padding: 6rem 0rem 5rem;
+				}
 			}
 
 		&-title {
@@ -31,7 +34,7 @@
 			text-align: left;
 			width: initial;
 			@include mq(tablet) {
-				width: 70%;
+				width: 60%;
 			}
 			h1 {
 				color: $color--white;
@@ -42,14 +45,16 @@
 			}
 			p {
 				margin-bottom: 0;
+				width: initial;
+				@include mq(tablet) {
+					width: 70%;
+				}
 			}
 		}
 
 		&-presenters {
-			position: absolute;
-			left: $gutter;
-			bottom: $gutter;
 			text-align: left;
+			margin-top: auto;
 
 			p {
 				margin: 0 0 1rem;
@@ -65,21 +70,21 @@
 					display: flex;
 					align-items: center;
 					justify-content: center;
-					padding: 8px 16px;
+					padding: 16px 32px;
 					margin-right: auto;
 					img {
 						display: inline-block;
 						width: auto;
-						max-width: 30rem;
+						max-width: 24rem;
 						height: auto;
-						max-height: 12rem;
+						max-height: 10rem;
 						margin-right: auto;
 					}
 				}
 			}
 		}
 	}
-	
+
 	&-two {
 
 		&-box {
