@@ -17,6 +17,7 @@ while ( have_posts() ) {
 	<div class="section section-challenge-one" style="background-image: url(<?php echo esc_url( get_the_post_thumbnail_url( null, 'full' ) ); ?>">
 		<div class="wrap">
 			<?php the_title( '<h1>', '</h1>' ); ?>
+			<h2><?php echo esc_html( get_post_meta( get_the_id(), 'header_subtitle', true ) ); ?></h2>
 			<div class="section-challenge-one-presenters">
 			<?php
 			if ( function_exists( '\get_field' ) ) {
