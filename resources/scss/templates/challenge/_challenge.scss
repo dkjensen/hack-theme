@@ -8,7 +8,7 @@
 		background-position: center;
 		background-size: cover;
 		@include mq(tablet) {
-			min-height: 32rem;
+			min-height: 62rem;
 		}
 
 		@include overlay();
@@ -21,20 +21,33 @@
 			height: inherit;
 		}
 
-		h1 {
+		&-title {
 			margin: 2rem 0;
-			color: $color--white;
-			width: initial;
-			@include mq(tablet) {
-				width: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			flex-direction: row;
+			h1 {
+				color: $color--white;
+				width: initial;
+				// @include mq(tablet) {
+				// 	width: 50%;
+				// }
+				margin-bottom: 0;
+			}
+			h2 {
+				margin-bottom: 1.6rem;
+			}
+			p {
+				margin-bottom: 0;
 			}
 		}
 
 		&-presenters {
 			position: absolute;
-			right: $gutter;
+			left: $gutter;
 			bottom: $gutter;
-			text-align: right;
+			text-align: left;
 
 			p {
 				margin: 0 0 1rem;
@@ -51,14 +64,14 @@
 					align-items: center;
 					justify-content: center;
 					padding: 8px 16px;
-					margin-left: auto;
+					margin-right: auto;
 					img {
 						display: inline-block;
 						width: auto;
-						max-width: 10rem;
+						max-width: 30rem;
 						height: auto;
-						max-height: 4rem;
-						margin-left: auto;
+						max-height: 12rem;
+						margin-right: auto;
 					}
 				}
 			}

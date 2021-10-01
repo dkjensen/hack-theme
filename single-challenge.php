@@ -16,8 +16,11 @@ while ( have_posts() ) {
 
 	<div class="section section-challenge-one" style="background-image: url(<?php echo esc_url( get_the_post_thumbnail_url( null, 'full' ) ); ?>">
 		<div class="wrap">
-			<?php the_title( '<h1>', '</h1>' ); ?>
-			<h2><?php echo esc_html( get_post_meta( get_the_id(), 'header_subtitle', true ) ); ?></h2>
+			<div class="section-challenge-one-title">
+				<?php the_title( '<h1>', '</h1>' ); ?>
+				<h2><?php echo esc_html( get_post_meta( get_the_id(), 'header_subtitle', true ) ); ?></h2>
+				<p><?php echo esc_html( get_post_meta( get_the_id(), 'header_paragraph', true ) ); ?></p>
+			</div>
 			<div class="section-challenge-one-presenters">
 			<?php
 			if ( function_exists( '\get_field' ) ) {
@@ -26,7 +29,7 @@ while ( have_posts() ) {
 				if ( ! empty( $hack_presented_by ) ) {
 					?>
 
-						<p><?php esc_html_e( 'This Challenge is presented by', 'hack' ); ?></p>
+						<p><?php esc_html_e( 'This Challenge is Presented by:', 'hack' ); ?></p>
 						<div class="section-challenge-one-presenters--items">
 							<?php
 							foreach ( $hack_presented_by as $hack_presenter ) {
