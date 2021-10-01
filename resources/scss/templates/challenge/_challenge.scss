@@ -16,6 +16,7 @@
 		.wrap {
 			align-items: flex-start;
 			display: flex;
+			flex-direction: column;
 			height: inherit;
 			position: relative;
 			z-index: 1;
