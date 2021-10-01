@@ -54,10 +54,8 @@ if ( have_posts() ) :
 								<h3><?php the_title(); ?></h3>
 								<?php the_excerpt(); ?>
 								<div class="section-challenges-two-item-info 
-								<?php echo esc_url( sanitize_title_with_dashes( get_the_title( get_the_ID() ) ) ); ?>
-								" 
-								style="background-image: url(<?php echo esc_url( get_theme_file_uri( 'assets/img/challenges/hack-challenges-item-1.jpg' ) ); ?>);"
-								>
+								<?php echo esc_html( sanitize_title_with_dashes( get_the_title( get_the_ID() ) ) ); ?>
+								">
 									<?php echo wp_kses_post( wpautop( get_post_meta( get_the_ID(), 'short_info', true ) ) ); ?>
 									<p><a href="<?php echo esc_url( get_permalink( get_the_ID() ) ); ?>" class="button"><?php esc_html_e( 'View Details', 'hack' ); ?></a></p>
 

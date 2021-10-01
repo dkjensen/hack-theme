@@ -59,6 +59,15 @@
 				background-position: center;
 				background-size: cover;
 				border-radius: 4px;
+				&.american-bible-society {
+					background-image: url('assets/img/challenges/american-bible-society.jpg');
+				}
+				&.coalition-of-the-willing {
+					background-image: url('assets/img/challenges/coalition-of-the-willing.jpg');
+				}
+				&.world-vision {
+					background-image: url('assets/img/challenges/world-vision.jpg');
+				}
 
 				@include margin($spacing--s ($gutter * 2) * -1 0);
 				@include overlay();
