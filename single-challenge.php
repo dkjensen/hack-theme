@@ -14,6 +14,17 @@ while ( have_posts() ) {
 
 	?>
 
+<div class="wrap">s
+	<p class="breadcrumbs">
+		<a href="<?php echo esc_url( get_permalink( get_page_by_path( 'challenges' ) ) ); ?>">
+		<?php esc_html_e( 'Challenges', 'hack' ); ?>
+		</a>
+		<span>
+		> <?php echo esc_html( the_title() ); ?>
+		</span>
+	</p>
+</div>
+
 	<div class="section section-challenge-one" style="background-image: url(<?php echo esc_url( get_the_post_thumbnail_url( null, 'full' ) ); ?>">
 		<div class="wrap">
 			<div class="section-challenge-one-title">
