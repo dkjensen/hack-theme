@@ -53,7 +53,11 @@ if ( have_posts() ) :
 								<img class="section-challenges-two-item-icon" src="<?php echo esc_url( get_theme_file_uri( 'assets/img/icons/hack-icon-' . get_post_meta( get_the_ID(), 'icon', true ) . '.svg' ) ); ?>" width="56" />
 								<h3><?php the_title(); ?></h3>
 								<?php the_excerpt(); ?>
-								<div class="section-challenges-two-item-info" style="background-image: url(<?php echo esc_url( get_theme_file_uri( 'assets/img/challenges/hack-challenges-item-1.jpg' ) ); ?>);">
+								<div class="section-challenges-two-item-info 
+								<?php echo esc_url( sanitize_title_with_dashes( get_the_title( get_the_ID() ) ) ); ?>
+								" 
+								style="background-image: url(<?php echo esc_url( get_theme_file_uri( 'assets/img/challenges/hack-challenges-item-1.jpg' ) ); ?>);"
+								>
 									<?php echo wp_kses_post( wpautop( get_post_meta( get_the_ID(), 'short_info', true ) ) ); ?>
 									<p><a href="<?php echo esc_url( get_permalink( get_the_ID() ) ); ?>" class="button"><?php esc_html_e( 'View Details', 'hack' ); ?></a></p>
 
@@ -70,7 +74,7 @@ if ( have_posts() ) :
 
 													<?php
 													foreach ( $hack_presented_by as $hack_presenter ) {
-														printf( '<a href="%s" target="_blank">%s</a>', esc_url( $hack_presenter['website'] ), wp_get_attachment_image( $hack_presenter['logo'] ) );
+														printf( '<a href="%s" target="_blank">%s</a>', esc_url( $hack_presenter['website'] ), wp_get_attachment_image( $hack_presenter['logo'], 'full' ) );
 													}
 													?>
 												</div>

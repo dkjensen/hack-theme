@@ -33,7 +33,7 @@ while ( have_posts() ) {
 						<div class="section-challenge-one-presenters--items">
 							<?php
 							foreach ( $hack_presented_by as $hack_presenter ) {
-								printf( '<a href="%s" target="_blank">%s</a>', esc_url( $hack_presenter['website'] ), wp_get_attachment_image( $hack_presenter['logo'] ) );
+								printf( '<a href="%s" target="_blank">%s</a>', esc_url( $hack_presenter['website'] ), wp_get_attachment_image( $hack_presenter['logo'], 'full' ) );
 							}
 							?>
 							</div>
