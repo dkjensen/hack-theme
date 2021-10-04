@@ -177,5 +177,6 @@ let hack = {};
 	} );
 
 	$( '.events .accordion-header' ).eq( 0 ).trigger( 'click' );
+	$( '.wp-block-column .accordion .accordion-header' ).eq( 0 ).trigger( 'click' );
 
 } )( jQuery );
