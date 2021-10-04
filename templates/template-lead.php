@@ -307,6 +307,18 @@ if ( have_posts() ) :
 								</div>
 								<div class="team-member">
 									<div class="team-member-photo">
+										<a href="<?php echo esc_url( get_location_region_link( 'north-america' ) ); ?>"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/team/yan.png' ) ); ?>" /></a>
+									</div>
+									<div class="team-member-label">
+										<h3><a href="<?php echo esc_url( get_location_region_link( 'north-america' ) ); ?>"><?php echo esc_html( 'Yan' ); ?></a></h3>
+										<h6><?php esc_html_e( 'North America', 'hack' ); ?></h6>
+									</div>
+									<div class="team-member-bio">
+										<?php esc_html_e( 'An interdisciplinary designer with 10+ years of experience in product design & strategy, project management, and workshop design and facilitation.', 'hack' ); ?>
+									</div>
+								</div>
+								<div class="team-member">
+									<div class="team-member-photo">
 										<a href="<?php echo esc_url( get_location_region_link( 'north-america' ) ); ?>"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/team/andrew-fang.png' ) ); ?>" /></a>
 									</div>
 									<div class="team-member-label">

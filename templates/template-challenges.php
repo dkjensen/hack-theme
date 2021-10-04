@@ -25,7 +25,7 @@ if ( have_posts() ) :
 								echo sprintf( esc_html__( '%s Global Challenges', 'hack' ), '#HACK21' );
 								?>
 							</h1>
-							<p><?php esc_html_e( 'The Indigitous hackathon is a unique opportunity to gather people with unique skill sets for the purpose of responding to the most pressing needs that impact our society.', 'hack' ); ?></p>
+							<p><?php esc_html_e( 'Presented by our ministry partners, here are 3 great challenges for you to work on during #HACK2021 with your teams.', 'hack' ); ?></p>
 						</div>
 					</div>
 				</div>
@@ -51,7 +51,7 @@ if ( have_posts() ) :
 						<div class="column one-third">
 							<div class="section-challenges-two-item">
 								<img class="section-challenges-two-item-icon" src="<?php echo esc_url( get_theme_file_uri( 'assets/img/icons/hack-icon-' . get_post_meta( get_the_ID(), 'icon', true ) . '.svg' ) ); ?>" width="56" />
-								<h3><?php the_title(); ?></h3>
+								<h3><?php echo esc_html( get_post_meta( get_the_id(), 'challenge_type', true ) ); ?></h3>
 								<?php the_excerpt(); ?>
 								<div class="section-challenges-two-item-info 
 								<?php echo esc_html( sanitize_title_with_dashes( get_the_title( get_the_ID() ) ) ); ?>
@@ -105,7 +105,7 @@ if ( have_posts() ) :
 							<a href="https://indigitous.typeform.com/to/mojiHQqC" target="_blank" class="button"><?php esc_html_e( 'Lead', 'hack' ); ?></a>
 						</div>
 						<div class="section-challenges-three-items--item yellow-background-color" data-sal="slide-down" data-sal-delay="100">
-							<p><?php esc_html_e( 'Use your talents for God by working on missional projects to solve the problems facing your community.', 'hack' ); ?></p>
+							<p><?php esc_html_e( 'Use your talents for God by working on mission-focused projects to solve the problems facing your community.', 'hack' ); ?></p>
 							<a href="https://indigitous.typeform.com/to/QkVDWhea" target="_blank" class="button"><?php esc_html_e( 'Participate', 'hack' ); ?></a>
 						</div>
 						<div class="section-challenges-three-items--item blue-background-color" data-sal="slide-down" data-sal-delay="200">
