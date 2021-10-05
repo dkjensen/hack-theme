@@ -64,7 +64,7 @@ get_header();
 							<?php echo esc_html( gmdate( 'Y-m-d \of h:i', $hack_start_date ) ); ?> <?php echo esc_html( get_post_meta( get_the_id(), 'timezone', true ) ); ?>
 							&title=<?php echo esc_html( get_the_title() ); ?>
 							">
-						<?php esc_html_e( 'View Your Local Timezone', 'hack' ); ?>
+						<?php esc_html_e( 'View My Timezone', 'hack' ); ?>
 						</a>
 					</div>
 
