@@ -40,6 +40,17 @@
 			<a target="_blank" rel="noopener" href="https://athirdofus.com/" class="template-parts-partners-logos--logo" aria-label="A Third of Us"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/a-third-of-us-logo.png' ) ); ?>" alt="" /></a>
 			<a target="_blank" rel="noopener" href="https://www.wycliffe.org/" class="template-parts-partners-logos--logo" aria-label="Wycliffe"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/wycliffe-logo.png' ) ); ?>" alt="" /></a>
 			<a target="_blank" rel="noopener" href="https://www.agapeliv.dk/" class="template-parts-partners-logos--logo" aria-label="Agapeliv"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/agapeliv-logo.png' ) ); ?>" alt="" /></a>
+
+
+			<a target="_blank" rel="noopener" href="https://frontierventures.org" class="template-parts-partners-logos--logo" aria-label="Frontier Ventures"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/frontier-ventures.jpg' ) ); ?>" alt="" /></a>
+			<a target="_blank" rel="noopener" href="https://www.afcinc.org/en-us/home.aspx" class="template-parts-partners-logos--logo" aria-label="AFC/CMC"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/afc-cmc.jpg' ) ); ?>" alt="" /></a>
+			<a target="_blank" rel="noopener" href="https://www.perspectives.org" class="template-parts-partners-logos--logo" aria-label="Perspectives"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/perspectives.png' ) ); ?>" alt="" /></a>
+			<a target="_blank" rel="noopener" href="https://www.faithdriveninvestor.org" class="template-parts-partners-logos--logo" aria-label="Faith Driven Investor"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/faith-driven-adventures.png' ) ); ?>" alt="" /></a>
+			<a target="_blank" rel="noopener" href="https://finishingthetask.com" class="template-parts-partners-logos--logo" aria-label="Finishing the Task"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/finishing-the-task.png' ) ); ?>" alt="" /></a>
+			<a target="_blank" rel="noopener" href="https://www.visualstory.org/" class="template-parts-partners-logos--logo" aria-label="Visual Story Network"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/visual-story.png' ) ); ?>" alt="" /></a>
+			<a target="_blank" rel="noopener" href="https://renewoutreach.org/" class="template-parts-partners-logos--logo" aria-label="Renew World Outreach"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/renew-world.png' ) ); ?>" alt="" /></a>
+			<a target="_blank" rel="noopener" href="https://gacx.io" class="template-parts-partners-logos--logo" aria-label="GACX"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/gacx.jpg' ) ); ?>" alt="" /></a>
+			
 		</div>
 	</div>
 </div>
