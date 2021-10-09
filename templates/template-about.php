@@ -185,7 +185,7 @@ if ( have_posts() ) :
 										<div class="timeline-item--stats">
 											<p><?php esc_html_e( 'The world’s largest global missional hackathon returns this October.', 'hack' ); ?></p>
 											<div class="timeline-item--report">
-												<a href="https://indigitous.typeform.com/to/QkVDWhea" class="button margin-right-s" target="_blank"><?php esc_html_e( 'Participate', 'hack' ); ?></a>
+												<a href="https://indigitous.typeform.com/to/srzbTRnE" class="button margin-right-s" target="_blank"><?php esc_html_e( 'Participate', 'hack' ); ?></a>
 												<a href="https://indigitous.typeform.com/to/mojiHQqC" class="button margin-right-s" target="_blank"><?php esc_html_e( 'Lead', 'hack' ); ?></a>
 												<a href="https://indigitous.typeform.com/to/RQGajmbR" class="button" target="_blank"><?php esc_html_e( 'Partner', 'hack' ); ?></a>
 											</div>
@@ -405,7 +405,7 @@ if ( have_posts() ) :
 						</div>
 						<div class="section-about-nine-items--item yellow-background-color" data-sal="slide-down" data-sal-delay="100">
 							<p><?php esc_html_e( 'Use your skills to bring the gospel where it needs to go.', 'hack' ); ?></p>
-							<a href="https://indigitous.typeform.com/to/QkVDWhea" target="_blank" class="button"><?php esc_html_e( 'Participate', 'hack' ); ?></a>
+							<a href="https://indigitous.typeform.com/to/srzbTRnE" target="_blank" class="button"><?php esc_html_e( 'Participate', 'hack' ); ?></a>
 						</div>
 						<div class="section-about-nine-items--item blue-background-color" data-sal="slide-down" data-sal-delay="200">
 							<p><?php esc_html_e( 'We need partners to help make this event a success.', 'hack' ); ?></p>

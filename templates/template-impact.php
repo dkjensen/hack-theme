@@ -207,7 +207,7 @@ if ( have_posts() ) :
 									<div class="section-impact-four-items--item--container current" data-sal="slide-left">
 										<h1><span><?php echo esc_html( '#HACK' ); ?></span><?php echo esc_html( '2021' ); ?></h1>
 										<p><?php esc_html_e( 'The world’s largest global missional hackathon returns this October.', 'hack' ); ?></p>
-										<p><a href="https://indigitous.typeform.com/to/QkVDWhea" target="_blank" class="button"><?php esc_html_e( 'Register', 'hack' ); ?></a></p>
+										<p><a href="https://indigitous.typeform.com/to/srzbTRnE" target="_blank" class="button"><?php esc_html_e( 'Register', 'hack' ); ?></a></p>
 									</div>
 								</div>
 							</div>

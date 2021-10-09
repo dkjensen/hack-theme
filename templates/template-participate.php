@@ -30,7 +30,7 @@ if ( have_posts() ) :
 								<?php esc_html_e( 'You have an opportunity to make an impact for God in your city.  Indigitous wants to empower you to serve your city and tackle those real problems facing your friends, neighbors, and coworkers.', 'hack' ); ?>
 							</p>
 							<p>
-								<a href="https://indigitous.typeform.com/to/QkVDWhea" class="button" target="_blank"><?php esc_html_e( 'Register Now', 'hack' ); ?></a>
+								<a href="https://indigitous.typeform.com/to/srzbTRnE" class="button" target="_blank"><?php esc_html_e( 'Register Now', 'hack' ); ?></a>
 							</p>
 						</div>
 						<div class="column one-half">
@@ -81,7 +81,7 @@ if ( have_posts() ) :
 								?>
 							</h2>
 							<p>
-								<a href="https://indigitous.typeform.com/to/QkVDWhea" class="button" target="_blank"><?php esc_html_e( 'Register Now', 'hack' ); ?></a>
+								<a href="https://indigitous.typeform.com/to/srzbTRnE" class="button" target="_blank"><?php esc_html_e( 'Register Now', 'hack' ); ?></a>
 							</p>
 						</div>
 					</div>

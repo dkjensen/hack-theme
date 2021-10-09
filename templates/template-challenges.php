@@ -106,7 +106,7 @@ if ( have_posts() ) :
 						</div>
 						<div class="section-challenges-three-items--item yellow-background-color" data-sal="slide-down" data-sal-delay="100">
 							<p><?php esc_html_e( 'Use your talents for God by working on mission-focused projects to solve the problems facing your community.', 'hack' ); ?></p>
-							<a href="https://indigitous.typeform.com/to/QkVDWhea" target="_blank" class="button"><?php esc_html_e( 'Participate', 'hack' ); ?></a>
+							<a href="https://indigitous.typeform.com/to/srzbTRnE" target="_blank" class="button"><?php esc_html_e( 'Participate', 'hack' ); ?></a>
 						</div>
 						<div class="section-challenges-three-items--item blue-background-color" data-sal="slide-down" data-sal-delay="200">
 							<p><?php esc_html_e( 'We need partners to help make this event a success. Find out how you can partner with us.', 'hack' ); ?></p>

@@ -47,7 +47,7 @@ get_header();
 					<?php
 					$hack_registration_url = get_term_meta( get_queried_object_id(), 'registration_url', true );
 					$hack_registration_url = empty( $hack_registration_url ) ?
-					'https://indigitous.typeform.com/to/QkVDWhea#source=hackwebsite-' . strtolower( get_term_meta( get_queried_object_id(), 'country_code', true ) ) . '-' . sanitize_title_with_dashes( get_the_archive_title() )
+					'https://indigitous.typeform.com/to/srzbTRnE#source=hackwebsite-' . strtolower( get_term_meta( get_queried_object_id(), 'country_code', true ) ) . '-' . sanitize_title_with_dashes( get_the_archive_title() )
 					:
 					$hack_registration_url;
 					echo esc_url( $hack_registration_url );

@@ -46,7 +46,7 @@ if ( have_posts() ) :
 								?>
 							</h3>
 							<p>
-								<a href="https://indigitous.typeform.com/to/QkVDWhea" target="_blank" class="button"><?php esc_html_e( 'Participate', 'hack' ); ?></a>
+								<a href="https://indigitous.typeform.com/to/srzbTRnE" target="_blank" class="button"><?php esc_html_e( 'Participate', 'hack' ); ?></a>
 							</p>
 						</div>
 					</div>
