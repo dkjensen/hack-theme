@@ -1,0 +1,189 @@
+.section-judges {
+
+	&-pg {
+		display: flex;
+		column-gap: 7px;
+		margin: 0 0 $spacing--xxs;
+
+		span {
+			width: 30px;
+			height: 4px;
+			background-color: rgba($color--primary, 0.25);
+			border-radius: 4px;
+
+			&.active {
+				background-color: $color--primary;
+			}
+		}
+	}
+
+	&-one {
+		padding-bottom: 28rem;
+
+		@include hero();
+
+		h1 {
+			margin-bottom: $spacing--m;
+
+			span {
+				display: block;
+			}
+		}
+	}
+
+	&-two {
+		margin-top: -32rem;
+
+		&-grid {
+			display: flex;
+			flex-wrap: wrap;
+
+			&-item {
+				position: relative;
+				display: flex;
+				flex: 1 0 100%;
+				min-height: 25rem;
+				color: $color--white;
+				background-color: $color--black;
+				background-position: center;
+				background-size: cover;
+
+				@include overlay();
+
+				@include mq(tablet) {
+					max-width: 33.333%;
+				}
+
+				a {
+					position: absolute;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					z-index: 1;
+					display: flex;
+					flex-direction: column;
+					justify-content: flex-end;
+					padding: 1.6rem;
+					color: inherit;
+					text-decoration: none;
+				}
+
+				h3 {
+					margin: 0 0 $spacing--xs;
+				}
+
+				:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+
+	&-four {
+
+		.one-third {
+			margin: 0 0 $spacing--l;
+		}
+	}
+
+	&-five {
+		overflow: hidden;
+		color: $color--white;
+
+		&-info {
+			background-position: center;
+			background-size: cover;
+
+			.column:empty {
+
+				@include mq($until: tablet) {
+					display: none;
+				}
+			}
+
+			.wrap {
+				position: relative;
+				z-index: 1;
+			}
+
+			.shadow {
+				position: relative;
+				z-index: 1;
+				padding: $spacing--xxl $gutter;
+				overflow: visible !important;
+
+				@include overlay();
+
+				@include mq($until: tablet) {
+					margin: $gutter * 2 0;
+				}
+
+				&:after {
+					position: absolute !important;
+					top: 0;
+					right: 100%;
+					bottom: 0;
+					width: 100vw;
+					content: "";
+					background-color: $color--overlay;
+
+					@include mq($until: tablet) {
+						display: none;
+					}
+				}
+
+				&.right:after {
+					right: auto;
+					left: 100%;
+				}
+
+				&.full {
+
+					&:before {
+
+						@include mq(tablet) {
+							background: transparent !important;
+						}
+					}
+
+					&:after {
+						left: 50%;
+						transform: translateX(-50%);
+					}
+				}
+			}
+
+			&-content {
+				position: relative;
+				z-index: 2;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				width: 100%;
+				max-width: 40rem;
+				min-height: 30rem;
+
+				@include margin(null auto);
+
+				@include mq(tablet) {
+					min-height: 50rem;
+				}
+			}
+		}
+	}
+
+	&-six {
+
+		&-content {
+			padding: $gutter * 2;
+			margin: 0 0 $gutter;
+			background-color: $color--white;
+			border-radius: 4px;
+
+			h4 {
+				margin-bottom: $spacing--xxs;
+			}
+		}
+	}
+}
