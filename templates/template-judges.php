@@ -188,8 +188,8 @@ if ( have_posts() ) :
 										<span></span>
 										<span></span>
 									</span>
-									<h2><?php esc_html_e( 'Inform Participants', 'hack' ); ?></h2>
-									<p class="intro-text"><?php esc_html_e( 'One of the goals for #HACK is to ask all teams to complete a project summary form to present their project and answer a few (1-3) questions.', 'hack' ); ?></p>
+									<h2><?php esc_html_e( 'Challenge Accepted ', 'hack' ); ?></h2>
+									<p class="intro-text"><?php esc_html_e( 'Work with your team during the #HACK weekend to craft a solution or project.', 'hack' ); ?></p>
 								</div>
 							</div>
 						</div>
@@ -209,8 +209,8 @@ if ( have_posts() ) :
 										<span></span>
 										<span></span>
 									</span>
-									<h2><?php esc_html_e( 'Elect Top Local Projects', 'hack' ); ?></h2>
-									<p class="intro-text"><?php esc_html_e( 'One of the goals for #HACK is to ask all teams to complete a project summary form to present their project and answer a few (1-3) questions.', 'hack' ); ?></p>
+									<h2><?php esc_html_e( 'Submit', 'hack' ); ?></h2>
+									<p class="intro-text"><?php esc_html_e( 'Submit the project or solution to be reviewed by your local mentors.', 'hack' ); ?></p>
 								</div>
 							</div>
 						</div>
@@ -230,8 +230,8 @@ if ( have_posts() ) :
 										<span></span>
 										<span></span>
 									</span>
-									<h2><?php esc_html_e( 'Submit Projects', 'hack' ); ?></h2>
-									<p class="intro-text"><?php esc_html_e( 'The top project per city that receives the highest marks in all 4 categories will advance to the regional judging process. ', 'hack' ); ?></p>
+									<h2><?php esc_html_e( 'City Review', 'hack' ); ?></h2>
+									<p class="intro-text"><?php esc_html_e( 'Top projects will be invited to submit a 3 minute video and project summary to the regional review', 'hack' ); ?></p>
 								</div>
 							</div>
 							<div class="column one-third"></div>
@@ -251,8 +251,8 @@ if ( have_posts() ) :
 										<span></span>
 										<span></span>
 									</span>
-									<h2><?php esc_html_e( 'Elect Top Regional Projects', 'hack' ); ?></h2>
-									<p class="intro-text"><?php esc_html_e( 'One of the goals for #HACK is to ask all teams to complete a project summary form to present their project and answer a few (1-3) questions.', 'hack' ); ?></p>
+									<h2><?php esc_html_e( 'Regional Review', 'hack' ); ?></h2>
+									<p class="intro-text"><?php esc_html_e( 'Your video and project summary will be reviewed on the regional level.', 'hack' ); ?></p>
 								</div>
 							</div>
 						</div>
@@ -272,8 +272,8 @@ if ( have_posts() ) :
 										<span class="active"></span>
 										<span></span>
 									</span>
-									<h2><?php esc_html_e( 'Join Presentation', 'hack' ); ?></h2>
-									<p class="intro-text"><?php esc_html_e( 'One of the goals for #HACK is to ask all teams to complete a project summary form to present their project and answer a few (1-3) questions.', 'hack' ); ?></p>
+									<h2><?php esc_html_e( 'Global Review', 'hack' ); ?></h2>
+									<p class="intro-text"><?php esc_html_e( 'Top projects from the regional review will be submitted to our global judges.', 'hack' ); ?></p>
 								</div>
 							</div>
 						</div>
@@ -293,8 +293,8 @@ if ( have_posts() ) :
 										<span class="active"></span>
 										<span class="active"></span>
 									</span>
-									<h2><?php esc_html_e( 'Global Projects Vote', 'hack' ); ?></h2>
-									<p class="intro-text"><?php esc_html_e( 'The top project per city that receives the highest marks in all 4 categories will advance to the regional judging process. ', 'hack' ); ?></p>
+									<h2><?php esc_html_e( 'Celebration', 'hack' ); ?></h2>
+									<p class="intro-text"><?php esc_html_e( 'Global winners will be announced at our Celebration.', 'hack' ); ?></p>
 								</div>
 							</div>
 							<div class="column one-third"></div>
