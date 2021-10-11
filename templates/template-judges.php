@@ -25,7 +25,7 @@ if ( have_posts() ) :
 								echo sprintf( esc_html__( '%s Global Judging Process', 'hack' ), hack_name_tag() );
 								?>
 							</h1>
-							<p class="intro-text"><?php esc_html_e( 'A global community engaging with ideas and each other to advance God’s kingdom through innovation', 'hack' ); ?></p>
+							<p class="intro-text"><?php esc_html_e( 'Working together to sharpen our efforts and increase the impact of #HACK2021.', 'hack' ); ?></p>
 						</div>
 					</div>
 				</div>
@@ -45,8 +45,8 @@ if ( have_posts() ) :
 										<span></span>
 										<span></span>
 									</span>
-									<h3><?php esc_html_e( 'Inform', 'hack' ); ?></h3>
-									<p><?php esc_html_e( 'A brief overview of what you are trying to solve.', 'hack' ); ?></p>
+									<h3><?php esc_html_e( '#1 Challenge Accepted', 'hack' ); ?></h3>
+									<p><?php esc_html_e( 'Work with your team during the #HACK weekend to craft a solution or project.', 'hack' ); ?></p>
 									</a>
 								</div>
 								<div class="section-judges-two-grid-item" style="background-image: url(<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/hack-judges-section-2.jpg' ) ); ?>);">
@@ -59,8 +59,8 @@ if ( have_posts() ) :
 										<span></span>
 										<span></span>
 									</span>
-									<h3><?php esc_html_e( 'Vote Local', 'hack' ); ?></h3>
-									<p><?php esc_html_e( 'A brief overview of what you are trying to solve.', 'hack' ); ?></p>
+									<h3><?php esc_html_e( '#2 Submit', 'hack' ); ?></h3>
+									<p><?php esc_html_e( 'Submit the project or solution to be reviewed by your local mentors.', 'hack' ); ?></p>
 									</a>
 								</div>
 								<div class="section-judges-two-grid-item" style="background-image: url(<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/hack-judges-section-3.jpg' ) ); ?>);">
@@ -73,8 +73,8 @@ if ( have_posts() ) :
 										<span></span>
 										<span></span>
 									</span>
-									<h3><?php esc_html_e( 'Submit', 'hack' ); ?></h3>
-									<p><?php esc_html_e( 'A brief overview of what you are trying to solve.', 'hack' ); ?></p>
+									<h3><?php esc_html_e( '#3 City Review', 'hack' ); ?></h3>
+									<p><?php esc_html_e( 'Top projects will be invited to submit a 3 minute video and project summary to the regional review', 'hack' ); ?></p>
 									</a>
 								</div>
 								<div class="section-judges-two-grid-item" style="background-image: url(<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/hack-judges-section-4.jpg' ) ); ?>);">
@@ -87,8 +87,8 @@ if ( have_posts() ) :
 										<span></span>
 										<span></span>
 									</span>
-									<h3><?php esc_html_e( '#4 Vote Regional', 'hack' ); ?></h3>
-									<p><?php esc_html_e( 'A brief overview of what you are trying to solve.', 'hack' ); ?></p>
+									<h3><?php esc_html_e( '#4 Regional Review', 'hack' ); ?></h3>
+									<p><?php esc_html_e( 'Your video and project summary will be reviewed on the regional level.', 'hack' ); ?></p>
 									</a>
 								</div>
 								<div class="section-judges-two-grid-item" style="background-image: url(<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/hack-judges-section-5.jpg' ) ); ?>);">
@@ -101,8 +101,8 @@ if ( have_posts() ) :
 										<span class="active"></span>
 										<span></span>
 									</span>
-									<h3><?php esc_html_e( '#5 Final Meeting', 'hack' ); ?></h3>
-									<p><?php esc_html_e( 'A brief overview of what you are trying to solve.', 'hack' ); ?></p>
+									<h3><?php esc_html_e( '#5 Global Review', 'hack' ); ?></h3>
+									<p><?php esc_html_e( 'Top projects from the regional review will be submitted to our global judges.', 'hack' ); ?></p>
 									</a>
 								</div>
 								<div class="section-judges-two-grid-item" style="background-image: url(<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/hack-judges-section-6.jpg' ) ); ?>);">
@@ -115,8 +115,8 @@ if ( have_posts() ) :
 										<span class="active"></span>
 										<span class="active"></span>
 									</span>
-									<h3><?php esc_html_e( '#6 Vote Global', 'hack' ); ?></h3>
-									<p><?php esc_html_e( 'A brief overview of what you are trying to solve.', 'hack' ); ?></p>
+									<h3><?php esc_html_e( '#6 Celebration', 'hack' ); ?></h3>
+									<p><?php esc_html_e( 'Global winners will be announced at our Celebration.', 'hack' ); ?></p>
 									</a>
 								</div>
 							</div>
@@ -128,11 +128,11 @@ if ( have_posts() ) :
 				<div class="wrap">
 					<div class="row">
 						<div class="column one-third offset-1">
-							<blockquote class="primary-color margin-top-0"><?php esc_html_e( 'We firmly believe that a global judging process helps us achieve our goal for excellence, innovation and that judging is an important part of mass collaboration.', 'hack' ); ?></blockquote>
+							<blockquote class="primary-color margin-top-0"><?php esc_html_e( 'The #HACK2021 Global Judging Process is a core part of our mass collaboration because our desired outcome is impact.', 'hack' ); ?></blockquote>
 						</div>
 						<div class="column five-twelfths offset-1">
-							<p><?php esc_html_e( 'Teams would submit a short video presentation, along with some questions and answers at the end of their #HACK weekend to their city hub.', 'hack' ); ?></p>
-							<p><?php esc_html_e( 'The city lead team would select their top project to move onto judging at the regional level. Each City Lead will post their top project summary.', 'hack' ); ?></p>
+							<p><span class="bold"><?php esc_html_e( 'Judging', 'hack' ); ?></span><?php esc_html_e( ' is a core part of a mass collaboration because our desired outcome is impact. Judging is not meant in this context to encourage competition, but instead to sharpen the efforts of all participants and increase the impact of their work. The desired outcome is better work and a better story to tell about our collaborative work.', 'hack' ); ?></p>
+							<p><span class="bold"><?php esc_html_e( 'Recognition', 'hack' ); ?></span><?php esc_html_e( ' is a focus because it reminds us of the unique contribution we all make to the larger body - each is valuable!', 'hack' ); ?></p>
 						</div>
 					</div>
 				</div>
@@ -142,7 +142,7 @@ if ( have_posts() ) :
 					<div class="row">
 						<div class="column five-sixths offset-1">
 							<h2><?php esc_html_e( 'Categories', 'hack' ); ?></h2>
-							<p class="intro-text"><?php esc_html_e( 'Your city/country will vote for the projects based on the following categories. Here are our recommended judging criteria for you to select the top solutions of your hackathon. It would be terrific to hand out prizes to the top teams in each category, even if they’re electronic certificates or a small gift.', 'hack' ); ?></p>
+							<p class="intro-text"><?php esc_html_e( ' Your location will vote for the projects based on the following categories. Here are some criteria that may be used to evaluate the solution or project you submitted.', 'hack' ); ?></p>
 							<div class="row">
 								<div class="one-third">
 									<p><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/icons/hack-icon-bible.svg' ) ); ?>" height="78" /></p>
@@ -226,7 +226,7 @@ if ( have_posts() ) :
 										<span class="active"></span>
 										<span class="active"></span>
 										<span class="active"></span>
-										<span class="active"></span>
+										<span></span>
 										<span></span>
 										<span></span>
 									</span>
@@ -248,7 +248,7 @@ if ( have_posts() ) :
 										<span class="active"></span>
 										<span class="active"></span>
 										<span class="active"></span>
-										<span class="active"></span>
+										<span></span>
 										<span></span>
 									</span>
 									<h2><?php esc_html_e( 'Elect Top Regional Projects', 'hack' ); ?></h2>
@@ -270,7 +270,7 @@ if ( have_posts() ) :
 										<span class="active"></span>
 										<span class="active"></span>
 										<span class="active"></span>
-										<span class="active"></span>
+										<span></span>
 									</span>
 									<h2><?php esc_html_e( 'Join Presentation', 'hack' ); ?></h2>
 									<p class="intro-text"><?php esc_html_e( 'One of the goals for #HACK is to ask all teams to complete a project summary form to present their project and answer a few (1-3) questions.', 'hack' ); ?></p>
@@ -289,9 +289,9 @@ if ( have_posts() ) :
 										<span class="active"></span>
 										<span class="active"></span>
 										<span class="active"></span>
-										<span></span>
-										<span></span>
-										<span></span>
+										<span class="active"></span>
+										<span class="active"></span>
+										<span class="active"></span>
 									</span>
 									<h2><?php esc_html_e( 'Global Projects Vote', 'hack' ); ?></h2>
 									<p class="intro-text"><?php esc_html_e( 'The top project per city that receives the highest marks in all 4 categories will advance to the regional judging process. ', 'hack' ); ?></p>
@@ -309,61 +309,167 @@ if ( have_posts() ) :
 						<div class="column one-third">
 							<div class="section-judges-six-content">
 								<div class="text-center">
-									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/team/andrew-fang.png' ) ); ?>" width="152" />
-									<h4><?php echo esc_html( 'Andrew' ); ?></h4>
-									<h6 class="tan-color"><?php esc_html_e( 'North America', 'hack' ); ?></h6>
+									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-christeen-rico.jpg' ) ); ?>" width="152" />
+									<h4><?php echo esc_html( 'Christeen Rico' ); ?></h4>
+									<h6 class="tan-color"><?php esc_html_e( 'USA/Philippines', 'hack' ); ?></h6>
 								</div>
-								<p><?php esc_html_e( 'Loves to imagine new ways to empower people towards the great commission beyond the four church walls.', 'hack' ); ?></p>
+								<p><?php esc_html_e( 'Christeen is a daughter of the Most High King, a committed follower of Jesus intent on pursuing a vision found in Proverbs 11:10 (NIV). Belief in the unique role business can play to help set right things that are broken and bring flourishing in our communities fuels her life’s mission. Christeen has 8+ years in the tech industry with expertise launching online and offline customer experiences in new markets. Christeen serves on the Advisory Board of Faith and Work Movement Global, the Office of Innovation at Biola University, the Lausanne Movement Global Workplace Ministry, and is the founder of the Dream Bigger Manila entrepreneurship program for Filipino youth.', 'hack' ); ?></p>
 							</div>
 						</div>
 						<div class="column one-third">
 							<div class="section-judges-six-content">
 								<div class="text-center">
-									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/team/andrew-fang.png' ) ); ?>" width="152" />
-									<h4><?php echo esc_html( 'Andrew' ); ?></h4>
-									<h6 class="tan-color"><?php esc_html_e( 'North America', 'hack' ); ?></h6>
+									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-jonhart.jpg' ) ); ?>" width="152" />
+									<h4><?php echo esc_html( 'Jon Hart' ); ?></h4>
+									<h6 class="tan-color"><?php esc_html_e( 'USA', 'hack' ); ?></h6>
 								</div>
-								<p><?php esc_html_e( 'Loves to imagine new ways to empower people towards the great commission beyond the four church walls.', 'hack' ); ?></p>
+								<p><?php esc_html_e( 'Jon loves working with builders and entrepreneurs to connect their heart & purpose. In his role at Praxis, he works on strategic partnerships, ecosystems, and programs to bring vocational training on redemptive action to more people. Previously, he spent seven years at a Fortune 100 Company, where he helped launch a new venture and revive another as part of a turnaround strategy. Jon was also an Executive Producer of a successful independent film. In addition to his work at Praxis, Jon is a founding board member of 100cameras, a nonprofit that empowers youth to create change in their communities through photography. He has also served as an advisor and mentor for the Quarter Zero and Catapult Incubators, and taught entrepreneurship as an adjunct at The King’s College NYC. He holds a BS from the Carlson School of Management at the University of Minnesota and lives in New York City.', 'hack' ); ?></p>
 							</div>
 						</div>
 						<div class="column one-third">
 							<div class="section-judges-six-content">
 								<div class="text-center">
-									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/team/andrew-fang.png' ) ); ?>" width="152" />
-									<h4><?php echo esc_html( 'Andrew' ); ?></h4>
-									<h6 class="tan-color"><?php esc_html_e( 'North America', 'hack' ); ?></h6>
+									<!--  -->
+									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-shikou-gitau.png' ) ); ?>" width="152" />
+									<h4><?php echo esc_html( 'Dr. Shikoh Gitau' ); ?></h4>
+									<h6 class="tan-color"><?php esc_html_e( 'Kenya', 'hack' ); ?></h6>
 								</div>
-								<p><?php esc_html_e( 'Loves to imagine new ways to empower people towards the great commission beyond the four church walls.', 'hack' ); ?></p>
+								<p><?php esc_html_e( 'Shikoh is the CEO of Qhala, a Digital Innovation company that catalyzes digital transformation capabilities for organizations across Africa. She has over ten years of experience in the research, design, implementation, and management of digital technologies. She has established expertise in both African and emerging markets specialized in solving problems in agriculture, education, health, payments, retail and renewable energies. She is responsible for the set-up of Safaricom Alpha, a first of the kind corporate innovation hub in Africa, where she worked as the head of products – innovation, and acted as the chief innovation officer. She has worked for Safaricom, Africa Development Bank (AfDB), and Google. Shikoh sits on various boards in ICT companies and contributes to a number of steering committees and think tanks on Africa and technology. Shikoh holds a PhD and MSc in computer science from the University of Cape Town, South Africa.', 'hack' ); ?></p>
 							</div>
 						</div>
 						<div class="column one-third">
 							<div class="section-judges-six-content">
 								<div class="text-center">
-									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/team/andrew-fang.png' ) ); ?>" width="152" />
-									<h4><?php echo esc_html( 'Andrew' ); ?></h4>
-									<h6 class="tan-color"><?php esc_html_e( 'North America', 'hack' ); ?></h6>
+									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-pablo-baldoma.jpg' ) ); ?>" width="152" />
+									<h4><?php echo esc_html( 'Pablo Baldomá' ); ?></h4>
+									<h6 class="tan-color"><?php esc_html_e( 'Argentina', 'hack' ); ?></h6>
 								</div>
-								<p><?php esc_html_e( 'Loves to imagine new ways to empower people towards the great commission beyond the four church walls.', 'hack' ); ?></p>
+								<p>
+								<?php
+								esc_html_e(
+									'Pablo Baldoma Jones is an entrepreneur and startup advisor, with more than 15 years of experience in the technology field.
+									He is the Co-founder and CBO of',
+									'hack'
+								);
+								?>
+								<a href="http://celerative.com/" target="_blank">www.celerative.com</a>
+								<?php
+									esc_html_e(
+										', a tech platform based in Silicon Valley, aiming to help Global companies to Hire, Manage and Pay Remote Tech Talent.
+										He previously founded other startups and La Plata Hub, an incubator that invested in 60 technology companies.
+										He also collaborates with lots of entrepreneurs (in the US and Latam) and companies through ',
+										'hack'
+									);
+								?>
+									<a href="https://www.asea.org.ar/" target="_blank">www.asea.org.ar</a>
+									<?php
+									esc_html_e(
+										', "UNLP FCE Seminar of Entrepreneurship" and ',
+										'hack'
+									);
+									?>
+									<a href="http://poloitlaplata.com/" target="_blank">www.poloitlaplata.com</a>
+									<?php
+									esc_html_e(
+										' as president.
+										He is married to Ana, with two daughters, and loves mountain biking, running, and mountaineering.',
+										'hack'
+									);
+									?>
+									</p>
 							</div>
 						</div>
 						<div class="column one-third">
 							<div class="section-judges-six-content">
 								<div class="text-center">
-									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/team/andrew-fang.png' ) ); ?>" width="152" />
-									<h4><?php echo esc_html( 'Andrew' ); ?></h4>
-									<h6 class="tan-color"><?php esc_html_e( 'North America', 'hack' ); ?></h6>
+									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-jasmine-ng.jpg' ) ); ?>" width="152" />
+									<h4><?php echo esc_html( 'Jasmine Ng' ); ?></h4>
+									<h6 class="tan-color"><?php esc_html_e( 'Malaysia', 'hack' ); ?></h6>
 								</div>
-								<p><?php esc_html_e( 'Loves to imagine new ways to empower people towards the great commission beyond the four church walls.', 'hack' ); ?></p>
+								<p><?php esc_html_e( 'Tech enthusiast and investor. Blockchain evangelist. Senior retail and corporate banker. Payment specialist turned fintech intrapreneur. Enjoy shaping new fintech strategies and work with highly motivated teams to bring great ideas to realization. Strong people manager, P&L focus, deep thinker and a realist motivator and public speaker. Strongly believes that a better world is just in the next action we choose to take and in order to predict the future is to create it. No stranger to start-up culture having co-founded one herself.', 'hack' ); ?></p>
 							</div>
 						</div>
 						<div class="column one-third">
 							<div class="section-judges-six-content">
 								<div class="text-center">
-									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/team/andrew-fang.png' ) ); ?>" width="152" />
-									<h4><?php echo esc_html( 'Andrew' ); ?></h4>
-									<h6 class="tan-color"><?php esc_html_e( 'North America', 'hack' ); ?></h6>
+									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-richard-zhang.jpg' ) ); ?>" width="152" />
+									<h4><?php echo esc_html( 'Richard Zhang' ); ?></h4>
+									<h6 class="tan-color"><?php esc_html_e( 'USA/China', 'hack' ); ?></h6>
 								</div>
-								<p><?php esc_html_e( 'Loves to imagine new ways to empower people towards the great commission beyond the four church walls.', 'hack' ); ?></p>
+								<p>
+								<?php
+								esc_html_e(
+									'Richard is a laid-down lover of Jesus who is a revivalist at heart and always excited for the next adventure that God is taking him on. He is currently at ',
+									'hack'
+								);
+								?>
+						
+								<a href="https://research.google/teams/brain/" target="_blank">Google Brain/AI</a>
+								<?php
+								esc_html_e(
+									'in Pittsburgh, where he leads research efforts on hyperparameter optimization, Bayesian methods, and theoretical deep learning. Recently, he leads diversity initiatives within Google to raise awareness of faith-based discrimination within its models and data. He is grateful to have graduated with a PhD in Applied Mathematics and Computer Science at',
+									'hack'
+								);
+								?>
+								<a href="https://www.berkeley.edu/" target="_blank">UC Berkeley</a>
+								<?php
+								esc_html_e(
+									' and his interests are in the intersection of optimization, theoretical computer science and machine learning. Before that, Richard graduated in the Great Class of 2014 from',
+									'hack'
+								);
+								?>
+								<a href="http://www.princeton.edu/" target="_blank">Princeton University</a>		
+								<?php
+								esc_html_e(
+									', where he first personally experienced God in a wave of revival. 
+									',
+									'hack'
+								);
+								?>
+									</p>
+							</div>
+						</div>
+						<div class="column one-third">
+							<div class="section-judges-six-content">
+								<div class="text-center">
+									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-trip-nine.png' ) ); ?>" width="152" />
+									<h4><?php echo esc_html( 'Trip Nine' ); ?></h4>
+									<h6 class="tan-color"><?php esc_html_e( 'USA', 'hack' ); ?></h6>
+								</div>
+								<p>
+								<?php
+								esc_html_e(
+									'Trip Nine is a field sales engineer for CrowdStrike, a cybersecurity company based in Silicon Valley. In addition to his day job, he leads Ekballo University; an organization that teaches, trains, and equips the global church in digital evangelism. His hobbies include working on technical innovations both in cybersecurity and within the world of missions. Trip and his family live in the greater Boston area of the US. Feel free to connect with him on
+									',
+									'hack'
+								);
+								?>
+								<a href="http://linkedin.com/in/tripnine" target="_blank">Linkedin</a>
+							</p>
+							<ul>
+								<li><?php echo esc_html( 'Field Sales Engineer at CrowdStrike (CISSP, CCFA, CCFH, CCFR)' ); ?></li>
+								<li><?php echo esc_html( '10 years+ working in technology with a focus on Cybersecurity' ); ?></li>
+								<li><?php echo esc_html( '7 years leading Ekballo University (Teaching, training, equipping the global church in digital evangelism)' ); ?></li>
+								<li><?php echo esc_html( 'Works on innovation efforts in the field of cybersecurity & missions' ); ?></li>
+							</ul>
+							</div>
+						</div>
+						<div class="column one-third">
+							<div class="section-judges-six-content">
+								<div class="text-center">
+									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-natch-lazarus.jpg' ) ); ?>" width="152" />
+									<h4><?php echo esc_html( 'Natchi Lazarus' ); ?></h4>
+									<h6 class="tan-color"><?php esc_html_e( 'India', 'hack' ); ?></h6>
+								</div>
+								<p>
+								<?php
+								esc_html_e(
+									'Natchi Lazarus is a digital & social media marketing consultant specialising in working with nonprofits, churches & faith-based ventures. He is the author of The Connected Church, a best-seller on Amazon. He is the co-founder of Open Minds Digital Agency. He has more than 20-years of experience in marketing. He is a keynote speaker who regularly speaks in various international events, conferences, and seminars. For more details & to connect, visit:',
+									'hack'
+								);
+								?>
+								<a href="http://www.natchilazarus.com/" class="text-link" target="_blank">www.natchilazarus.com</a>
+									</p>
 							</div>
 						</div>
 					</div>
