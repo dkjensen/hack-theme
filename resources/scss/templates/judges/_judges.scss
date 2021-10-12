@@ -194,7 +194,14 @@
 					object-fit: cover;
 					border-radius: 4pxs;
 				}
+				.text-left {
+					min-height: 290px;
+				}
 			}
 		}
 	}
+}
+
+.basic-list {
+	list-style: initial;
 }

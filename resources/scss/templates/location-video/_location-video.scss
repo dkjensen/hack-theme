@@ -11,6 +11,12 @@
       .gform_wrapper.gravity-theme {
         margin: 0 !important;
       }
+      .form-disclaimer {
+        font-size: 1.4rem;
+        opacity: 0.7;
+        max-width: 300px;
+        margin: 0;
+      }
 
 			@include mq(tablet) {
 				margin: $spacing--xl 0 -20rem;

@@ -188,8 +188,34 @@ if ( have_posts() ) :
 										<span></span>
 										<span></span>
 									</span>
-									<h2><?php esc_html_e( 'Challenge Accepted ', 'hack' ); ?></h2>
-									<p class="intro-text"><?php esc_html_e( 'Work with your team during the #HACK weekend to craft a solution or project.', 'hack' ); ?></p>
+									<div class="accordion slide-judge">
+										<div class="accordion-header">
+											<h2><?php esc_html_e( '#1 Challenge Accepted ', 'hack' ); ?></h2>
+											<p class="intro-text"><?php esc_html_e( 'Work with your team during the #HACK weekend to craft a solution or project.', 'hack' ); ?></p>
+											<!-- <p class="toggle-readmore-wrapper">
+												<span class="toggle-readmore"></span>
+											</p> -->
+										</div>
+										<div class="accordion-content">
+		<!-- <div class="bg-color-white">
+			<div class="accordion event">
+				<div class="accordion-header">
+					Video Presentation Tips
+				</div>
+				<div class="accordion-content">
+				<div class="video-tip">
+					<div class="vt-header">
+						<p><img src="assets/img/judges/orange-check-box.svg" alt=""><span>Number 1</span></p>
+					</div>
+					<div class="vt-content">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In harum perspiciatis nostrum laudantium dolores deserunt, blanditiis laboriosam placeat culpa molestiae id totam quisquam veniam velit, incidunt ipsam. Quas, rerum vero!</p>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div> -->
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -209,7 +235,7 @@ if ( have_posts() ) :
 										<span></span>
 										<span></span>
 									</span>
-									<h2><?php esc_html_e( 'Submit', 'hack' ); ?></h2>
+									<h2><?php esc_html_e( '#2 Submit', 'hack' ); ?></h2>
 									<p class="intro-text"><?php esc_html_e( 'Submit the project or solution to be reviewed by your local mentors.', 'hack' ); ?></p>
 								</div>
 							</div>
@@ -230,7 +256,7 @@ if ( have_posts() ) :
 										<span></span>
 										<span></span>
 									</span>
-									<h2><?php esc_html_e( 'City Review', 'hack' ); ?></h2>
+									<h2><?php esc_html_e( '#3 City Review', 'hack' ); ?></h2>
 									<p class="intro-text"><?php esc_html_e( 'Top projects will be invited to submit a 3 minute video and project summary to the regional review', 'hack' ); ?></p>
 								</div>
 							</div>
@@ -251,7 +277,7 @@ if ( have_posts() ) :
 										<span></span>
 										<span></span>
 									</span>
-									<h2><?php esc_html_e( 'Regional Review', 'hack' ); ?></h2>
+									<h2><?php esc_html_e( '#4 Regional Review', 'hack' ); ?></h2>
 									<p class="intro-text"><?php esc_html_e( 'Your video and project summary will be reviewed on the regional level.', 'hack' ); ?></p>
 								</div>
 							</div>
@@ -272,7 +298,7 @@ if ( have_posts() ) :
 										<span class="active"></span>
 										<span></span>
 									</span>
-									<h2><?php esc_html_e( 'Global Review', 'hack' ); ?></h2>
+									<h2><?php esc_html_e( '#5 Global Review', 'hack' ); ?></h2>
 									<p class="intro-text"><?php esc_html_e( 'Top projects from the regional review will be submitted to our global judges.', 'hack' ); ?></p>
 								</div>
 							</div>
@@ -293,7 +319,7 @@ if ( have_posts() ) :
 										<span class="active"></span>
 										<span class="active"></span>
 									</span>
-									<h2><?php esc_html_e( 'Celebration', 'hack' ); ?></h2>
+									<h2><?php esc_html_e( '#6 Celebration', 'hack' ); ?></h2>
 									<p class="intro-text"><?php esc_html_e( 'Global winners will be announced at our Celebration.', 'hack' ); ?></p>
 								</div>
 							</div>
@@ -308,43 +334,80 @@ if ( have_posts() ) :
 					<div class="row">
 						<div class="column one-third">
 							<div class="section-judges-six-content">
-								<div class="text-center">
+								<div class="accordion judges">
+									<div class="accordion-header">
+									<div class="text-center">
 									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-christeen-rico.jpg' ) ); ?>" width="152" />
 									<h4><?php echo esc_html( 'Christeen Rico' ); ?></h4>
 									<h6 class="tan-color"><?php esc_html_e( 'USA/Philippines', 'hack' ); ?></h6>
+									<p class="text-left"><?php esc_html_e( 'Christeen serves on the Advisory Board of Faith and Work Movement Global, the Office of Innovation at Biola University, the Lausanne Movement Global Workplace Ministry, and is the founder of the Dream Bigger Manila entrepreneurship program for Filipino youth.' ); ?></p>
+											<p class="toggle-readmore-wrapper">
+												<span class="toggle-readmore"></span>
+											</p>
 								</div>
-								<p><?php esc_html_e( 'Christeen is a daughter of the Most High King, a committed follower of Jesus intent on pursuing a vision found in Proverbs 11:10 (NIV). Belief in the unique role business can play to help set right things that are broken and bring flourishing in our communities fuels her life’s mission. Christeen has 8+ years in the tech industry with expertise launching online and offline customer experiences in new markets. Christeen serves on the Advisory Board of Faith and Work Movement Global, the Office of Innovation at Biola University, the Lausanne Movement Global Workplace Ministry, and is the founder of the Dream Bigger Manila entrepreneurship program for Filipino youth.', 'hack' ); ?></p>
+									</div>
+									<div class="accordion-content">
+									<p><?php esc_html_e( 'Christeen is a daughter of the Most High King, a committed follower of Jesus intent on pursuing a vision found in Proverbs 11:10 (NIV). Belief in the unique role business can play to help set right things that are broken and bring flourishing in our communities fuels her life’s mission. Christeen has 8+ years in the tech industry with expertise launching online and offline customer experiences in new markets. Christeen serves on the Advisory Board of Faith and Work Movement Global, the Office of Innovation at Biola University, the Lausanne Movement Global Workplace Ministry, and is the founder of the Dream Bigger Manila entrepreneurship program for Filipino youth.', 'hack' ); ?></p>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="column one-third">
 							<div class="section-judges-six-content">
-								<div class="text-center">
-									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-jonhart.jpg' ) ); ?>" width="152" />
-									<h4><?php echo esc_html( 'Jon Hart' ); ?></h4>
-									<h6 class="tan-color"><?php esc_html_e( 'USA', 'hack' ); ?></h6>
+								<div class="accordion judges">
+									<div class="accordion-header">
+										<div class="text-center">
+											<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-jonhart.jpg' ) ); ?>" width="152" />
+											<h4><?php echo esc_html( 'Jon Hart' ); ?></h4>
+											<h6 class="tan-color"><?php esc_html_e( 'USA', 'hack' ); ?></h6>
+											<p class="text-left"><?php esc_html_e( 'Jon loves working with builders and entrepreneurs to connect their heart & purpose. In his role at Praxis, he works on strategic partnerships, ecosystems, and programs to bring vocational training on redemptive action to more people.' ); ?></p>
+											<p class="toggle-readmore-wrapper">
+												<span class="toggle-readmore"></span>
+											</p>
+										</div>
+									</div>
+									<div class="accordion-content">
+									<p><?php esc_html_e( 'Jon loves working with builders and entrepreneurs to connect their heart & purpose. In his role at Praxis, he works on strategic partnerships, ecosystems, and programs to bring vocational training on redemptive action to more people. Previously, he spent seven years at a Fortune 100 Company, where he helped launch a new venture and revive another as part of a turnaround strategy. Jon was also an Executive Producer of a successful independent film. In addition to his work at Praxis, Jon is a founding board member of 100cameras, a nonprofit that empowers youth to create change in their communities through photography. He has also served as an advisor and mentor for the Quarter Zero and Catapult Incubators, and taught entrepreneurship as an adjunct at The King’s College NYC. He holds a BS from the Carlson School of Management at the University of Minnesota and lives in New York City.', 'hack' ); ?></p>
+									</div>
 								</div>
-								<p><?php esc_html_e( 'Jon loves working with builders and entrepreneurs to connect their heart & purpose. In his role at Praxis, he works on strategic partnerships, ecosystems, and programs to bring vocational training on redemptive action to more people. Previously, he spent seven years at a Fortune 100 Company, where he helped launch a new venture and revive another as part of a turnaround strategy. Jon was also an Executive Producer of a successful independent film. In addition to his work at Praxis, Jon is a founding board member of 100cameras, a nonprofit that empowers youth to create change in their communities through photography. He has also served as an advisor and mentor for the Quarter Zero and Catapult Incubators, and taught entrepreneurship as an adjunct at The King’s College NYC. He holds a BS from the Carlson School of Management at the University of Minnesota and lives in New York City.', 'hack' ); ?></p>
 							</div>
 						</div>
 						<div class="column one-third">
 							<div class="section-judges-six-content">
-								<div class="text-center">
-									<!--  -->
-									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-shikou-gitau.png' ) ); ?>" width="152" />
-									<h4><?php echo esc_html( 'Dr. Shikoh Gitau' ); ?></h4>
-									<h6 class="tan-color"><?php esc_html_e( 'Kenya', 'hack' ); ?></h6>
+									<div class="accordion judges">
+									<div class="accordion-header">
+										<div class="text-center">
+											<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-shikou-gitau.png' ) ); ?>" width="152" />
+											<h4><?php echo esc_html( 'Dr. Shikoh Gitau' ); ?></h4>
+											<h6 class="tan-color"><?php esc_html_e( 'Kenya', 'hack' ); ?></h6>
+											<p class="text-left"><?php esc_html_e( 'Shikoh is the CEO of Qhala, a Digital Innovation company that catalyzes digital transformation capabilities for organizations across Africa. She has over ten years of experience in the research, design, implementation, and management of digital technologies.' ); ?></p>
+											<p class="toggle-readmore-wrapper">
+												<span class="toggle-readmore"></span>
+											</p>
+										</div>
+									</div>
+									<div class="accordion-content">
+									<p><?php esc_html_e( 'Shikoh is the CEO of Qhala, a Digital Innovation company that catalyzes digital transformation capabilities for organizations across Africa. She has over ten years of experience in the research, design, implementation, and management of digital technologies. She has established expertise in both African and emerging markets specialized in solving problems in agriculture, education, health, payments, retail and renewable energies. She is responsible for the set-up of Safaricom Alpha, a first of the kind corporate innovation hub in Africa, where she worked as the head of products – innovation, and acted as the chief innovation officer. She has worked for Safaricom, Africa Development Bank (AfDB), and Google. Shikoh sits on various boards in ICT companies and contributes to a number of steering committees and think tanks on Africa and technology. Shikoh holds a PhD and MSc in computer science from the University of Cape Town, South Africa.', 'hack' ); ?></p>
+									</div>
 								</div>
-								<p><?php esc_html_e( 'Shikoh is the CEO of Qhala, a Digital Innovation company that catalyzes digital transformation capabilities for organizations across Africa. She has over ten years of experience in the research, design, implementation, and management of digital technologies. She has established expertise in both African and emerging markets specialized in solving problems in agriculture, education, health, payments, retail and renewable energies. She is responsible for the set-up of Safaricom Alpha, a first of the kind corporate innovation hub in Africa, where she worked as the head of products – innovation, and acted as the chief innovation officer. She has worked for Safaricom, Africa Development Bank (AfDB), and Google. Shikoh sits on various boards in ICT companies and contributes to a number of steering committees and think tanks on Africa and technology. Shikoh holds a PhD and MSc in computer science from the University of Cape Town, South Africa.', 'hack' ); ?></p>
 							</div>
 						</div>
 						<div class="column one-third">
 							<div class="section-judges-six-content">
-								<div class="text-center">
+								<div class="accordion judges">
+									<div class="accordion-header">
+									<div class="text-center">
 									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-pablo-baldoma.jpg' ) ); ?>" width="152" />
 									<h4><?php echo esc_html( 'Pablo Baldomá' ); ?></h4>
 									<h6 class="tan-color"><?php esc_html_e( 'Argentina', 'hack' ); ?></h6>
+									<p class="text-left"><?php esc_html_e( 'Pablo Baldoma Jones is an entrepreneur and startup advisor, with more than 15 years of experience in the technology field. He is the Co-founder and CBO of www.celerative.com, a tech platform based in Silicon Valley, aiming to help Global companies to Hire, Manage and Pay Remote Tech Talent.' ); ?></p>
+									<p class="toggle-readmore-wrapper">
+										<span class="toggle-readmore"></span>
+									</p>
 								</div>
-								<p>
+									</div>
+									<div class="accordion-content">
+									<p>
 								<?php
 								esc_html_e(
 									'Pablo Baldoma Jones is an entrepreneur and startup advisor, with more than 15 years of experience in the technology field.
@@ -377,26 +440,46 @@ if ( have_posts() ) :
 									);
 									?>
 									</p>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="column one-third">
 							<div class="section-judges-six-content">
-								<div class="text-center">
+								<div class="accordion judges">
+									<div class="accordion-header">
+									<div class="text-center">
 									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-jasmine-ng.jpg' ) ); ?>" width="152" />
 									<h4><?php echo esc_html( 'Jasmine Ng' ); ?></h4>
 									<h6 class="tan-color"><?php esc_html_e( 'Malaysia', 'hack' ); ?></h6>
+									<p class="text-left"><?php esc_html_e( '(Jasmine) Tech enthusiast and investor. Blockchain evangelist. Senior retail and corporate banker. Payment specialist turned fintech intrapreneur. Enjoy shaping new fintech strategies and work with highly motivated teams to bring great ideas to realization.' ); ?></p>
+									<p class="toggle-readmore-wrapper">
+										<span class="toggle-readmore"></span>
+									</p>
 								</div>
-								<p><?php esc_html_e( 'Tech enthusiast and investor. Blockchain evangelist. Senior retail and corporate banker. Payment specialist turned fintech intrapreneur. Enjoy shaping new fintech strategies and work with highly motivated teams to bring great ideas to realization. Strong people manager, P&L focus, deep thinker and a realist motivator and public speaker. Strongly believes that a better world is just in the next action we choose to take and in order to predict the future is to create it. No stranger to start-up culture having co-founded one herself.', 'hack' ); ?></p>
+									</div>
+									<div class="accordion-content">
+									<p><?php esc_html_e( 'Tech enthusiast and investor. Blockchain evangelist. Senior retail and corporate banker. Payment specialist turned fintech intrapreneur. Enjoy shaping new fintech strategies and work with highly motivated teams to bring great ideas to realization. Strong people manager, P&L focus, deep thinker and a realist motivator and public speaker. Strongly believes that a better world is just in the next action we choose to take and in order to predict the future is to create it. No stranger to start-up culture having co-founded one herself.', 'hack' ); ?></p>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="column one-third">
 							<div class="section-judges-six-content">
-								<div class="text-center">
+								<div class="accordion judges">
+									<div class="accordion-header">
+									<div class="text-center">
 									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-richard-zhang.jpg' ) ); ?>" width="152" />
 									<h4><?php echo esc_html( 'Richard Zhang' ); ?></h4>
 									<h6 class="tan-color"><?php esc_html_e( 'USA/China', 'hack' ); ?></h6>
+									<p class="text-left"><?php esc_html_e( 'Richard is a lover of Jesus who is a revivalist at heart and always excited for the next adventure that God is taking him on. He is currently at Google Brain/AI in Pittsburgh, where he leads research efforts on hyperparameter optimization, Bayesian methods, and theoretical deep learning.' ); ?></p>
+									<p class="toggle-readmore-wrapper">
+										<span class="toggle-readmore"></span>
+									</p>
 								</div>
-								<p>
+									</div>
+									<div class="accordion-content">
+									<p>
 								<?php
 								esc_html_e(
 									'Richard is a laid-down lover of Jesus who is a revivalist at heart and always excited for the next adventure that God is taking him on. He is currently at ',
@@ -426,50 +509,72 @@ if ( have_posts() ) :
 									'hack'
 								);
 								?>
-									</p>
+								</p>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="column one-third">
 							<div class="section-judges-six-content">
-								<div class="text-center">
-									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-trip-nine.png' ) ); ?>" width="152" />
-									<h4><?php echo esc_html( 'Trip Nine' ); ?></h4>
-									<h6 class="tan-color"><?php esc_html_e( 'USA', 'hack' ); ?></h6>
+								<div class="accordion judges">
+									<div class="accordion-header">
+										<div class="text-center">
+											<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-trip-nine.png' ) ); ?>" width="152" />
+											<h4><?php echo esc_html( 'Trip Nine' ); ?></h4>
+											<h6 class="tan-color"><?php esc_html_e( 'USA', 'hack' ); ?></h6>
+											<p class="text-left"><?php esc_html_e( 'Trip Nine is a field sales engineer for CrowdStrike, a cybersecurity company based in Silicon Valley. In addition to his day job, he leads Ekballo University; an organization that teaches, trains, and equips the global church in digital evangelism.' ); ?></p>
+											<p class="toggle-readmore-wrapper">
+												<span class="toggle-readmore"></span>
+											</p>
+										</div>
+									</div>
+									<div class="accordion-content">									
+										<p>
+											<?php
+											esc_html_e(
+												'Trip Nine is a field sales engineer for CrowdStrike, a cybersecurity company based in Silicon Valley. In addition to his day job, he leads Ekballo University; an organization that teaches, trains, and equips the global church in digital evangelism. His hobbies include working on technical innovations both in cybersecurity and within the world of missions. Trip and his family live in the greater Boston area of the US. Feel free to connect with him on
+												',
+												'hack'
+											);
+											?>
+											<a href="http://linkedin.com/in/tripnine" target="_blank">Linkedin</a>
+										</p>
+										<ul class="basic-list">
+											<li><?php echo esc_html( 'Field Sales Engineer at CrowdStrike (CISSP, CCFA, CCFH, CCFR)' ); ?></li>
+											<li><?php echo esc_html( '10 years+ working in technology with a focus on Cybersecurity' ); ?></li>
+											<li><?php echo esc_html( '7 years leading Ekballo University (Teaching, training, equipping the global church in digital evangelism)' ); ?></li>
+											<li><?php echo esc_html( 'Works on innovation efforts in the field of cybersecurity & missions' ); ?></li>
+										</ul>
+									</div>
 								</div>
-								<p>
-								<?php
-								esc_html_e(
-									'Trip Nine is a field sales engineer for CrowdStrike, a cybersecurity company based in Silicon Valley. In addition to his day job, he leads Ekballo University; an organization that teaches, trains, and equips the global church in digital evangelism. His hobbies include working on technical innovations both in cybersecurity and within the world of missions. Trip and his family live in the greater Boston area of the US. Feel free to connect with him on
-									',
-									'hack'
-								);
-								?>
-								<a href="http://linkedin.com/in/tripnine" target="_blank">Linkedin</a>
-							</p>
-							<ul>
-								<li><?php echo esc_html( 'Field Sales Engineer at CrowdStrike (CISSP, CCFA, CCFH, CCFR)' ); ?></li>
-								<li><?php echo esc_html( '10 years+ working in technology with a focus on Cybersecurity' ); ?></li>
-								<li><?php echo esc_html( '7 years leading Ekballo University (Teaching, training, equipping the global church in digital evangelism)' ); ?></li>
-								<li><?php echo esc_html( 'Works on innovation efforts in the field of cybersecurity & missions' ); ?></li>
-							</ul>
 							</div>
 						</div>
 						<div class="column one-third">
 							<div class="section-judges-six-content">
-								<div class="text-center">
-									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-natch-lazarus.jpg' ) ); ?>" width="152" />
-									<h4><?php echo esc_html( 'Natchi Lazarus' ); ?></h4>
-									<h6 class="tan-color"><?php esc_html_e( 'India', 'hack' ); ?></h6>
+								<div class="accordion judges">
+									<div class="accordion-header">
+										<div class="text-center">
+											<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-natch-lazarus.jpg' ) ); ?>" width="152" />
+											<h4><?php echo esc_html( 'Natchi Lazarus' ); ?></h4>
+											<h6 class="tan-color"><?php esc_html_e( 'India', 'hack' ); ?></h6>
+											<p class="text-left"><?php esc_html_e( 'Natchi Lazarus is a digital & social media marketing consultant specialising in working with nonprofits, churches & faith-based ventures. He is the author of The Connected Church, a best-seller on Amazon. He is the co-founder of Open Minds Digital Agency.' ); ?></p>
+													<p class="toggle-readmore-wrapper">
+														<span class="toggle-readmore"></span>
+													</p>
+										</div>
+									</div>
+									<div class="accordion-content">
+										<p>
+										<?php
+										esc_html_e(
+											'Natchi Lazarus is a digital & social media marketing consultant specialising in working with nonprofits, churches & faith-based ventures. He is the author of The Connected Church, a best-seller on Amazon. He is the co-founder of Open Minds Digital Agency. He has more than 20-years of experience in marketing. He is a keynote speaker who regularly speaks in various international events, conferences, and seminars. For more details & to connect, visit:',
+											'hack'
+										);
+										?>
+										<a href="http://www.natchilazarus.com/" class="text-link" target="_blank">www.natchilazarus.com</a>
+											</p>
+									 </div>
 								</div>
-								<p>
-								<?php
-								esc_html_e(
-									'Natchi Lazarus is a digital & social media marketing consultant specialising in working with nonprofits, churches & faith-based ventures. He is the author of The Connected Church, a best-seller on Amazon. He is the co-founder of Open Minds Digital Agency. He has more than 20-years of experience in marketing. He is a keynote speaker who regularly speaks in various international events, conferences, and seminars. For more details & to connect, visit:',
-									'hack'
-								);
-								?>
-								<a href="http://www.natchilazarus.com/" class="text-link" target="_blank">www.natchilazarus.com</a>
-									</p>
 							</div>
 						</div>
 					</div>
