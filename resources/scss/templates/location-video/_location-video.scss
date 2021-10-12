@@ -1,0 +1,24 @@
+.section-location-video {
+
+	&-one {
+		.form-card {
+      border-radius: 4px;
+      background: $color--white;
+      padding: 3.2rem;
+			display: block;
+			margin: $spacing--xl 0 -24vw;
+			border-radius: 4px;
+      .gform_wrapper.gravity-theme {
+        margin: 0 !important;
+      }
+
+			@include mq(tablet) {
+				margin: $spacing--xl 0 -20rem;
+			}
+		}
+	}
+
+	&-two {
+    min-height: 20vh;
+	}
+}
