@@ -60,7 +60,7 @@ if ( have_posts() ) :
 										<span></span>
 									</span>
 									<h3><?php esc_html_e( '#2 Submit', 'hack' ); ?></h3>
-									<p><?php esc_html_e( 'Submit the project or solution to be reviewed by your local mentors.', 'hack' ); ?></p>
+									<p><?php esc_html_e( 'Submit the project or solution to be reviewed by your local mentors. This submission will include a project summary and a 3 minute video.', 'hack' ); ?></p>
 									</a>
 								</div>
 								<div class="section-judges-two-grid-item" style="background-image: url(<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/hack-judges-section-3.jpg' ) ); ?>);">
@@ -74,7 +74,7 @@ if ( have_posts() ) :
 										<span></span>
 									</span>
 									<h3><?php esc_html_e( '#3 City Review', 'hack' ); ?></h3>
-									<p><?php esc_html_e( 'Top projects will be invited to submit a 3 minute video and project summary to the regional review', 'hack' ); ?></p>
+									<p><?php esc_html_e( 'The top project per city that receives the highest marks in all 5 categories will advance to the regional judging process.', 'hack' ); ?></p>
 									</a>
 								</div>
 								<div class="section-judges-two-grid-item" style="background-image: url(<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/hack-judges-section-4.jpg' ) ); ?>);">
@@ -145,27 +145,27 @@ if ( have_posts() ) :
 							<p class="intro-text"><?php esc_html_e( ' Your location will vote for the projects based on the following categories. Here are some criteria that may be used to evaluate the solution or project you submitted.', 'hack' ); ?></p>
 							<div class="row">
 								<div class="one-third">
-									<p><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/icons/hack-icon-bible.svg' ) ); ?>" height="78" /></p>
+									<p><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/icons/medallion/medallion_kingdomimpact.png' ) ); ?>" height="120" /></p>
 									<h3 class="primary-color"><?php esc_html_e( 'Kingdom Impact', 'hack' ); ?></h3>
 									<p><?php esc_html_e( 'Does this solution have a kingdom impact? Does it advance God’s purposes as communicated in the Bible?', 'hack' ); ?></p>
 								</div>
 								<div class="one-third">
-									<p><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/icons/hack-icon-city.svg' ) ); ?>" height="78" /></p>
+									<p><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/icons/medallion/medallion_innovation.png' ) ); ?>" height="120" /></p>
 									<h3 class="primary-color"><?php esc_html_e( 'Innovation', 'hack' ); ?></h3>
 									<p><?php esc_html_e( 'Is this an original or unique approach? Has the team done something different in how they have addressed the challenge? ', 'hack' ); ?></p>
 								</div>
 								<div class="one-third">
-									<p><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/icons/hack-icon-globe.svg' ) ); ?>" height="78" /></p>
+									<p><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/icons/medallion/medallion_viability.png' ) ); ?>" height="120" /></p>
 									<h3 class="primary-color"><?php esc_html_e( 'Viability', 'hack' ); ?></h3>
 									<p><?php esc_html_e( 'How viable is this in the real world? Is this solution implementable? How hard would it be to scale?', 'hack' ); ?></p>
 								</div>
 								<div class="one-third">
-									<p><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/icons/hack-icon-locations.svg' ) ); ?>" height="78" /></p>
+									<p><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/icons/medallion/medallion_completeness.png' ) ); ?>" height="120" /></p>
 									<h3 class="primary-color"><?php esc_html_e( 'Completeness', 'hack' ); ?></h3>
 									<p><?php esc_html_e( 'Is the project still conceptual, or has it been more fully developed? Is there a working prototype?', 'hack' ); ?></p>
 								</div>
 								<div class="one-third">
-									<p><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/icons/hack-icon-prize.svg' ) ); ?>" height="78" /></p>
+									<p><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/icons/medallion/medallion_peopleschoice.png' ) ); ?>" height="120" /></p>
 									<h3 class="primary-color"><?php esc_html_e( 'People’s Choice', 'hack' ); ?></h3>
 									<p><?php esc_html_e( 'Is there a project that is by far the favorite from the group?', 'hack' ); ?></p>
 								</div>
@@ -188,32 +188,20 @@ if ( have_posts() ) :
 										<span></span>
 										<span></span>
 									</span>
-									<div class="accordion slide-judge">
-										<div class="accordion-header">
+									<div class="">
+										<div class="">
 											<h2><?php esc_html_e( '#1 Challenge Accepted ', 'hack' ); ?></h2>
 											<p class="intro-text"><?php esc_html_e( 'Work with your team during the #HACK weekend to craft a solution or project.', 'hack' ); ?></p>
-											<!-- <p class="toggle-readmore-wrapper">
-												<span class="toggle-readmore"></span>
-											</p> -->
 										</div>
-										<div class="accordion-content">
-		<!-- <div class="bg-color-white">
-			<div class="accordion event">
-				<div class="accordion-header">
-					Video Presentation Tips
-				</div>
-				<div class="accordion-content">
-				<div class="video-tip">
-					<div class="vt-header">
-						<p><img src="assets/img/judges/orange-check-box.svg" alt=""><span>Number 1</span></p>
-					</div>
-					<div class="vt-content">
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In harum perspiciatis nostrum laudantium dolores deserunt, blanditiis laboriosam placeat culpa molestiae id totam quisquam veniam velit, incidunt ipsam. Quas, rerum vero!</p>
-					</div>
-				</div>
-				</div>
-			</div>
-		</div> -->
+										<div class="">
+											<p class="color-white"><?php esc_html_e( 'Work with your team during the #HACK weekend to craft a solution or project.' ); ?></p>
+											<p class="color-white"><?php esc_html_e( 'Check out the global challenges from:' ); ?></p>
+											<ul class="basic-list">
+												<li><a href="https://hack.indigitous.org/en/challenge/world-vision/">World Vision</a></li>
+												<li><a href="https://hack.indigitous.org/en/challenge/american-bible-society/">American Bible Society</a></li>
+												<li><a href="https://hack.indigitous.org/en/challenge/coalition-of-the-willing/">Coalition of the Willing</a></li>
+											</ul>
+											<p class="color-white"><?php esc_html_e( 'Bring your own or ask the organizers at your location to help you settle on a challenge for #HACK2021.' ); ?></p>
 										</div>
 									</div>
 								</div>
@@ -236,7 +224,64 @@ if ( have_posts() ) :
 										<span></span>
 									</span>
 									<h2><?php esc_html_e( '#2 Submit', 'hack' ); ?></h2>
-									<p class="intro-text"><?php esc_html_e( 'Submit the project or solution to be reviewed by your local mentors.', 'hack' ); ?></p>
+									<p class="intro-text"><?php esc_html_e( 'Submit the project or solution to be reviewed by your local mentor', 'hack' ); ?></p>
+									<p class="intro-text"><?php esc_html_e( 'You will be asked to submit a project summary form that includes:', 'hack' ); ?></p>
+									<ul class="basic-list mb-20">
+										<li><?php esc_html_e( 'Names of your team members' ); ?></li>
+										<li><?php esc_html_e( 'Overall challenge' ); ?></li>
+										<li><?php esc_html_e( 'Project summary' ); ?></li>
+										<li><?php esc_html_e( 'Any additional project data' ); ?></li>
+										<li><?php esc_html_e( 'Project impact' ); ?></li>
+										<li><?php esc_html_e( 'Demonstration' ); ?></li>
+										<li><?php esc_html_e( 'Future Steps' ); ?></li>
+										<li><?php esc_html_e( '3-minute video' ); ?></li>
+									</ul>
+									<div class="bg-color-white">
+											<div class="accordion border-none video-tips">
+												<div class="accordion-header">
+												<?php esc_html_e( '3-Minute Video Tips' ); ?>
+												</div>
+												<div class="accordion-content">
+
+												<div class="video-tip">
+													<div class="vt-header">
+														<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/orange-check-box.svg' ) ); ?>" alt=""><span><?php esc_html_e( 'Overview' ); ?></span>
+													</div>
+													<div class="vt-content">
+														<p><?php esc_html_e( 'A brief overview of what you are trying to solve.' ); ?></p>
+													</div>
+												</div>
+
+												<div class="video-tip">
+													<div class="vt-header">
+														<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/orange-check-box.svg' ) ); ?>" alt=""><span><?php esc_html_e( 'Demonstration' ); ?></span>
+													</div>
+													<div class="vt-content">
+														<p><?php esc_html_e( 'The demonstration of what you did and what it can do (this is most important, otherwise judges will assume you did not create anything).' ); ?></p>
+													</div>
+												</div>
+
+												<div class="video-tip">
+													<div class="vt-header">
+														<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/orange-check-box.svg' ) ); ?>" alt=""><span><?php esc_html_e( 'Impact' ); ?></span>
+													</div>
+													<div class="vt-content">
+														<p><?php esc_html_e( 'The solution’s impact: why does it matter?' ); ?></p>
+													</div>
+												</div>
+
+												<div class="video-tip">
+													<div class="vt-header">
+														<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/orange-check-box.svg' ) ); ?>" alt=""><span><?php esc_html_e( 'Vision' ); ?></span>
+													</div>
+													<div class="vt-content">
+														<p><?php esc_html_e( 'Your project’s recommended next steps (shows your vision to move this forward)' ); ?></p>
+													</div>
+												</div>
+
+												</div>
+											</div>
+										</div>
 								</div>
 							</div>
 						</div>
@@ -257,7 +302,14 @@ if ( have_posts() ) :
 										<span></span>
 									</span>
 									<h2><?php esc_html_e( '#3 City Review', 'hack' ); ?></h2>
-									<p class="intro-text"><?php esc_html_e( 'Top projects will be invited to submit a 3 minute video and project summary to the regional review', 'hack' ); ?></p>
+									<p class="intro-text"><?php esc_html_e( 'The top project per city that receives the highest marks in all 5 categories will advance to the regional judging process. These categories include:', 'hack' ); ?></p>
+									<ol class="basic-list">
+										<li><?php esc_html_e( 'Kingdom Impact' ); ?></li>
+										<li><?php esc_html_e( 'Inovation' ); ?></li>
+										<li><?php esc_html_e( 'Viability' ); ?></li>
+										<li><?php esc_html_e( 'Completeness' ); ?></li>
+										<li><?php esc_html_e( 'People’s Choice' ); ?></li>
+									</ol>
 								</div>
 							</div>
 							<div class="column one-third"></div>
@@ -320,7 +372,11 @@ if ( have_posts() ) :
 										<span class="active"></span>
 									</span>
 									<h2><?php esc_html_e( '#6 Celebration', 'hack' ); ?></h2>
-									<p class="intro-text"><?php esc_html_e( 'Global winners will be announced at our Celebration.', 'hack' ); ?></p>
+									<p class="intro-text">
+										<?php esc_html_e( 'Global celebrated at our', 'hack' ); ?>
+										<a href="https://hack.indigitous.org/en/meetup/global-celebration-1/" >Global Celebration</a>
+										<?php esc_html_e( ' on November 5th, 2021. See you all there.', 'hack' ); ?>
+								</p>
 								</div>
 							</div>
 							<div class="column one-third"></div>

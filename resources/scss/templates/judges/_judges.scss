@@ -18,7 +18,10 @@
 	}
 
 	&-one {
-		padding-bottom: 28rem;
+		padding-bottom: 8rem;
+		@include mq(tablet) {
+			padding-bottom: 28rem;
+		}
 
 		@include hero();
 
@@ -32,6 +35,10 @@
 	}
 
 	&-two {
+		display: none;
+		@include mq(tablet) {
+			display: flex;
+		}
 		margin-top: -32rem;
 
 		&-grid {
@@ -168,6 +175,10 @@
 				max-width: 40rem;
 				min-height: 30rem;
 
+				.intro-text {
+					margin-bottom: 1.6rem;
+				}
+
 				@include margin(null auto);
 
 				@include mq(tablet) {
@@ -204,4 +215,12 @@
 
 .basic-list {
 	list-style: initial;
+	margin-bottom: 1.6rem;
 }
+
+.bg-color-white {
+	background: #fff;
+	padding: 0.8rem;
+	border-radius: var(--border-radius);
+}
+
