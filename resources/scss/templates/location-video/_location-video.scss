@@ -28,3 +28,12 @@
     min-height: 20vh;
 	}
 }
+
+.basic-list {
+	list-style: initial;
+	margin-bottom: 1.6rem;
+}
+
+.text-color--primary {
+  color: $color--primary !important;
+}
