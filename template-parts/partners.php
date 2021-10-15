@@ -50,6 +50,15 @@
 			<a target="_blank" rel="noopener" href="https://www.visualstory.org/" class="template-parts-partners-logos--logo" aria-label="Visual Story Network"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/visual-story.png' ) ); ?>" alt="" /></a>
 			<a target="_blank" rel="noopener" href="https://renewoutreach.org/" class="template-parts-partners-logos--logo" aria-label="Renew World Outreach"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/renew-world.png' ) ); ?>" alt="" /></a>
 			<a target="_blank" rel="noopener" href="https://gacx.io" class="template-parts-partners-logos--logo" aria-label="GACX"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/gacx.jpg' ) ); ?>" alt="" /></a>
+
+			<a target="_blank" rel="noopener" href="https://urgentneeds.org/" class="template-parts-partners-logos--logo" aria-label="Urgent Needs"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/urgent.png' ) ); ?>" alt="" /></a>
+			<a target="_blank" rel="noopener" href="#" class="template-parts-partners-logos--logo" aria-label="International Students Inc"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/international-students.png' ) ); ?>" alt="" /></a>
+			<a target="_blank" rel="noopener" href="https://lifepointchurch.org/" class="template-parts-partners-logos--logo" aria-label="LifePoint Church"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/lifepoint.png' ) ); ?>" alt="" /></a>
+			<a target="_blank" rel="noopener" href="#" class="template-parts-partners-logos--logo" aria-label="Pioneers"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/pioneers.png' ) ); ?>" alt="" /></a>
+			<a target="_blank" rel="noopener" href="https://stratus.earth/" class="template-parts-partners-logos--logo" aria-label="Stratus"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/stratus.png' ) ); ?>" alt="" /></a>
+			<a target="_blank" rel="noopener" href="#" class="template-parts-partners-logos--logo" aria-label="UMOT"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/umot.png' ) ); ?>" alt="" /></a>
+			<a target="_blank" rel="noopener" href="#" class="template-parts-partners-logos--logo" aria-label="Alpha Paving"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/alpha-paving.jpg' ) ); ?>" alt="" /></a>
+			<a target="_blank" rel="noopener" href="#" class="template-parts-partners-logos--logo" aria-label="Buy on Purpose"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/buy-on-purpose.png' ) ); ?>" alt="" /></a>
 			
 		</div>
 	</div>
