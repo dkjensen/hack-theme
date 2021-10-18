@@ -1,4 +1,18 @@
 <?php
+/**
+ * Queries functions.
+ *
+ * @package Dkjensen\Hack
+ */
+
+namespace Dkjensen\Hack\Functions;
+
+/**
+ * Modify resources posts per page query
+ *
+ * @param WP_Query $query The query to modify.
+ * @return void
+ */
 function resources_query( $query ) {
 	if ( \is_admin() ) {
 		return;
