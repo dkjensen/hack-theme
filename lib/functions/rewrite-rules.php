@@ -68,18 +68,30 @@ function filter_resource_visibility( $wp_query ) {
 
 	$meta_query = (array) $wp_query->get( 'meta_query' );
 
+	$meta_query['relation'] = 'OR';
+
 	if ( $leads ) {
 		$meta_query[] = array(
 			'key'     => 'visibility',
 			'value'   => '1',
 			'compare' => '=',
 		);
-	} else {
-		$meta_query['relation'] = 'OR';
 
 		$meta_query[] = array(
 			'key'     => 'visibility',
+			'value'   => '2',
+			'compare' => '=',
+		);
+	} else {
+		$meta_query[] = array(
+			'key'     => 'visibility',
 			'value'   => '0',
+			'compare' => '=',
+		);
+
+		$meta_query[] = array(
+			'key'     => 'visibility',
+			'value'   => '2',
 			'compare' => '=',
 		);
 
