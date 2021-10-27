@@ -37,7 +37,7 @@
 			<a target="_blank" rel="noopener" href="https://www.frontiers.org/" class="template-parts-partners-logos--logo" aria-label="Frontiers"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/frontiers-logo.png' ) ); ?>" alt="" /></a>
 			<a target="_blank" rel="noopener" href="https://visionsynergy.net/" class="template-parts-partners-logos--logo" aria-label="Vision Synergy"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/vision-synergy-logo.png' ) ); ?>" alt="" /></a>
 			<a target="_blank" rel="noopener" href="https://emdc.info/" class="template-parts-partners-logos--logo" aria-label="EMDC"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/emdc-logo.png' ) ); ?>" alt="" /></a>
-			<a target="_blank" rel="noopener" href="https://athirdofus.com/" class="template-parts-partners-logos--logo" aria-label="A Third of Us"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/a-third-of-us-logo.png' ) ); ?>" alt="" /></a>
+			<a target="_blank" rel="noopener" href="https://athirdofus.com/" class="template-parts-partners-logos--logo" aria-label="A Third of Us"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/athirdofus.png' ) ); ?>" alt="" /></a>
 			<a target="_blank" rel="noopener" href="https://www.wycliffe.org/" class="template-parts-partners-logos--logo" aria-label="Wycliffe"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/wycliffe-logo.png' ) ); ?>" alt="" /></a>
 			<a target="_blank" rel="noopener" href="https://www.agapeliv.dk/" class="template-parts-partners-logos--logo" aria-label="Agapeliv"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/agapeliv-logo.png' ) ); ?>" alt="" /></a>
 
@@ -59,6 +59,19 @@
 			<a target="_blank" rel="noopener" href="#" class="template-parts-partners-logos--logo" aria-label="UMOT"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/umot.png' ) ); ?>" alt="" /></a>
 			<a target="_blank" rel="noopener" href="#" class="template-parts-partners-logos--logo" aria-label="Alpha Paving"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/alpha-paving.jpg' ) ); ?>" alt="" /></a>
 			<a target="_blank" rel="noopener" href="#" class="template-parts-partners-logos--logo" aria-label="Buy on Purpose"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/buy-on-purpose.png' ) ); ?>" alt="" /></a>
+
+
+
+			<a target="_blank" rel="noopener" href="https://www.christar.org/" class="template-parts-partners-logos--logo" aria-label=""><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/christar.png' ) ); ?>" alt="" /></a>
+
+			<a target="_blank" rel="noopener" href="https://bethanyinternational.org/" class="template-parts-partners-logos--logo" aria-label="Bethany International"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/bethanyinternational-logo.jpg' ) ); ?>" alt="" /></a>
+
+			<a target="_blank" rel="noopener" href="https://www.jesusfilm.org/" class="template-parts-partners-logos--logo" aria-label="Jesus Film Project"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/jesus-film-logo.png' ) ); ?>" alt="" /></a>
+			<a target="_blank" rel="noopener" href="https://www.beyondchikin.com/" class="template-parts-partners-logos--logo" aria-label="Chick Fil A (Plano, TX)"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/chickfila.png' ) ); ?>" alt="" /></a>
+			<a target="_blank" rel="noopener" href="#" class="template-parts-partners-logos--logo" aria-label="Soul Care"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/soulcare.png' ) ); ?>" alt="" /></a>
+			<a target="_blank" rel="noopener" href="#" class="template-parts-partners-logos--logo" aria-label="Crossway"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/crowssway.jpg' ) ); ?>" alt="" /></a>
+			<a target="_blank" rel="noopener" href="#" class="template-parts-partners-logos--logo" aria-label="GoCorps"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/gocorps.jpg' ) ); ?>" alt="" /></a>
+			<a target="_blank" rel="noopener" href="#" class="template-parts-partners-logos--logo" aria-label="Ergatas"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/ergatas.png' ) ); ?>" alt="" /></a>
 			
 		</div>
 	</div>
