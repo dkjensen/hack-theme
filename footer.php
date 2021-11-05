@@ -11,21 +11,6 @@ use function Dkjensen\Hack\Functions\hack_name_tag;
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-footer-call-to-action primary-background-color">
-			<div class="wrap">
-				<div class="site-footer-call-to-action--content">
-					<h1 class="white-color" data-sal="slide-right">
-					<?php
-						/* translators: %s #HACK name tag */
-						printf( esc_html__( 'Join %s', 'hack' ), hack_name_tag() );
-					?>
-					</h1>
-					<?php
-					if ( has_nav_menu( 'footer-join' ) ) {
-						wp_nav_menu( array( 'theme_location' => 'footer-join' ) );
-					}
-					?>
-				</div>
-			</div><!-- .wrap -->
 		</div><!-- .site-footer-call-to-action -->
 		<div class="site-footer-primary section">
 			<div class="wrap">
