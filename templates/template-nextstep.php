@@ -43,7 +43,7 @@ if ( have_posts() ) :
 								<div class="section-nextstep-two-item-info">
 						  <h3><?php esc_html_e( 'Using my skills to share my faith felt good. I\'d like to find out more.', 'hack' ); ?></h3>
 									<p><?php esc_html_e( 'Interested in sharing the good news? Wondering if you are ready to start? Take this quiz to gauge your readiness.', 'hack' ); ?></p>
-									<p><a href="https://indigitous.typeform.com/to/Wo1dj0sS" class="button"><?php esc_html_e( 'Take the Quiz', 'hack' ); ?></a></p>
+									<p><a href="https://indigitous.typeform.com/to/Wo1dj0sS" target="_blank" class="button"><?php esc_html_e( 'Take the Quiz', 'hack' ); ?></a></p>
 								</div>
 							</div>
 						</div>
@@ -58,7 +58,7 @@ if ( have_posts() ) :
 										<li><?php esc_html_e( 'Let you know as soon as registration for #HACK2022 opens', 'hack' ); ?></li>
 										<li><?php esc_html_e( 'Keep you informed of any other awesome events and similar news', 'hack' ); ?></li>
 									</ul>
-									<p><a href="https://indigitous.typeform.com/to/Wo1dj0sS" class="button"><?php esc_html_e( 'Sign up', 'hack' ); ?></a></p>
+									<p><a href="https://indigitous.typeform.com/to/e4fM2CQR#source=xxxxx" target="_blank" class="button"><?php esc_html_e( 'Sign up', 'hack' ); ?></a></p>
 								</div>
 							</div>
 						</div>
@@ -68,7 +68,7 @@ if ( have_posts() ) :
 								<div class="section-nextstep-two-item-info">
 						  <h3><?php esc_html_e( 'What I learned about Indigitous at #HACK2021 was intriguing, tell me more.', 'hack' ); ?></h3>
 									<p><?php esc_html_e( 'We are planning an Indigitous openhouse so you can ask all the questions and find out how you can get involved. Drop your email below and you\'ll be first to receive an invite.', 'hack' ); ?></p>
-									<p><a href="https://indigitous.typeform.com/to/Wo1dj0sS" class="button"><?php esc_html_e( 'I\'m in', 'hack' ); ?></a></p>
+									<p><a href="https://indigitous.typeform.com/to/Xe2rptf1#source=xxxxx" target="_blank" class="button"><?php esc_html_e( 'I\'m in', 'hack' ); ?></a></p>
 								</div>
 							</div>
 						</div>
@@ -80,8 +80,8 @@ if ( have_posts() ) :
 				</div>
 			</div>
 
-		<?php get_template_part( 'template-parts/celebrate-2021' ); ?>
-		<?php get_template_part( 'template-parts/projects-2021' ); ?>
+		<?php // get_template_part( 'template-parts/celebrate-2021' ); ?>
+		<?php // get_template_part( 'template-parts/projects-2021' ); ?>
 		</article>
 
 		<?php
