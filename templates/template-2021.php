@@ -119,7 +119,7 @@ if ( have_posts() ) :
 		  </div>
 			<div class="wrap" style="margin-bottom:64px"
 			  ><h3 class="text-center"><?php esc_html_e( 'Global Participation of #HACK2020', 'hack' ); ?></h3>
-		<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem omnis, a voluptatibus quibusdam itaque officiis, sint atque recusandae qui vero similique nesciunt accusantium veritatis odit enim, vel consequatur nam laborum!</p>
+		<p class="intro-text text-center" style="margin: 0 auto;"><?php esc_html_e( 'The Indigitous hackathon is a unique opportunity to gather people with unique skill sets for the purpose of responding to the most pressing needs that impact our society.', 'hack' ); ?></p>
 			</div>
 	  <div class="wrap">
 		<div class="video-grid">
@@ -137,11 +137,12 @@ if ( have_posts() ) :
 		  <section>
 		  <div class="wrap" style="margin-bottom:64px"
 			  ><h3 class="text-center"><?php esc_html_e( 'Global Participation of #HACK2020', 'hack' ); ?></h3>
-		<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem omnis, a voluptatibus quibusdam itaque officiis, sint atque recusandae qui vero similique nesciunt accusantium veritatis odit enim, vel consequatur nam laborum!</p>
+		<p class="intro-text text-center" style="margin: 0 auto;"><?php esc_html_e( 'The Indigitous hackathon is a unique opportunity to gather people with unique skill sets for the purpose of responding to the most pressing needs that impact our society.', 'hack' ); ?></p>
 			</div>
 		  </section>
 
-	  <div class="section section-challenges-two">
+	  <!-- Challenges -->
+	  <div class="section section-challenges-two" style="margin-top:0;">
 				<div class="wrap">
 					<div class="row">
 						<?php
@@ -316,7 +317,9 @@ Global Judges',
 			</div>
 
 		<?php get_template_part( 'template-parts/projects' ); ?>
+	<section class="gray-300-background-color">
 		<?php get_template_part( 'template-parts/partners' ); ?>
+	</section>
 		<?php get_template_part( 'template-parts/downloads' ); ?>
 
 		</article>
