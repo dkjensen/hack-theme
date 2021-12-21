@@ -5,7 +5,6 @@
  * @package Dkjensen\Hack
  */
 
-global $hack_infinity_query;
 use function Dkjensen\Hack\Functions\hack_name_tag;
 
 get_header();
@@ -123,12 +122,24 @@ if ( have_posts() ) :
 			</div>
 	  <div class="wrap">
 		<div class="video-grid">
-		  <div class="placeholder"></div>
-		  <div class="placeholder"></div>
-		  <div class="placeholder"></div>
-		  <div class="placeholder"></div>
-		  <div class="placeholder"></div>
-		  <div class="placeholder"></div>
+		  <a href="#" target="_blank" rel="noopener" class="video-grid-item">
+				<img src="https://static01.nyt.com/images/2021/09/14/science/07CAT-STRIPES/07CAT-STRIPES-superJumbo.jpg" alt="video" />
+			</a>
+		  <a href="#" target="_blank" rel="noopener" class="video-grid-item">
+				<img src="https://static01.nyt.com/images/2021/09/14/science/07CAT-STRIPES/07CAT-STRIPES-superJumbo.jpg" alt="video" />
+			</a>
+		  <a href="#" target="_blank" rel="noopener" class="video-grid-item">
+				<img src="https://static01.nyt.com/images/2021/09/14/science/07CAT-STRIPES/07CAT-STRIPES-superJumbo.jpg" alt="video" />
+			</a>
+		  <a href="#" target="_blank" rel="noopener" class="video-grid-item">
+				<img src="https://static01.nyt.com/images/2021/09/14/science/07CAT-STRIPES/07CAT-STRIPES-superJumbo.jpg" alt="video" />
+			</a>
+		  <a href="#" target="_blank" rel="noopener" class="video-grid-item">
+				<img src="https://static01.nyt.com/images/2021/09/14/science/07CAT-STRIPES/07CAT-STRIPES-superJumbo.jpg" alt="video" />
+			</a>
+		  <a href="#" target="_blank" rel="noopener" class="video-grid-item">
+				<img src="https://static01.nyt.com/images/2021/09/14/science/07CAT-STRIPES/07CAT-STRIPES-superJumbo.jpg" alt="video" />
+			</a>
 		</div>
 	  </div>
 </div>
@@ -243,59 +254,59 @@ Global Judges',
 						<div class="judge-grid">
 
 			  <div class="judge-card">
-		  <img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-shikou-gitau.png' ) ); ?>" alt="">
+		  <img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-christeen-rico.jpg' ) ); ?>" alt="">
 		  <p>
-			<span>Name</span>
+			<span>Christeen Rico</span>
+			<span>USA/Philippines</span>
+		  </p>
+			  </div>
+			  <div class="judge-card">
+		  <img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-jonhart.jpg' ) ); ?>" alt="">
+		  <p>
+			<span>Jon Hart</span>
+			<span>USA</span>
+		  </p>
+			  </div>
+			  <div class="judge-card">
+		  <img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-jasmine-ng.jpg' ) ); ?>" alt="">
+		  <p>
+			<span>Jasmine Ng</span>
+			<span>Malaysia</span>
+		  </p>
+			  </div>
+			  <div class="judge-card">
+		  <img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-natch-lazarus.jpg' ) ); ?>" alt="">
+		  <p>
+			<span>Natchi Lazarus</span>
 			<span>Title</span>
 		  </p>
 			  </div>
 			  <div class="judge-card">
-		  <img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-shikou-gitau.png' ) ); ?>" alt="">
+		  <img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-pablo-baldoma.jpg' ) ); ?>" alt="">
 		  <p>
-			<span>Name</span>
-			<span>Title</span>
+			<span>Pablo Baldomá</span>
+			<span>Argentina</span>
 		  </p>
 			  </div>
+				<div class="judge-card">
+			<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-richard-zhang.jpg' ) ); ?>" alt="">
+			<p>
+			<span>Richard Zhang</span>
+			<span>USA/China</span>
+			</p>
+				</div>
 			  <div class="judge-card">
 		  <img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-shikou-gitau.png' ) ); ?>" alt="">
 		  <p>
-			<span>Name</span>
-			<span>Title</span>
+			<span>Dr. Shikoh Gitau</span>
+			<span>Kenya</span>
 		  </p>
 			  </div>
 			  <div class="judge-card">
-		  <img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-shikou-gitau.png' ) ); ?>" alt="">
+		  <img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-trip-nine.png' ) ); ?>" alt="">
 		  <p>
-			<span>Name</span>
-			<span>Title</span>
-		  </p>
-			  </div>
-			  <div class="judge-card">
-		  <img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-shikou-gitau.png' ) ); ?>" alt="">
-		  <p>
-			<span>Name</span>
-			<span>Title</span>
-		  </p>
-			  </div>
-			  <div class="judge-card">
-		  <img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-shikou-gitau.png' ) ); ?>" alt="">
-		  <p>
-			<span>Name</span>
-			<span>Title</span>
-		  </p>
-			  </div>
-			  <div class="judge-card">
-		  <img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-shikou-gitau.png' ) ); ?>" alt="">
-		  <p>
-			<span>Name</span>
-			<span>Title</span>
-		  </p>
-			  </div>
-			  <div class="judge-card">
-		  <img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-shikou-gitau.png' ) ); ?>" alt="">
-		  <p>
-			<span>Name</span>
-			<span>Title</span>
+			<span>Trip Nine</span>
+			<span>USA</span>
 		  </p>
 			  </div>
 
@@ -316,6 +327,7 @@ Global Judges',
 				</div>
 			</div>
 
+			<!-- https://static01.nyt.com/images/2021/09/14/science/07CAT-STRIPES/07CAT-STRIPES-superJumbo.jpg -->
 		<?php get_template_part( 'template-parts/projects' ); ?>
 	<section class="gray-300-background-color">
 		<?php get_template_part( 'template-parts/partners' ); ?>
