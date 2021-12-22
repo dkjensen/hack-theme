@@ -153,7 +153,7 @@ if ( have_posts() ) :
 		  </section>
 
 	  <!-- Challenges -->
-	  <div class="section section-challenges-two" style="margin-top:0;">
+	  <div class="section section-challenges-two" style="margin-top:0; padding-top:0;">
 				<div class="wrap">
 					<div class="row">
 						<?php
@@ -254,56 +254,56 @@ Global Judges',
 						<div class="judge-grid">
 
 			  <div class="judge-card">
-		  <img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-christeen-rico.jpg' ) ); ?>" alt="">
+		  <img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-christeen-rico.jpg' ) ); ?>" alt="Christeen Rico">
 		  <p>
 			<span>Christeen Rico</span>
 			<span>USA/Philippines</span>
 		  </p>
 			  </div>
 			  <div class="judge-card">
-		  <img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-jonhart.jpg' ) ); ?>" alt="">
+		  <img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-jonhart.jpg' ) ); ?>" alt="Jon Hart">
 		  <p>
 			<span>Jon Hart</span>
 			<span>USA</span>
 		  </p>
 			  </div>
 			  <div class="judge-card">
-		  <img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-jasmine-ng.jpg' ) ); ?>" alt="">
+		  <img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-jasmine-ng.jpg' ) ); ?>" alt="Jasmine Ng">
 		  <p>
 			<span>Jasmine Ng</span>
 			<span>Malaysia</span>
 		  </p>
 			  </div>
 			  <div class="judge-card">
-		  <img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-natch-lazarus.jpg' ) ); ?>" alt="">
+		  <img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-natch-lazarus.jpg' ) ); ?>" alt="Natchi Lazarus">
 		  <p>
 			<span>Natchi Lazarus</span>
 			<span>Title</span>
 		  </p>
 			  </div>
 			  <div class="judge-card">
-		  <img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-pablo-baldoma.jpg' ) ); ?>" alt="">
+		  <img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-pablo-baldoma.jpg' ) ); ?>" alt="Pablo Baldomá">
 		  <p>
 			<span>Pablo Baldomá</span>
 			<span>Argentina</span>
 		  </p>
 			  </div>
 				<div class="judge-card">
-			<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-richard-zhang.jpg' ) ); ?>" alt="">
+			<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-richard-zhang.jpg' ) ); ?>" alt="Richard Zhang">
 			<p>
 			<span>Richard Zhang</span>
 			<span>USA/China</span>
 			</p>
 				</div>
 			  <div class="judge-card">
-		  <img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-shikou-gitau.png' ) ); ?>" alt="">
+		  <img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-shikou-gitau.png' ) ); ?>" alt="Dr. Shikoh Gitau">
 		  <p>
 			<span>Dr. Shikoh Gitau</span>
 			<span>Kenya</span>
 		  </p>
 			  </div>
 			  <div class="judge-card">
-		  <img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-trip-nine.png' ) ); ?>" alt="">
+		  <img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-trip-nine.png' ) ); ?>" alt="Trip Nine">
 		  <p>
 			<span>Trip Nine</span>
 			<span>USA</span>
@@ -316,23 +316,111 @@ Global Judges',
 				</div>
 			</div>
 
+			<?php get_template_part( 'template-parts/projects' ); ?>
+
 	  <!-- Stories -->
-	<div class="section section-impact-five gray-300-background-color">
+	<div class="section section-impact-five">
+	<div class="wrap" style="margin-bottom:64px"
+			  ><h3 class="text-center"><?php esc_html_e( 'Global Participation of #HACK2020', 'hack' ); ?></h3>
+		<p class="intro-text text-center" style="margin: 0 auto;"><?php esc_html_e( 'The Indigitous hackathon is a unique opportunity to gather people with unique skill sets for the purpose of responding to the most pressing needs that impact our society.', 'hack' ); ?></p>
+			</div>
 				<div class="wrap">
-					<h2><?php esc_html_e( 'Stories From #HACK', 'hack' ); ?></h2>
-					<p class="intro-text"><?php esc_html_e( 'All of the 4,300 people who have taken part in #HACK since 2016 have their own stories - stories of lives changed, problems solved, and Jesus made known. Here is just a glimpse of what God has done through Indigitous #HACK.', 'hack' ); ?></p>
 					<div id="content" class="site-content">
-		
+					<div <?php post_class( 'card-story' ); ?><?php /* data-lity-target="#story-content-<?php echo esc_attr( get_the_ID() ); ?>" data-lity*/ ?>>
+	<div class="card-story--content">
+		<div class="card-story--content-header">
+			<?php
+			$hack_locations = wp_get_post_terms( get_the_ID(), 'location' );
+			$hack_flags     = array();
+
+			array_walk(
+				$hack_locations,
+				function( $location ) use ( &$hack_flags ) {
+					$country_code = esc_attr( get_term_meta( $location->term_id, 'country_code', true ) );
+
+					if ( ! $country_code ) {
+						return;
+					}
+
+					if ( ! in_array( strtolower( $country_code ), $hack_flags, true ) ) {
+						printf(
+							'<img src="%s" width="60" title="%s" />',
+							esc_url( get_theme_file_uri( 'assets/img/flags/' . strtolower( $country_code ) . '.svg' ) ),
+							esc_attr( $location->name )
+						);
+
+						$hack_flags[] = strtolower( $country_code );
+					}
+				}
+			);
+			?>
+		</div>
+		<h3><?php the_excerpt(); ?></h3>
+		<div class="card-story--content-thumbnail">
+			<?php the_post_thumbnail(); ?>
+		</div>
+	</div>
+	<div id="story-content-<?php echo esc_attr( get_the_ID() ); ?>" class="card-story--content-rendered">
+		<div class="card-story--content-rendered-header">
+			<?php the_title( '<h1>', '</h1>' ); ?>
+			<?php
+				$hack_locations = wp_get_post_terms( get_the_ID(), 'location' );
+				array_walk(
+					$hack_locations,
+					function( $location ) {
+						$country_code = esc_attr( get_term_meta( $location->term_id, 'country_code', true ) );
+
+						if ( ! $country_code ) {
+							return;
+						}
+
+						printf(
+							'<img src="%s" width="60" title="%s" />',
+							esc_url( get_theme_file_uri( 'assets/img/flags/' . $country_code . '.svg' ) ),
+							esc_attr( $location->name )
+						);
+					}
+				);
+			?>
+		</div>
+		<?php the_post_thumbnail(); ?>
+		<?php the_content(); ?>
+	</div>
+</div>
 					</div>
 				</div>
 			</div>
 
-			<!-- https://static01.nyt.com/images/2021/09/14/science/07CAT-STRIPES/07CAT-STRIPES-superJumbo.jpg -->
-		<?php get_template_part( 'template-parts/projects' ); ?>
-	<section class="gray-300-background-color">
+			<!-- GALLERY -->
+			<div class="section">
+				<div class="wrap">
+					<div class="hack-slick" data-slick='{"dots": true, "arrows": true}'>
+						<img src="https://static01.nyt.com/images/2021/09/14/science/07CAT-STRIPES/07CAT-STRIPES-superJumbo.jpg" alt="video" />
+						<img src="https://static01.nyt.com/images/2021/09/14/science/07CAT-STRIPES/07CAT-STRIPES-superJumbo.jpg" alt="video" />
+						<img src="https://static01.nyt.com/images/2021/09/14/science/07CAT-STRIPES/07CAT-STRIPES-superJumbo.jpg" alt="video" />
+						<img src="https://static01.nyt.com/images/2021/09/14/science/07CAT-STRIPES/07CAT-STRIPES-superJumbo.jpg" alt="video" />
+					</div>
+				</div>
+			</div>
+
+			<div class="section">
+				<div class="wrap" style="margin-bottom:64px">
+					<div class="row">
+						<div class="column five-sixths offset-1">
+			  <iframe width="992" height="558" src="https://www.youtube.com/embed/SQvagv8Eegc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			  </div>
+			</div>
+		  </div>
+			<div class="wrap"><h3 class="text-center"><?php esc_html_e( 'Global Participation of #HACK2020', 'hack' ); ?></h3>
+			</div>
+			</div>
+
+			
+	<section class="section">
 		<?php get_template_part( 'template-parts/partners' ); ?>
 	</section>
 		<?php get_template_part( 'template-parts/downloads' ); ?>
+
 
 		</article>
 
