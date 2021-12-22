@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#8dc8e8"/>
+      <stop offset="1" stop-color="#a5d9e7"/>
+    </linearGradient>
+  </defs>
+  <g id="SVG_Coordinate" data-name="SVG Coordinate" transform="translate(18744 23956)">
+    <rect id="Rectangle_2254" data-name="Rectangle 2254" width="128" height="128" transform="translate(-18744 -23956)" fill="rgba(255,255,255,0)"/>
+    <g id="Coordinate" transform="translate(-18743.039 -23937.508)">
+      <g id="Icon_Components" data-name="Icon Components" transform="translate(0.43 0.4)">
+        <rect id="Rectangle_2247" data-name="Rectangle 2247" width="75.074" height="3.007" transform="translate(24.794 73.721)"/>
+        <rect id="Rectangle_2248" data-name="Rectangle 2248" width="74.608" height="3.007" transform="translate(25.26 13.893)"/>
+        <path id="Path_3994" data-name="Path 3994" d="M92,27.767H66V1.8H92ZM69.007,24.76H88.99V4.807H69.007Z" transform="translate(32.59 0.305)"/>
+        <path id="Path_3995" data-name="Path 3995" d="M26.617,67.982H.65V42H26.617ZM3.657,64.975H23.61V45.007H3.657Z" transform="translate(-0.319 20.549)"/>
+        <rect id="Rectangle_2249" data-name="Rectangle 2249" width="41.8" height="90.215" transform="translate(41.83)" fill="url(#linear-gradient)"/>
+        <path id="Path_3996" data-name="Path 3996" d="M79.232,68.5A13.382,13.382,0,1,1,92.614,55.122,13.382,13.382,0,0,1,79.232,68.5Zm0-23.757A10.375,10.375,0,1,0,89.607,55.122,10.375,10.375,0,0,0,79.232,44.747Z" transform="translate(32.515 20.418)"/>
+        <path id="Path_3997" data-name="Path 3997" d="M13.812,29.034A13.382,13.382,0,1,1,27.194,15.652,13.382,13.382,0,0,1,13.812,29.034Zm0-23.757A10.375,10.375,0,1,0,24.187,15.652,10.375,10.375,0,0,0,13.812,5.277Z" transform="translate(-0.43 0.542)"/>
+        <path id="Path_3998" data-name="Path 3998" d="M109.589,54.379h-3.007v-6.24a9.833,9.833,0,0,0-2.676-7.277,13.532,13.532,0,0,0-8.6-3.248H23.133c-5.007,0-8.871-1.413-11.472-4.2a13.668,13.668,0,0,1-3.368-9.443l.075-4.917h3.007L11.3,24.082a10.706,10.706,0,0,0,2.571,7.307c2,2.135,5.112,3.218,9.247,3.218H95.29A16.539,16.539,0,0,1,106,38.712a12.72,12.72,0,0,1,3.594,9.427Z" transform="translate(3.526 8.997)"/>
+      </g>
+    </g>
+  </g>
+</svg>

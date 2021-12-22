@@ -57,50 +57,55 @@ if ( have_posts() ) :
 	  </div>
   </section>
   
-  <div class="section section-impact-two padding-0">
+  <div class="section section-2021-two">
 	<div class="wrap">
-	  <div class="row">
-		<div class="column five-sixths offset-1">
-		  <div class="section-impact-two-media-texts">
-			<div class="media-text">
-			  <div class="media-text--img">
-				<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/impact/hack-impact-Participate.svg' ) ); ?>" width="67" />
-			  </div>
-			  <div class="media-text--content">
-				<span class="primary-color"><?php echo esc_html( '4,300' ); ?></span>
-				<h3><?php esc_html_e( 'Participants', 'hack' ); ?></h3>
-			  </div>
-			</div>
-			<div class="media-text">
-			  <div class="media-text--img">
-				<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/impact/hack-impact-Countries.svg' ) ); ?>" width="67" />
-			  </div>
-			  <div class="media-text--content">
-				<span class="primary-color"><?php echo esc_html( '41' ); ?></span>
-				<h3><?php esc_html_e( 'Countries', 'hack' ); ?></h3>
-			  </div>
-			</div>
-			<div class="media-text">
-			  <div class="media-text--img">
-				<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/impact/hack-impact-City.svg' ) ); ?>" width="67" />
-			  </div>
-			  <div class="media-text--content">
-				<span class="primary-color"><?php echo esc_html( '210' ); ?></span>
-				<h3><?php esc_html_e( 'Cities', 'hack' ); ?></h3>
-			  </div>
-			</div>
-			<div class="media-text">
-			  <div class="media-text--img">
-				<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/impact/hack-impact-Calendar.svg' ) ); ?>" width="67" />
-			  </div>
-			  <div class="media-text--content">
-				<span class="primary-color"><?php echo esc_html( '6' ); ?></span>
-				<h3><?php esc_html_e( 'Years', 'hack' ); ?></h3>
-			  </div>
-			</div>
+		  <div class="grid-icons">
+				<div class="media-text">
+					<div class="media-text--img">
+						<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/impact/hack-impact-Countries.svg' ) ); ?>" width="67" />
+					</div>
+					<div class="media-text--content">
+						<span class="primary-color"><?php echo esc_html( '46' ); ?></span>
+						<h3><?php esc_html_e( 'Countries', 'hack' ); ?></h3>
+					</div>
+				</div>
+				<div class="media-text">
+					<div class="media-text--img">
+					<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/impact/hack-impact-City.svg' ) ); ?>" width="67" />
+					</div>
+					<div class="media-text--content">
+					<span class="primary-color"><?php echo esc_html( '115' ); ?></span>
+					<h3><?php esc_html_e( 'Cities', 'hack' ); ?></h3>
+					</div>
+				</div>
+				<div class="media-text">
+					<div class="media-text--img">
+					<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/impact/hack-impact-Participate.svg' ) ); ?>" width="67" />
+					</div>
+					<div class="media-text--content">
+					<span class="primary-color"><?php echo esc_html( '74' ); ?></span>
+					<h3><?php esc_html_e( 'Volunteer Leaders', 'hack' ); ?></h3>
+					</div>
+				</div>
+				<div class="media-text">
+					<div class="media-text--img">
+					<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/icons/hack-icon-launch.svg' ) ); ?>" width="67" />
+					</div>
+					<div class="media-text--content">
+					<span class="primary-color"><?php echo esc_html( '61' ); ?></span>
+					<h3><?php esc_html_e( 'City Leads', 'hack' ); ?></h3>
+					</div>
+				</div>
+				<div class="media-text">
+					<div class="media-text--img">
+					<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/impact/hack-impact-network.svg' ) ); ?>" width="67" />
+					</div>
+					<div class="media-text--content">
+					<span class="primary-color"><?php echo esc_html( '13' ); ?></span>
+					<h3><?php esc_html_e( 'Regional Leads', 'hack' ); ?></h3>
+					</div>
+				</div>
 		  </div>
-		</div>
-	  </div>
 	</div>
   </div>
   
@@ -325,69 +330,7 @@ Global Judges',
 		<p class="intro-text text-center" style="margin: 0 auto;"><?php esc_html_e( 'The Indigitous hackathon is a unique opportunity to gather people with unique skill sets for the purpose of responding to the most pressing needs that impact our society.', 'hack' ); ?></p>
 			</div>
 				<div class="wrap">
-					<div id="content" class="site-content">
-					<div <?php post_class( 'card-story' ); ?><?php /* data-lity-target="#story-content-<?php echo esc_attr( get_the_ID() ); ?>" data-lity*/ ?>>
-	<div class="card-story--content">
-		<div class="card-story--content-header">
-			<?php
-			$hack_locations = wp_get_post_terms( get_the_ID(), 'location' );
-			$hack_flags     = array();
-
-			array_walk(
-				$hack_locations,
-				function( $location ) use ( &$hack_flags ) {
-					$country_code = esc_attr( get_term_meta( $location->term_id, 'country_code', true ) );
-
-					if ( ! $country_code ) {
-						return;
-					}
-
-					if ( ! in_array( strtolower( $country_code ), $hack_flags, true ) ) {
-						printf(
-							'<img src="%s" width="60" title="%s" />',
-							esc_url( get_theme_file_uri( 'assets/img/flags/' . strtolower( $country_code ) . '.svg' ) ),
-							esc_attr( $location->name )
-						);
-
-						$hack_flags[] = strtolower( $country_code );
-					}
-				}
-			);
-			?>
-		</div>
-		<h3><?php the_excerpt(); ?></h3>
-		<div class="card-story--content-thumbnail">
-			<?php the_post_thumbnail(); ?>
-		</div>
-	</div>
-	<div id="story-content-<?php echo esc_attr( get_the_ID() ); ?>" class="card-story--content-rendered">
-		<div class="card-story--content-rendered-header">
-			<?php the_title( '<h1>', '</h1>' ); ?>
-			<?php
-				$hack_locations = wp_get_post_terms( get_the_ID(), 'location' );
-				array_walk(
-					$hack_locations,
-					function( $location ) {
-						$country_code = esc_attr( get_term_meta( $location->term_id, 'country_code', true ) );
-
-						if ( ! $country_code ) {
-							return;
-						}
-
-						printf(
-							'<img src="%s" width="60" title="%s" />',
-							esc_url( get_theme_file_uri( 'assets/img/flags/' . $country_code . '.svg' ) ),
-							esc_attr( $location->name )
-						);
-					}
-				);
-			?>
-		</div>
-		<?php the_post_thumbnail(); ?>
-		<?php the_content(); ?>
-	</div>
-</div>
-					</div>
+	
 				</div>
 			</div>
 
@@ -419,7 +362,9 @@ Global Judges',
 	<section class="section">
 		<?php get_template_part( 'template-parts/partners' ); ?>
 	</section>
+	<div id="pdf-download">
 		<?php get_template_part( 'template-parts/downloads' ); ?>
+	</div>
 
 
 		</article>
