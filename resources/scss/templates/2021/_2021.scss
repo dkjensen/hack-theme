@@ -188,17 +188,16 @@
           width: 100%;
         }
         &:after {
-          display: inline-block;
-          margin-left: 1.5rem;
-          font-size: 4rem;
-          font-weight: 400;
-          line-height: 0;
-          color: white;
-          content: "\25B6";
+          display: block;
+          content: ' ';
+          background-image: url('../img/icons/play.svg');
+          background-size: 28px 28px;
+          height: 28px;
+          width: 28px;
           position: absolute;
           z-index: 1;
-          top: 53%;
-          left: 43%;
+          top: 47%;
+          left: 47%;
         }
       }
     }
@@ -238,6 +237,13 @@
             font-size: 1.6rem;
           }
         }
+      }
+    }
+  }
+  &-stories {
+    .card-story {
+      img {
+        filter: brightness(1.15) saturate(1.15);
       }
     }
   }
