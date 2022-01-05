@@ -7,7 +7,7 @@
 
 get_header();
 
-$hack_from_year = gmdate( 'Y' );
+$hack_from_year = gmdate( 'Y' ) - 1;
 ?>
 
 <div class="section section-stories-hero">
@@ -22,7 +22,7 @@ $hack_from_year = gmdate( 'Y' );
 			<div class="column one-fourth">
 				<?php
 				// phpcs:ignore
-				for ( $i = gmdate( 'Y' ); $i >= 2016; $i-- ) {
+				for ( $i = gmdate( 'Y' ) - 1; $i >= 2016; $i-- ) {
 					?>
 
 					<div class="section-stories-posts-toggle toggle-trigger" data-section-id="<?php echo esc_attr( $i ); ?>">

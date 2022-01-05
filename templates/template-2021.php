@@ -21,7 +21,7 @@ if ( have_posts() ) :
 						<div class="column one-half">
 							<div class="media-text">
 								<div class="media-text--img">
-									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/impact/hack-impact-Countries.svg' ) ); ?>" width="67" />
+									<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/impact/hack-impact-Countries.svg' ) ); ?>" width="47" />
 								</div>
 								<div class="media-text--content">
 									<span class="primary-color"><?php echo esc_html( '6th' ); ?></span>
@@ -31,14 +31,17 @@ if ( have_posts() ) :
 							<h1>
 								<?php
 								/* translators: %s #HACK name tag */
-								echo sprintf( esc_html__( 'Thank You %s', 'hack' ), hack_name_tag() );
+								echo sprintf( esc_html__( 'What Happened at %s', 'hack' ), hack_name_tag() );
 								?>
 							</h1>
 							<p>
 								<?php esc_html_e( 'At #HACK participants from around the world in the tech, creative, and adjacent industries gather to solve problems facing their communities.', 'hack' ); ?>
 							</p>
 							<p>
-								<a href="#pdf-download" class="button"><?php esc_html_e( 'Download 2021 Report', 'hack' ); ?></a>
+								<?php esc_html_e( 'Since 2016, #HACK has been organized by Indigitous and partnering organizations and individuals.', 'hack' ); ?>
+							</p>
+							<p>
+								<a href="#pdf-download" class="button"><?php esc_html_e( '#HACK2021 Report', 'hack' ); ?></a>
 							</p>
 						</div>
 						<div class="column one-half">
@@ -118,41 +121,44 @@ if ( have_posts() ) :
   </div>
   
   <div class="section-2021-bg-church"></div>
-	
+
 	<!-- Video Grid -->
   <div class="section section-2021-three">
 		<div class="wrap" style="margin-bottom:64px">
 			<div class="row">
 				<div class="column five-sixths offset-1">
-					<iframe width="992" height="558" src="https://www.youtube.com/embed/SQvagv8Eegc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe width="992" height="558" src="https://www.youtube.com/embed/KB2scbAwcC4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 			</div>
 		</div>
 		<div class="wrap" style="margin-bottom:64px">
 			<h3 class="text-center">
-				<?php esc_html_e( 'Global Participation of #HACK2020', 'hack' ); ?>
+				<?php esc_html_e( '#HACK2021 Around the World', 'hack' ); ?>
 			</h3>
-			<p class="intro-text text-center" style="margin: 0 auto;"><?php esc_html_e( 'The Indigitous hackathon is a unique opportunity to gather people with unique skill sets for the purpose of responding to the most pressing needs that impact our society.', 'hack' ); ?></p>
+			<p class="intro-text text-center" style="margin: 0 auto;"><?php esc_html_e( '#HACK looks different in each country and city that it is hosted. Check out these previous submitted by teams from around the world.', 'hack' ); ?></p>
 		</div>
 		<div class="wrap">
 			<div class="video-grid">
-				<a href="#" target="_blank" rel="noopener" class="video-grid-item">
-					<img src="https://static01.nyt.com/images/2021/09/14/science/07CAT-STRIPES/07CAT-STRIPES-superJumbo.jpg" alt="video" />
+				<a href="https://vimeo.com/641789775?embedded=true&source=vimeo_logo&owner=95672474" target="_blank" rel="noopener" class="video-grid-item">
+					<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/2021/video-1-vimeo-641789775.jpg' ) ); ?>" alt="video" />
 				</a>
-				<a href="#" target="_blank" rel="noopener" class="video-grid-item">
-					<img src="https://static01.nyt.com/images/2021/09/14/science/07CAT-STRIPES/07CAT-STRIPES-superJumbo.jpg" alt="video" />
+				<a href="https://www.youtube.com/watch?v=l763lx9fszA" target="_blank" rel="noopener" class="video-grid-item">
+					<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/2021/video-2-youtube-l763lx9fszA.jpg' ) ); ?>" alt="video" />
 				</a>
-				<a href="#" target="_blank" rel="noopener" class="video-grid-item">
-					<img src="https://static01.nyt.com/images/2021/09/14/science/07CAT-STRIPES/07CAT-STRIPES-superJumbo.jpg" alt="video" />
+				<a href="https://www.facebook.com/watch/?extid=NS-UNK-UNK-UNK-AN_GK0T-GK1C&v=407760157494698" target="_blank" rel="noopener" class="video-grid-item">
+				<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/2021/video-3-fb-407760157494698.jpg' ) ); ?>" alt="video" />
 				</a>
-				<a href="#" target="_blank" rel="noopener" class="video-grid-item">
-					<img src="https://static01.nyt.com/images/2021/09/14/science/07CAT-STRIPES/07CAT-STRIPES-superJumbo.jpg" alt="video" />
+				<a href="https://www.youtube.com/watch?v=uv0-9piHBQQ" target="_blank" rel="noopener" class="video-grid-item">
+				<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/2021/video-4-uv0-9piHBQQ.jpg' ) ); ?>" alt="video" />
 				</a>
-				<a href="#" target="_blank" rel="noopener" class="video-grid-item">
-					<img src="https://static01.nyt.com/images/2021/09/14/science/07CAT-STRIPES/07CAT-STRIPES-superJumbo.jpg" alt="video" />
+				<a href="https://www.facebook.com/indigitousph/videos/858654311399633" target="_blank" rel="noopener" class="video-grid-item">
+				<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/2021/video-5-fb-858654311399633.jpg' ) ); ?>" alt="video" />
 				</a>
-				<a href="#" target="_blank" rel="noopener" class="video-grid-item">
-					<img src="https://static01.nyt.com/images/2021/09/14/science/07CAT-STRIPES/07CAT-STRIPES-superJumbo.jpg" alt="video" />
+				<a href="https://drive.google.com/file/d/1ZDSu93k75zlvebXf9Xu7yB1rQL3SvjMl/view" target="_blank" rel="noopener" class="video-grid-item">
+				<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/2021/video-6-gd-1ZDSu93k75zlvebXf9Xu7yB1rQL3SvjMl.jpg' ) ); ?>" alt="video" />
+				</a>
+				<a href="https://drive.google.com/file/d/1ujXk4yMo4I_v9hH4F4LXNLLfFoxKVIyY/view" target="_blank" rel="noopener" class="video-grid-item">
+				<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/2021/video-7-gd-1ujXk4yMo4I_v9hH4F4LXNLLfFoxKVIyY.jpg' ) ); ?>" alt="video" />
 				</a>
 			</div>
 		</div>
@@ -165,9 +171,9 @@ if ( have_posts() ) :
 	<section>
 		<div class="wrap" style="margin-bottom:64px">
 			<h3 class="text-center">
-				<?php esc_html_e( 'Global Participation of #HACK2020', 'hack' ); ?>
+				<?php esc_html_e( '#HACK2021 Global Challenges', 'hack' ); ?>
 			</h3>
-			<p class="intro-text text-center" style="margin: 0 auto;"><?php esc_html_e( 'The Indigitous hackathon is a unique opportunity to gather people with unique skill sets for the purpose of responding to the most pressing needs that impact our society.', 'hack' ); ?></p>
+			<p class="intro-text text-center" style="margin: 0 auto;"><?php esc_html_e( 'Presented by our ministry partners, these 3 challenges were tackled by teams around the world.', 'hack' ); ?></p>
 		</div>
 	</section>
 
@@ -266,7 +272,6 @@ if ( have_posts() ) :
 				<li>● People’s Choice</li>
 			  </ul>
 							</div>
-			  <blockquote class="primary-color"><?php esc_html_e( 'We want to bring the gospel to those who need to hear.', 'hack' ); ?></blockquote>
 						</div>
 						<div class="column seven-twelfths offset-1">
 						<div class="judge-grid">
@@ -340,8 +345,7 @@ if ( have_posts() ) :
 	<!-- Stories -->
 	<div class="section section-2021-stories">
 		<div class="wrap" style="margin-bottom:64px"
-			  ><h3 class="text-center"><?php esc_html_e( 'Global Participation of #HACK2020', 'hack' ); ?></h3>
-		<p class="intro-text text-center" style="margin: 0 auto;"><?php esc_html_e( 'The Indigitous hackathon is a unique opportunity to gather people with unique skill sets for the purpose of responding to the most pressing needs that impact our society.', 'hack' ); ?></p>
+			  ><h3 class="text-center" style="font-size: 4rem;"><?php esc_html_e( 'Stories from #HACK2021', 'hack' ); ?></h3>
 		</div>
 		<div class="wrap">
 			<div class="site-content">
@@ -402,29 +406,31 @@ if ( have_posts() ) :
 	</div>
 
 	<!-- GALLERY -->
-	<div class="section">
+	<div class="section section-20201-hack-gallery">
+		<div class="wrap" style="margin-bottom:64px"
+			  ><h3 class="text-center" style="font-size: 4rem;"><?php esc_html_e( '#HACK2021 Gallery', 'hack' ); ?></h3>
+		</div>
 		<div class="wrap">
 			<div class="hack-slick" data-slick='{"dots": true, "arrows": true}'>
-				<img src="https://static01.nyt.com/images/2021/09/14/science/07CAT-STRIPES/07CAT-STRIPES-superJumbo.jpg" alt="video" />
-				<img src="https://static01.nyt.com/images/2021/09/14/science/07CAT-STRIPES/07CAT-STRIPES-superJumbo.jpg" alt="video" />
-				<img src="https://static01.nyt.com/images/2021/09/14/science/07CAT-STRIPES/07CAT-STRIPES-superJumbo.jpg" alt="video" />
-				<img src="https://static01.nyt.com/images/2021/09/14/science/07CAT-STRIPES/07CAT-STRIPES-superJumbo.jpg" alt="video" />
+				<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/2021/gallery-1.jpg' ) ); ?>" alt="gallery" />
+				<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/2021/gallery-2.jpg' ) ); ?>" alt="gallery" />
+				<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/2021/gallery-3.jpg' ) ); ?>" alt="gallery" />
+				<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/2021/gallery-4.jpg' ) ); ?>" alt="gallery" />
+				<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/2021/gallery-5.jpg' ) ); ?>" alt="gallery" />
+				<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/2021/gallery-6.jpg' ) ); ?>" alt="gallery" />
+				<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/2021/gallery-7.jpg' ) ); ?>" alt="gallery" />
+				<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/2021/gallery-8.jpg' ) ); ?>" alt="gallery" />
+				<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/2021/gallery-9.jpg' ) ); ?>" alt="gallery" />
+				<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/2021/gallery-10.jpg' ) ); ?>" alt="gallery" />
+				<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/2021/gallery-11.jpg' ) ); ?>" alt="gallery" />
+				<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/2021/gallery-12.jpg' ) ); ?>" alt="gallery" />
+				<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/2021/gallery-13.jpg' ) ); ?>" alt="gallery" />
+				<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/2021/gallery-14.jpg' ) ); ?>" alt="gallery" />
+				<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/2021/gallery-15.jpg' ) ); ?>" alt="gallery" />
+				<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/2021/gallery-16.jpg' ) ); ?>" alt="gallery" />
 			</div>
 		</div>
 	</div>
-
-	<div class="section">
-		<div class="wrap" style="margin-bottom:64px">
-				<div class="row">
-					<div class="column five-sixths offset-1">
-			<iframe width="992" height="558" src="https://www.youtube.com/embed/SQvagv8Eegc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</div>
-		</div>
-		</div>
-		<div class="wrap"><h3 class="text-center"><?php esc_html_e( 'Global Participation of #HACK2020', 'hack' ); ?></h3>
-		</div>
-	</div>
-
 			
 	<section class="section">
 		<?php get_template_part( 'template-parts/partners' ); ?>
@@ -434,19 +440,19 @@ if ( have_posts() ) :
 	<div class="wrap">
 		<div class="row">
 			<div class="column one-third">
-				<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/about/hack-about-section-11.jpg' ) ); ?>" style="border-radius: 4px; object-fit:cover;"/>
+				<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/2021/dl-image.png' ) ); ?>" style="border-radius: 4px; object-fit:cover;"/>
 			</div>
 			<div class="column two-thirds">
 				<h5 class="divider"><?php esc_html_e( 'Downloads', 'hack' ); ?></h5>
 				<h2>
 					<?php
 					/* translators: %s #HACK */
-					echo sprintf( esc_html__( 'Want to know more about %s?', 'hack' ), '<span>#HACK</span>' );
+					echo sprintf( esc_html__( '%s2021 Report', 'hack' ), '<span>#HACK</span>' );
 					?>
 				</h2>
 				<div class="row">
 					<div class="column seven-twelfths">
-						<p><?php esc_html_e( 'Check out our resources or download the report from #HACK2020 for more information. ', 'hack' ); ?></p>
+						<p><?php esc_html_e( 'See more details about what happened at #HACK2021.', 'hack' ); ?></p>
 						<br>
 						<p>
 							<a href="https://hack.indigitous.org/wp-content/uploads/2021/12/HACK2021_Report.pdf" target="_blank"><i class="fas fa-download"></i> <?php esc_html_e( '#HACK2021 Report', 'hack' ); ?></a>

@@ -1,9 +1,9 @@
 .section-2021 {
 
 	&-one {
-
+    min-height: 125vh;
 		@include mq(tablet) {
-
+      min-height: 75vh;
 			.column:first-child {
 
 				> * {
@@ -24,20 +24,6 @@
 		}
 
 		&-graphic {
-			// max-width: 124vw;
-			// margin-left: -12vw;
-
-			// @include mq(tablet) {
-			// 	max-width: 58vw;
-			// 	margin-right: -10vw;
-			// 	margin-left: 0;
-			// }
-
-			// @include mq(desktop) {
-			// 	max-width: 61.1vw;
-			// 	margin-left: -12vw;
-			// }
-
 			&--container {
 				position: absolute;
 				left: -15%;
@@ -64,7 +50,6 @@
 				img:nth-child(1) {
 					top: 4.016%;
 					left: 19.709%;
-					// width: 30%;
 				}
 			}
 
@@ -129,7 +114,7 @@
     background: url(../img/2021/bg-church.png) center no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
+    height: 75vh;
     width: 100vw;
     position: relative;
     padding: 0;
@@ -155,6 +140,16 @@
       display: grid;
       grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
       grid-gap: 40px 20px; 
+      @include mq(tablet) {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        width: 100%;
+        max-width: 925px;
+        margin: 0 auto 48px auto;
+        row-gap: 40px;
+        column-gap: 40px;
+      }
       .media-text--content {
         margin: 0 auto;
       }
@@ -162,7 +157,7 @@
 	}
 
 	&-three {
-	  margin-top: -10vw;
+	  margin-top: -25vw;
     position: relative;
     .video-grid {
       display: grid;
@@ -244,6 +239,14 @@
     .card-story {
       img {
         filter: brightness(1.15) saturate(1.15);
+      }
+    }
+  }
+  &-hack-gallery {
+    .hack-slick {
+      img {
+        height: 640px;
+        object-fit: cover;
       }
     }
   }
