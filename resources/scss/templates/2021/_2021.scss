@@ -234,6 +234,12 @@
         }
       }
     }
+    .null-judge {
+      display: none;
+      @include mq(desktop) {
+        display: flex;
+      }
+    }
   }
   &-stories {
     .card-story {
@@ -245,9 +251,7 @@
   &-hack-gallery {
     .hack-slick {
       img {
-        height: 640px;
-        object-fit: cover;
-        width: 100%;
+        filter: saturate(1.15);
       }
     }
   }

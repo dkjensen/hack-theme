@@ -127,7 +127,7 @@ if ( have_posts() ) :
 		<div class="wrap" style="margin-bottom:64px">
 			<div class="row">
 				<div class="column five-sixths offset-1">
-					<iframe width="992" height="558" src="https://www.youtube.com/embed/KB2scbAwcC4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe width="992" height="558" src="https://www.youtube.com/embed/KB2scbAwcC4?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 			</div>
 		</div>
@@ -159,6 +159,9 @@ if ( have_posts() ) :
 				</a>
 				<a href="https://drive.google.com/file/d/1ujXk4yMo4I_v9hH4F4LXNLLfFoxKVIyY/view" target="_blank" rel="noopener" class="video-grid-item">
 				<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/2021/video-7-gd-1ujXk4yMo4I_v9hH4F4LXNLLfFoxKVIyY.jpg' ) ); ?>" alt="video" />
+				</a>
+				<a href="https://drive.google.com/file/d/1QvZ3I9X2oI8j3aNUY3H1yyGdoYDCjK1D/view" target="_blank" rel="noopener" class="video-grid-item">
+				<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/2021/video-8-gd-1QvZ3I9X2oI8j3aNUY3H1yyGdoYDCjK1D.jpg' ) ); ?>" alt="video" />
 				</a>
 			</div>
 		</div>
@@ -277,60 +280,61 @@ if ( have_posts() ) :
 						<div class="judge-grid">
 
 			  <div class="judge-card">
-		  <img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-christeen-rico.jpg' ) ); ?>" alt="Christeen Rico">
-		  <p>
-			<span>Christeen Rico</span>
-			<span>USA/Philippines</span>
-		  </p>
+					<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-christeen-rico.jpg' ) ); ?>" alt="Christeen Rico">
+					<p>
+					<span>Christeen Rico</span>
+					<span>USA/Philippines</span>
+					</p>
 			  </div>
 			  <div class="judge-card">
-		  <img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-jonhart.jpg' ) ); ?>" alt="Jon Hart">
-		  <p>
-			<span>Jon Hart</span>
-			<span>USA</span>
-		  </p>
+					<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-jonhart.jpg' ) ); ?>" alt="Jon Hart">
+					<p>
+					<span>Jon Hart</span>
+					<span>USA</span>
+					</p>
 			  </div>
 			  <div class="judge-card">
-		  <img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-jasmine-ng.jpg' ) ); ?>" alt="Jasmine Ng">
-		  <p>
-			<span>Jasmine Ng</span>
-			<span>Malaysia</span>
-		  </p>
+					<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-jasmine-ng.jpg' ) ); ?>" alt="Jasmine Ng">
+					<p>
+					<span>Jasmine Ng</span>
+					<span>Malaysia</span>
+					</p>
 			  </div>
 			  <div class="judge-card">
-		  <img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-natch-lazarus.jpg' ) ); ?>" alt="Natchi Lazarus">
-		  <p>
-			<span>Natchi Lazarus</span>
-			<span>Title</span>
-		  </p>
+					<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-natch-lazarus.jpg' ) ); ?>" alt="Natchi Lazarus">
+					<p>
+					<span>Natchi Lazarus</span>
+					<span>India</span>
+					</p>
 			  </div>
 			  <div class="judge-card">
-		  <img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-pablo-baldoma.jpg' ) ); ?>" alt="Pablo Baldomá">
-		  <p>
-			<span>Pablo Baldomá</span>
-			<span>Argentina</span>
-		  </p>
+					<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-pablo-baldoma.jpg' ) ); ?>" alt="Pablo Baldomá">
+					<p>
+					<span>Pablo Baldomá</span>
+					<span>Argentina</span>
+					</p>
 			  </div>
 				<div class="judge-card">
-			<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-richard-zhang.jpg' ) ); ?>" alt="Richard Zhang">
-			<p>
-			<span>Richard Zhang</span>
-			<span>USA/China</span>
-			</p>
+					<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-richard-zhang.jpg' ) ); ?>" alt="Richard Zhang">
+					<p>
+					<span>Richard Zhang</span>
+					<span>USA/China</span>
+					</p>
 				</div>
+				<div style="null-judge"></div>
 			  <div class="judge-card">
-		  <img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-shikou-gitau.png' ) ); ?>" alt="Dr. Shikoh Gitau">
-		  <p>
-			<span>Dr. Shikoh Gitau</span>
-			<span>Kenya</span>
-		  </p>
+					<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-shikou-gitau.png' ) ); ?>" alt="Dr. Shikoh Gitau">
+					<p>
+					<span>Dr. Shikoh Gitau</span>
+					<span>Kenya</span>
+					</p>
 			  </div>
 			  <div class="judge-card">
-		  <img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-trip-nine.png' ) ); ?>" alt="Trip Nine">
-		  <p>
-			<span>Trip Nine</span>
-			<span>USA</span>
-		  </p>
+					<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/judges/judge-trip-nine.png' ) ); ?>" alt="Trip Nine">
+					<p>
+					<span>Trip Nine</span>
+					<span>USA</span>
+					</p>
 			  </div>
 				  </div>
 						</div>
@@ -339,7 +343,7 @@ if ( have_posts() ) :
 			</div>
 
 	<section>
-		<?php get_template_part( 'template-parts/projects' ); ?>
+		<?php get_template_part( 'template-parts/projects-2021' ); ?>
 	</section>
 
 	<!-- Stories -->
@@ -406,12 +410,12 @@ if ( have_posts() ) :
 	</div>
 
 	<!-- GALLERY -->
-	<div class="section section-20201-hack-gallery">
+	<div class="section section-2021-hack-gallery" style="padding-bottom: 0px;">
 		<div class="wrap" style="margin-bottom:64px"
 			  ><h3 class="text-center" style="font-size: 4rem;"><?php esc_html_e( '#HACK2021 Gallery', 'hack' ); ?></h3>
 		</div>
 		<div class="wrap">
-			<div class="hack-slick" data-slick='{"dots": true, "arrows": true}'>
+			<div class="hack-slick" data-slick='{"dots": true, "arrows": true}' data-slick-id="twelve">
 				<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/2021/gallery-1.jpg' ) ); ?>" alt="gallery" />
 				<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/2021/gallery-2.jpg' ) ); ?>" alt="gallery" />
 				<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/2021/gallery-3.jpg' ) ); ?>" alt="gallery" />
@@ -429,6 +433,7 @@ if ( have_posts() ) :
 				<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/2021/gallery-15.jpg' ) ); ?>" alt="gallery" />
 				<img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/2021/gallery-16.jpg' ) ); ?>" alt="gallery" />
 			</div>
+			<div style="margin: 0 auto; justify-content: center; text-align: center;" class="slick-carousel-pagination" data-slick-id="twelve" data-label="<?php esc_attr_e( 'Image', 'hack' ); ?>"><div></div></div>
 		</div>
 	</div>
 			
