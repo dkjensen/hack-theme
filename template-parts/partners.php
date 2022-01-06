@@ -2,7 +2,6 @@
 	<div class="wrap">
 		<h2><?php esc_html_e( 'Friends of #HACK', 'hack' ); ?></h2>
 		<p class="intro-text"><?php esc_html_e( 'These friends and partners are wonderful champions of #HACK and play an important role in bringing this event to a city near you.', 'hack' ); ?></p>
-		<p><a target="_blank" href="<?php echo esc_url( get_permalink( get_page_by_path( 'partner' ) ) ); ?>" class="button outline"><?php esc_html_e( 'Partner with Us', 'hack' ); ?></a></p>
 		<div class="template-parts-partners-logos">
 			<a target="_blank" rel="noopener" href="https://www.cru.org/" class="template-parts-partners-logos--logo" aria-label="CRU"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/cru-logo.png' ) ); ?>" alt=""/></a>
 			<a target="_blank" rel="noopener" href="https://lausanne.org/" class="template-parts-partners-logos--logo" aria-label="Lausanne Missional"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/logos/lausanne-movement-logo.png' ) ); ?>" alt=""/></a>

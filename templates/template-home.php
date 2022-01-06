@@ -19,10 +19,6 @@ if ( have_posts() ) :
 				<div class="wrap">
 					<h1><?php esc_html_e( 'A Global Hackathon To Bring The', 'hack' ); ?> <br><span><?php esc_html_e( 'Gospel Where It Needs To Go', 'hack' ); ?></span></h1>
 					<p><?php esc_html_e( 'The Indigitous #HACK is a global hackathon where participants around the world gather to solve problems facing their communities. #HACK convenes people from all backgrounds to use their skills, gifts, and expertise to impact the world. Join #HACK2021 and see how God can use you.', 'hack' ); ?>
-					<div class="section-home-one-buttons">
-					<a href="<?php echo esc_url( get_permalink( get_page_by_path( 'participate' ) ) ); ?>" class="button"><?php esc_html_e( 'Participate', 'hack' ); ?></a>
-						<a href="<?php echo esc_url( get_permalink( get_page_by_path( 'lead' ) ) ); ?>" class="button outline"><?php esc_html_e( 'Lead', 'hack' ); ?></a>
-					</div>
 				</div>
 			</div>
 			
@@ -60,8 +56,6 @@ if ( have_posts() ) :
 								<div class="column two-fifths offset-2">
 									<h3 class="primary-color"><?php esc_html_e( 'When and where is the event?', 'hack' ); ?></h3>
 									<p><?php esc_html_e( 'This year the Indigitous #HACK will take place October 15-17 and October 22-24, 2021 in multiple cities around the world.', 'hack' ); ?>
-									<a class="text-color" href="<?php echo esc_url( get_permalink( get_page_by_path( 'locations' ) ) ); ?>">		
-									<?php esc_html_e( 'Find a city near you here', 'hack' ); ?>
 								</a>
 								</p>
 								</div>
@@ -158,7 +152,6 @@ if ( have_posts() ) :
 									<p>
 										<?php esc_html_e( 'Join #HACK2021 to make an impact and bring the Gospel where it needs to go. Sign up and see how God will use your talents and experience.', 'hack' ); ?>
 									</p>
-									<a href="<?php echo esc_url( get_permalink( get_page_by_path( 'participate' ) ) ); ?>" class="button"><?php esc_html_e( 'Participate', 'hack' ); ?></a>
 								</div>
 							</div>
 						</div>
@@ -172,7 +165,6 @@ if ( have_posts() ) :
 									<p>
 										<?php esc_html_e( 'Bring #HACK2021 to your city. Bring together skilled individuals to collaborate on projects that make Jesus known and meet needs specific to your community.', 'hack' ); ?>
 									</p>
-									<a href="<?php echo esc_url( get_permalink( get_page_by_path( 'lead' ) ) ); ?>" class="button"><?php esc_html_e( 'Lead', 'hack' ); ?></a>
 								</div>
 							</div>
 						</div>
@@ -186,7 +178,6 @@ if ( have_posts() ) :
 									<p>
 										<?php esc_html_e( 'Partners play an important role in bringing #HACK to cities around the world by providing challenges, sponsorship or other support. We’d love to work together to bring the gospel to where it is not.', 'hack' ); ?>
 									</p>
-									<a href="<?php echo esc_url( get_permalink( get_page_by_path( 'partner' ) ) ); ?>" class="button"><?php esc_html_e( 'Partner', 'hack' ); ?></a>
 								</div>
 							</div>
 						</div>
