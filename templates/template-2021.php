@@ -347,7 +347,7 @@ if ( have_posts() ) :
 	</section>
 
 	<!-- Stories -->
-	<div class="section section-2021-stories">
+	<div class="section section-2021-stories gray-300-background-color">
 		<div class="wrap" style="margin-bottom:64px"
 			  ><h3 class="text-center" style="font-size: 4rem;"><?php esc_html_e( 'Stories from #HACK2021', 'hack' ); ?></h3>
 		</div>
